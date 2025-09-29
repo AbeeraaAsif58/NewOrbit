@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Navigation from '../components/Navigation';
+import TalkBanner from '../components/TalkBanner';
 import { motion, useInView } from 'framer-motion';
 
 function useCounter(target, start = 0, durationMs = 1600, when = true) {
@@ -93,31 +94,31 @@ const Services = () => {
         </div>
 
         <div ref={containerRef} className="mx-auto max-w-[1400px] px-6 relative z-10">
-          {/* Hero Section */}
+          {/* Hero Section - Matching About Page Design */}
           <motion.div
             variants={fade}
             initial="hidden"
             animate={inView ? 'show' : 'hidden'}
-            className="text-center mb-20"
+            className="mb-16 min-h-[80vh] flex flex-col justify-center"
           >
-            <motion.img
-              variants={scaleIn}
-              src="/logo/logo.png"
-              alt="Orbit Walls Logo"
-              className="mx-auto h-20 w-auto mb-8 drop-shadow-[0_0_12px_rgba(37,99,235,0.35)]"
-            />
-            <motion.h2
+            <motion.h1
               variants={fadeUp}
-              className="text-6xl md:text-7xl font-bold text-white mb-8 hover:text-blue-400 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(37,99,235,0.4)]"
+              className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow"
             >
-              Our <span className="animate-pulse">Services</span>
-            </motion.h2>
-            <motion.p
-              variants={fadeUp}
-              className="text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed"
-            >
-              Launch your digital presence with solutions crafted to match Orbit Walls’ identity
-            </motion.p>
+              We are "Orbit" — product and branding and creative agency
+              based in California
+            </motion.h1>
+            <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              <div className="md:col-span-3">
+                <div className="flex items-center gap-4 text-[11px] tracking-[0.18em] font-semibold uppercase text-gray-400">
+                  <span>02. Our Services</span>
+                  <span className="h-px w-14 bg-gray-600" />
+                </div>
+              </div>
+              <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
+                Launch your digital presence with solutions crafted to match Orbit Walls' identity and propel your business into the digital stratosphere.
+              </div>
+            </div>
           </motion.div>
 
           {/* Core Services Section */}
@@ -656,6 +657,21 @@ const Services = () => {
               transform: translateX(0); 
             }
           }
+
+          @keyframes text-grow {
+            0% {
+              opacity: 0;
+              transform: scale(0.92);
+            }
+            60% {
+              opacity: 1;
+              transform: scale(1.03);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
           
           .animate-fade-in {
             animation: fade-in 1.2s ease-out;
@@ -676,8 +692,14 @@ const Services = () => {
           .animate-slide-in-right {
             animation: slide-in-right 1.2s ease-out 0.8s both;
           }
+
+          .animate-text-grow {
+            animation: text-grow 900ms ease-out 300ms both;
+          }
         `}</style>
       </section>
+      
+      <TalkBanner />
     </div>
   );
 };

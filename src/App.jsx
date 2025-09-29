@@ -9,14 +9,20 @@ import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cursor from "./components/Cursor";
-import FooterOrbit from "./components/FooterOrbit";
+// import FooterOrbit from "./components/FooterOrbit";
 // Industry pages
+import ArtificialIntelligence from "./pages/Industries/ArtificialIntelligence";
+import Automobile from "./pages/Industries/Automobile";
+import Blockchain from "./pages/Industries/Blockchain";
+import B2B from "./pages/Industries/B2B";
+import Companies from "./pages/Industries/Companies";
+import Dating from "./pages/Industries/Dating";
+import Finance from "./pages/Industries/Finance";
 import BrandingAgency from "./pages/Industries/BrandingAgency";
 import WebDesignAgency from "./pages/Industries/WebDesignAgency";
 import SEOAgency from "./pages/Industries/SEOAgency";
 import DesignStudio from "./pages/Industries/DesignStudio";
 import VideoProduction from "./pages/Industries/VideoProduction";
-import AIStartup from "./pages/Industries/AIStartup";
 import CreativeAgencyClassic from "./pages/Industries/CreativeAgencyClassic";
 import MarketingAgency from "./pages/Industries/MarketingAgency";
 import CorporateAgency from "./pages/Industries/CorporateAgency";
@@ -25,6 +31,7 @@ import Freelancer from "./pages/Industries/Freelancer";
 import MarketingConsultancyAgency from "./pages/Industries/MarketingConsultancyAgency";
 import PersonalPortfolio from "./pages/Industries/PersonalPortfolio";
 import ITConsultancyAgency from "./pages/Industries/ITConsultancyAgency";
+import ProjectDetail from "./pages/Industries/ProjectDetail";
 
 
 // import BackgroundAI from "./components/BackgroundAI";
@@ -61,12 +68,19 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* Industry routes */}
+            <Route path="/artificial-intelligence" element={<ArtificialIntelligence />} />
+            <Route path="/artificial-intelligence/:projectSlug" element={<ProjectDetail />} />
+            <Route path="/automobile" element={<Automobile />} />
+            <Route path="/blockchain" element={<Blockchain />} />
+            <Route path="/b2b" element={<B2B />} />
+            <Route path="/companies" element={<Companies />} />
+            <Route path="/dating" element={<Dating />} />
+            <Route path="/finance" element={<Finance />} />
             <Route path="/branding-agency" element={<BrandingAgency />} />
             <Route path="/web-design-agency" element={<WebDesignAgency />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/design-studio" element={<DesignStudio />} />
             <Route path="/video-production" element={<VideoProduction />} />
-            <Route path="/ai-startup" element={<AIStartup />} />
             <Route path="/creative-agency-classic" element={<CreativeAgencyClassic />} />
             <Route path="/marketing-agency" element={<MarketingAgency />} />
             <Route path="/corporate-agency" element={<CorporateAgency />} />
@@ -77,9 +91,9 @@ export default function App() {
             <Route path="/it-consultancy-agency" element={<ITConsultancyAgency />} />
           </Routes>
         </main>
-
-        {/* Global footer (once) */}
-        <FooterOrbit />
+       
+           {/* Global footer (once) */}
+        {/* <FooterOrbit /> */}
     
       </div>
     </>

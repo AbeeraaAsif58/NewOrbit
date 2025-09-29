@@ -32,12 +32,18 @@ export default function Navbar() {
   ];
 
   const INDUSTRY_PAGES = [
+    { to: "/artificial-intelligence", label: "Artificial Intelligence" },
+    { to: "/automobile", label: "Automobile" },
+    { to: "/blockchain", label: "Blockchain" },
+    { to: "/b2b", label: "B2B Companies" },
+    { to: "/companies", label: "Companies" },
+    { to: "/dating", label: "Dating" },
+    { to: "/finance", label: "Finance" },
     { to: "/branding-agency", label: "Branding Agency" },
     { to: "/web-design-agency", label: "Web Design Agency" },
     { to: "/seo-agency", label: "SEO Agency" },
     { to: "/design-studio", label: "Design Studio" },
     { to: "/video-production", label: "Video Production" },
-    { to: "/ai-startup", label: "AI Startup" },
     { to: "/creative-agency-classic", label: "Creative Agency Classic" },
     { to: "/marketing-agency", label: "Marketing Agency" },
     { to: "/corporate-agency", label: "Corporate Agency" },
@@ -48,8 +54,9 @@ export default function Navbar() {
     { to: "/it-consultancy-agency", label: "IT Consultancy Agency" },
   ];
 
-  const CREAM = "#ECE7D8";
-  const NAVY_GLASS = "rgba(15,29,51,0.45)";
+  const CREAM = "#ffffff"; // white text
+  const NAVY_GLASS = "rgba(0,0,0,0.85)"; // black background with opacity
+  const ORANGE_ACCENT = "rgba(255,107,53,0.9)"; // orange accent
 
   // Entrance animation
   useLayoutEffect(() => {
@@ -73,7 +80,7 @@ export default function Navbar() {
       const y = window.scrollY;
       gsap.to(barRef.current, {
         height: y > 8 ? 60 : 72,
-        backgroundColor: y > 8 ? "rgba(15,29,51,0.65)" : NAVY_GLASS,
+        backgroundColor: y > 8 ? "rgba(0,0,0,0.95)" : NAVY_GLASS,
         boxShadow: y > 8 ? "0 8px 30px rgba(0,0,0,.35)" : "0 0 0 rgba(0,0,0,0)",
         duration: 0.25,
         ease: "power2.out",
@@ -148,17 +155,17 @@ export default function Navbar() {
 
   return (
     <header ref={headerRef} className="sticky top-0 z-[200] w-full">
-      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent" />
+      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-orange-500 to-transparent" />
 
       {/* Navbar */}
       <nav
         ref={barRef}
-        className="relative z-[201] flex h-[72px] w-full items-center justify-between px-4 md:px-6 border-b border-black/10 bg-white/30 backdrop-blur-xl"
+        className="relative z-[201] flex h-[72px] w-full items-center justify-between px-4 md:px-6 border-b border-orange-500/20 bg-black/90 backdrop-blur-xl"
         style={{ color: CREAM, transition: "height .25s ease" }}
       >
         {/* Left menu */}
         <div className="flex items-center gap-2">
-          <button ref={burgerRef} onClick={toggleLeft} className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/25 bg-white/5">
+          <button ref={burgerRef} onClick={toggleLeft} className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-orange-500/30 bg-orange-500/10 hover:bg-orange-500/20 transition-colors">
             <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -166,8 +173,14 @@ export default function Navbar() {
         </div>
 
         {/* Brand */}
-        <Link to="/" ref={brandRef} className="text-2xl font-bold">
-          MyBrand
+        <Link 
+          to="/" 
+          ref={brandRef} 
+          className="group relative text-2xl font-bold text-orange-500 hover:text-orange-400 transition-all duration-300 hover:scale-105"
+        >
+          <span className="relative z-10">ORBIT WALLS</span>
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 via-orange-500/30 to-orange-600/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-orange-400/10 via-orange-500/20 to-orange-600/10 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </Link>
 
         {/* Right — Industries Button */}
@@ -176,7 +189,7 @@ export default function Navbar() {
             ref={industriesBtnRef}
             onMouseEnter={openIndustriesSheet}
             onClick={openIndustriesSheet}
-            className="px-4 py-2 rounded-xl font-semibold text-[#0B0F19] bg-[#f5c669] border border-[#f5c669] ring-1 ring-black/10 shadow-md hover:bg-[#eabf5a] focus:outline-none focus:ring-2 focus:ring-white/70 transition-colors"
+            className="px-4 py-2 rounded-xl font-semibold text-white bg-orange-500 border border-orange-500 ring-1 ring-orange-500/20 shadow-md hover:bg-orange-600 hover:border-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition-colors"
           >
             Industries
           </button>
@@ -191,9 +204,16 @@ export default function Navbar() {
       />
 
       {/* LEFT — Slide Panel */}
-      <div ref={panelRef} className="fixed left-0 top-0 z-[75] hidden h-full w-full max-w-md flex-col gap-4 bg-[rgba(15,29,51,0.6)] backdrop-blur-xl p-4 pt-16">
+      <div ref={panelRef} className="fixed left-0 top-0 z-[75] hidden h-full w-full max-w-md flex-col gap-4 bg-black/95 backdrop-blur-xl p-8 pt-20">
         {PAGES.map((item, i) => (
-          <NavLink key={i} to={item.to} end={item.end} onClick={closeLeft} ref={(el) => setItemRef(el, i)} className="p-3 text-white hover:bg-white/10 rounded">
+          <NavLink 
+            key={i} 
+            to={item.to} 
+            end={item.end} 
+            onClick={closeLeft} 
+            ref={(el) => setItemRef(el, i)} 
+            className="text-white text-lg font-normal hover:text-gray-300 transition-colors duration-200"
+          >
             {item.label}
           </NavLink>
         ))}
@@ -202,18 +222,16 @@ export default function Navbar() {
       {/* RIGHT — Industries Mega Menu */}
       <div
         ref={industriesPanelRef}
-        className="fixed right-0 top-[72px] z-[75] hidden w-[600px] bg-[#0F1D33]/95 backdrop-blur-lg p-6 rounded-lg shadow-2xl"
+        className="fixed right-0 top-[72px] z-[75] hidden w-[600px] bg-black/95 backdrop-blur-lg p-6 rounded-lg shadow-2xl border border-orange-500/20"
         onMouseLeave={closeIndustries}
       >
-        <div className="grid grid-cols-2 gap-4 text-[#ECE7D8]">
+        <div className="grid grid-cols-2 gap-3 text-white">
           {INDUSTRY_PAGES.map((item, i) => (
             <NavLink
               key={i}
               to={item.to}
               onClick={closeIndustries}
-              className="py-2 px-3 rounded hover:bg-white/10 transition-colors duration-200"
-              onMouseEnter={(e) => gsap.to(e.currentTarget, { x: 4, duration: 0.2, ease: "power2.out" })}
-              onMouseLeave={(e) => gsap.to(e.currentTarget, { x: 0, duration: 0.2, ease: "power2.out" })}
+              className="text-white text-sm font-normal hover:text-gray-300 transition-colors duration-200"
             >
               {item.label}
             </NavLink>

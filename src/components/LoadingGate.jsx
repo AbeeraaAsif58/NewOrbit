@@ -7,13 +7,13 @@ export default function LoadingGate({
   logoSrc = "",
   onDone,
   colors = {
-    ink: "#202c3f",                 // page background
-    text: "#ffffff",                // all text is now white
-    textSoft: "rgba(255,255,255,.85)",
-    dark: "#274472",
-    mid: "#41729f",
-    blue: "#5885af",
-    cyan: "#9ad9ff",
+    ink: "#e0550d",                 // theme background
+    text: "#ffffff",                // white text
+    textSoft: "rgba(255,255,255,.85)", // white with opacity
+    dark: "#6b2f0a", // darker brown
+    mid: "#c85013", // primary orange
+    blue: "#c85013", // primary orange
+    cyan: "#ffffff", // white
   },
 }) {
   const [hidden, setHidden] = useState(false);
@@ -95,8 +95,8 @@ export default function LoadingGate({
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            `radial-gradient(ellipse at 30% 20%, rgba(88,133,175,.15), transparent 55%),
-             radial-gradient(ellipse at 70% 80%, rgba(65,114,159,.12), transparent 60%)`,
+            `radial-gradient(ellipse at 30% 20%, rgba(200,80,19,.15), transparent 55%),
+             radial-gradient(ellipse at 70% 80%, rgba(200,80,19,.12), transparent 60%)`,
         }}
       />
 
@@ -111,7 +111,7 @@ export default function LoadingGate({
               left: `${Math.random() * 100}%`,
               background: "rgba(255,255,255,.9)",
               opacity: 0.35 + Math.random() * 0.6,
-              filter: "drop-shadow(0 0 6px rgba(154,217,255,.65))",
+              filter: "drop-shadow(0 0 6px rgba(255,255,255,.65))",
               animation: `twinkle ${1.5 + Math.random() * 2.5}s ease-in-out ${Math.random() * 1.2}s infinite`,
             }}
           />
@@ -127,8 +127,8 @@ export default function LoadingGate({
           style={{
             boxShadow:
               `inset 0 0 0 2px rgba(255,255,255,0.10),
-               0 0 26px rgba(154,217,255,0.12),
-               0 0 70px rgba(88,133,175,0.14)`,
+               0 0 26px rgba(255,255,255,0.12),
+               0 0 70px rgba(200,80,19,0.14)`,
             maskImage: "radial-gradient(circle at center, black 63%, transparent 64%)",
             WebkitMaskImage: "radial-gradient(circle at center, black 63%, transparent 64%)",
           }}
@@ -141,7 +141,7 @@ export default function LoadingGate({
               className="absolute left-1/2 top-0 w-2 h-2 rounded-full"
               style={{
                 background: colors.cyan,
-                boxShadow: "0 0 10px rgba(154,217,255,0.8)",
+                boxShadow: "0 0 10px rgba(255,255,255,0.8)",
                 transform: `rotate(${deg}deg) translateY(-10px)`,
                 transformOrigin: "center 90px",
               }}
@@ -160,13 +160,13 @@ export default function LoadingGate({
             0
           </p>
         </div>
-        <div className="h-1.5 w-full rounded-full overflow-hidden" style={{ background: "rgba(88,133,175,.25)" }}>
+        <div className="h-1.5 w-full rounded-full overflow-hidden" style={{ background: "rgba(200,80,19,.25)" }}>
           <div
             ref={barRef}
             className="h-full w-0 rounded-full"
             style={{
               background: `linear-gradient(90deg, ${colors.dark} 0%, ${colors.mid} 35%, ${colors.blue} 70%, #ffffff 100%)`,
-              boxShadow: "0 0 18px rgba(154,217,255,.35)",
+              boxShadow: "0 0 18px rgba(255,255,255,.35)",
             }}
           />
         </div>

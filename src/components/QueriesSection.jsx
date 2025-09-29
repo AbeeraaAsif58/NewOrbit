@@ -4,19 +4,19 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-/* ——— Refreshed Palette ——— */
+/* ——— Theme Palette ——— */
 const PALETTE = {
-  INK: "#0e1222",
-  INK_SOFT: "rgba(14,18,34,.65)",
-  SHEEN: "#dfe7ff",
-  CYAN: "#47d6ff",
-  CYAN_DARK: "#00abd2",
-  PURPLE: "#9a8cff",
+  INK: "#e0550d", // background
+  INK_SOFT: "rgba(158,63,14,.65)", // background with opacity
+  SHEEN: "#ffffff", // white text
+  CYAN: "#c85013", // primary orange
+  CYAN_DARK: "#8b380d", // text brown
+  PURPLE: "#c85013", // primary orange
   CARD: "rgba(255,255,255,.06)",
   CARD_BORDER: "rgba(255,255,255,.14)",
-  CARD_BORDER_HOVER: "rgba(71,214,255,.55)",
+  CARD_BORDER_HOVER: "rgba(200,80,19,.55)", // primary with opacity
   WHITE: "#ffffff",
-  MUTED: "rgba(223,231,255,.7)",
+  MUTED: "rgba(255,255,255,.7)", // white with opacity
 };
 
 const faqs = [
@@ -106,11 +106,11 @@ export default function QueriesSection() {
   return (
     <section
       ref={root}
-      className="relative w-full py-16 md:py-24"
+      className="relative w-full py-8 md:py-12"
       style={{
         // soft radial vignette for depth on dark bg
         background:
-          "radial-gradient(1200px 600px at 10% -10%, rgba(71,214,255,.08), transparent 50%), radial-gradient(1000px 600px at 110% -20%, rgba(154,140,255,.08), transparent 50%)",
+          "radial-gradient(1200px 600px at 10% -10%, rgba(200,80,19,.08), transparent 50%), radial-gradient(1000px 600px at 110% -20%, rgba(200,80,19,.08), transparent 50%)",
       }}
     >
       <div className="relative z-10 mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12">
@@ -121,7 +121,7 @@ export default function QueriesSection() {
             className="font-extrabold leading-[0.95] tracking-tight"
             style={{
               fontSize: "clamp(34px, 9vw, 86px)",
-              background: `linear-gradient(180deg, ${PALETTE.WHITE} 0%, ${PALETTE.SHEEN} 100%)`,
+              background: `linear-gradient(180deg, ${PALETTE.WHITE} 0%, ${PALETTE.WHITE} 100%)`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               textShadow: "0 20px 60px rgba(0,0,0,.35)",
@@ -328,7 +328,7 @@ export default function QueriesSection() {
           padding:.9rem 1.2rem;
           border-radius:14px;
           font-weight:700;
-          color:${PALETTE.INK};
+          color:${PALETTE.WHITE};
           background: linear-gradient(90deg, ${PALETTE.CYAN}, ${PALETTE.PURPLE});
           box-shadow: 0 14px 30px -14px ${PALETTE.CYAN};
           transition: transform .15s ease, filter .2s ease, box-shadow .2s ease;

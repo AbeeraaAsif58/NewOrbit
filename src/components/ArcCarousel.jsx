@@ -43,10 +43,10 @@ export default function ArcCarousel({
   backdrop = false,
 }) {
   const PALETTE = {
-    MIDNIGHT: "#41729f",
-    BLUEGRAY: "#5885af",
-    DARK: "#274472",
-    BABY: "#c3e0e5",
+    MIDNIGHT: "#6b2f0a", // darker brown
+    BLUEGRAY: "#c85013", // primary orange
+    DARK: "#e0550d", // background brown
+    BABY: "#ffffff", // white text
     WHITE: "#ffffff",
   };
 
@@ -396,7 +396,7 @@ export default function ArcCarousel({
               />
               <div
                 className="absolute inset-[1.5px] rounded-[24px]"
-                style={{ background: "rgba(39,68,114,0.88)" }} // DARK with alpha
+                style={{ background: "rgba(158,63,14,0.88)" }} // theme background with alpha
               />
             </div>
 
@@ -462,11 +462,11 @@ export default function ArcCarousel({
 
             {/* Labels */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center px-3">
-              <div className="text-[13px] md:text-[14px] tracking-[.28em] uppercase text-white">
+              <div className="text-[13px] md:text-[14px] tracking-[.28em] uppercase text-white font-semibold">
                 {it.title}
               </div>
               {it.subtitle && (
-                <div className="text-[12px] md:text-[13px]" style={{ color: `${PALETTE.BABY}CC` }}>
+                <div className="text-[12px] md:text-[13px] text-white/90 font-medium">
                   {it.subtitle}
                 </div>
               )}
@@ -483,12 +483,9 @@ export default function ArcCarousel({
             onClick={() => setIndex(i)}
             className={`h-2.5 rounded-full transition-all ${
               i === index
-                ? "w-8"
-                : "w-2.5 hover:opacity-80"
+                ? "w-8 bg-orange-500"
+                : "w-2.5 bg-white/60 hover:bg-white/80"
             }`}
-            style={{
-              backgroundColor: i === index ? PALETTE.BABY : `${PALETTE.BLUEGRAY}66`,
-            }}
             aria-label={`Go to slide ${i + 1}`}
           />
         ))}
@@ -501,8 +498,7 @@ export default function ArcCarousel({
         aria-label="Previous"
       >
         <div
-          className="size-11 md:size-12 rounded-full bg-white font-semibold grid place-items-center shadow-lg ring-1 ring-white/40 group-active:scale-95 transition"
-          style={{ color: PALETTE.DARK }}
+          className="size-11 md:size-12 rounded-full bg-orange-500 font-semibold grid place-items-center shadow-lg ring-1 ring-orange-400/40 group-active:scale-95 transition text-white"
         >
           ←
         </div>
@@ -513,8 +509,7 @@ export default function ArcCarousel({
         aria-label="Next"
       >
         <div
-          className="size-11 md:size-12 rounded-full bg-white font-semibold grid place-items-center shadow-lg ring-1 ring-white/40 group-active:scale-95 transition"
-          style={{ color: PALETTE.DARK }}
+          className="size-11 md:size-12 rounded-full bg-orange-500 font-semibold grid place-items-center shadow-lg ring-1 ring-orange-400/40 group-active:scale-95 transition text-white"
         >
           →
         </div>

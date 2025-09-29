@@ -111,7 +111,7 @@ const Team = () => {
       <div ref={containerRef} className="flex flex-col h-auto">
         {/* top strip */}
         <div className="md:flex md:items-center md:justify-between md:w-full md:h-auto xl:h-auto lg:h-auto xl:pt-20">
-          <div className="first flex items-center justify-between border-primary border-t-[1px] w-[100vw] px-3 mt-14 sm:w-[92%] md:w-[35vw] md:px-4 md:mt-2 lg:w-[38vw]">
+          <div className="first flex items-center justify-between border-white border-t-[1px] w-[100vw] px-3 mt-14 sm:w-[92%] md:w-[35vw] md:px-4 md:mt-2 lg:w-[38vw]">
             {/* <p className='text-[17px] sm:text-[17px] md:text-[18px] lg:text-[20px]'>
               Want to serve global audiences and take your career to the next level? 
             </p> */}
@@ -132,18 +132,18 @@ const Team = () => {
         {/* circle stats */}
         <div className="circle flex justify-center items-center py-5 sm:pt-[65px] md:justify-end md:pr-[8%] lg:pt-[90px] xl:pt-[130px] lg:pb-20">
           <div className="circle1 flex flex-col justify-center items-start text-left border rounded-full h-auto w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[32%] p-5 lg:p-8 xl:p-10">
-            <h1 className="text-[26px] sm:text-[28px] md:text-[30px] lg:text-[34px] xl:text-[40px] font-semibold">4,000 +</h1>
-            <p className="text-[18px] md:text-[19px] lg:text-[20px] xl:text-[22px] text-secondary font-medium">Happy Clients</p>
+            <h1 className="text-[26px] sm:text-[28px] md:text-[30px] lg:text-[34px] xl:text-[40px] font-semibold text-white">4,000 +</h1>
+            <p className="text-[18px] md:text-[19px] lg:text-[20px] xl:text-[22px] text-white font-medium">Happy Clients</p>
           </div>
         </div>
 
         {/* hero image & expertise employees counter */}
         <div className="flex flex-col justify-center items-center gap-3 pt-[70px] sm:pt-[50px] md:relative lg:relative lg:h-auto">
           <div className="sectionCircle flex flex-col justify-center items-center text-center h-[25vh] w-[50vw] rounded-full bg-primary sm:w-[35vw] sm:h-[50vh] sm:pb-[55px] md:absolute md:top-[-6%] md:left-10 md:h-[22vh] md:w-[26vw] lg:h-[20vh] lg:w-[26vw] lg:left-[7%] lg:top-[-15%] xl:h-[45vh] xl:w-[22vw]">
-            <h1 ref={counterARef} className="text-[35px] sm:text-[60px] md:mt-10 lg:text-[70px] mt-1 font-semibold">
+            <h1 ref={counterARef} className="text-[35px] sm:text-[60px] md:mt-10 lg:text-[70px] mt-1 font-semibold text-white">
               {countA} +
             </h1>
-            <p className="text-[21px] sm:text-[27px] md:text-[24px] lg:text-[40px] xl:text-[34px] text-secondary font-medium leading-[1.3em] sm:text-white sm:font-light sm:leading-[1.03em]">
+            <p className="text-[21px] sm:text-[27px] md:text-[24px] lg:text-[40px] xl:text-[34px] text-white font-medium leading-[1.3em] sm:text-white sm:font-light sm:leading-[1.03em]">
               Expertise Employees
             </p>
           </div>
@@ -177,8 +177,8 @@ const Team = () => {
                     <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
                   </div>
                   <div className="titlebar w-[90%] text-center lg:text-left">
-                    <h1 className="font-semibold text-[22px] sm:text-[20px] md:text-[24px] lg:text-[26px]">{item.title}</h1>
-                    <p className="text-[#515151] font-medium leading-[1.2em] text-[16px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
+                    <h1 className="font-semibold text-[22px] sm:text-[20px] md:text-[24px] lg:text-[26px] text-white">{item.title}</h1>
+                    <p className="text-white font-medium leading-[1.2em] text-[16px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
                       {item.description}
                     </p>
                   </div>
@@ -200,7 +200,7 @@ const Team = () => {
               <div className="h-[40vh] lg:h-[50%] p-[5px] relative">
                 <img className="h-full w-full bg-black" src="public/shapeA.png" alt="shape A" />
                 <div className="absolute top-10 left-2 bg-opacity-80 px-4 py-2 rounded-lg">
-                  <p className="text-[30px] font-medium leading-[2rem] text-quaternary">
+                  <p className="text-[30px] font-medium leading-[2rem] text-white">
                     We helped companies get 99M+ funding
                   </p>
                 </div>
@@ -212,10 +212,10 @@ const Team = () => {
                 {/* NOTE: file name looks like a typo (shpaeB). Make sure the actual file name matches. */}
                 <img className="h-full w-full p-[5px]" src="public/shapeA.png" alt="shape B" />
                 <div className="absolute top-10 left-5">
-                  <p className="text-[30px] font-[400] leading-[2.3rem]">We have 99+ satisfied clients</p>
-                  <h1 ref={counterBRef} className="font-bold text-primary text-[75px] text-center">
+                  <p className="text-[30px] font-[400] leading-[2.3rem] text-white">We have 99+ satisfied clients</p>
+                  <h1 ref={counterBRef} className="font-bold text-white text-[75px] text-center">
                     {countB}
-                    <span className="text-[20px] font-medium leading-[2rem] text-primary">K+</span>
+                    <span className="text-[20px] font-medium leading-[2rem] text-white">K+</span>
                   </h1>
                 </div>
               </div>
@@ -227,7 +227,7 @@ const Team = () => {
 
           {/* bottom content + gallery */}
           <div className="content py-4 px-3 lg:py-20 lg:px-20 md:pt-20">
-            <ul className="text-[20px] font-[Kanit] flex gap-8 flex-wrap px-3 leading-[1.16em] sm:text-[18px] sm:gap-5 sm:px-3 md:justify-center md:text-[35px] md:gap-10 lg:gap-5">
+            <ul className="text-[20px] font-[Kanit] flex gap-8 flex-wrap px-3 leading-[1.16em] sm:text-[18px] sm:gap-5 sm:px-3 md:justify-center md:text-[35px] md:gap-10 lg:gap-5 text-white">
               <li>Future</li>
               <li className="flex items-center md:gap-3">
                 <img className="h-[1.5vh] w-[1vw] md:h-[1vh] md:w-[.8vw]" src="public/g2.png" alt="" />

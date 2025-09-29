@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -------- Root Theme Variables -------- */
+:root {
+  --color-text: #ffffff;            /* Text color - white */
+  --color-primary: #c85013;        /* Primary color */
+  --color-background: #e0550d;     /* Background color */
+  --color-secondary: #000000;       /* Secondary dark color */
+}
+
+/* -------- Theme Utility Classes -------- */
+.text-theme { color: var(--color-text); }
+.bg-theme { background-color: var(--color-background); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.border-theme { border-color: var(--color-text); }
+.border-primary { border-color: var(--color-primary); }
+.border-secondary { border-color: var(--color-secondary); }
+
 /* -------- Base -------- */
 * {
   margin: 0;
@@ -14,8 +31,8 @@
 }
 html, body {
   overflow-x: hidden;
-  background: #202c3f;                 /* deep space blue */
-  color: #c3e0e5;
+  background: var(--color-background);  /* Theme background color */
+  color: var(--color-text);            /* Theme text color */
 }
 
 /* -------- Scrollbar -------- */
@@ -101,11 +118,11 @@ html, body {
 
 /* -------- Headings glow (optional) -------- */
 .hello, .hyisycis {
-  color: #fff !important;
+  color: var(--color-text) !important;
   text-shadow:
-    0 2px 0 rgba(39,68,114,.6),
-    0 10px 30px rgba(65,114,159,.6),
-    0 0 40px rgba(195,224,229,.5);
+    0 2px 0 rgba(200,80,19,.6),
+    0 10px 30px rgba(200,80,19,.6),
+    0 0 40px rgba(200,80,19,.5);
   position: relative;
   display: inline-block;
 }
@@ -115,7 +132,7 @@ html, body {
   z-index: -1;
   inset: -4% -2%;
   border-radius: 999px;
-  background: radial-gradient(closest-side, rgba(39,68,114,.45), rgba(0,0,0,0) 75%);
+  background: radial-gradient(closest-side, rgba(200,80,19,.45), rgba(0,0,0,0) 75%);
   filter: blur(10px);
 }
 

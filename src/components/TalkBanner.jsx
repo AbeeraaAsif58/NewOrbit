@@ -19,9 +19,9 @@ function splitChars(el) {
 
 export default function TalkBanner({
   email = "hello@example.com",
-  bg = "#0f2135",      // your site’s deep navy
-  textColor = "#ffffff",
-  subColor = "#d1d5db", // gray-300 for email
+  bg = "#e0550d",      // theme background color
+  textColor = "#ffffff", // theme text color (white)
+  subColor = "#c85013", // theme primary color for email
 }) {
   const root = useRef(null);
   const line1Ref = useRef(null);
@@ -108,7 +108,7 @@ export default function TalkBanner({
     <section
       ref={root}
       style={{ background: bg, color: textColor }}
-      className="relative w-full min-h-[90vh] flex flex-col items-center justify-center text-white overflow-hidden"
+      className="relative w-full min-h-[60vh] flex flex-col items-center justify-center text-white overflow-hidden mt-0"
     >
       {/* small top label */}
       <div ref={helloRef} className="mb-6 flex items-center gap-2 text-lg font-semibold tracking-wider">

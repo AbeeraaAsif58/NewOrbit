@@ -6,7 +6,7 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function AIStartup() {
+export default function ArtificialIntelligence() {
   const scrollRoot = useRef(null);
 
   useEffect(() => {
@@ -78,7 +78,7 @@ export default function AIStartup() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0E1730] text-[#ECE7D8] selection:bg-cyan-300/20 mt-[-5%]">
+    <div className="min-h-screen bg-black text-white selection:bg-orange-500/20 mt-[-5%]">
       {/* Decorative backdrop */}
       <Backdrop />
 
@@ -103,9 +103,9 @@ export default function AIStartup() {
 function Backdrop() {
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-      <div className="orb-a absolute -top-32 -right-28 h-[28rem] w-[28rem] rounded-full bg-cyan-300/20 blur-3xl" />
-      <div className="orb-b absolute top-1/2 -left-28 h-[24rem] w-[24rem] -translate-y-1/2 rounded-full bg-fuchsia-400/20 blur-3xl" />
-      <div className="absolute bottom-0 right-1/3 h-60 w-60 translate-y-1/2 rounded-full bg-cyan-300/10 blur-3xl" />
+      <div className="orb-a absolute -top-32 -right-28 h-[28rem] w-[28rem] rounded-full bg-orange-500/20 blur-3xl" />
+      <div className="orb-b absolute top-1/2 -left-28 h-[24rem] w-[24rem] -translate-y-1/2 rounded-full bg-orange-400/20 blur-3xl" />
+      <div className="absolute bottom-0 right-1/3 h-60 w-60 translate-y-1/2 rounded-full bg-orange-500/10 blur-3xl" />
       <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_20%_0%,rgba(255,255,255,0.06),transparent_60%)]" />
     </div>
   );
@@ -118,12 +118,12 @@ function Hero() {
   return (
     <section id="hero" data-reveal className="relative isolate py-4 sm:py-8">
       <div className="max-w-5xl">
-        <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.15em] text-cyan-200/80">
+        <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.15em] text-orange-400/80">
           <Dot /> AI Templates • Agents • Starters
         </span>
 
         <h1 className="mt-4 text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.08] tracking-tight">
-          Build smarter, <span className="text-cyan-200">ship faster</span> — production-ready AI
+          Build smarter, <span className="text-orange-400">ship faster</span> — Artificial Intelligence Solutions
         </h1>
 
         <p className="mt-5 text-lg sm:text-xl lg:text-2xl text-white/85">
@@ -135,13 +135,13 @@ function Hero() {
           <div className="relative">
             <input
               placeholder="Search: chatbot, RAG, vision, SaaS boilerplate…"
-              className="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 pr-10 outline-none placeholder:text-white/40 focus:border-cyan-200/60"
+              className="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 pr-10 outline-none placeholder:text-white/40 focus:border-orange-400/60"
             />
-            <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-cyan-200/80">
+            <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-orange-400/80">
               <SearchIcon />
             </div>
           </div>
-          <button className="rounded-2xl bg-cyan-300/90 px-6 py-3 font-semibold text-[#0E1730] transition hover:bg-cyan-300">
+          <button className="rounded-2xl bg-orange-500/90 px-6 py-3 font-semibold text-black transition hover:bg-orange-400">
             Explore
           </button>
         </div>
@@ -159,7 +159,7 @@ function Hero() {
               data-reveal
               className="rounded-xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-sm"
             >
-              <div className="text-2xl sm:text-3xl font-semibold text-cyan-200">{it.k}</div>
+              <div className="text-2xl sm:text-3xl font-semibold text-orange-400">{it.k}</div>
               <div className="text-[11px] uppercase tracking-wider text-white/60">{it.l}</div>
             </div>
           ))}
@@ -213,7 +213,7 @@ function FeaturedSection() {
     <section className="mt-10" data-reveal>
       <div className="mb-4 flex items-end justify-between">
         <h2 className="text-xl font-semibold sm:text-2xl">Featured starters</h2>
-        <a className="text-sm text-cyan-200 hover:underline" href="#">
+        <a className="text-sm text-orange-400 hover:underline" href="#">
           View all
         </a>
       </div>

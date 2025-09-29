@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 function landingPage() {
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="-.4" className='w-full sm:h-screen sm:pt-1 pt-10 bg-[#c3e0e5] text-[#ffffff]'>
-            <div className="bg-[#202c3f] text sm:mt-32 mt-20 sm:p-16 px-5">
+        <div data-scroll data-scroll-section data-scroll-speed="-.4" className='w-full sm:h-screen sm:pt-1 pt-10 bg-background text-white'>
+            <div className="bg-secondary text sm:mt-32 mt-20 sm:p-16 px-5">
                 {["We Create", "Eye-opening", "presentations"].map((item, index) => (
                     <div key={index} className="w-fit flex items-end overflow-hidden gap-2">
                         {index === 1 && (
@@ -32,7 +32,7 @@ function landingPage() {
                 ))}
             </div>
 
-            <div className="two border-t-[1px] border-[#c3e0e5]/40 sm:mt-36 mt-80 flex flex-col sm:flex-row sm:justify-between justify-start sm:items-center items-start py-4 cursor-pointer sm:px-16 px-5 gap-8 mb-10 md:mb-0">
+            <div className="two border-t-[1px] border-primary/40 sm:mt-36 mt-80 flex flex-col sm:flex-row sm:justify-between justify-start sm:items-center items-start py-4 cursor-pointer sm:px-16 px-5 gap-8 mb-10 md:mb-0">
                 {["For public and private companies", "From the first pitch to IPO"].map((item, index) => (
                     <p 
                         key={index} 
@@ -43,13 +43,13 @@ function landingPage() {
 
                 <div id='startProject' className="start flex gap-3 items-center group cursor-pointer">
                     <motion.div 
-                        whileHover={{ backgroundColor: "#c3e0e5", color: "#202c3f" }} 
-                        className="px-5 py-1 border-[1px] rounded-full border-[#c3e0e5] uppercase sm:text-xl text-lg font-medium transition duration-700">
+                        whileHover={{ backgroundColor: "var(--color-primary)", color: "var(--color-secondary)" }} 
+                        className="px-5 py-1 border-[1px] rounded-full border-primary uppercase sm:text-xl text-lg font-medium transition duration-700">
                         Start the project
                     </motion.div>
                     <motion.div 
-                        whileHover={{ backgroundColor: "#c3e0e5", color: "#202c3f" }} 
-                        className="text-xl p-2 rounded-full border-[1px] border-[#c3e0e5] font-medium transition duration-700">
+                        whileHover={{ backgroundColor: "var(--color-primary)", color: "var(--color-secondary)" }} 
+                        className="text-xl p-2 rounded-full border-[1px] border-primary font-medium transition duration-700">
                         <MdArrowOutward />
                     </motion.div>
                 </div>

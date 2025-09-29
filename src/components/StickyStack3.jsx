@@ -7,16 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 export default function StickyStack3({
   topOffset = "0px",
   // palette: tumhare global colors ke mutabiq
+  // Theme colors palette
   colors = {
-    ink: "#202c3f",
-    text: "#c3e0e5",
-    sub: "rgba(195,224,229,.82)",
-    dark: "#274472",
-    mid: "#41729f",
-    blue: "#5885af",
-    border: "rgba(65,114,159,.30)",
-    borderSoft: "rgba(88,133,175,.30)",
-    veil: "rgba(39,68,114,.50)",
+    ink: "#e0550d", // background
+    text: "#ffffff", // text - white
+    sub: "rgba(255,255,255,0.82)", // white with opacity
+    dark: "#6b2f0a", // darker brown
+    mid: "#c85013", // primary
+    blue: "#c85013", // primary (reusing for accents)
+    border: "rgba(200,80,19,0.30)", // primary with opacity
+    borderSoft: "rgba(200,80,19,0.30)", // primary with opacity
+    veil: "rgba(200,80,19,0.50)", // primary with opacity
   },
 }) {
   const sectionRef = useRef(null);
@@ -90,7 +91,7 @@ export default function StickyStack3({
         .circle-clip{ -webkit-clip-path:circle(50% at 50% 50%); clip-path:circle(50% at 50% 50%) }
         .half-tint::after{
           content:""; position:absolute; inset:0;
-          background: linear-gradient(90deg, rgba(65,114,159,.55) 0%, rgba(88,133,175,0) 52%);
+          background: linear-gradient(90deg, rgba(200,80,19,.55) 0%, rgba(200,80,19,0) 52%);
           mix-blend-mode: screen; pointer-events:none;
         }
         @keyframes wheel { 0%{ transform: translateY(0); opacity:.85 } 100%{ transform: translateY(10px); opacity:.25 } }
@@ -237,7 +238,7 @@ function ExploreLayer({ colors }) {
             {/* stat card */}
             <div
               className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[62%] min-w-[260px] rounded-2xl p-6 sm:p-8 shadow-[0_30px_80px_-28px_rgba(0,0,0,.35)]"
-              style={{ background: "#1b2536", border: `1px solid ${colors.border}` }}
+              style={{ background: "#6b2f0a", border: `1px solid ${colors.border}` }}
             >
               <div className="text-2xl" style={{ color: colors.blue }}>”</div>
               <p className="mt-3 text-sm sm:text-base" style={{ color: colors.sub }}>
@@ -263,7 +264,7 @@ function ExploreLayer({ colors }) {
 /* ----------------------- LAYER 3: CLOSER ----------------------- */
 function CloserLayer({ colors }) {
   return (
-    <div className="h-full w-full" style={{ background: "#0f1624" }}>
+    <div className="h-full w-full" style={{ background: "#000000" }}>
       <div className="mx-auto flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 text-center">
         <h2
           className="font-black tracking-tight text-[12vw] sm:text-[10vw] lg:text-[6vw]"
@@ -276,11 +277,11 @@ function CloserLayer({ colors }) {
           <div className="grid place-items-center">
             <div
               className="h-24 w-16 rounded-full grid place-items-center"
-              style={{ border: "4px solid rgba(195,224,229,.7)" }}
+              style={{ border: "4px solid rgba(200,80,19,.7)" }}
             >
               <div
                 className="h-6 w-1.5 rounded-full"
-                style={{ background: "rgba(195,224,229,.85)", animation: "wheel 1s ease-in-out infinite alternate" }}
+                style={{ background: "rgba(200,80,19,.85)", animation: "wheel 1s ease-in-out infinite alternate" }}
               />
             </div>
           </div>

@@ -53,10 +53,10 @@ export default function FooterOrbitMoonTech() {
   return (
     <footer
       ref={root}
-      className="relative z-[100] w-full text-slate-300"
+      className="relative z-[100] w-full text-white mb-0"
       style={{
         background:
-          "linear-gradient(180deg, #222B45 0%, #222B45 20%, #27304D 100%)",
+          "linear-gradient(180deg, #e0550d 0%, #e0550d 20%, #6b2f0a 100%)",
       }}
     >
       <div className="mx-auto max-w-7xl px-6 pt-12 pb-6">
@@ -64,15 +64,15 @@ export default function FooterOrbitMoonTech() {
         <div className="grid gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand / intro */}
           <div>
-            <h3 className="ft-stagger text-2xl font-extrabold tracking-tight text-slate-100">
+            <h3 className="ft-stagger text-2xl font-extrabold tracking-tight text-white">
               ORBIT WALLS
             </h3>
-            <p className="ft-stagger mt-3 max-w-xs leading-relaxed text-slate-300/90">
+            <p className="ft-stagger mt-3 max-w-xs leading-relaxed text-white/90">
               Crafting digital excellence through custom
               software solutions.
             </p>
 
-            <div className="ft-social ft-stagger mt-5 flex items-center gap-3 text-slate-100">
+            <div className="ft-social ft-stagger mt-5 flex items-center gap-3 text-white">
               <SocialIcon
                 label="Instagram"
                 href="https://instagram.com/yourprofile"
@@ -98,7 +98,7 @@ export default function FooterOrbitMoonTech() {
 
           {/* Services */}
           <div>
-            <h4 className="ft-stagger text-xl font-semibold text-slate-100">
+            <h4 className="ft-stagger text-xl font-semibold text-white">
               Services
             </h4>
             <ul className="mt-4 space-y-3">
@@ -111,7 +111,7 @@ export default function FooterOrbitMoonTech() {
                 <li key={label} className="ft-stagger">
                   <a
                     href={href}
-                    className="text-slate-300 hover:text-slate-100 transition"
+                    className="text-white/80 hover:text-white transition"
                   >
                     {label}
                   </a>
@@ -122,7 +122,7 @@ export default function FooterOrbitMoonTech() {
 
           {/* Company */}
           <div>
-            <h4 className="ft-stagger text-xl font-semibold text-slate-100">
+            <h4 className="ft-stagger text-xl font-semibold text-white">
               Company
             </h4>
             <ul className="mt-4 space-y-3">
@@ -135,7 +135,7 @@ export default function FooterOrbitMoonTech() {
                 <li key={label} className="ft-stagger">
                   <a
                     href={href}
-                    className="text-slate-300 hover:text-slate-100 transition"
+                    className="text-white/80 hover:text-white transition"
                   >
                     {label}
                   </a>
@@ -146,14 +146,14 @@ export default function FooterOrbitMoonTech() {
 
           {/* Contact */}
           <div>
-            <h4 className="ft-stagger text-xl font-semibold text-slate-100">
+            <h4 className="ft-stagger text-xl font-semibold text-white">
               Contact
             </h4>
             <ul className="mt-4 space-y-3">
               <li className="ft-stagger">
                 <a
                   href="mailto:info@ufglab.com"
-                  className="text-slate-300 hover:text-slate-100 transition"
+                  className="text-white/80 hover:text-white transition"
                 >
                   info@ORBIT WALLSlab.com
                 </a>
@@ -161,7 +161,7 @@ export default function FooterOrbitMoonTech() {
               <li className="ft-stagger">
                 <a
                   href="tel:+97145706249"
-                  className="text-slate-300 hover:text-slate-100 transition"
+                  className="text-white/80 hover:text-white transition"
                 >
                   +97145706249
                 </a>
@@ -174,7 +174,7 @@ export default function FooterOrbitMoonTech() {
         <div className="mt-10 h-px w-full bg-white/10" />
 
         {/* Bottom copyright */}
-        <div className="mt-6 text-sm text-slate-400">
+        <div className="mt-6 text-sm text-white/60">
           © {year} ORBIT WALLS INFORMATION TECHNOLOGY.      All rights reserved.
         </div>
       </div>

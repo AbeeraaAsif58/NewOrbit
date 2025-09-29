@@ -26,7 +26,7 @@ export default function Cursor() {
     const qyRing = gsap.quickTo(ring, "y", { duration: 0.28, ease: "power3" });
 
     // 🎨 Particle colors
-    const colors = ["#ff4d4d", "#4dd0ff", "#4dff88", "#ffd24d", "#d44dff"];
+    const colors = ["#c85013", "#e0550d", "#8b380d", "#ffffff", "#000000"];
 
     const move = (e) => {
       const { clientX: x, clientY: y } = e;
@@ -66,8 +66,8 @@ export default function Cursor() {
 
     // Hover targets
     const enter = () => {
-      gsap.to(ring, { scale: 1.8, borderColor: "#ffffff", duration: 0.2 });
-      gsap.to(dot, { backgroundColor: "#ffffff", duration: 0.2 });
+      gsap.to(ring, { scale: 1.8, borderColor: "var(--color-primary)", duration: 0.2 });
+      gsap.to(dot, { backgroundColor: "var(--color-primary)", duration: 0.2 });
     };
     const leave = () => {
       gsap.to(ring, {
@@ -75,7 +75,7 @@ export default function Cursor() {
         borderColor: "rgba(255,255,255,0.4)",
         duration: 0.2,
       });
-      gsap.to(dot, { backgroundColor: "#ffffff", duration: 0.2 });
+      gsap.to(dot, { backgroundColor: "var(--color-primary)", duration: 0.2 });
     };
 
     window.addEventListener("mousemove", move);

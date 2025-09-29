@@ -91,7 +91,7 @@ export default function PromoSequence({
         // 16:9 safe height but adaptive
         minHeight: "100svh",
         background:
-          "radial-gradient(1000px 600px at 15% -10%, rgba(71,214,255,.08), transparent 50%), radial-gradient(1000px 600px at 120% -20%, rgba(154,140,255,.08), transparent 50%), #0b1324",
+          "radial-gradient(1000px 600px at 15% -10%, rgba(200,80,19,.08), transparent 50%), radial-gradient(1000px 600px at 120% -20%, rgba(200,80,19,.08), transparent 50%), #0b1324",
       }}
     >
       {/* gentle star field */}
@@ -124,7 +124,7 @@ export default function PromoSequence({
                 style={{
                   fontSize: "clamp(36px, 9vw, 86px)",
                   background:
-                    "linear-gradient(180deg, #ffffff 0%, #dfe7ff 100%)",
+                    "linear-gradient(180deg, #ffffff 0%, #ffffff 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   textShadow: "0 20px 60px rgba(0,0,0,.35)",
@@ -154,12 +154,12 @@ export default function PromoSequence({
               e.currentTarget.style.setProperty("--y", `${e.clientY - r.top}px`);
             }}
             style={{
-              color: "#0e1222",
+              color: "#000000",
               position: "relative",
               isolation: "isolate",
               border: "1px solid rgba(255,255,255,.18)",
               background:
-                "linear-gradient(90deg, #47d6ff 0%, #9a8cff 100%)",
+                "linear-gradient(90deg, #c85013 0%, #c85013 100%)",
               boxShadow: "0 16px 36px -18px rgba(71,214,255,.55)",
             }}
           >
@@ -223,8 +223,8 @@ export default function PromoSequence({
                   style={{
                     background:
                       i % 2
-                        ? "linear-gradient(160deg,#47d6ff,#00abd2)"
-                        : "linear-gradient(160deg,#b69cff,#735bff)",
+                        ? "linear-gradient(160deg,#c85013,#c85013)"
+                        : "linear-gradient(160deg,#c85013,#c85013)",
                     boxShadow:
                       "0 10px 20px -10px rgba(71,214,255,.45)",
                   }}
@@ -232,7 +232,7 @@ export default function PromoSequence({
                 <div className="flex-1">
                   <p
                     className="font-semibold"
-                    style={{ color: "#dfe7ff" }}
+                    style={{ color: "#ffffff" }}
                   >
                     Motion Tile {i + 1}
                   </p>
@@ -246,11 +246,11 @@ export default function PromoSequence({
                 <span
                   className="rounded-full px-2 py-1 text-xs"
                   style={{
-                    color: "#0e1222",
+                    color: "#000000",
                     background:
                       i % 2
-                        ? "linear-gradient(90deg,#47d6ff,#9a8cff)"
-                        : "linear-gradient(90deg,#9a8cff,#47d6ff)",
+                        ? "linear-gradient(90deg,#c85013,#c85013)"
+                        : "linear-gradient(90deg,#c85013,#c85013)",
                   }}
                 >
                   {i % 2 ? "GSAP" : "UI"}

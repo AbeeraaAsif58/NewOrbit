@@ -5,11 +5,18 @@ export default {
   theme: {
     extend: {
       colors: {
-         night: {
+        // Root theme colors - change these to update entire theme
+        text: "var(--color-text)",           // Text color
+        primary: "var(--color-primary)",     // Primary color
+        background: "var(--color-background)", // Background color
+        secondary: {
+        DEFAULT: "var(--color-secondary)", // Secondary dark color
+        },
+        // Legacy colors (keeping for compatibility)
+        night: {
           900: "#0B0F19",   // deep navy black
           800: "#121826",   // lighter navy
         },
-        primary: { DEFAULT: "#8a7bff" },     // moon violet
         accent:  { DEFAULT: "#f5c669" },     // warm gold
       },
       boxShadow: {

@@ -1,12 +1,12 @@
 // src/components/SolarPoster.jsx
 import React, { useEffect, useMemo, useRef } from "react";
 
-/** Brand palette */
+/** Theme palette */
 const COLOR = {
-  MIDNIGHT: "#41729f",
-  BLUEGRAY: "#5885af",
-  DARK: "#274472",
-  BABY: "#c3e0e5",
+  MIDNIGHT: "#6b2f0a", // darker brown
+  BLUEGRAY: "#c85013", // primary orange
+  DARK: "#e0550d", // background brown
+  BABY: "#ffffff", // white text
   WHITE: "#ffffff",
 };
 
@@ -90,14 +90,14 @@ export default function SolarPoster({
             <feDropShadow dx="0" dy="0" stdDeviation="12" floodColor={COLOR.BABY} floodOpacity=".35" />
           </filter>
 
-          {/* Moon halo in brand gradient (Baby Blue → transparent) */}
+          {/* Moon halo in theme gradient (White → transparent) */}
           <radialGradient id="moonHalo" cx="50%" cy="50%" r="50%">
-            <stop offset="0%"  stopColor="rgba(195,224,229,0.55)" />
-            <stop offset="70%" stopColor="rgba(195,224,229,0.18)" />
-            <stop offset="100%" stopColor="rgba(195,224,229,0)" />
+            <stop offset="0%"  stopColor="rgba(255,255,255,0.55)" />
+            <stop offset="70%" stopColor="rgba(255,255,255,0.18)" />
+            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
           </radialGradient>
 
-          {/* Ring gradient stroke: Blue Gray → Baby Blue → Midnight Blue */}
+          {/* Ring gradient stroke: Primary → White → Dark Brown */}
           <linearGradient id="ringLine" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%"   stopColor={COLOR.BLUEGRAY} />
             <stop offset="50%"  stopColor={COLOR.BABY} />
@@ -157,7 +157,7 @@ export default function SolarPoster({
                 rx={rx}
                 ry={ryScaled[i]}
                 fill="none"
-                stroke={COLOR.BABY}                   /* Baby Blue soft glow */
+                stroke={COLOR.BABY}                   /* White soft glow */
                 strokeOpacity="0.18"
                 strokeWidth={22}
                 style={{ filter: "blur(10px)" }}
@@ -219,12 +219,12 @@ export default function SolarPoster({
         .sp-moon-img{
           transform-origin:50% 50%;
           transition:transform .35s cubic-bezier(.2,.8,.2,1),filter .35s ease,opacity .35s ease;
-          filter:drop-shadow(0 0 40px rgba(195,224,229,.22)); /* Baby Blue glow */
+          filter:drop-shadow(0 0 40px rgba(255,255,255,.22)); /* White glow */
           will-change:transform,filter
         }
         .sp-moon:hover .sp-moon-img{
           transform:scale(1.13) rotate(1.2deg);
-          filter:drop-shadow(0 0 70px rgba(195,224,229,.38)) brightness(1.06)
+          filter:drop-shadow(0 0 70px rgba(255,255,255,.38)) brightness(1.06)
         }
         .sp-moon-halo{transition:opacity .35s ease,transform .35s ease;transform-origin:50% 50%}
         .sp-moon:hover .sp-moon-halo{opacity:.9;transform:scale(1.04)}

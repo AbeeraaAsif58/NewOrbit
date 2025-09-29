@@ -110,7 +110,7 @@ const cardsData = [
     <div className="mt-[8.5vh] text-center justify-center flex items-center">
       <button
         onClick={buttonhandle}
-        className="flex gap-4 border-[1px] border-teal-400 px-[1.2em] py-[1.2em] rounded-[100em] bg-transparent text-white font-semibold hover:bg-[#081529] hover:border-[#081529]"
+        className="flex gap-4 border-[1px] border-primary px-[1.2em] py-[1.2em] rounded-[100em] bg-transparent text-white font-semibold hover:bg-secondary hover:border-secondary"
       >
       <img
       className="rotate-90"

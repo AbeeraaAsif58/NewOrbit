@@ -178,11 +178,11 @@ export default function GalleryMarquee({
           <span className="heading-shine" aria-hidden />
         </h1>
 
-        <div className="mx-auto mt-3 h-[3px] w-20 sm:w-24 bg-white/70 rounded-full overflow-hidden">
-          <div className="h-full w-0 bg-white/70 transition-all duration-500 group-hover:w-full" />
+        <div className="mx-auto mt-3 h-[3px] w-20 sm:w-24 bg-primary/70 rounded-full overflow-hidden">
+          <div className="h-full w-0 bg-primary/70 transition-all duration-500 group-hover:w-full" />
         </div>
 
-        <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-slate-200/90 leading-relaxed">
+        <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed">
           orbits walls Projects Circle
         </p>
       </div>

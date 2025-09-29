@@ -51,10 +51,11 @@ export default function BackgroundAI({
     window.addEventListener("mousedown", onDown);
     window.addEventListener("mouseup", onUp);
 
-    const baseBg = "rgba(32,44,63,1)";
-    const nodeColor = "rgba(173,216,255,0.95)";
-    const lineColor = "rgba(120,190,255,";
-    const cursorHalo = "rgba(120,190,255,0.15)";
+    // Theme colors converted to RGB
+    const baseBg = "rgb(192, 83, 29)"; //rgb(212, 98, 23) (background)
+    const nodeColor = "rgba(201, 87, 30, 0.95)"; //rgb(240, 155, 113) (primary)
+    const lineColor = "rgba(139,56,13,"; //rgb(93, 80, 74) (text)
+    const cursorHalo = "rgba(200,80,19,0.15)"; //rgb(245, 241, 239) (primary)
 
     const clamp = (v,a,b)=>Math.max(a,Math.min(v,b));
     const lerp = (a,b,t)=>a+(b-a)*t;
@@ -74,7 +75,7 @@ export default function BackgroundAI({
       }
 
       const g = ctx.createLinearGradient(0, 0, 0, h);
-      g.addColorStop(0, "#1b2738");
+      g.addColorStop(0, "#6b2f0a"); // Darker brown gradient start
       g.addColorStop(1, baseBg);
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, w, h);
@@ -83,7 +84,7 @@ export default function BackgroundAI({
         const r = Math.random() * 2 + 0.5;
         ctx.beginPath();
         ctx.arc(Math.random() * w, Math.random() * h, r, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(255,255,255,0.03)";
+        ctx.fillStyle = "rgba(200,80,19,0.03)"; // Theme primary with low opacity
         ctx.fill();
       }
 
@@ -134,7 +135,7 @@ export default function BackgroundAI({
         ctx.arc(n.x, n.y, size, 0, Math.PI * 2);
         ctx.fillStyle = nodeColor;
         ctx.shadowBlur = 12 * n.z;
-        ctx.shadowColor = "rgba(120,190,255,0.6)";
+        ctx.shadowColor = "rgba(200,80,19,0.6)"; // Theme primary shadow
         ctx.fill();
         ctx.shadowBlur = 0;
       }
@@ -142,7 +143,7 @@ export default function BackgroundAI({
       const haloR = 80;
       const rad = ctx.createRadialGradient(cursor.x, cursor.y, 0, cursor.x, cursor.y, haloR);
       rad.addColorStop(0, cursorHalo);
-      rad.addColorStop(1, "rgba(120,190,255,0)");
+      rad.addColorStop(1, "rgba(200,80,19,0)"); // Theme primary fade
       ctx.fillStyle = rad;
       ctx.beginPath();
       ctx.arc(cursor.x, cursor.y, haloR, 0, Math.PI * 2);

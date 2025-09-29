@@ -166,7 +166,7 @@ export default function SolarPoster({
 
         <defs>
           <filter id="moonGlow" x="-50%" y="-50%" width="200%" height="200%">
-            <feDropShadow dx="0" dy="0" stdDeviation="12" floodColor="#9ec6ff" floodOpacity=".25" />
+            <feDropShadow dx="0" dy="0" stdDeviation="12" floodColor="#c85013" floodOpacity=".25" />
           </filter>
           <filter id="ringShadow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="0" />

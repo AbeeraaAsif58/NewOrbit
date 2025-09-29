@@ -12,9 +12,9 @@ import ArcCarousel from "../components/ArcCarousel";
 // import StickyBgVideo from "../components/StickyBgVideo"
 import StickyStack3 from "../components/StickyStack3";
 import QueriesSection from "../components/QueriesSection";
-import BackgroundAI from "../components/BackgroundAI";
 import Marquee from "../components/Marquee";
 import TalkBanner from "../components/TalkBanner"
+import FooterOrbit from "../components/FooterOrbit";
 
 
 
@@ -113,7 +113,7 @@ useEffect(() => {
     gsap.set(wrap, { transformPerspective: 900, transformStyle: "preserve-3d" });
     gsap.set(img, {
       willChange: "transform, filter",
-      filter: "drop-shadow(0 0 40px rgba(190,200,255,.18))",
+      filter: "drop-shadow(0 0 40px rgba(157, 70, 15, 0.32))",
       rotateX: 0,
       rotateY: 0,
     });
@@ -128,7 +128,6 @@ useEffect(() => {
 
   return (
     <>
-  <BackgroundAI/>
       <LoadingGate />
 
       <section
@@ -171,10 +170,10 @@ useEffect(() => {
 
         {/* Ambient glow */}
         <div
-          className="glow pointer-events-none absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 w-[780px] h-[780px] rounded-full blur-3xl opacity-0 border-2 border-green-400"
+          className="glow pointer-events-none absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 w-[780px] h-[780px] rounded-full blur-3xl opacity-0 border-2 border-primary"
           style={{
             background:
-              "radial-gradient(closest-side, rgba(138,123,255,.35), rgba(138,123,255,0))",
+              "radial-gradient(closest-side, var(--color-primary), rgba(200,80,19,0))",
             mixBlendMode: "screen",
           }}
         />
@@ -185,13 +184,13 @@ useEffect(() => {
               {/* 1) Gradient + glow + underline slide */}
               <h1
                 className="group/one relative cursor-pointer text-4xl md:text-4xl font-extrabold tracking-tight
-                   text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-white to-emerald-300
+                   text-white
                    transition-all duration-300 ease-out
-                   hover:tracking-wider hover:scale-105 hover:drop-shadow-[0_0_18px_rgba(16,185,129,0.55)]"
+                   hover:tracking-wider hover:scale-105 hover:drop-shadow-[0_0_18px_rgba(200,80,19,0.55)]"
               >
                 Transform your business <br /> with cutting-edge
                 <span
-                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-emerald-400 to-cyan-400
+                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-black to-primary
                        transition-all duration-500 group-hover/one:w-full"
                 ></span>
               </h1>
@@ -199,13 +198,13 @@ useEffect(() => {
               {/* 2) Clean white -> neon shift + slight skew */}
               <h1
                 className="group/two relative cursor-pointer text-2xl md:text-4xl font-extrabold tracking-tight
-                   text-emerald-100 transition-all duration-300 ease-out
+                   text-white transition-all duration-300 ease-out
                    hover:text-white hover:translate-y-1 hover:skew-x-[2deg] hover:tracking-wider
-                   hover:drop-shadow-[0_0_14px_rgba(16,185,129,0.6)]"
+                   hover:drop-shadow-[0_0_14px_rgba(200,80,19,0.6)]"
               >
                 fintech solutions powered by
                 <span
-                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-emerald-400 to-lime-400
+                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-black to-primary
                        transition-all duration-500 group-hover/two:w-full"
                 ></span>
               </h1>
@@ -213,23 +212,22 @@ useEffect(() => {
               {/* 3) Subtle -> teal gradient on hover + lift */}
               <h1
                 className="group/three relative cursor-pointer text-2xl md:text-4xl font-extrabold tracking-tight
-                   text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60
+                   text-white
                    transition-all duration-300 ease-out
-                   hover:from-emerald-300 hover:to-cyan-300 hover:tracking-wider hover:-translate-y-1
-                   hover:drop-shadow-[0_0_18px_rgba(16,185,129,0.55)]"
+                   hover:text-white hover:tracking-wider hover:-translate-y-1
+                   hover:drop-shadow-[0_0_18px_rgba(200,80,19,0.55)]"
               >
                 ORBIT WALLS's <br /> innovative technology.
                 <span
-                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-cyan-400 to-emerald-400
+                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-black to-primary
                        transition-all duration-500 group-hover/three:w-full"
                 ></span>
               </h1>
             </div>
           </div>
 
-          <div className="h-[230vh] w-full py-10">
             <Slider />
-          </div>
+          
         </div>
       </section>
 
@@ -242,31 +240,33 @@ useEffect(() => {
         }}
       />
 
-      <div className="relative h-[150vh] grid place-items-center overflow-hidden">
+      <div className="relative h-[100vh] grid place-items-center overflow-hidden">
         <h1 className="group relative text-center">
           <span
             className="block mt-[15%] text-5xl md:text-8xl font-extrabold leading-none
                  text-transparent bg-clip-text
-                 bg-gradient-to-r from-sky-300 via-cyan-400 to-blue-500
+                 bg-gradient-to-r from-primary via-text to-secondary
                  bg-[length:200%_100%] bg-left
                  transition-[background-position,letter-spacing,transform] duration-700 ease-out
                  hover:bg-right hover:tracking-wider hover:scale-[1.02]
-                 drop-shadow-[0_0_14px_rgba(56,189,248,0.28)]"
+                 drop-shadow-[0_0_14px_rgba(255,107,53,0.28)]"
           >
             ORBIT WALL'S<span className="text-white/90">SERVICES</span>
           </span>
 
-          <span className="mt-4 block text-emerald-100/70 text-lg">
+          <span className="mt-4 block text-text/70 text-lg">
             High-impact visuals, smooth interactions.
           </span>
         </h1>
-        <ArcCarousel />
       </div>
+        <ArcCarousel />
       <Marquee/>
       {/* <TestimonialsStack/> */}
       <QueriesSection />
-          <TalkBanner/>
+      <TalkBanner/>
+      <FooterOrbit/>
       {/* <Playfull/> */}
     </>
   );
 }
+
