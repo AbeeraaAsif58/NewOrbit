@@ -8,24 +8,24 @@ const About = () => {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 -z-[1] overflow-hidden">
         {/* Floating Stars */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-cyan-400 rounded-full animate-pulse opacity-80"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-blue-400 rounded-full animate-ping"></div>
-        <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse opacity-70"></div>
-        <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-cyan-300 rounded-full animate-ping"></div>
-        <div className="absolute bottom-20 right-10 w-2 h-2 bg-blue-300 rounded-full animate-pulse opacity-60"></div>
-        <div className="absolute top-1/3 left-1/3 w-1 h-1 bg-yellow-400 rounded-full animate-ping"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-indigo-400 rounded-full animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-2 h-2 bg-teal-400 rounded-full animate-pulse opacity-80"></div>
+        <div className="absolute top-40 right-20 w-1 h-1 bg-teal-500 rounded-full animate-ping"></div>
+        <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse opacity-70"></div>
+        <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-teal-300 rounded-full animate-ping"></div>
+        <div className="absolute bottom-20 right-10 w-2 h-2 bg-teal-300 rounded-full animate-pulse opacity-60"></div>
+        <div className="absolute top-1/3 left-1/3 w-1 h-1 bg-teal-500 rounded-full animate-ping"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse"></div>
         
         {/* Orbital Rings */}
-        <div className="absolute top-1/4 left-1/4 w-40 h-40 border border-gray-700/30 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-cyan-500/20 rounded-full animate-spin" style={{animationDuration: '20s', animationDirection: 'reverse'}}></div>
-        <div className="absolute bottom-1/4 right-1/4 w-36 h-36 border border-gray-600/25 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
-        <div className="absolute bottom-1/4 right-1/4 w-28 h-28 border border-blue-500/15 rounded-full animate-spin" style={{animationDuration: '18s', animationDirection: 'reverse'}}></div>
+        <div className="absolute top-1/4 left-1/4 w-40 h-40 border border-teal-700/30 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-teal-500/20 rounded-full animate-spin" style={{animationDuration: '20s', animationDirection: 'reverse'}}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-36 h-36 border border-teal-600/25 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-28 h-28 border border-teal-500/15 rounded-full animate-spin" style={{animationDuration: '18s', animationDirection: 'reverse'}}></div>
         
         {/* Central Orbit */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-gray-800/20 rounded-full animate-spin" style={{animationDuration: '40s'}}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-cyan-400/10 rounded-full animate-spin" style={{animationDuration: '35s', animationDirection: 'reverse'}}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-blue-500/15 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-teal-800/20 rounded-full animate-spin" style={{animationDuration: '40s'}}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-teal-400/10 rounded-full animate-spin" style={{animationDuration: '35s', animationDirection: 'reverse'}}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-teal-500/15 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
       </div>
 
       {/* Ambient Glow Effects */}
@@ -33,14 +33,14 @@ const About = () => {
         <div 
           className="absolute left-1/4 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl opacity-20"
           style={{
-            background: "radial-gradient(closest-side, rgba(138,123,255,.25), rgba(138,123,255,0))",
+            background: "radial-gradient(closest-side, rgba(12,242,93,.25), rgba(12,242,93,0))",
             mixBlendMode: "screen",
           }}
         />
         <div 
           className="absolute right-1/4 bottom-1/3 translate-x-1/2 translate-y-1/2 w-[300px] h-[300px] rounded-full blur-3xl opacity-15"
           style={{
-            background: "radial-gradient(closest-side, rgba(56,189,248,.2), rgba(56,189,248,0))",
+            background: "radial-gradient(closest-side, rgba(12,242,93,.2), rgba(12,242,93,0))",
             mixBlendMode: "screen",
           }}
         />
@@ -69,9 +69,9 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-20 items-center mb-24">
           <div className="animate-slide-in-left">
-             <h3 className="group relative text-5xl font-bold mb-10 text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-300 hover:via-cyan-400 hover:to-emerald-300 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(16,185,129,0.4)] cursor-pointer">
+             <h3 className="group relative text-5xl font-bold mb-10 text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-teal-300 hover:via-teal-400 hover:to-teal-300 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
                Our Journey Through Space
-               <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-emerald-400 to-cyan-400 transition-all duration-500 group-hover:w-full"></span>
+               <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-400 to-teal-500 transition-all duration-500 group-hover:w-full"></span>
              </h3>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               Founded in 2020, Orbit has been navigating the digital cosmos, pushing boundaries 
@@ -85,25 +85,39 @@ const About = () => {
             </p>
             
             <div className="grid grid-cols-2 gap-8">
-              <div className="text-center group hover:scale-110 transition-all duration-500 bg-gray-800/30 rounded-2xl p-6 border border-gray-700/50 hover:border-cyan-400/50">
-                <div className="text-5xl font-bold text-cyan-400 mb-3 group-hover:text-yellow-400 transition-colors duration-300">500+</div>
+              <div className="text-center group hover:scale-110 transition-all duration-500 bg-teal-900/30 rounded-2xl p-6 border border-teal-700/50 hover:border-teal-400/50">
+                <div className="text-5xl font-bold text-teal-400 mb-3 group-hover:text-teal-300 transition-colors duration-300">500+</div>
                 <div className="text-gray-400 text-sm">Missions Completed</div>
               </div>
-              <div className="text-center group hover:scale-110 transition-all duration-500 bg-gray-800/30 rounded-2xl p-6 border border-gray-700/50 hover:border-blue-400/50">
-                <div className="text-5xl font-bold text-cyan-400 mb-3 group-hover:text-yellow-400 transition-colors duration-300">50+</div>
+              <div className="text-center group hover:scale-110 transition-all duration-500 bg-teal-900/30 rounded-2xl p-6 border border-teal-700/50 hover:border-teal-400/50">
+                <div className="text-5xl font-bold text-teal-400 mb-3 group-hover:text-teal-300 transition-colors duration-300">50+</div>
                 <div className="text-gray-400 text-sm">Planets Explored</div>
               </div>
-              <div className="text-center group hover:scale-110 transition-all duration-500 bg-gray-800/30 rounded-2xl p-6 border border-gray-700/50 hover:border-purple-400/50">
-                <div className="text-5xl font-bold text-cyan-400 mb-3 group-hover:text-yellow-400 transition-colors duration-300">4+</div>
+              <div className="text-center group hover:scale-110 transition-all duration-500 bg-teal-900/30 rounded-2xl p-6 border border-teal-700/50 hover:border-teal-400/50">
+                <div className="text-5xl font-bold text-teal-400 mb-3 group-hover:text-teal-300 transition-colors duration-300">4+</div>
                 <div className="text-gray-400 text-sm">Light Years Experience</div>
               </div>
-              <div className="text-center group hover:scale-110 transition-all duration-500 bg-gray-800/30 rounded-2xl p-6 border border-gray-700/50 hover:border-indigo-400/50">
-                <div className="text-5xl font-bold text-cyan-400 mb-3 group-hover:text-yellow-400 transition-colors duration-300">24/7</div>
+              <div className="text-center group hover:scale-110 transition-all duration-500 bg-teal-900/30 rounded-2xl p-6 border border-teal-700/50 hover:border-teal-400/50">
+                <div className="text-5xl font-bold text-teal-400 mb-3 group-hover:text-teal-300 transition-colors duration-300">24/7</div>
                 <div className="text-gray-400 text-sm">Mission Control</div>
               </div>
             </div>
           </div>
           
+          {/* Moon Image */}
+          <div className="relative flex items-center justify-center animate-slide-in-right">
+            <div className="group relative">
+              <img 
+                src="/mun.png" 
+                alt="Moon" 
+                className="w-[80vw] h-[100vh] object-contain filter drop-shadow-[0_0_20px_rgba(255,255,255,0.6)] drop-shadow-[0_0_40px_rgba(255,255,255,0.4)] drop-shadow-[0_0_80px_rgba(255,255,255,0.3)] group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] group-hover:drop-shadow-[0_0_60px_rgba(255,255,255,0.6)] group-hover:drop-shadow-[0_0_120px_rgba(255,255,255,0.5)] transition-all duration-500 ease-in-out"
+              />
+              {/* Additional glow effect */}
+              <div className="absolute inset-0 rounded-full bg-white/10 opacity-60 blur-3xl scale-150"></div>
+              {/* Hover glow enhancement */}
+              <div className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl scale-200"></div>
+            </div>
+          </div>
         </div>
 
         {/* Why Choose Us Section */}
@@ -117,11 +131,11 @@ const About = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-12">
-            <div className="text-center group hover:scale-105 transition-all duration-700 bg-gray-800/40 rounded-3xl p-10 border border-gray-700/50 hover:border-cyan-400/70 hover:shadow-2xl hover:shadow-cyan-500/20">
-              <div className="w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:rotate-12 transition-transform duration-500 shadow-lg shadow-cyan-500/30">
+            <div className="text-center group hover:scale-105 transition-all duration-700 bg-gray-800/40 rounded-3xl p-10 border border-gray-700/50 hover:border-teal-400/70 hover:shadow-2xl hover:shadow-teal-500/20">
+              <div className="w-24 h-24 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:rotate-12 transition-transform duration-500 shadow-lg shadow-teal-500/30">
                 <span className="text-4xl">🚀</span>
               </div>
-              <h4 className="text-3xl font-bold text-white mb-6 group-hover:text-cyan-400 transition-colors duration-300">Innovation</h4>
+              <h4 className="text-3xl font-bold text-white mb-6 group-hover:text-teal-400 transition-colors duration-300">Innovation</h4>
               <p className="text-gray-400 text-lg leading-relaxed">
                 We stay ahead of the cosmic curve with cutting-edge technologies and 
                 innovative approaches that push the boundaries of what's possible in the digital universe.
@@ -173,27 +187,27 @@ const About = () => {
         {/* Quality Team Section */}
         <div className="mt-32">
           <div className="text-center mb-20 animate-fade-in">
-            <h3 className="group relative text-5xl font-bold mb-8 text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-300 hover:via-cyan-400 hover:to-emerald-300 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(16,185,129,0.4)] cursor-pointer">
+            <h3 className="group relative text-5xl font-bold mb-8 text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-teal-300 hover:via-teal-400 hover:to-teal-300 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
               Our Quality Team
-              <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-emerald-400 to-cyan-400 transition-all duration-500 group-hover:w-full"></span>
+              <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-400 to-teal-500 transition-all duration-500 group-hover:w-full"></span>
             </h3>
             <p className="text-2xl text-gray-400">Meet the stellar minds behind our cosmic success</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-cyan-500/20 overflow-hidden">
+            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="relative flex-shrink-0">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
                     alt="Alex Johnson" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-500 object-cover"
+                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500 object-cover"
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Alex Johnson</h4>
-                  <p className="text-cyan-400 text-xl mb-6 font-semibold">CEO & Founder</p>
+                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors duration-300">Alex Johnson</h4>
+                  <p className="text-teal-400 text-xl mb-6 font-semibold">CEO & Founder</p>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
                     Visionary leader with over 10 years of experience in digital innovation and cosmic strategy. Alex founded Orbit with a mission to revolutionize how businesses navigate the digital universe.
                   </p>
@@ -305,19 +319,19 @@ const About = () => {
               </p>
             </div>
             
-            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-cyan-400/70 hover:shadow-2xl hover:shadow-cyan-500/20 overflow-hidden">
+            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-teal-400/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
               <div className="relative mb-6">
                 <img 
                   src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
                   alt="Innovation" 
-                  className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-500"
+                  className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/30">
+                <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
                   <span className="text-2xl">🌌</span>
                 </div>
               </div>
-              <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors duration-300">Innovation</h4>
+              <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-400 transition-colors duration-300">Innovation</h4>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
                 We embrace cutting-edge technologies and creative thinking to solve complex challenges and explore new frontiers in the digital universe. Our innovative approach drives breakthrough solutions that transform industries.
               </p>
@@ -501,22 +515,22 @@ const About = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-cyan-500/20 overflow-hidden">
+            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="relative flex-shrink-0">
                   <img 
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
                     alt="Projects Completed" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-500 object-cover"
+                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500 object-cover"
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/30">
+                  <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
                     <span className="text-2xl font-bold text-white">150+</span>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">Projects Completed</h4>
-                  <p className="text-cyan-400 text-xl mb-6 font-semibold">Successfully Launched</p>
+                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors duration-300">Projects Completed</h4>
+                  <p className="text-teal-400 text-xl mb-6 font-semibold">Successfully Launched</p>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
                     We have successfully completed over 150 projects across various industries, each one carefully crafted and launched into the digital stratosphere with precision and excellence.
                   </p>
@@ -650,10 +664,10 @@ const About = () => {
                 Our stellar team is ready to make your vision a reality.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button className="group px-12 py-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-2xl font-bold rounded-full hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/30">
+                <button className="group px-12 py-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-2xl font-bold rounded-full hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/30">
                   <span className="group-hover:tracking-wider transition-all duration-300">Start Your Mission</span>
                 </button>
-                <button className="group px-12 py-6 bg-transparent border-2 border-cyan-400 text-cyan-400 text-2xl font-bold rounded-full hover:bg-cyan-400 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/30">
+                <button className="group px-12 py-6 bg-transparent border-2 border-cyan-400 text-teal-400 text-2xl font-bold rounded-full hover:bg-cyan-400 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/30">
                   <span className="group-hover:tracking-wider transition-all duration-300">Learn More</span>
                 </button>
               </div>
