@@ -86,11 +86,11 @@ function Hero() {
     <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          Automobile Industry Solutions
+          Automobile Marketplace Solutions
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-          Explore our cutting-edge automotive software solutions that help businesses streamline operations, 
-          enhance customer experience, and drive innovation in the automotive industry.
+          Discover verified and tested automobile startups from our marketplace. Ready-to-launch solutions 
+          for car dealerships, fleet management, vehicle rental, parking systems, and automotive services.
         </p>
       </div>
     </section>
@@ -104,58 +104,54 @@ function ProjectsGrid() {
   
   const projects = [
     {
-      title: "Carinian - Used Car Buy/Sell & Dealership",
+      title: "Carinian - Used Car Buy/Sell & Dealership Website & Apps",
       category: "Automobile",
       tags: ["Directory"],
-      description: "A comprehensive platform for buying, selling, and managing used cars with dealership integration.",
+      description: "A comprehensive platform for buying, selling, and managing used cars with dealership integration and mobile apps.",
       status: "38 Sales",
-      slug: "carinian-used-car-buy-sell-dealership",
-      image: "/api/placeholder/400/300"
+      price: "$625 – $1,125",
+      slug: "carinian-used-car-buy-sell-dealership-website-apps",
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "Garagify - Garage/Vehicle Service Management",
+      title: "Garagify - Garage/Vehicle Service Management System",
       category: "Automobile",
       tags: ["ERP & CRM"],
-      description: "Complete garage and vehicle service management system for modern automotive businesses.",
+      description: "Complete garage and vehicle service management system for modern automotive businesses with comprehensive CRM features.",
       status: "14 Sales",
-      slug: "garagify-garage-vehicle-service-management",
-      image: "/api/placeholder/400/300"
+      price: "$625 – $1,250",
+      slug: "garagify-garage-vehicle-service-management-system",
+      image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop&crop=center"
     },
     {
       title: "Carenting - Car/Bike/Scooter Vehicle Rental Platform",
       category: "Automobile",
       tags: ["Directory"],
-      description: "Advanced car, bike, and scooter rental platform with complete booking management - Zoomcar/Revv Clone.",
+      description: "Advanced car, bike, and scooter rental platform with complete booking management - Zoomcar/Revv Clone with modern features.",
       status: "Available",
+      price: "$750 – $1,500",
       slug: "carenting-car-bike-scooter-vehicle-rental-platform",
-      image: "/api/placeholder/400/300"
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "ParkingRabbit - Car and Bike Parking Management",
+      title: "TrackingBit - Fleet Management System With Live GPS Tracking",
       category: "Automobile",
       tags: ["ERP & CRM"],
-      description: "Smart parking management system for cars and bikes with real-time space tracking.",
+      description: "Advanced fleet management system with live GPS tracking, comprehensive reporting, and real-time monitoring capabilities.",
       status: "Available",
-      slug: "parkingrabbit-car-bike-parking-management",
-      image: "/api/placeholder/400/300"
+      price: "$625 – $1,250",
+      slug: "trackingbit-fleet-management-system-live-gps-tracking",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "TrackingBit - Fleet Management System",
+      title: "ParkingRabbit - SaaS Vehicle Parking Management System",
       category: "Automobile",
       tags: ["ERP & CRM"],
-      description: "Advanced fleet management system with live GPS tracking and comprehensive reporting.",
+      description: "Complete SaaS-based parking management solution for modern parking facilities with smart space allocation and payment processing.",
       status: "Available",
-      slug: "trackingbit-fleet-management-system",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      title: "ParkingRabbit - SaaS Vehicle Parking Management",
-      category: "Automobile",
-      tags: ["ERP & CRM"],
-      description: "Complete SaaS-based parking management solution for modern parking facilities.",
-      status: "Available",
-      slug: "parkingrabbit-saas-vehicle-parking-management",
-      image: "/api/placeholder/400/300"
+      price: "$625 – $1,250",
+      slug: "parkingrabbit-saas-vehicle-parking-management-system",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center"
     }
   ];
 
@@ -190,7 +186,7 @@ function ProjectCard({ project, index, navigate }) {
         {/* Project Image */}
         <div className="w-full h-32 rounded-lg overflow-hidden">
           <img 
-            src={`https://picsum.photos/400/200?random=${index + 10}`}
+            src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
           />
@@ -221,9 +217,16 @@ function ProjectCard({ project, index, navigate }) {
           {project.description}
         </p>
         
-        {/* Status */}
-        <div className="text-white text-sm font-medium">
-          {project.status}
+        {/* Status and Price */}
+        <div className="flex justify-between items-center">
+          <div className="text-white text-sm font-medium">
+            {project.status}
+          </div>
+          {project.price && (
+            <div className="text-orange-400 text-sm font-bold">
+              {project.price}
+            </div>
+          )}
         </div>
       </div>
     </div>

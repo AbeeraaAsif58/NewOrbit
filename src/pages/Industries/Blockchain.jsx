@@ -86,11 +86,11 @@ function Hero() {
     <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          Blockchain Industry Solutions
+          Blockchain Marketplace Solutions
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-          Explore our cutting-edge blockchain projects and solutions that help businesses leverage 
-          decentralized technology, smart contracts, and cryptocurrency innovations.
+          Discover verified and tested blockchain startups from our marketplace. Ready-to-launch solutions 
+          for cryptocurrency exchanges, ICO/STO platforms, and blockchain-based applications.
         </p>
       </div>
     </section>
@@ -108,54 +108,20 @@ function ProjectsGrid() {
       category: "Blockchain",
       tags: ["ICO", "STO"],
       description: "Cryptoquiver is a comprehensive ICO/STO token sale management platform that provides advanced features for managing token sales, user investments, and administrative tasks.",
-      status: "Available",
+      status: "69 Sales",
+      price: "$625 – $1,250",
       slug: "cryptoquiver-ico-sto-token-sale-management-ico-admin",
-      image: "/api/placeholder/400/300"
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "DeFiSwap – Decentralized Exchange Platform",
+      title: "Cryptologia – Cryptocurrency Buy Sell Exchange with MLM System",
       category: "Blockchain",
-      tags: ["DeFi", "DEX"],
-      description: "A comprehensive decentralized exchange platform with automated market making, liquidity pools, and yield farming capabilities.",
-      status: "Available",
-      slug: "defiswap-decentralized-exchange-platform",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      title: "NFTMarket – Digital Asset Marketplace",
-      category: "Blockchain",
-      tags: ["NFT", "Marketplace"],
-      description: "Complete NFT marketplace solution with minting, trading, and auction features for digital collectibles and art.",
-      status: "Available",
-      slug: "nftmarket-digital-asset-marketplace",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      title: "CryptoWallet – Multi-Chain Wallet Solution",
-      category: "Blockchain",
-      tags: ["Wallet", "Multi-chain"],
-      description: "Secure multi-chain cryptocurrency wallet supporting Bitcoin, Ethereum, and other major blockchain networks.",
-      status: "Available",
-      slug: "cryptowallet-multi-chain-wallet-solution",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      title: "SmartContract – Automated Contract Platform",
-      category: "Blockchain",
-      tags: ["Smart Contracts", "Automation"],
-      description: "Platform for creating, deploying, and managing smart contracts across multiple blockchain networks.",
-      status: "Available",
-      slug: "smartcontract-automated-contract-platform",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      title: "BlockExplorer – Blockchain Analytics Tool",
-      category: "Blockchain",
-      tags: ["Analytics", "Explorer"],
-      description: "Advanced blockchain explorer and analytics platform for tracking transactions and monitoring network activity.",
-      status: "Available",
-      slug: "blockexplorer-blockchain-analytics-tool",
-      image: "/api/placeholder/400/300"
+      tags: ["Cryptocurrency", "Exchange", "MLM"],
+      description: "Advanced cryptocurrency exchange platform with integrated MLM (Multi-Level Marketing) system for comprehensive trading and referral management.",
+      status: "9 Sales",
+      price: "$625 – $1,250",
+      slug: "cryptologia-cryptocurrency-buy-sell-exchange-mlm-system",
+      image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=400&h=300&fit=crop&crop=center"
     }
   ];
 
@@ -190,7 +156,7 @@ function ProjectCard({ project, index, navigate }) {
         {/* Project Image */}
         <div className="w-full h-32 rounded-lg overflow-hidden">
           <img 
-            src={`https://picsum.photos/400/200?random=${index + 20}`}
+            src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
           />
@@ -221,9 +187,16 @@ function ProjectCard({ project, index, navigate }) {
           {project.description}
         </p>
         
-        {/* Status */}
-        <div className="text-white text-sm font-medium">
-          {project.status}
+        {/* Status and Price */}
+        <div className="flex justify-between items-center">
+          <div className="text-white text-sm font-medium">
+            {project.status}
+          </div>
+          {project.price && (
+            <div className="text-orange-400 text-sm font-bold">
+              {project.price}
+            </div>
+          )}
         </div>
       </div>
     </div>

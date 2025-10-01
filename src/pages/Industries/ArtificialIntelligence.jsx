@@ -92,11 +92,11 @@ function Hero() {
     <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          Artificial Intelligence Solutions
+          AI Marketplace Solutions
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-          Explore our cutting-edge AI projects and solutions that help businesses automate, 
-          innovate, and scale their operations with advanced machine learning capabilities.
+          Discover verified and tested AI startups from our marketplace. Ready-to-launch SaaS solutions 
+          for text-to-speech, content generation, marketplace platforms, and AI-powered tools.
         </p>
       </div>
     </section>
@@ -115,8 +115,29 @@ function ProjectsGrid() {
       tags: ["SaaS", "Tools and Utilities"],
       description: "Machine learning and Deep learning based text-to-speech solution with advanced features and analytics",
       status: "1 Sale",
+      price: "$625 – $1,250",
       slug: "sonicvox-text-to-speech-as-saas",
-      image: "/api/placeholder/400/300"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Classifiable – Classified Buy and Sell Marketplace Platform",
+      category: "Artificial Intelligence",
+      tags: ["SaaS", "Tools and Utilities"],
+      description: "AI-powered classified marketplace platform for buying and selling with intelligent matching and recommendations",
+      status: "Available",
+      price: "$2,000 – $3,500",
+      slug: "classifiable-classified-buy-sell-marketplace",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Inbitcoin – AI Prompt Buy Selling Marketplace",
+      category: "Artificial Intelligence",
+      tags: ["SaaS", "Tools and Utilities"],
+      description: "Multi-seller marketplace platform for AI prompts with intelligent pricing and automated trading features",
+      status: "Available",
+      price: "$2,000 – $3,500",
+      slug: "inbitcoin-ai-prompt-buy-selling-marketplace",
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop&crop=center"
     },
     {
       title: "WriteTalent – SAAS OpenAI Content Generator",
@@ -124,17 +145,9 @@ function ProjectsGrid() {
       tags: ["SaaS", "Tools and Utilities"],
       description: "Complete AI solution for content, text, image, voice, chat, code, transcript, and video generation",
       status: "Available",
+      price: "$2,000 – $3,500",
       slug: "writetalent-saas-openai-content-generator",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      title: "Aitini – AI Content, Chat Bot & Generator",
-      category: "Artificial Intelligence",
-      tags: ["SaaS", "Tools and Utilities"],
-      description: "Comprehensive AI platform for content creation, chat bot, image generation & speech to text conversion",
-      status: "Available",
-      slug: "aitini-ai-content-chat-bot-generator",
-      image: "/api/placeholder/400/300"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
     },
     {
       title: "Writingo – AI Content Writer & Copyright Generator",
@@ -142,8 +155,9 @@ function ProjectsGrid() {
       tags: ["SaaS", "Tools and Utilities"],
       description: "Advanced AI-powered content writing and copyright generation tool with SAAS capabilities",
       status: "Available",
+      price: "$750 – $1,375",
       slug: "writingo-ai-content-writer-copyright-generator",
-      image: "/api/placeholder/400/300"
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop&crop=center"
     },
     {
       title: "Aitini – ChatGPT SaaS Writing Assistant",
@@ -151,17 +165,9 @@ function ProjectsGrid() {
       tags: ["SaaS", "Tools and Utilities"],
       description: "AI writing assistant and content creator powered by ChatGPT technology",
       status: "Available",
+      price: "$750 – $1,375",
       slug: "aitini-chatgpt-saas-writing-assistant",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      title: "ThinkGPT – ChatGPT & OpenAI Mobile App",
-      category: "Artificial Intelligence",
-      tags: ["Tools and Utilities"],
-      description: "Mobile application for ChatGPT integration, OpenAI writing assistant & image generation",
-      status: "Available",
-      slug: "thinkgpt-chatgpt-openai-mobile-app",
-      image: "/api/placeholder/400/300"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
     }
   ];
 
@@ -196,7 +202,7 @@ function ProjectCard({ project, index, navigate }) {
         {/* Project Image */}
         <div className="w-full h-32 rounded-lg overflow-hidden">
           <img 
-            src={`https://picsum.photos/400/200?random=${index}`}
+            src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
           />
@@ -227,10 +233,17 @@ function ProjectCard({ project, index, navigate }) {
           {project.description}
         </p>
         
-        {/* Status */}
-        <div className="text-white text-sm font-medium">
-          {project.status}
-      </div>
+        {/* Status and Price */}
+        <div className="flex justify-between items-center">
+          <div className="text-white text-sm font-medium">
+            {project.status}
+          </div>
+          {project.price && (
+            <div className="text-orange-400 text-sm font-bold">
+              {project.price}
+            </div>
+          )}
+        </div>
         </div>
       </div>
   );

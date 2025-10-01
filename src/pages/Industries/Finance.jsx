@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import TalkBanner from "../../components/TalkBanner";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
+import TalkBanner from "../../components/TalkBanner";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,91 +60,167 @@ export default function Finance() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-orange-500/20 mt-[-5%]">
-      <Backdrop />
+    <div className="min-h-screen text-white selection:bg-orange-500/20">
       <div data-scroll-container ref={scrollRoot}>
         <div className="px-4 py-8 sm:px-6 lg:px-8">
           <Hero />
-          <Stats />
-          <Features />
+          <ProjectsGrid />
         </div>
-      </div>
-      <TalkBanner />
+        
+        {/* Talk Banner */}
+        <TalkBanner 
+          email="hello@orbitwalls.com"
+          bg="#ff6b35"
+          textColor="#ffffff"
+          subColor="#ff8c42"
+        />
+        </div>
     </div>
   );
 }
 
-function Backdrop() {
-  return (
-    <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-      <div className="orb-a absolute -top-32 -right-28 h-[28rem] w-[28rem] rounded-full bg-orange-500/20 blur-3xl" />
-      <div className="orb-b absolute top-1/2 -left-28 h-[24rem] w-[24rem] -translate-y-1/2 rounded-full bg-orange-400/20 blur-3xl" />
-      <div className="absolute bottom-0 right-1/3 h-60 w-60 translate-y-1/2 rounded-full bg-orange-500/10 blur-3xl" />
-      <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_20%_0%,rgba(255,255,255,0.06),transparent_60%)]" />
-    </div>
-  );
-}
-
-function Dot() {
-  return <div className="h-1.5 w-1.5 rounded-full bg-orange-400" />;
-}
-
-function SearchIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2}>
-      <circle cx={11} cy={11} r={8} />
-      <path d="m21 21-4.35-4.35" />
-    </svg>
-  );
-}
+/* ---------------- Hero ---------------- */
 
 function Hero() {
   return (
-    <section id="hero" data-reveal className="relative isolate py-4 sm:py-8">
-      <div className="max-w-5xl">
-        <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.15em] text-orange-400/80">
-          <Dot /> FinTech • Banking • Payments
-        </span>
-
-        <h1 className="mt-4 text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.08] tracking-tight">
-          Transform finance with <span className="text-orange-400">cutting-edge technology</span>
+    <section className="py-16 md:py-24">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          Finance Marketplace Solutions
         </h1>
-
-        <p className="mt-5 text-lg sm:text-xl lg:text-2xl text-white/85">
-          Build secure financial applications, payment systems, and banking solutions. 
-          From mobile banking to investment platforms, we create fintech solutions that matter.
+        <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+          Discover verified and tested finance startups from our marketplace. Ready-to-launch solutions 
+          for banking, payments, trading, lending, and financial technology applications.
         </p>
+      </div>
+    </section>
+  );
+}
 
-        <div className="mt-7 grid gap-3 sm:max-w-2xl sm:grid-cols-[1fr_auto]">
-          <div className="relative">
-            <input
-              placeholder="Search: mobile banking, payments, trading, investment…"
-              className="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 pr-10 outline-none placeholder:text-white/40 focus:border-orange-400/60"
-            />
-            <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-orange-400/80">
-              <SearchIcon />
-            </div>
-          </div>
-          <button className="rounded-2xl bg-orange-500/90 px-6 py-3 font-semibold text-black transition hover:bg-orange-400">
-            Explore
-          </button>
-        </div>
+/* ---------------- Projects Grid ---------------- */
 
-        <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {[
-            { k: "$1B+", l: "Transactions" },
-            { k: "99.99%", l: "Security" },
-            { k: "50+", l: "Banks" },
-            { k: "1M+", l: "Users" },
-          ].map((it, i) => (
-            <div
-              key={i}
-              data-reveal
-              className="rounded-xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-sm"
-            >
-              <div className="text-2xl sm:text-3xl font-semibold text-orange-400">{it.k}</div>
-              <div className="text-[11px] uppercase tracking-wider text-white/60">{it.l}</div>
-            </div>
+function ProjectsGrid() {
+  const navigate = useNavigate();
+  
+  const projects = [
+    {
+      title: "ProperLoan - NBFC Finance Mortgage Startup sourcing Loans/Credit Cards",
+      category: "Finance",
+      tags: ["NBFC", "Loans", "Credit Cards"],
+      description: "Complete NBFC finance platform for mortgage startup sourcing loans and credit cards with comprehensive financial management.",
+      status: "71 Sales",
+      price: "$625 – $1,250",
+      slug: "properloan-nbfc-finance-mortgage-startup-sourcing-loans-credit-cards",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "InvestDrive - HYIP Crypto Investment Management Platform",
+      category: "Finance",
+      tags: ["Crypto", "Investment", "HYIP"],
+      description: "High Yield Investment Program (HYIP) crypto investment management platform with advanced trading and portfolio management features.",
+      status: "70 Sales",
+      price: "$625 – $1,250",
+      slug: "investdrive-hyip-crypto-investment-management-platform",
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Quotora - Live Trading, Market Analysis, Portfolio, Watching List, Subscriptions",
+      category: "Finance",
+      tags: ["Trading", "Market Analysis", "Portfolio"],
+      description: "Comprehensive live trading platform with market analysis, portfolio management, watch lists, and subscription-based premium features.",
+      status: "41 Sales",
+      price: "$625 – $1,250",
+      slug: "quotora-live-trading-market-analysis-portfolio-watching-list-subscriptions",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Bankovia - Online Banking With DPS & Loan",
+      category: "Finance",
+      tags: ["Online Banking", "DPS", "Loans"],
+      description: "Complete online banking platform with Deposit Pension Scheme (DPS) and loan management features for modern banking operations.",
+      status: "32 Sales",
+      price: "$625 – $1,250",
+      slug: "bankovia-online-banking-with-dps-loan",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "PayoutCard - Complete Virtual Credit Card Solution",
+      category: "Finance",
+      tags: ["Virtual Cards", "Credit Cards"],
+      description: "Complete virtual credit card solution with advanced security features, instant issuance, and comprehensive card management.",
+      status: "15 Sales",
+      price: "$625 – $1,250",
+      slug: "payoutcard-complete-virtual-credit-card-solution",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "CapturePay - Start your own Secure Online Payment Gateway",
+      category: "Finance",
+      tags: ["Payment Gateway", "Secure Payments"],
+      description: "Complete secure online payment gateway solution allowing businesses to start their own payment processing platform.",
+      status: "12 Sales",
+      price: "$875 – $1,500",
+      slug: "capturepay-start-your-own-secure-online-payment-gateway",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Bighitter - Wallet & Online Banking Online Investment Platform",
+      category: "Finance",
+      tags: ["Wallet", "Online Banking", "Investment"],
+      description: "Comprehensive wallet and online banking platform with integrated investment features for modern financial management.",
+      status: "10 Sales",
+      price: "$625 – $1,250",
+      slug: "bighitter-wallet-online-banking-online-investment-platform",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "VirtuLoan - Complete Loan Management System",
+      category: "Finance",
+      tags: ["Loan Management", "Lending"],
+      description: "Complete loan management system with automated processing, risk assessment, and comprehensive lending operations.",
+      status: "6 Sales",
+      price: "$625 – $1,250",
+      slug: "virtuloan-complete-loan-management-system",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "SwipeBank - Online Internet Banking With Account, Loans, DSP for NBFC & Banks",
+      category: "Finance",
+      tags: ["Internet Banking", "NBFC", "Banks"],
+      description: "Complete online internet banking solution with account management, loans, and DSP features for NBFC and banks like ICICI, HDFC.",
+      status: "1 Sale",
+      price: "$1,750 – $2,500",
+      slug: "swipebank-online-internet-banking-with-account-loans-dsp-nbfc-banks",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "NFTLyfe - NFT Buy/Sell Marketplace",
+      category: "Finance",
+      tags: ["NFT", "Marketplace"],
+      description: "Complete NFT buy/sell marketplace platform with advanced trading features, auctions, and digital asset management.",
+      status: "1 Sale",
+      price: "$625 – $1,250",
+      slug: "nftlyfe-nft-buy-sell-marketplace",
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "SyncPay Orchestra - Complete Payment Gateway, Wallet & QR System",
+      category: "Finance",
+      tags: ["Payment Gateway", "Wallet", "QR System"],
+      description: "Complete payment gateway solution with integrated wallet functionality and QR code payment system for modern transactions.",
+      status: "Available",
+      price: "$1,750 – $2,500",
+      slug: "syncpay-orchestra-complete-payment-gateway-wallet-qr-system",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+    }
+  ];
+
+  return (
+    <section className="py-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} index={index} navigate={navigate} />
           ))}
         </div>
       </div>
@@ -151,87 +228,67 @@ function Hero() {
   );
 }
 
-function Stats() {
-  return (
-    <section className="mt-16" data-reveal>
-      <div className="flex items-center gap-3">
-        <h2 className="text-xl font-semibold sm:text-2xl">Financial Solutions</h2>
-        <div className="h-px flex-1 bg-white/10" />
-        <button
-          className="rounded-lg border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/75"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          Back to top
-        </button>
-      </div>
-    </section>
-  );
-}
+/* ---------------- Project Card ---------------- */
 
-function Features() {
-  const cards = [
-    {
-      title: "Mobile Banking",
-      desc: "Complete mobile banking applications with secure authentication and real-time transactions.",
-      tags: ["Biometric Auth", "Real-time", "Secure"],
-    },
-    {
-      title: "Payment Gateway",
-      desc: "Multi-channel payment processing solutions for businesses of all sizes.",
-      tags: ["Multi-currency", "PCI Compliant", "API Integration"],
-    },
-    {
-      title: "Investment Platform",
-      desc: "Trading and investment platforms with advanced analytics and portfolio management.",
-      tags: ["Trading", "Analytics", "Portfolio"],
-    },
-    {
-      title: "Digital Wallet",
-      desc: "Secure digital wallet solutions with multi-currency support and instant transfers.",
-      tags: ["Multi-currency", "Instant Transfer", "Security"],
-    },
-    {
-      title: "Lending Platform",
-      desc: "Automated lending and credit assessment platforms with risk management.",
-      tags: ["Credit Scoring", "Risk Assessment", "Automation"],
-    },
-    {
-      title: "Insurance Tech",
-      desc: "Digital insurance platforms with automated claims processing and risk assessment.",
-      tags: ["Claims Processing", "Risk Assessment", "Automation"],
-    },
-  ];
+function ProjectCard({ project, index, navigate }) {
+  const handleCardClick = () => {
+    navigate(`/finance/${project.slug}`);
+  };
 
   return (
-    <section className="mt-10" data-reveal>
-      <div className="mb-4 flex items-end justify-between">
-        <h2 className="text-xl font-semibold sm:text-2xl">Featured Financial Solutions</h2>
-        <a className="text-sm text-orange-400 hover:underline" href="#">
-          View all
-        </a>
-      </div>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {cards.map((it, i) => (
-          <div
-            key={i}
+    <div 
             data-reveal
-            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:bg-white/10"
-          >
-            <h3 className="text-lg font-semibold">{it.title}</h3>
-            <p className="mt-2 text-sm text-white/70">{it.desc}</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {it.tags.map((tag, j) => (
-                <span
-                  key={j}
-                  className="rounded-full bg-orange-500/20 px-2 py-1 text-xs text-orange-300"
-                >
+      onClick={handleCardClick}
+      className="group relative bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/30 rounded-2xl overflow-hidden hover:border-orange-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/20 cursor-pointer"
+    >
+      {/* Top Graphic Section */}
+      <div className="relative bg-gradient-to-b from-orange-100 to-orange-200 p-4">
+        {/* Project Image */}
+        <div className="w-full h-32 rounded-lg overflow-hidden">
+          <img 
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      
+      {/* Content Section */}
+      <div className="relative z-10 p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/70">
+        {/* Tags */}
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <span className="px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-medium rounded-full border border-orange-500/30">
+            {project.category}
+          </span>
+          {project.tags.map((tag, i) => (
+            <span key={i} className="px-3 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50">
                   {tag}
                 </span>
               ))}
             </div>
+        
+        {/* Title */}
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors duration-300">
+          {project.title}
+        </h3>
+        
+        {/* Description */}
+        <p className="text-gray-300 text-sm leading-relaxed mb-4">
+          {project.description}
+        </p>
+        
+        {/* Status and Price */}
+        <div className="flex justify-between items-center">
+          <div className="text-white text-sm font-medium">
+            {project.status}
           </div>
-        ))}
+          {project.price && (
+            <div className="text-orange-400 text-sm font-bold">
+              {project.price}
+            </div>
+          )}
+            </div>
+          </div>
       </div>
-    </section>
   );
 }

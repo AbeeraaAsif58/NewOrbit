@@ -86,11 +86,11 @@ function Hero() {
     <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          B2B Industry Solutions
+          B2B Marketplace Solutions
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-          Explore our comprehensive B2B software solutions that help businesses streamline operations, 
-          manage inventory, and scale their enterprise operations efficiently.
+          Discover verified and tested B2B startups from our marketplace. Ready-to-launch solutions 
+          for business management, CRM, eCommerce, healthcare systems, and enterprise applications.
         </p>
       </div>
     </section>
@@ -108,54 +108,90 @@ function ProjectsGrid() {
       category: "B2B",
       tags: ["ERP & CRM", "SAAS"],
       description: "This is a SAAS based Startup provides a CRM with some amazing features suitable for all businesses. With this application, you are assured to save time-consuming process of bookkeeping accounting and inventory information.",
-      status: "Available",
+      status: "164 Sales",
+      price: "$750 – $1,375",
       slug: "vyapaar-complete-saas-business-for-stock-management-pos-invoicing",
-      image: "/api/placeholder/400/300"
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "EnterpriseCRM – Advanced Customer Relationship Management",
+      title: "Cloud Prospects – Lead Management System and Sales CRM",
       category: "B2B",
-      tags: ["CRM", "Enterprise"],
-      description: "Comprehensive CRM solution designed for large enterprises with advanced lead management, sales pipeline, and customer analytics.",
-      status: "Available",
-      slug: "enterprisecrm-advanced-customer-relationship-management",
-      image: "/api/placeholder/400/300"
+      tags: ["ERP & CRM"],
+      description: "Advanced lead management system and sales CRM designed to streamline business processes, track prospects, and manage customer relationships effectively.",
+      status: "72 Sales",
+      price: "$625 – $1,250",
+      slug: "cloud-prospects-lead-management-system-and-sales-crm",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "ProcureFlow – B2B Procurement Management System",
+      title: "Hospitalcore – Complete SAAS Hospital management system",
       category: "B2B",
-      tags: ["Procurement", "Management"],
-      description: "Streamline your B2B procurement processes with automated vendor management, purchase orders, and approval workflows.",
-      status: "Available",
-      slug: "procureflow-b2b-procurement-management-system",
-      image: "/api/placeholder/400/300"
+      tags: ["HealthCare", "SAAS"],
+      description: "Comprehensive SAAS-based hospital management system with patient records, appointment scheduling, billing, and complete healthcare facility management.",
+      status: "51 Sales",
+      price: "$625 – $1,250",
+      slug: "hospitalcore-complete-saas-hospital-management-system",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "SalesForce Pro – B2B Sales Automation Platform",
+      title: "Business Brawn – Complete SAAS Business Management",
       category: "B2B",
-      tags: ["Sales", "Automation"],
-      description: "Advanced sales automation platform with lead scoring, email campaigns, and sales analytics for B2B companies.",
-      status: "Available",
-      slug: "salesforce-pro-b2b-sales-automation-platform",
-      image: "/api/placeholder/400/300"
+      tags: ["SAAS"],
+      description: "Complete SAAS business management solution with comprehensive tools for operations, finance, HR, and project management in one unified platform.",
+      status: "14 Sales",
+      price: "$625 – $1,250",
+      slug: "business-brawn-complete-saas-business-management",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "VendorHub – Supplier Management Portal",
+      title: "Account Tap – KhataBook Clone Android application",
       category: "B2B",
-      tags: ["Vendor", "Management"],
-      description: "Complete vendor and supplier management portal with performance tracking, compliance monitoring, and payment processing.",
-      status: "Available",
-      slug: "vendorhub-supplier-management-portal",
-      image: "/api/placeholder/400/300"
+      tags: ["Finance"],
+      description: "Android application clone of KhataBook for digital ledger management, accounting, and financial tracking for small and medium businesses.",
+      status: "8 Sales",
+      price: "$625 – $1,250",
+      slug: "account-tap-khatabook-clone-android-application",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
     },
     {
-      title: "BusinessIntel – B2B Analytics Dashboard",
+      title: "BusinessBite – Business Consulting",
       category: "B2B",
-      tags: ["Analytics", "Dashboard"],
-      description: "Comprehensive business intelligence platform with real-time analytics, reporting, and data visualization for B2B operations.",
+      tags: ["HealthCare"],
+      description: "Professional business consulting platform providing strategic advice, market analysis, and growth solutions for businesses across various industries.",
       status: "Available",
-      slug: "businessintel-b2b-analytics-dashboard",
-      image: "/api/placeholder/400/300"
+      price: "$750 – $1,000",
+      slug: "businessbite-business-consulting",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Shopping Spark – Ecommerce Shopping Platform",
+      category: "B2B",
+      tags: ["eCommerce"],
+      description: "Complete ecommerce shopping platform with advanced features for online retail, inventory management, and customer engagement.",
+      status: "Available",
+      price: "$750 – $1,500",
+      slug: "shopping-spark-ecommerce-shopping-platform",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Close Sourcing – B2B eCommerce with Bulk Discount",
+      category: "B2B",
+      tags: ["eCommerce"],
+      description: "B2B eCommerce platform with bulk discount features - AliExpress, IndiaMart Clone with advanced wholesale and retail capabilities.",
+      status: "Available",
+      price: "$750 – $1,500",
+      slug: "close-sourcing-b2b-ecommerce-with-bulk-discount",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+    },
+    {
+      title: "Billing – Advanced POS, Inventory, Accounting, Warehouse",
+      category: "B2B",
+      tags: ["ERP & CRM"],
+      description: "Advanced POS system with inventory management, accounting, warehouse management, multi-user support, and GST ready features.",
+      status: "Available",
+      price: "$625 – $1,250",
+      slug: "billing-advanced-pos-inventory-accounting-warehouse",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
     }
   ];
 
@@ -190,7 +226,7 @@ function ProjectCard({ project, index, navigate }) {
         {/* Project Image */}
         <div className="w-full h-32 rounded-lg overflow-hidden">
           <img 
-            src={`https://picsum.photos/400/200?random=${index + 30}`}
+            src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
           />
@@ -221,9 +257,16 @@ function ProjectCard({ project, index, navigate }) {
           {project.description}
         </p>
         
-        {/* Status */}
-        <div className="text-white text-sm font-medium">
-          {project.status}
+        {/* Status and Price */}
+        <div className="flex justify-between items-center">
+          <div className="text-white text-sm font-medium">
+            {project.status}
+          </div>
+          {project.price && (
+            <div className="text-orange-400 text-sm font-bold">
+              {project.price}
+            </div>
+          )}
         </div>
       </div>
     </div>

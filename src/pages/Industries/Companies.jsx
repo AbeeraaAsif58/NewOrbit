@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
@@ -82,14 +82,39 @@ export default function Companies() {
 /* ---------------- Hero ---------------- */
 
 function Hero() {
+  const location = useLocation();
+  const path = location.pathname;
+  
+  // Get industry name from path
+  const getIndustryName = (path) => {
+    const industryMap = {
+      '/companies': 'Directory',
+      '/ecommerce': 'eCommerce',
+      '/education': 'Education',
+      '/entertainment': 'Entertainment',
+      '/games': 'Games',
+      '/grocery': 'Grocery',
+      '/healthcare': 'HealthCare',
+      '/human-resource': 'Human Resource',
+      '/matrimony': 'Matrimony',
+      '/news-media': 'News & Media',
+      '/real-estate': 'Real Estate',
+      '/restaurant': 'Restaurant',
+      '/travel': 'Travel'
+    };
+    return industryMap[path] || 'Directory';
+  };
+
+  const industryName = getIndustryName(path);
+
   return (
     <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          Companies for Sale
+          {industryName} Marketplace Solutions
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-          Discover innovative companies and businesses available for acquisition. 
+          Discover comprehensive {industryName.toLowerCase()} platforms available for acquisition. 
           Explore our curated selection of profitable ventures across various industries 
           with proven track records and growth potential.
         </p>
@@ -102,94 +127,1284 @@ function Hero() {
 
 function ProjectsGrid() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const path = location.pathname;
   
-  const projects = [
-    {
-      title: "For Sale: Innovative fintech banking company in Spain",
-      category: "Companies",
-      tags: ["Fintech", "Banking"],
-      description: "Our business is an innovative fintech banking company that is registered in Barcelona, Spain. We have our headquarters in Madrid and virtual offices in Barcelona, Estonia, and Bulgaria.",
-      status: "EUR 50,000,000",
-      slug: "for-sale-innovative-fintech-banking-company-in-spain",
-      image: "/api/placeholder/400/300",
-      established: "4 years",
-      employees: "25",
-      sales: "EUR 12.4 million",
-      location: "Barcelona, Spain"
-    },
-    {
-      title: "For Sale: E-commerce Marketplace Platform",
-      category: "Companies",
-      tags: ["E-commerce", "Marketplace"],
-      description: "Profitable e-commerce marketplace with established vendor network, integrated payment systems, and strong customer base across multiple regions.",
-      status: "EUR 15,000,000",
-      slug: "for-sale-ecommerce-marketplace-platform",
-      image: "/api/placeholder/400/300",
-      established: "6 years",
-      employees: "45",
-      sales: "EUR 8.2 million",
-      location: "London, UK"
-    },
-    {
-      title: "For Sale: SaaS Analytics Company",
-      category: "Companies",
-      tags: ["SaaS", "Analytics"],
-      description: "Leading SaaS analytics platform serving enterprise clients with advanced data visualization and business intelligence solutions.",
-      status: "EUR 25,000,000",
-      slug: "for-sale-saas-analytics-company",
-      image: "/api/placeholder/400/300",
-      established: "5 years",
-      employees: "60",
-      sales: "EUR 18.5 million",
-      location: "San Francisco, USA"
-    },
-    {
-      title: "For Sale: Digital Marketing Agency",
-      category: "Companies",
-      tags: ["Marketing", "Digital"],
-      description: "Full-service digital marketing agency with established client portfolio, proprietary tools, and strong recurring revenue streams.",
-      status: "EUR 8,000,000",
-      slug: "for-sale-digital-marketing-agency",
-      image: "/api/placeholder/400/300",
-      established: "7 years",
-      employees: "35",
-      sales: "EUR 6.8 million",
-      location: "Berlin, Germany"
-    },
-    {
-      title: "For Sale: Healthcare Technology Startup",
-      category: "Companies",
-      tags: ["Healthcare", "Technology"],
-      description: "Innovative healthcare technology company with patented solutions for patient management and telemedicine platforms.",
-      status: "EUR 30,000,000",
-      slug: "for-sale-healthcare-technology-startup",
-      image: "/api/placeholder/400/300",
-      established: "3 years",
-      employees: "28",
-      sales: "EUR 4.2 million",
-      location: "Toronto, Canada"
-    },
-    {
-      title: "For Sale: Real Estate Technology Platform",
-      category: "Companies",
-      tags: ["Real Estate", "Technology"],
-      description: "Comprehensive real estate technology platform connecting buyers, sellers, and agents with advanced property management tools.",
-      status: "EUR 20,000,000",
-      slug: "for-sale-real-estate-technology-platform",
-      image: "/api/placeholder/400/300",
-      established: "8 years",
-      employees: "50",
-      sales: "EUR 12.1 million",
-      location: "Sydney, Australia"
+  // Get industry-specific projects based on route
+  const getProjectsForRoute = (route) => {
+    if (route === '/travel') {
+      return [
+        {
+          title: "Travoila – Book Hotels, Tours, Flights, Activities, Cabs – Complete Travel Portal",
+          category: "Travel",
+          tags: ["Travel"],
+          description: "Complete travel portal for booking hotels, tours, flights, activities, and cabs with comprehensive travel management features.",
+          status: "133 Sales",
+          price: "$500 – $1,125",
+          slug: "travoila-book-hotels-tours-flights-activities-cabs-complete-travel-portal",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "CargoSilo- Complete Courier Management System – Domestic and International",
+          category: "Travel",
+          tags: ["ERP & CRM", "Travel"],
+          description: "Complete courier management system for domestic and international shipping with comprehensive logistics and tracking features.",
+          status: "46 Sales",
+          price: "$625 – $1,250",
+          slug: "cargosilo-complete-courier-management-system-domestic-international",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "SecretBus- Bus Reservation System",
+          category: "Travel",
+          tags: ["ERP & CRM", "Travel"],
+          description: "Complete bus reservation system with seat booking, route management, and comprehensive bus travel operations.",
+          status: "34 Sales",
+          price: "$625 – $1,250",
+          slug: "secretbus-bus-reservation-system",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Travelray – Book Hotels, Tours, Flights, Activities, Cabs – Complete Travel Booking Portal",
+          category: "Travel",
+          tags: ["Travel"],
+          description: "Complete travel booking portal for hotels, tours, flights, activities, and cabs with advanced booking management and customer service.",
+          status: "6 Sales",
+          price: "$500 – $1,125",
+          slug: "travelray-book-hotels-tours-flights-activities-cabs-complete-travel-booking-portal",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "WunderBus- Bus Ticket Booking System",
+          category: "Travel",
+          tags: ["Travel"],
+          description: "Advanced bus ticket booking system with comprehensive route management, seat selection, and payment processing.",
+          status: "New",
+          price: "$4,500 – $7,500",
+          slug: "wunderbus-bus-ticket-booking-system",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Point Panel- Retail POS and Stock Software",
+          category: "Travel",
+          tags: ["Travel"],
+          description: "Retail point-of-sale and stock management software with comprehensive inventory tracking and sales management.",
+          status: "New",
+          price: "$1,125 – $1,875",
+          slug: "point-panel-retail-pos-stock-software",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "WorkCab- Complete Taxi app | Taxi Booking Solution",
+          category: "Travel",
+          tags: ["Travel"],
+          description: "Complete taxi booking solution with mobile app for passengers and drivers, real-time tracking, and payment processing.",
+          status: "New",
+          price: "$1,125 – $1,875",
+          slug: "workcab-complete-taxi-app-taxi-booking-solution",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "PoshPass – Appointment Booking & Visitor Gate Pass System With Qr Code",
+          category: "Travel",
+          tags: ["ERP & CRM", "Travel"],
+          description: "Appointment booking and visitor gate pass system with QR code integration for secure access management and visitor tracking.",
+          status: "New",
+          price: "$500 – $1,125",
+          slug: "poshpass-appointment-booking-visitor-gate-pass-system-qr-code",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "HotelElf – Hotel Management System",
+          category: "Travel",
+          tags: ["ERP & CRM", "Travel"],
+          description: "Complete hotel management system with room booking, guest management, billing, and comprehensive hotel operations.",
+          status: "New",
+          price: "$500 – $1,125",
+          slug: "hotelfelf-hotel-management-system",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "CourierSquad – SAAS Multi-Tenancy courier and logistics management – merchant, delivery app",
+          category: "Travel",
+          tags: ["ERP & CRM", "Travel"],
+          description: "SaaS multi-tenancy courier and logistics management platform with merchant and delivery apps for comprehensive shipping management.",
+          status: "New",
+          price: "$625 – $1,000",
+          slug: "couriersquad-saas-multi-tenancy-courier-logistics-management-merchant-delivery-app",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "HotelTitan – Hotel & Resort Booking Application",
+          category: "Travel",
+          tags: ["Travel"],
+          description: "Hotel and resort booking application with comprehensive reservation management, guest services, and hospitality features.",
+          status: "New",
+          price: "$500 – $1,125",
+          slug: "hoteltitan-hotel-resort-booking-application",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "HotelNerd – Hotel & Resort Booking System",
+          category: "Travel",
+          tags: ["Travel"],
+          description: "Complete hotel and resort booking system with advanced reservation management, guest services, and hospitality management.",
+          status: "New",
+          price: "$500 – $1,125",
+          slug: "hotelnerd-hotel-resort-booking-system",
+          image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
     }
-  ];
+    
+    if (route === '/restaurant') {
+      return [
+        {
+          title: "Mexicata – Complete Restaurant POS",
+          category: "Restaurant",
+          tags: ["ERP & CRM", "Restaurant"],
+          description: "Complete restaurant point-of-sale system with comprehensive order management, payment processing, and restaurant operations.",
+          status: "64 Sales",
+          price: "$625 – $1,250",
+          slug: "mexicata-complete-restaurant-pos",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Food Desk – Restaurant Management Software with Website",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Comprehensive restaurant management software with integrated website for online ordering, table management, and restaurant operations.",
+          status: "23 Sales",
+          price: "$625 – $1,250",
+          slug: "food-desk-restaurant-management-software-website",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Foodinga – Zomato Clone – Multiple Restaurant Food ordering Website with Customer, Merchant and Driver Android and iOS apps",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Complete Zomato clone with multiple restaurant food ordering website and dedicated Android and iOS apps for customers, merchants, and drivers.",
+          status: "23 Sales",
+          price: "$1,125 – $1,875",
+          slug: "foodinga-zomato-clone-multiple-restaurant-food-ordering-website-customer-merchant-driver-android-ios-apps",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "NexaMLM -Multilevel Marketing Platform",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Complete multilevel marketing platform with comprehensive MLM features, commission tracking, and network management.",
+          status: "New",
+          price: "$1,000 – $1,750",
+          slug: "nexamlm-multilevel-marketing-platform",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Binex MLM -Ecommerce Based MLM Platform",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Ecommerce-based multilevel marketing platform with integrated shopping features, commission management, and network building tools.",
+          status: "New",
+          price: "$1,000 – $1,750",
+          slug: "binex-mlm-ecommerce-based-mlm-platform",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Shopiax -Inventory Management",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Comprehensive inventory management system for restaurants with real-time tracking, stock alerts, and supply chain management.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "shopiax-inventory-management",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Ecomya – Multivendor Organic & Grocery eCommerce",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Multivendor organic and grocery eCommerce platform with comprehensive marketplace features and vendor management.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "ecomya-multivendor-organic-grocery-ecommerce",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "LeFood – Food & Grocery eCommerce with Admin Dashboard",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Complete food and grocery eCommerce platform with comprehensive admin dashboard for order management and analytics.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "lefood-food-grocery-ecommerce-admin-dashboard",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "TrackAla- The Complete SaaS Restaurant Management Solution",
+          category: "Restaurant",
+          tags: ["ERP & CRM", "Restaurant", "SAAS"],
+          description: "Complete SaaS restaurant management solution with comprehensive features for operations, analytics, and customer management.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "trackala-complete-saas-restaurant-management-solution",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "OrderCreator – SaaS Restaurant / QR Menu / WhatsApp Online ordering / Reservation system",
+          category: "Restaurant",
+          tags: ["ERP & CRM", "Restaurant", "SAAS"],
+          description: "SaaS restaurant solution with QR menu, WhatsApp online ordering, and reservation system for modern restaurant operations.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "ordercreator-saas-restaurant-qr-menu-whatsapp-online-ordering-reservation-system",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Lilplates – Restaurant Food Delivery System with Admin Panel & Delivery Man App | Restaurant POS",
+          category: "Restaurant",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Complete restaurant food delivery system with admin panel, delivery man app, and integrated POS functionality.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "lilplates-restaurant-food-delivery-system-admin-panel-delivery-man-app-restaurant-pos",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "DixieDaily- Dunzo Clone – Multivendor Food, Grocery, eCommerce, Parcel, Pharmacy Delivery Website & 3 Mobile apps (Customer, Store, Driver apps)",
+          category: "Restaurant",
+          tags: ["Directory", "eCommerce", "Grocery", "Restaurant"],
+          description: "Complete Dunzo clone with multivendor food, grocery, eCommerce, parcel, and pharmacy delivery website with 3 mobile apps for customers, stores, and drivers.",
+          status: "New",
+          price: "$1,125 – $1,875",
+          slug: "dixiedaily-dunzo-clone-multivendor-food-grocery-ecommerce-parcel-pharmacy-delivery-website-3-mobile-apps-customer-store-driver-apps",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/real-estate') {
+      return [
+        {
+          title: "ExtraAcre – Real Estate Portal with Multiple Users with Android App",
+          category: "Real Estate",
+          tags: ["Real Estate"],
+          description: "Comprehensive real estate portal supporting multiple user types with dedicated Android application for property management and transactions.",
+          status: "51 Sales",
+          price: "$375 – $1,000",
+          slug: "extraacre-real-estate-portal-multiple-users-android-app",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "GigaBrick – Real Estate Portal Website",
+          category: "Real Estate",
+          tags: ["Real Estate"],
+          description: "Complete real estate portal website with property listings, search functionality, and comprehensive real estate management features.",
+          status: "45 Sales",
+          price: "$500 – $1,125",
+          slug: "gigabrick-real-estate-portal-website",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Citysquid – Innovative Real Estate Investment Platform",
+          category: "Real Estate",
+          tags: ["Real Estate"],
+          description: "Innovative real estate investment platform with advanced analytics, property valuation, and investment management tools.",
+          status: "15 Sales",
+          price: "$750 – $1,500",
+          slug: "citysquid-innovative-real-estate-investment-platform",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "PropertyPlus – Society, Property, Tenant and Maintenance Management System",
+          category: "Real Estate",
+          tags: ["ERP & CRM", "Real Estate", "Tools and Utilities"],
+          description: "Comprehensive property management system for societies, properties, tenants, and maintenance with ERP and CRM functionality.",
+          status: "4 Sales",
+          price: "$625 – $1,250",
+          slug: "propertyplus-society-property-tenant-maintenance-management-system",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Tropical Rental-Multivendor Equipment / Multipurpose Rental Website",
+          category: "Real Estate",
+          tags: ["Real Estate"],
+          description: "Multivendor equipment and multipurpose rental website platform for various rental services and equipment management.",
+          status: "New",
+          price: "$750 – $1,500",
+          slug: "tropical-rental-multivendor-equipment-multipurpose-rental-website",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "HomeFlow-Laravel Real Estate Agency Portal",
+          category: "Real Estate",
+          tags: ["Real Estate"],
+          description: "Laravel-based real estate agency portal with comprehensive property management, client relations, and agency operations.",
+          status: "New",
+          price: "$750 – $1,500",
+          slug: "homeflow-laravel-real-estate-agency-portal",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "RealtorStack-Real Estate Property Buy-Rent-Sell Platform",
+          category: "Real Estate",
+          tags: ["Real Estate"],
+          description: "Complete real estate platform for buying, renting, and selling properties with comprehensive transaction management.",
+          status: "New",
+          price: "$750 – $1,500",
+          slug: "realtorstack-real-estate-property-buy-rent-sell-platform",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "SmartCitizens – Property Management System with Tenant & Maintenance",
+          category: "Real Estate",
+          tags: ["ERP & CRM", "Real Estate", "Tools and Utilities"],
+          description: "Smart property management system with tenant management, maintenance tracking, and comprehensive property administration.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "smartcitizens-property-management-system-tenant-maintenance",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Brickwick – Real Estate Portal (Multilingual)",
+          category: "Real Estate",
+          tags: ["Real Estate"],
+          description: "Multilingual real estate portal supporting multiple languages with comprehensive property listings and search functionality.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "brickwick-real-estate-portal-multilingual",
+          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/news-media') {
+      return [
+        {
+          title: "Newsshelf – News Portal with Android and iOS Mobile Apps",
+          category: "News & Media",
+          tags: ["News & Media"],
+          description: "Complete news portal platform with dedicated Android and iOS mobile applications featuring real-time news updates and multimedia content.",
+          status: "71 Sales",
+          price: "$875 – $1,625",
+          slug: "newsshelf-news-portal-android-ios-mobile-apps",
+          image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Indie News – Newspaper, Blog Multilingual News Portal (with AI Writer, Content Generator)",
+          category: "News & Media",
+          tags: ["News & Media"],
+          description: "Multilingual news portal with AI-powered content generation, newspaper and blog functionality, and comprehensive media management.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "indie-news-newspaper-blog-multilingual-news-portal-ai-writer-content-generator",
+          image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Shortnews – Short News App – Inshorts Clone",
+          category: "News & Media",
+          tags: ["News & Media"],
+          description: "Complete Inshorts clone application featuring short-form news content, quick updates, and mobile-optimized news consumption.",
+          status: "New",
+          price: "$875 – $1,625",
+          slug: "shortnews-short-news-app-inshorts-clone",
+          image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/matrimony') {
+      return [
+        {
+          title: "Futureshaadi- Matrimony Web Application with Android and iOS app",
+          category: "Matrimony",
+          tags: ["Dating", "Matrimony"],
+          description: "Complete matrimony web application with dedicated Android and iOS apps featuring advanced matching algorithms and secure communication.",
+          status: "73 Sales",
+          price: "$750 – $1,500",
+          slug: "futureshaadi-matrimony-web-application-android-ios-app",
+          image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Rishtey – Shaadi Clone Matrimony Android & iOS app",
+          category: "Matrimony",
+          tags: ["Dating", "Matrimony"],
+          description: "Complete Shaadi clone matrimony platform with Android and iOS applications featuring comprehensive matchmaking and family integration.",
+          status: "53 Sales",
+          price: "$1,250 – $2,000",
+          slug: "rishtey-shaadi-clone-matrimony-android-ios-app",
+          image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/human-resource') {
+      return [
+        {
+          title: "HR Logics – HRM, Payroll & Project Management",
+          category: "Human Resource",
+          tags: ["ERP & CRM", "Human Resource"],
+          description: "Comprehensive HR management system with payroll processing, project management, and employee administration tools.",
+          status: "86 Sales",
+          price: "$750 – $1,375",
+          slug: "hr-logics-hrm-payroll-project-management",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Bold Jobs – Freelancer Job Board System",
+          category: "Human Resource",
+          tags: ["Human Resource"],
+          description: "Complete freelancer job board system connecting employers with skilled freelancers across various industries.",
+          status: "73 Sales",
+          price: "$625 – $1,250",
+          slug: "bold-jobs-freelancer-job-board-system",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Recruitrabbit – SAAS Human Resource Management",
+          category: "Human Resource",
+          tags: ["Human Resource", "SAAS"],
+          description: "SaaS-based human resource management platform with cloud deployment and comprehensive HR tools.",
+          status: "71 Sales",
+          price: "$625 – $1,250",
+          slug: "recruitrabbit-saas-human-resource-management",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Resumesy – Complete SAAS Resume Builder",
+          category: "Human Resource",
+          tags: ["Human Resource", "SAAS"],
+          description: "Complete SaaS resume builder platform with professional templates, ATS optimization, and career tools.",
+          status: "58 Sales",
+          price: "$625 – $1,250",
+          slug: "resumesy-complete-saas-resume-builder",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Freelance Mall – Freelancing Marketplace Platform – Upwork, Fiverr Clone",
+          category: "Human Resource",
+          tags: ["Human Resource"],
+          description: "Complete freelancing marketplace platform similar to Upwork and Fiverr with project management and payment systems.",
+          status: "38 Sales",
+          price: "$625 – $1,250",
+          slug: "freelance-mall-freelancing-marketplace-platform-upwork-fiverr-clone",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Recruitpool:- Complete SAAS Recruitment Manager with ATS (Application Tracking System)",
+          category: "Human Resource",
+          tags: ["Human Resource", "SAAS"],
+          description: "Complete SaaS recruitment management system with ATS functionality for streamlined hiring processes.",
+          status: "24 Sales",
+          price: "$1,000 – $1,750",
+          slug: "recruitpool-complete-saas-recruitment-manager-ats-application-tracking-system",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Jobs Heaven – Complete Job Portal",
+          category: "Human Resource",
+          tags: ["Human Resource"],
+          description: "Comprehensive job portal platform connecting job seekers with employers across various industries.",
+          status: "17 Sales",
+          price: "$625 – $1,250",
+          slug: "jobs-heaven-complete-job-portal",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Happy Jobs – Complete Job Mobile Application",
+          category: "Human Resource",
+          tags: ["Human Resource"],
+          description: "Complete job mobile application for iOS and Android with job search, application tracking, and career tools.",
+          status: "16 Sales",
+          price: "$625 – $1,375",
+          slug: "happy-jobs-complete-job-mobile-application",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Joboro – Complete Job Board with Android & iOS",
+          category: "Human Resource",
+          tags: ["ERP & CRM", "Human Resource"],
+          description: "Complete job board platform with dedicated Android and iOS applications for job seekers and employers.",
+          status: "26 Sales",
+          price: "$750 – $1,500",
+          slug: "joboro-complete-job-board-android-ios",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "TinacaHR- Saas HRM and Payroll Tool",
+          category: "Human Resource",
+          tags: ["Human Resource", "SAAS"],
+          description: "SaaS-based HRM and payroll tool with comprehensive employee management and payroll processing features.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "tinacahr-saas-hrm-payroll-tool",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Staffswift- HRM Software for all your HR Needs",
+          category: "Human Resource",
+          tags: ["Human Resource", "SAAS"],
+          description: "Comprehensive HRM software solution covering all HR needs including recruitment, payroll, and employee management.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "staffswift-hrm-software-all-hr-needs",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "RecruitPanel – Recruitment Management System",
+          category: "Human Resource",
+          tags: ["ERP & CRM", "Human Resource"],
+          description: "Complete recruitment management system with candidate tracking, interview scheduling, and hiring workflow management.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "recruitpanel-recruitment-management-system",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/healthcare') {
+      return [
+        {
+          title: "Healthy Web – Hospital Management System",
+          category: "HealthCare",
+          tags: ["ERP & CRM", "HealthCare"],
+          description: "Comprehensive hospital management system with patient records, appointment scheduling, billing, and administrative tools.",
+          status: "96 Sales",
+          price: "$625 – $1,250",
+          slug: "healthy-web-hospital-management-system",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Phroma – Pharmacy Management System",
+          category: "HealthCare",
+          tags: ["ERP & CRM", "HealthCare"],
+          description: "Complete pharmacy management system with inventory tracking, prescription management, and customer billing.",
+          status: "55 Sales",
+          price: "$625 – $1,250",
+          slug: "phroma-pharmacy-management-system",
+          image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Doctor Corps- Hospital Management System",
+          category: "HealthCare",
+          tags: ["ERP & CRM", "HealthCare"],
+          description: "Advanced hospital management system with doctor scheduling, patient management, and comprehensive healthcare administration.",
+          status: "52 Sales",
+          price: "$625 – $1,250",
+          slug: "doctor-corps-hospital-management-system",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Hospitalcore – Complete SAAS Hospital management system",
+          category: "HealthCare",
+          tags: ["B2B", "HealthCare", "SAAS"],
+          description: "Complete SaaS-based hospital management system with cloud-based deployment and comprehensive healthcare management features.",
+          status: "51 Sales",
+          price: "$625 – $1,250",
+          slug: "hospitalcore-complete-saas-hospital-management-system",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "All Healed – Diagnostic/Pathology lab Management System",
+          category: "HealthCare",
+          tags: ["ERP & CRM", "HealthCare"],
+          description: "Specialized diagnostic and pathology lab management system with test tracking, report generation, and patient management.",
+          status: "38 Sales",
+          price: "$625 – $1,250",
+          slug: "all-healed-diagnostic-pathology-lab-management-system",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Hospiva- Hospital Management System",
+          category: "HealthCare",
+          tags: ["ERP & CRM", "HealthCare"],
+          description: "Comprehensive hospital management system with patient care, staff management, and administrative functionality.",
+          status: "28 Sales",
+          price: "$625 – $1,250",
+          slug: "hospiva-hospital-management-system",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Doctorific – Doctor Chamber / Patient Management System",
+          category: "HealthCare",
+          tags: ["ERP & CRM", "HealthCare"],
+          description: "Specialized doctor chamber and patient management system for individual practitioners and small clinics.",
+          status: "13 Sales",
+          price: "$625 – $1,250",
+          slug: "doctorific-doctor-chamber-patient-management-system",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Practova – Appointment Booking With Time-slot app – Practo clone",
+          category: "HealthCare",
+          tags: ["Directory", "HealthCare"],
+          description: "Complete Practo clone with appointment booking, time-slot management, and healthcare provider directory.",
+          status: "11 Sales",
+          price: "$750 – $1,500",
+          slug: "practova-appointment-booking-time-slot-app-practo-clone",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Clinicio – Clinic/Hospital Management System – Doctor Patient Appointment Management System",
+          category: "HealthCare",
+          tags: ["ERP & CRM", "HealthCare"],
+          description: "Comprehensive clinic and hospital management system with doctor-patient appointment management and scheduling.",
+          status: "7 Sales",
+          price: "$625 – $1,250",
+          slug: "clinicio-clinic-hospital-management-system-doctor-patient-appointment-management-system",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "BusinessBite- Business Consulting",
+          category: "HealthCare",
+          tags: ["B2B", "HealthCare"],
+          description: "Business consulting platform for healthcare organizations with strategic planning and management services.",
+          status: "New",
+          price: "$750 – $1,000",
+          slug: "businessbite-business-consulting",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Pharma – SaaS Pharmacy Management Software",
+          category: "HealthCare",
+          tags: ["Directory", "HealthCare"],
+          description: "SaaS-based pharmacy management software with cloud deployment and comprehensive pharmacy operations management.",
+          status: "New",
+          price: "$750 – $1,000",
+          slug: "pharma-saas-pharmacy-management-software",
+          image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Atlasjoy – Business Directory Listing",
+          category: "HealthCare",
+          tags: ["Directory", "HealthCare"],
+          description: "Business directory listing platform for healthcare providers with comprehensive listing and search functionality.",
+          status: "New",
+          price: "$750 – $1,000",
+          slug: "atlasjoy-business-directory-listing",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/grocery') {
+      return [
+        {
+          title: "Grocery Space – Grocery Multi-Store with Customer, Store and Driver apps – BigBasket Clone",
+          category: "Grocery",
+          tags: ["eCommerce", "Grocery"],
+          description: "Complete grocery delivery platform with customer, store, and driver apps - BigBasket clone with multi-store management capabilities.",
+          status: "120 Sales",
+          price: "$1,125 – $1,875",
+          slug: "grocery-space-grocery-multi-store-customer-store-driver-apps-bigbasket-clone",
+          image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Farm Grocery- Ecommerce for Grocery, Food, Pharmacy with Android Apps",
+          category: "Grocery",
+          tags: ["eCommerce", "Grocery"],
+          description: "Complete grocery eCommerce platform for food, pharmacy, and grocery items with dedicated Android applications.",
+          status: "59 Sales",
+          price: "$1,125 – $1,375",
+          slug: "farm-grocery-ecommerce-grocery-food-pharmacy-android-apps",
+          image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "BerryDairy – Grocery, Daily Milk Delivery Mobile App with Subscription | Customer & Delivery App",
+          category: "Grocery",
+          tags: ["eCommerce", "Grocery"],
+          description: "Specialized dairy delivery platform with subscription-based milk delivery, customer and delivery apps for daily grocery needs.",
+          status: "New",
+          price: "$1,125 – $1,875",
+          slug: "berrydairy-grocery-daily-milk-delivery-mobile-app-subscription-customer-delivery-app",
+          image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "DixieDaily- Dunzo Clone – Multivendor Food, Grocery, eCommerce, Parcel, Pharmacy Delivery Website & 3 Mobile apps (Customer, Store, Driver apps)",
+          category: "Grocery",
+          tags: ["Directory", "eCommerce", "Grocery", "Restaurant"],
+          description: "Complete Dunzo clone with multivendor support for food, grocery, eCommerce, parcel, and pharmacy delivery with dedicated mobile apps.",
+          status: "New",
+          price: "$1,125 – $1,875",
+          slug: "dixiedaily-dunzo-clone-multivendor-food-grocery-ecommerce-parcel-pharmacy-delivery-website-3-mobile-apps-customer-store-driver-apps",
+          image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/games') {
+      return [
+        {
+          title: "QuizMatics – Real Money Quiz Game/App",
+          category: "Games",
+          tags: ["Education", "Games"],
+          description: "Interactive quiz game application with real money rewards, educational content, and gamified learning experience.",
+          status: "71 Sales",
+          price: "$625 – $1,250",
+          slug: "quizmatics-real-money-quiz-game-app",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "HPL11- Dream 11 Clone Fantasy App",
+          category: "Games",
+          tags: ["Games"],
+          description: "Complete Dream11 clone fantasy sports platform with team creation, contests, and real money rewards.",
+          status: "42 Sales",
+          price: "$1,250 – $1,500",
+          slug: "hpl11-dream-11-clone-fantasy-app",
+          image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Ludo HG – Ludo Tournament Betting",
+          category: "Games",
+          tags: ["Games"],
+          description: "Ludo tournament platform with betting features, multiplayer gameplay, and tournament management system.",
+          status: "26 Sales",
+          price: "$1,000 – $1,750",
+          slug: "ludo-hg-ludo-tournament-betting",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "FortuneFantasy – Online Betting Platform – 1xBet Clone",
+          category: "Games",
+          tags: ["Games"],
+          description: "Complete 1xBet clone online betting platform with sports betting, casino games, and comprehensive betting features.",
+          status: "4 Sales",
+          price: "$1,000 – $1,250",
+          slug: "fortunefantasy-online-betting-platform-1xbet-clone",
+          image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Online Rival-Online Competition Platform",
+          category: "Games",
+          tags: ["Games"],
+          description: "Comprehensive online competition platform with tournaments, leaderboards, and competitive gaming features.",
+          status: "New",
+          price: "$1,000 – $1,750",
+          slug: "online-rival-online-competition-platform",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Jwelbling-Games",
+          category: "Games",
+          tags: ["Games"],
+          description: "Comprehensive gaming platform with multiple game types, user management, and gaming features.",
+          status: "New",
+          price: "$1,000 – $1,750",
+          slug: "jwelbling-games",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Quizzity – AI Powered Quiz Generator",
+          category: "Games",
+          tags: ["Education", "Games"],
+          description: "AI-powered quiz generation platform with automated question creation and intelligent quiz management.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "quizzity-ai-powered-quiz-generator",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "GameComplex-Games Buy and Sell, Subscription & Gift Card",
+          category: "Games",
+          tags: ["Games"],
+          description: "Complete gaming marketplace for buying, selling games, managing subscriptions, and gift card systems.",
+          status: "New",
+          price: "$1,000 – $1,750",
+          slug: "gamecomplex-games-buy-sell-subscription-gift-card",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Aviator – Real Money Aviator Game",
+          category: "Games",
+          tags: ["Fantasy", "Games"],
+          description: "Real money aviator game with betting features, multiplayer gameplay, and advanced gaming mechanics.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "aviator-real-money-aviator-game",
+          image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Color IQ – Real Money Colour Predication Game",
+          category: "Games",
+          tags: ["Fantasy", "Games"],
+          description: "Color prediction game with real money betting, advanced prediction algorithms, and engaging gameplay.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "color-iq-real-money-colour-predication-game",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Quizoid – Real Money Quiz Game/App with Admin Panel",
+          category: "Games",
+          tags: ["Education", "Games"],
+          description: "Advanced quiz game application with real money rewards, comprehensive admin panel, and user management.",
+          status: "New",
+          price: "$625 – $1,250",
+          slug: "quizoid-real-money-quiz-game-app-admin-panel",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Byte Lottery – Live Online Lottery Application with MLM",
+          category: "Games",
+          tags: ["Fantasy", "Games"],
+          description: "Complete online lottery platform with MLM features, live draws, and comprehensive lottery management system.",
+          status: "New",
+          price: "$750 – $1,375",
+          slug: "byte-lottery-live-online-lottery-application-mlm",
+          image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/entertainment') {
+      return [
+        {
+          title: "Juqe – Adult Video Platform",
+          category: "Entertainment",
+          tags: ["Entertainment"],
+          description: "Comprehensive adult video platform with advanced features for content creators and viewers with secure payment processing.",
+          status: "67 Sales",
+          price: "$625 – $1,250",
+          slug: "juqe-adult-video-platform",
+          image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Tokito – Android & iOS media app for creating and sharing short videos – Tiktok, Moj Clone",
+          category: "Entertainment",
+          tags: ["Entertainment", "Social Media", "Mobile Apps"],
+          description: "Complete TikTok and Moj clone with Android and iOS apps for creating, editing, and sharing short videos with social features.",
+          status: "66 Sales",
+          price: "$625 – $1,375",
+          slug: "tokito-android-ios-media-app-creating-sharing-short-videos-tiktok-moj-clone",
+          image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Nexagram – Instagram Clone – Image & Photo Sharing Social Network Platform",
+          category: "Entertainment",
+          tags: ["Entertainment", "Social"],
+          description: "Complete Instagram clone with image and photo sharing capabilities, stories, reels, and social networking features.",
+          status: "38 Sales",
+          price: "$750 – $1,500",
+          slug: "nexagram-instagram-clone-image-photo-sharing-social-network-platform",
+          image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Janoo – Dating Platform like Tinder/Badoo",
+          category: "Entertainment",
+          tags: ["Dating", "Entertainment", "Social"],
+          description: "Modern dating platform similar to Tinder and Badoo with advanced matching algorithms and social features.",
+          status: "11 Sales",
+          price: "$625 – $1,250",
+          slug: "janoo-dating-platform-like-tinder-badoo",
+          image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "BubbleJug – Tiktok Clone – Short Video App Live streaming App Complete Solution",
+          category: "Entertainment",
+          tags: ["Entertainment", "Social"],
+          description: "Complete TikTok clone with short video creation, live streaming capabilities, and comprehensive social features.",
+          status: "New",
+          price: "$750 – $1,500",
+          slug: "bubblejug-tiktok-clone-short-video-app-live-streaming-app-complete-solution",
+          image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "PixelPear OTT Platform – Netflix Clone – Live TV & Movie Portal with Android app",
+          category: "Entertainment",
+          tags: ["Entertainment", "Social"],
+          description: "Complete Netflix clone with live TV streaming, movie portal, and dedicated Android application for entertainment content.",
+          status: "New",
+          price: "$750 – $1,500",
+          slug: "pixelpear-ott-platform-netflix-clone-live-tv-movie-portal-android-app",
+          image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/education') {
+      return [
+        {
+          title: "School Silo – Multi-School Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Comprehensive multi-school management system with advanced features for managing multiple educational institutions from a single platform.",
+          status: "89 Sales",
+          price: "$625 – $1,250",
+          slug: "school-silo-multi-school-management-system",
+          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "SkillSly – Ultimate eLearning Website",
+          category: "Education",
+          tags: ["eCommerce", "Education"],
+          description: "Comprehensive eLearning platform with course management, student tracking, and educational content delivery.",
+          status: "82 Sales",
+          price: "$500 – $1,125",
+          slug: "skillsly-ultimate-elearning-website",
+          image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Hostelstead – Hostel/Room Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Complete hostel and room management system for educational institutions with booking, payment, and maintenance features.",
+          status: "76 Sales",
+          price: "$625 – $1,250",
+          slug: "hostelstead-hostel-room-management-system",
+          image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Libraxo – Library Management System with Website",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Advanced library management system with integrated website for book cataloging, borrowing, and digital resource management.",
+          status: "73 Sales",
+          price: "$625 – $1,250",
+          slug: "libraxo-library-management-system-website",
+          image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Skillbuzz – Udemy Clone – Online Courses and Learning Management System",
+          category: "Education",
+          tags: ["eCommerce", "Education"],
+          description: "Complete Udemy clone with online course management, instructor dashboard, and learning management system.",
+          status: "72 Sales",
+          price: "$750 – $1,500",
+          slug: "skillbuzz-udemy-clone-online-courses-learning-management-system",
+          image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "QuizMatics – Real Money Quiz Game/App",
+          category: "Education",
+          tags: ["Education", "Games"],
+          description: "Interactive quiz game application with real money rewards, educational content, and gamified learning experience.",
+          status: "71 Sales",
+          price: "$625 – $1,250",
+          slug: "quizmatics-real-money-quiz-game-app",
+          image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "SchoolRoster – School Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Comprehensive school management system with student enrollment, academic tracking, and administrative tools.",
+          status: "69 Sales",
+          price: "$625 – $1,000",
+          slug: "schoolroster-school-management-system",
+          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Result Wizard – Result Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Advanced result management system for educational institutions with grade calculation, report generation, and analytics.",
+          status: "68 Sales",
+          price: "$625 – $1,000",
+          slug: "result-wizard-result-management-system",
+          image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "SchoolSector- School Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Complete school management system with student information, academic records, and administrative functionality.",
+          status: "62 Sales",
+          price: "$625 – $1,250",
+          slug: "schoolsector-school-management-system",
+          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "School Penguin – School Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "User-friendly school management system with intuitive interface for managing students, teachers, and academic activities.",
+          status: "56 Sales",
+          price: "$625 – $1,250",
+          slug: "school-penguin-school-management-system",
+          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Letster – Hostel Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Specialized hostel management system for educational institutions with room allocation, maintenance tracking, and resident management.",
+          status: "24 Sales",
+          price: "$625 – $1,250",
+          slug: "letster-hostel-management-system",
+          image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "SchoolNerd – School Management System",
+          category: "Education",
+          tags: ["Education", "ERP & CRM"],
+          description: "Comprehensive school management system designed for modern educational institutions with advanced features and analytics.",
+          status: "11 Sales",
+          price: "$625 – $1,250",
+          slug: "schoolnerd-school-management-system",
+          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    if (route === '/ecommerce') {
+      return [
+        {
+          title: "Grocery Space – Grocery Multi-Store with Customer, Store and Driver apps – BigBasket Clone",
+          category: "eCommerce",
+          tags: ["eCommerce", "Grocery"],
+          description: "Complete grocery delivery platform with customer, store, and driver apps - BigBasket clone with multi-store management capabilities.",
+          status: "120 Sales",
+          price: "$1,125 – $1,875",
+          slug: "grocery-space-grocery-multi-store-customer-store-driver-apps-bigbasket-clone",
+          image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Buyyu – Fashion & Lifestyle eCommerce Platform with Mobileapp",
+          category: "eCommerce",
+          tags: ["eCommerce"],
+          description: "Comprehensive fashion and lifestyle eCommerce platform with mobile app support for modern retail businesses.",
+          status: "95 Sales",
+          price: "$750 – $1,500",
+          slug: "buyyu-fashion-lifestyle-ecommerce-platform-mobileapp",
+          image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Bunnypay – Complete eCommerce",
+          category: "eCommerce",
+          tags: ["eCommerce"],
+          description: "Complete eCommerce solution with comprehensive features for online retail businesses.",
+          status: "90 Sales",
+          price: "$625 – $1,250",
+          slug: "bunnypay-complete-ecommerce",
+          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "SkillSly – Ultimate eLearning Website",
+          category: "eCommerce",
+          tags: ["eCommerce", "Education"],
+          description: "Comprehensive eLearning platform with course management, student tracking, and educational content delivery.",
+          status: "82 Sales",
+          price: "$500 – $1,125",
+          slug: "skillsly-ultimate-elearning-website",
+          image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Skillbuzz – Udemy Clone – Online Courses and Learning Management System",
+          category: "eCommerce",
+          tags: ["eCommerce", "Education"],
+          description: "Complete Udemy clone with online course management, instructor dashboard, and learning management system.",
+          status: "72 Sales",
+          price: "$750 – $1,500",
+          slug: "skillbuzz-udemy-clone-online-courses-learning-management-system",
+          image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Bona Kart: Multi-Vendor eCommerce Platform with Android & iOS app",
+          category: "eCommerce",
+          tags: ["eCommerce"],
+          description: "Advanced multi-vendor eCommerce platform with dedicated Android and iOS applications for vendors and customers.",
+          status: "67 Sales",
+          price: "$750 – $1,500",
+          slug: "bona-kart-multi-vendor-ecommerce-platform-android-ios-app",
+          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "City Listing – Classified Ads Website and Mobile app – OLX, Quikr, Craigslist Clone",
+          category: "eCommerce",
+          tags: ["Directory", "eCommerce"],
+          description: "A comprehensive classified ads platform similar to OLX, Quikr, and Craigslist with website and mobile app functionality for buying and selling various items.",
+          status: "66 Sales",
+          price: "$875 – $1,125",
+          slug: "city-listing-classified-ads-website-mobile-app-olx-quikr-craigslist-clone",
+          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Farm Grocery- Ecommerce for Grocery, Food, Pharmacy with Android Apps",
+          category: "eCommerce",
+          tags: ["eCommerce", "Grocery"],
+          description: "Complete grocery eCommerce platform for food, pharmacy, and grocery items with dedicated Android applications.",
+          status: "59 Sales",
+          price: "$1,125 – $1,375",
+          slug: "farm-grocery-ecommerce-grocery-food-pharmacy-android-apps",
+          image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Urban Better – Home Services, Business Listing, Handyman Booking App",
+          category: "eCommerce",
+          tags: ["Directory", "eCommerce"],
+          description: "Complete home services platform with business listings and handyman booking functionality for various home improvement services.",
+          status: "30 Sales",
+          price: "$700 – $1,875",
+          slug: "urban-better-home-services-business-listing-handyman-booking-app",
+          image: "https://images.unsplash.com/photo-1581578731548-c6d0f3e4e94f?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Binnic – Business Suite",
+          category: "eCommerce",
+          tags: ["Directory", "eCommerce"],
+          description: "Comprehensive business suite platform providing directory services and eCommerce solutions for businesses of all sizes.",
+          status: "25 Sales",
+          price: "$625 – $1,250",
+          slug: "binnic-business-suite",
+          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Printoasis – Online Custom Printing Services eCommerce",
+          category: "eCommerce",
+          tags: ["eCommerce"],
+          description: "Specialized eCommerce platform for custom printing services with online ordering and design tools.",
+          status: "25 Sales",
+          price: "$500 – $1,125",
+          slug: "printoasis-online-custom-printing-services-ecommerce",
+          image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop&crop=center"
+        },
+        {
+          title: "Food Desk – Restaurant Management Software with Website",
+          category: "eCommerce",
+          tags: ["eCommerce", "Restaurant"],
+          description: "Complete restaurant management software with integrated website for food ordering and restaurant operations.",
+          status: "23 Sales",
+          price: "$625 – $1,250",
+          slug: "food-desk-restaurant-management-software-website",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+        }
+      ];
+    }
+    
+    // Default Directory projects (for /companies route)
+    return [
+      {
+        title: "City Listing – Classified Ads Website and Mobile app – OLX, Quikr, Craigslist Clone",
+        category: "Directory",
+        tags: ["Directory", "eCommerce"],
+        description: "A comprehensive classified ads platform similar to OLX, Quikr, and Craigslist with website and mobile app functionality for buying and selling various items.",
+        status: "66 Sales",
+        price: "$875 – $1,125",
+        slug: "city-listing-classified-ads-website-mobile-app-olx-quikr-craigslist-clone",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "Fantica – Premium Content Creators SaaS platform, Onlyfans Clone",
+        category: "Directory",
+        tags: ["Digital Marketing", "Directory", "SAAS", "Social"],
+        description: "Premium content creators SaaS platform similar to Onlyfans with subscription-based content monetization and creator management tools.",
+        status: "56 Sales",
+        price: "$625 – $1,250",
+        slug: "fantica-premium-content-creators-saas-platform-onlyfans-clone",
+        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "Carinian- Used Car Buy/Sell & Dealership Website & Apps",
+        category: "Directory",
+        tags: ["Automobile", "Directory"],
+        description: "A comprehensive platform for buying, selling, and managing used cars with dealership integration and mobile apps.",
+        status: "38 Sales",
+        price: "$625 – $1,125",
+        slug: "carinian-used-car-buy-sell-dealership-website-apps",
+        image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "Urban Better – Home Services, Business Listing, Handyman Booking App",
+        category: "Directory",
+        tags: ["Directory", "eCommerce"],
+        description: "Complete home services platform with business listings and handyman booking functionality for various home improvement services.",
+        status: "30 Sales",
+        price: "$700 – $1,875",
+        slug: "urban-better-home-services-business-listing-handyman-booking-app",
+        image: "https://images.unsplash.com/photo-1581578731548-c6d0f3e4e94f?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "Binnic – Business Suite",
+        category: "Directory",
+        tags: ["Directory", "eCommerce"],
+        description: "Comprehensive business suite platform providing directory services and eCommerce solutions for businesses of all sizes.",
+        status: "25 Sales",
+        price: "$625 – $1,250",
+        slug: "binnic-business-suite",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "Practova – Appointment Booking With Time-slot app – Practo clone",
+        category: "Directory",
+        tags: ["Directory", "HealthCare"],
+        description: "Healthcare appointment booking platform similar to Practo with time-slot management and healthcare provider directory.",
+        status: "11 Sales",
+        price: "$750 – $1,500",
+        slug: "practova-appointment-booking-time-slot-app-practo-clone",
+        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "CouponLife – Affiliate & Submitting Coupons Application",
+        category: "Directory",
+        tags: ["Directory", "eCommerce"],
+        description: "Affiliate marketing platform for coupon submission and management with comprehensive coupon directory and tracking system.",
+        status: "6 Sales",
+        price: "$625 – $1,250",
+        slug: "couponlife-affiliate-submitting-coupons-application",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "BookMyEvent – Ticket Sales and Event Booking & Management System with Website & Web Panels (SaaS)",
+        category: "Directory",
+        tags: ["Directory", "SAAS", "Social"],
+        description: "Complete event management SaaS platform with ticket sales, event booking, and comprehensive management system with web panels.",
+        status: "4 Sales",
+        price: "$625 – $1,250",
+        slug: "bookmyevent-ticket-sales-event-booking-management-system-website-web-panels-saas",
+        image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "Event Arena- Event Ticket Booking System",
+        category: "Directory",
+        tags: ["Directory", "SAAS", "Social"],
+        description: "Professional event ticket booking system with comprehensive event management and ticketing solutions.",
+        status: "New",
+        price: "$625 – $1,250",
+        slug: "event-arena-event-ticket-booking-system",
+        image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "Influencer Mafia- Influencer Marketing Platform",
+        category: "Directory",
+        tags: ["Directory"],
+        description: "Comprehensive influencer marketing platform connecting brands with influencers for effective marketing campaigns.",
+        status: "New",
+        price: "$750 – $1,000",
+        slug: "influencer-mafia-influencer-marketing-platform",
+        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "MetaGrit- Metamask Based Freelancing Platform",
+        category: "Directory",
+        tags: ["Directory"],
+        description: "Blockchain-based freelancing platform integrated with Metamask for secure payments and decentralized freelancer marketplace.",
+        status: "New",
+        price: "$750 – $1,000",
+        slug: "metagrit-metamask-based-freelancing-platform",
+        image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop&crop=center"
+      },
+      {
+        title: "FreelanceIQ- Freelancer Marketplace Platform",
+        category: "Directory",
+        tags: ["Directory"],
+        description: "Professional freelancer marketplace platform connecting clients with skilled freelancers across various industries.",
+        status: "New",
+        price: "$750 – $1,000",
+        slug: "freelanceiq-freelancer-marketplace-platform",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+      }
+    ];
+  };
+
+  const projects = getProjectsForRoute(path);
 
   return (
     <section className="py-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} navigate={navigate} />
+            <ProjectCard key={index} project={project} index={index} navigate={navigate} currentPath={path} />
           ))}
         </div>
       </div>
@@ -199,9 +1414,9 @@ function ProjectsGrid() {
 
 /* ---------------- Project Card ---------------- */
 
-function ProjectCard({ project, index, navigate }) {
+function ProjectCard({ project, index, navigate, currentPath }) {
   const handleCardClick = () => {
-    navigate(`/companies/${project.slug}`);
+    navigate(`${currentPath}/${project.slug}`);
   };
 
   return (
@@ -215,7 +1430,7 @@ function ProjectCard({ project, index, navigate }) {
         {/* Project Image */}
         <div className="w-full h-32 rounded-lg overflow-hidden">
           <img 
-            src={`https://picsum.photos/400/200?random=${index + 40}`}
+            src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
           />
@@ -246,25 +1461,16 @@ function ProjectCard({ project, index, navigate }) {
           {project.description}
         </p>
         
-        {/* Company Stats */}
-        <div className="grid grid-cols-2 gap-2 mb-4 text-xs">
-          <div className="text-gray-400">
-            <span className="font-semibold">Established:</span> {project.established}
-          </div>
-          <div className="text-gray-400">
-            <span className="font-semibold">Employees:</span> {project.employees}
-          </div>
-          <div className="text-gray-400">
-            <span className="font-semibold">Sales:</span> {project.sales}
-          </div>
-          <div className="text-gray-400">
-            <span className="font-semibold">Location:</span> {project.location}
-          </div>
-        </div>
-        
-        {/* Price */}
-        <div className="text-orange-400 text-lg font-bold">
+        {/* Status and Price */}
+        <div className="flex justify-between items-center">
+          <div className="text-white text-sm font-medium">
           {project.status}
+          </div>
+          {project.price && (
+            <div className="text-orange-400 text-sm font-bold">
+              {project.price}
+          </div>
+          )}
         </div>
       </div>
     </div>
