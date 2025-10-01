@@ -1,5 +1,5 @@
 // src/components/StickyStack3.jsx
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -9,15 +9,15 @@ export default function StickyStack3({
   // palette: tumhare global colors ke mutabiq
   // Theme colors palette
   colors = {
-    ink: "#e0550d", // background
+    ink: "#034159", // Dark Teal background
     text: "#ffffff", // text - white
     sub: "rgba(255,255,255,0.82)", // white with opacity
-    dark: "#6b2f0a", // darker brown
-    mid: "#c85013", // primary
-    blue: "#c85013", // primary (reusing for accents)
-    border: "rgba(200,80,19,0.30)", // primary with opacity
-    borderSoft: "rgba(200,80,19,0.30)", // primary with opacity
-    veil: "rgba(200,80,19,0.50)", // primary with opacity
+    dark: "#025951", // Dark Green
+    mid: "#02735E", // Teal Green
+    blue: "#0CF25D", // Bright Green
+    border: "rgba(12,242,93,0.30)", // Bright Green with opacity
+    borderSoft: "rgba(12,242,93,0.30)", // Bright Green with opacity
+    veil: "rgba(12,242,93,0.50)", // Bright Green with opacity
   },
 }) {
   const sectionRef = useRef(null);
@@ -91,7 +91,7 @@ export default function StickyStack3({
         .circle-clip{ -webkit-clip-path:circle(50% at 50% 50%); clip-path:circle(50% at 50% 50%) }
         .half-tint::after{
           content:""; position:absolute; inset:0;
-          background: linear-gradient(90deg, rgba(200,80,19,.55) 0%, rgba(200,80,19,0) 52%);
+          background: linear-gradient(90deg, rgba(12,242,93,.55) 0%, rgba(12,242,93,0) 52%);
           mix-blend-mode: screen; pointer-events:none;
         }
         @keyframes wheel { 0%{ transform: translateY(0); opacity:.85 } 100%{ transform: translateY(10px); opacity:.25 } }
@@ -238,7 +238,7 @@ function ExploreLayer({ colors }) {
             {/* stat card */}
             <div
               className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[62%] min-w-[260px] rounded-2xl p-6 sm:p-8 shadow-[0_30px_80px_-28px_rgba(0,0,0,.35)]"
-              style={{ background: "#6b2f0a", border: `1px solid ${colors.border}` }}
+              style={{ background: colors.dark, border: `1px solid ${colors.border}` }}
             >
               <div className="text-2xl" style={{ color: colors.blue }}>”</div>
               <p className="mt-3 text-sm sm:text-base" style={{ color: colors.sub }}>
@@ -264,24 +264,35 @@ function ExploreLayer({ colors }) {
 /* ----------------------- LAYER 3: CLOSER ----------------------- */
 function CloserLayer({ colors }) {
   return (
-    <div className="h-full w-full" style={{ background: "#000000" }}>
-      <div className="mx-auto flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 text-center">
+    <div className="h-full w-full bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 via-transparent to-teal-600/5"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-teal-500/10 via-transparent to-teal-600/10"></div>
+      
+      {/* Floating Particles */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-teal-500/30 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-3 h-3 bg-teal-400/40 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-40 left-20 w-1 h-1 bg-teal-600/50 rounded-full animate-pulse delay-2000"></div>
+        <div className="absolute bottom-20 right-10 w-2 h-2 bg-teal-500/30 rounded-full animate-pulse delay-500"></div>
+      </div>
+      <div className="mx-auto flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 text-center relative z-10">
         <h2
           className="font-black tracking-tight text-[12vw] sm:text-[10vw] lg:text-[6vw]"
           style={{ color: colors.text }}
         >
-          PIXEL BY PIXEL
+          WE CREATE MAGIC
         </h2>
 
         <div className="mt-10">
           <div className="grid place-items-center">
             <div
               className="h-24 w-16 rounded-full grid place-items-center"
-              style={{ border: "4px solid rgba(200,80,19,.7)" }}
+              style={{ border: "4px solid rgba(12,242,93,.7)" }}
             >
               <div
                 className="h-6 w-1.5 rounded-full"
-                style={{ background: "rgba(200,80,19,.85)", animation: "wheel 1s ease-in-out infinite alternate" }}
+                style={{ background: "rgba(12,242,93,.85)", animation: "wheel 1s ease-in-out infinite alternate" }}
               />
             </div>
           </div>

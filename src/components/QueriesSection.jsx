@@ -6,15 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* ——— Theme Palette ——— */
 const PALETTE = {
-  INK: "#e0550d", // background
-  INK_SOFT: "rgba(158,63,14,.65)", // background with opacity
+  INK: "#0f4c75", // background - Dark Teal
+  INK_SOFT: "rgba(15,76,117,.65)", // background with opacity
   SHEEN: "#ffffff", // white text
-  CYAN: "#c85013", // primary orange
-  CYAN_DARK: "#8b380d", // text brown
-  PURPLE: "#c85013", // primary orange
+  CYAN: "#00d4aa", // primary - Bright Green
+  CYAN_DARK: "#0f4c75", // text - Dark Teal
+  PURPLE: "#00d4aa", // primary - Bright Green
   CARD: "rgba(255,255,255,.06)",
   CARD_BORDER: "rgba(255,255,255,.14)",
-  CARD_BORDER_HOVER: "rgba(200,80,19,.55)", // primary with opacity
+  CARD_BORDER_HOVER: "rgba(0,212,170,.55)", // primary with opacity
   WHITE: "#ffffff",
   MUTED: "rgba(255,255,255,.7)", // white with opacity
 };
@@ -110,7 +110,7 @@ export default function QueriesSection() {
       style={{
         // soft radial vignette for depth on dark bg
         background:
-          "radial-gradient(1200px 600px at 10% -10%, rgba(200,80,19,.08), transparent 50%), radial-gradient(1000px 600px at 110% -20%, rgba(200,80,19,.08), transparent 50%)",
+          "radial-gradient(1200px 600px at 10% -10%, rgba(0,212,170,.08), transparent 50%), radial-gradient(1000px 600px at 110% -20%, rgba(0,212,170,.08), transparent 50%)",
       }}
     >
       <div className="relative z-10 mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12">
@@ -266,10 +266,10 @@ export default function QueriesSection() {
           </form>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 opacity-90">
-            <img src="public/svg/linkedin-box-line.svg" alt="ISO" className="h-8" />
-            <img src="public/svg/facebook-circle-fill.svg" alt="AWS" className="h-8" />
-            <img src="public/svg/instagram-line.svg" alt="CMMI" className="h-6" />
-            <img src="public/svg/twitter-x-line.svg" alt="CMMI" className="h-6" />
+            <img src="public/svg/linkedin-box-line.svg" alt="LinkedIn" className="h-8 social-icon" />
+            <img src="public/svg/facebook-circle-fill.svg" alt="Facebook" className="h-8 social-icon" />
+            <img src="public/svg/instagram-line.svg" alt="Instagram" className="h-6 social-icon" />
+            <img src="public/svg/twitter-x-line.svg" alt="X (Twitter)" className="h-6 social-icon" />
           </div>
         </div>
       </div>
@@ -338,6 +338,15 @@ export default function QueriesSection() {
           box-shadow: 0 18px 42px -16px ${PALETTE.CYAN};
         }
         .btn-primary:active{ transform: translateY(1px) }
+
+        .social-icon{
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          transition: filter 0.3s ease, transform 0.2s ease;
+        }
+        .social-icon:hover{
+          filter: brightness(0) saturate(100%) invert(67%) sepia(100%) saturate(1000%) hue-rotate(120deg) brightness(100%) contrast(100%);
+          transform: scale(1.1);
+        }
       `}</style>
     </section>
   );

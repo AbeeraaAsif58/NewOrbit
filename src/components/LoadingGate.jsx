@@ -7,12 +7,12 @@ export default function LoadingGate({
   logoSrc = "",
   onDone,
   colors = {
-    ink: "#e0550d",                 // theme background
+    ink: "#034159",                 // Dark Teal background
     text: "#ffffff",                // white text
     textSoft: "rgba(255,255,255,.85)", // white with opacity
-    dark: "#6b2f0a", // darker brown
-    mid: "#c85013", // primary orange
-    blue: "#c85013", // primary orange
+    dark: "#025951", // Dark Green
+    mid: "#02735E", // Teal Green
+    blue: "#0CF25D", // Bright Green
     cyan: "#ffffff", // white
   },
 }) {
@@ -95,8 +95,8 @@ export default function LoadingGate({
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            `radial-gradient(ellipse at 30% 20%, rgba(200,80,19,.15), transparent 55%),
-             radial-gradient(ellipse at 70% 80%, rgba(200,80,19,.12), transparent 60%)`,
+            `radial-gradient(ellipse at 30% 20%, rgba(12,242,93,.15), transparent 55%),
+             radial-gradient(ellipse at 70% 80%, rgba(12,242,93,.12), transparent 60%)`,
         }}
       />
 
@@ -128,7 +128,7 @@ export default function LoadingGate({
             boxShadow:
               `inset 0 0 0 2px rgba(255,255,255,0.10),
                0 0 26px rgba(255,255,255,0.12),
-               0 0 70px rgba(200,80,19,0.14)`,
+               0 0 70px rgba(12,242,93,0.14)`,
             maskImage: "radial-gradient(circle at center, black 63%, transparent 64%)",
             WebkitMaskImage: "radial-gradient(circle at center, black 63%, transparent 64%)",
           }}
@@ -160,7 +160,7 @@ export default function LoadingGate({
             0
           </p>
         </div>
-        <div className="h-1.5 w-full rounded-full overflow-hidden" style={{ background: "rgba(200,80,19,.25)" }}>
+        <div className="h-1.5 w-full rounded-full overflow-hidden" style={{ background: "rgba(12,242,93,.25)" }}>
           <div
             ref={barRef}
             className="h-full w-0 rounded-full"

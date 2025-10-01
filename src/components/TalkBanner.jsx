@@ -1,5 +1,5 @@
 // src/components/TalkBanner.jsx
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 // Utility: split a node's text into <span class="char"> elements
@@ -19,9 +19,9 @@ function splitChars(el) {
 
 export default function TalkBanner({
   email = "hello@example.com",
-  bg = "#e0550d",      // theme background color
+  bg = "#034159",      // Dark Teal background
   textColor = "#ffffff", // theme text color (white)
-  subColor = "#c85013", // theme primary color for email
+  subColor = "#0CF25D", // Bright Green for email
 }) {
   const root = useRef(null);
   const line1Ref = useRef(null);
@@ -29,6 +29,7 @@ export default function TalkBanner({
   const helloRef = useRef(null);
   const emailRef = useRef(null);
   const tlRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const rootEl = root.current;
@@ -120,13 +121,33 @@ export default function TalkBanner({
       <div className="text-center leading-[0.9] font-extrabold uppercase select-none px-4">
         <h1
           ref={line1Ref}
-          className="text-[clamp(40px,10vw,180px)] tracking-tight cursor-pointer"
+          className="text-[clamp(40px,10vw,180px)] tracking-tight cursor-pointer transition-all duration-300"
+          style={{
+            textShadow: isHovered 
+              ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
+              : '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)',
+            filter: isHovered 
+              ? 'drop-shadow(0 0 30px rgba(12,242,93,0.8))'
+              : 'drop-shadow(0 0 20px rgba(12,242,93,0.6))'
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          LET’S TALK
+          LET'S TALK
         </h1>
         <h2
           ref={line2Ref}
-          className="text-[clamp(40px,10vw,180px)] tracking-tight cursor-pointer"
+          className="text-[clamp(40px,10vw,180px)] tracking-tight cursor-pointer transition-all duration-300"
+          style={{
+            textShadow: isHovered 
+              ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
+              : '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)',
+            filter: isHovered 
+              ? 'drop-shadow(0 0 30px rgba(12,242,93,0.8))'
+              : 'drop-shadow(0 0 20px rgba(12,242,93,0.6))'
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           WITH US
         </h2>
@@ -136,8 +157,12 @@ export default function TalkBanner({
       <a
         ref={emailRef}
         href={`mailto:${email}`}
-        style={{ color: subColor }}
-        className="mt-10 text-[clamp(18px,2.5vw,44px)] font-medium tracking-wide hover:opacity-90 transition"
+        style={{ 
+          color: subColor,
+          textShadow: '0 0 15px rgba(12,242,93,0.5), 0 0 30px rgba(12,242,93,0.3)',
+          filter: 'drop-shadow(0 0 15px rgba(12,242,93,0.5))'
+        }}
+        className="mt-10 text-[clamp(18px,2.5vw,44px)] font-medium tracking-wide hover:opacity-90 transition-all duration-300 hover:scale-105"
       >
         {email}
       </a>

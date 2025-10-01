@@ -56,7 +56,7 @@ export default function FooterOrbitMoonTech() {
       className="relative z-[100] w-full text-white mb-0"
       style={{
         background:
-          "linear-gradient(180deg, #e0550d 0%, #e0550d 20%, #6b2f0a 100%)",
+          "linear-gradient(180deg, #034159 0%, #025951 20%, #02735E 100%)",
       }}
     >
       <div className="mx-auto max-w-7xl px-6 pt-12 pb-6">

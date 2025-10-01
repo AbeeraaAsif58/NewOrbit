@@ -43,9 +43,9 @@ export default function ArcCarousel({
   backdrop = false,
 }) {
   const PALETTE = {
-    MIDNIGHT: "#6b2f0a", // darker brown
-    BLUEGRAY: "#c85013", // primary orange
-    DARK: "#e0550d", // background brown
+    MIDNIGHT: "#0f4c75", // Dark Teal
+    BLUEGRAY: "#1a5f7a", // Medium Teal
+    DARK: "#2a7c8a", // Light Teal
     BABY: "#ffffff", // white text
     WHITE: "#ffffff",
   };
@@ -396,7 +396,7 @@ export default function ArcCarousel({
               />
               <div
                 className="absolute inset-[1.5px] rounded-[24px]"
-                style={{ background: "rgba(158,63,14,0.88)" }} // theme background with alpha
+                style={{ background: "rgba(15,76,117,0.88)" }} // theme background with alpha
               />
             </div>
 
@@ -483,9 +483,13 @@ export default function ArcCarousel({
             onClick={() => setIndex(i)}
             className={`h-2.5 rounded-full transition-all ${
               i === index
-                ? "w-8 bg-orange-500"
+                ? "w-8"
                 : "w-2.5 bg-white/60 hover:bg-white/80"
             }`}
+            style={i === index ? { 
+              background: `linear-gradient(90deg, ${PALETTE.BLUEGRAY}, ${PALETTE.MIDNIGHT})`,
+              width: "2rem"
+            } : {}}
             aria-label={`Go to slide ${i + 1}`}
           />
         ))}
@@ -498,7 +502,11 @@ export default function ArcCarousel({
         aria-label="Previous"
       >
         <div
-          className="size-11 md:size-12 rounded-full bg-orange-500 font-semibold grid place-items-center shadow-lg ring-1 ring-orange-400/40 group-active:scale-95 transition text-white"
+          className="size-11 md:size-12 rounded-full font-semibold grid place-items-center shadow-lg ring-1 ring-teal-400/40 group-active:scale-95 transition text-white"
+          style={{ 
+            background: `linear-gradient(135deg, ${PALETTE.BLUEGRAY}, ${PALETTE.MIDNIGHT})`,
+            border: `1px solid ${PALETTE.BLUEGRAY}`
+          }}
         >
           ←
         </div>
@@ -509,7 +517,11 @@ export default function ArcCarousel({
         aria-label="Next"
       >
         <div
-          className="size-11 md:size-12 rounded-full bg-orange-500 font-semibold grid place-items-center shadow-lg ring-1 ring-orange-400/40 group-active:scale-95 transition text-white"
+          className="size-11 md:size-12 rounded-full font-semibold grid place-items-center shadow-lg ring-1 ring-teal-400/40 group-active:scale-95 transition text-white"
+          style={{ 
+            background: `linear-gradient(135deg, ${PALETTE.BLUEGRAY}, ${PALETTE.MIDNIGHT})`,
+            border: `1px solid ${PALETTE.BLUEGRAY}`
+          }}
         >
           →
         </div>

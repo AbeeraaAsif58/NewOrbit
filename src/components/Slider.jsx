@@ -57,6 +57,7 @@ export default function GalleryMarquee({
   rightImages = RIGHT_IMGS,
 }) {
   const { gap, w: itemWidth, h: itemHeight, speedLeft, speedRight } = useResponsiveSizes();
+  const [isHovered, setIsHovered] = useState(false);
 
   const rootRef = useRef(null);
   const leftRef = useRef(null);
@@ -171,8 +172,19 @@ export default function GalleryMarquee({
             text-[12vw] sm:text-[9vw] md:text-[7vw] lg:text-[6vw]
             leading-none font-extrabold
             drop-shadow-[0_6px_24px_rgba(0,0,0,.35)]
-            transition-transform duration-300 group-hover:scale-[1.02]
+            transition-all duration-300 group-hover:scale-[1.02]
+            cursor-pointer
           "
+          style={{
+            textShadow: isHovered 
+              ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
+              : '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)',
+            filter: isHovered 
+              ? 'drop-shadow(0 0 30px rgba(12,242,93,0.8))'
+              : 'drop-shadow(0 0 20px rgba(12,242,93,0.6))'
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           INTRODUCTION
           <span className="heading-shine" aria-hidden />
@@ -182,8 +194,20 @@ export default function GalleryMarquee({
           <div className="h-full w-0 bg-primary/70 transition-all duration-500 group-hover:w-full" />
         </div>
 
-        <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed">
-          orbits walls Projects Circle
+        <p 
+          className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed cursor-pointer transition-all duration-300"
+          style={{
+            textShadow: isHovered 
+              ? '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)'
+              : '0 0 10px rgba(12,242,93,0.4), 0 0 20px rgba(12,242,93,0.2), 0 0 30px rgba(12,242,93,0.1)',
+            filter: isHovered 
+              ? 'drop-shadow(0 0 20px rgba(12,242,93,0.6))'
+              : 'drop-shadow(0 0 10px rgba(12,242,93,0.4))'
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          orbits walls Projects Circle Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero, dolorum eaque atque temporibus unde delectus perferendis! Sapiente, tenetur corporis? Accusantium aliquid sunt iste dolores placeat? Ipsum enim libero officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quae voluptates molestias, magni excepturi doloremque ducimus tempore possimus repudiandae aliquam voluptatem quidem exercitationem nam enim, blanditiis dignissimos ipsam quas placeat.?
         </p>
       </div>
 

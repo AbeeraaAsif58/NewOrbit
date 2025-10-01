@@ -12,12 +12,20 @@ export default {
         secondary: {
         DEFAULT: "var(--color-secondary)", // Secondary dark color
         },
+        // New Green/Teal Theme Colors
+        teal: {
+          900: "#034159",   // Dark Teal
+          800: "#025951",   // Dark Green
+          700: "#02735E",   // Teal Green
+          600: "#038C3E",   // Medium Green
+          500: "#0CF25D",   // Bright Green
+        },
         // Legacy colors (keeping for compatibility)
         night: {
           900: "#0B0F19",   // deep navy black
           800: "#121826",   // lighter navy
         },
-        accent:  { DEFAULT: "#f5c669" },     // warm gold
+        accent:  { DEFAULT: "#0CF25D" },     // bright green accent
       },
       boxShadow: {
         glow: "0 0 60px 10px rgba(138,123,255,0.25)",
@@ -27,8 +35,8 @@ export default {
           "radial-gradient(120% 120% at 50% 15%, #0b1020 0%, #070a15 60%, #05070f 100%)",
       },
       fontFamily: {
-        display: ["'Playfair Display'", "serif"], // headings
-        sans: ["Inter", "ui-sans-serif", "system-ui"],
+        display: ["Poppins", "sans-serif"], // headings
+        sans: ["Poppins", "ui-sans-serif", "system-ui"],
       },
     },
   },
