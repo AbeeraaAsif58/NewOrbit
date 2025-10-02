@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Navigation from '../components/Navigation';
 import TalkBanner from '../components/TalkBanner';
 import Marquee from '../components/Marquee';
+import FooterOrbitMoonTech from '../components/FooterOrbit';
 import { motion, useInView } from 'framer-motion';
 
 function useCounter(target, start = 0, durationMs = 1600, when = true) {
@@ -669,6 +670,7 @@ const Services = () => {
       </section>
       
       <TalkBanner />
+      <FooterOrbitMoonTech />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TalkBanner from "../components/TalkBanner";
 import Marquee from "../components/Marquee";
+import FooterOrbitMoonTech from "../components/FooterOrbit";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
@@ -213,6 +214,7 @@ export default function Contact() {
         </div>
       </section>
         <TalkBanner/>
+        <FooterOrbitMoonTech/>
     </main>
   );
 }

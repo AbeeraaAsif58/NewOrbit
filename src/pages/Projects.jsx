@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TalkBanner from "../components/TalkBanner";
 import Marquee from "../components/Marquee";
-import ProjectsCard from "../components/ProjectCard"
+import ProjectsCard from "../components/ProjectCard";
+import FooterOrbitMoonTech from "../components/FooterOrbit";
 gsap.registerPlugin(ScrollTrigger);
 
 const Team = () => {
@@ -264,7 +265,8 @@ const Team = () => {
 
         </div>
       </div>
- <TalkBanner/>      
+ <TalkBanner/>
+ <FooterOrbitMoonTech/>      
     </div>
 
   );

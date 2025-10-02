@@ -37,7 +37,7 @@ export default function ArcCarousel({
   className = "",
   showCount = 5,
   autoplay = true,
-  interval = 2600,
+  interval = 4000, // Increased interval to reduce CPU load
   pauseOnHover = true,
   /** set true if you want the soft radial backdrop behind the slider */
   backdrop = false,
@@ -125,8 +125,8 @@ export default function ArcCarousel({
         rotateY: rotY,
         scale,
         opacity,
-        duration: 0.55,
-        ease: "power3.out",
+        duration: 0.35, // Reduced duration for better performance
+        ease: "power2.out", // Simpler easing
         transformPerspective: 1200,
         transformStyle: "preserve-3d",
         pointerEvents: depth <= span ? "auto" : "none",
@@ -135,6 +135,21 @@ export default function ArcCarousel({
       el.classList.toggle("is-center", depth === 0);
     }
   }, [index, gap, showCount, total]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      // Clear all GSAP animations
+      gsap.killTweensOf(cardRefs.current);
+      // Clear autoplay
+      if (autoRef.current) {
+        clearInterval(autoRef.current);
+      }
+      // Clear hover cleanups
+      hoverTiltCleanup.current.forEach(cleanup => cleanup());
+      hoverTiltCleanup.current.clear();
+    };
+  }, []);
 
   // Hover tilt + sparkles
   useEffect(() => {

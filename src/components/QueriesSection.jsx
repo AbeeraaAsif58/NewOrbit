@@ -20,11 +20,24 @@ const PALETTE = {
 };
 
 const faqs = [
-  { q: "Orbit Walls kis type ke projects leta hai?", a: "Frontend-heavy, motion-first websites/apps (React, GSAP, Three.js). Enterprise-grade performance aur pixel-perfect UI par focus." },
-  { q: "Timeline aur process kya hota hai?", a: "Discovery → Wireframes → Visual/Animation prototypes → Dev sprints → QA → Launch. Har phase ke end par demo." },
-  { q: "GSAP scroll animations SEO-friendly hoti hain?", a: "Haan—content DOM me rahta hai. Hum lazy motion + accessible markup use karte hain, LCP aur CLS par dhyan ke saath." },
-  { q: "Pricing model?", a: "Fixed-scope for landing pages, aur retainers/blocks for long-running products. Contact form bhejein—hum breakdown share karenge." },
+  { 
+    q: "What services does Orbit Walls LLC provide?", 
+    a: "We specialize in building front-end heavy, motion-first websites and applications using React, GSAP, and Three.js. Our focus is on delivering enterprise-grade performance with pixel-perfect user interfaces." 
+  },
+  { 
+    q: "What is your typical timeline and process?", 
+    a: "Our workflow follows a structured approach: Discovery → Wireframes → Visual & Animation Prototypes → Development Sprints → QA Testing → Launch. At the end of each phase, we provide a demo to ensure alignment." 
+  },
+  { 
+    q: "Who can benefit from your solutions?", 
+    a: "Our solutions are designed for businesses, startups, and enterprises that value high-quality, performance-driven digital experiences. We build accessible, SEO-friendly, and animation-rich platforms optimized for modern audiences." 
+  },
+  { 
+    q: "How does Orbit Walls LLC ensure quality?", 
+    a: "We maintain quality through fixed-scope packages for landing pages and long-term retainers for complex products. Each project undergoes rigorous testing, accessibility checks, and performance audits before launch." 
+  },
 ];
+
 
 export default function QueriesSection() {
   const root = useRef(null);

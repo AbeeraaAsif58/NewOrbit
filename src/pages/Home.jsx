@@ -133,7 +133,7 @@ useEffect(() => {
   return (
     <>
       <LoadingGate />
-      <BackgroundAI mode="scroll" nodeCount={140} linkDistance={140} cursorLinkDistance={190} />
+      <BackgroundAI mode="scroll" nodeCount={40} linkDistance={100} cursorLinkDistance={120} />
 
       <section
         ref={root}
@@ -141,9 +141,9 @@ useEffect(() => {
       >
         {/* Centered big heading that scales in and stays (no left/right) */}
         <div className="hero-head absolute top-[20%] h-[100vh] w-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-[6vw] font-bold text-center leading-tight">
-          <h1 className="hello">Elevate Your</h1>
+          <h1 className="hello">Beyond Walls</h1>
           <br />
-          <h1 className="hyisycis">Financial Future</h1>
+          <h1 className="hyisycis">Towards Innovation</h1>
         </div>
 
         {/* Starfield now provided globally in App.jsx */}
@@ -346,13 +346,11 @@ useEffect(() => {
             hover:bg-right hover:tracking-wider hover:scale-[1.02]
             drop-shadow-[0_0_14px_rgba(12,242,93,0.28)]"
             >
-            ORBIT WaLL'S<span className="text-white/90">SERVICES</span>
+            Redefining Innovation <span className="text-white/90">Through Advanced Technology</span>
           </span>
 
           <span className="mt-4 block text-text/70 text-lg text-center mx-auto max-w-6xl">
-            High-impact visuals, smooth interactions Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, recusandae accusamus sed temporibus, tenetur exercitationem expedita soluta dignissimos sint minima ea voluptatibus delectus ducimus ab laudantium doloremque deserunt nulla. Voluptas.
-            quibusdam, cum ut neque quis.
-            Deleniti maxime blanditiis, illum doloremque nulla recusandae laborum mollitia distinctio optio! Voluptatem unde quidem voluptates dolore nisi, qui illum ipsum magni nesciunt eaque quod fugiat perferendis doloremque eveniet cupiditate earum?.
+          Orbit Walls LLC, we believe that true innovation begins where technology and creativity meet. By harnessing the power of AI, automation, cloud computing, blockchain, and next-generation frameworks, we are redefining how businesses adopt and benefit from digital transformation. Our solutions go beyond functionality — they deliver scalability, performance, and long-term value. With a relentless focus on innovation, we empower organizations to stay ahead in a rapidly evolving digital world.
           </span>
         </h1>
       </div>

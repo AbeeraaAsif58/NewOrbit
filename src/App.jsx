@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import PerformanceMonitor from "./components/PerformanceMonitor";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -121,6 +122,9 @@ export default function App() {
             <Route path="/it-consultancy-agency" element={<ITConsultancyAgency />} />
           </Routes>
         </main>
+        
+        {/* Performance Monitor - only in development */}
+        <PerformanceMonitor enabled={process.env.NODE_ENV === 'development'} />
        
            {/* Global footer (once) */}
         {/* <FooterOrbit /> */}

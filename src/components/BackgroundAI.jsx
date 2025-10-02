@@ -1,11 +1,17 @@
 import React, { useEffect, useRef } from "react";
+import { getAdaptiveSettings } from "../utils/performance";
 
 export default function BackgroundAI({
-  nodeCount = 120,
-  linkDistance = 130,
-  cursorLinkDistance = 170,
+  nodeCount,
+  linkDistance,
+  cursorLinkDistance,
   mode = "fixed", // "fixed" | "scroll"
 }) {
+  // Use adaptive settings based on device capabilities
+  const settings = getAdaptiveSettings();
+  const finalNodeCount = nodeCount || settings.nodeCount;
+  const finalLinkDistance = linkDistance || settings.linkDistance;
+  const finalCursorLinkDistance = cursorLinkDistance || (settings.linkDistance + 20);
   const canvasRef = useRef(null);
   const rafRef = useRef(0);
 
@@ -13,7 +19,7 @@ export default function BackgroundAI({
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    const DPR = Math.max(1, Math.min(window.devicePixelRatio || 1, 2));
+    const DPR = Math.max(1, Math.min(window.devicePixelRatio || 1, 1.5)); // Reduced pixel ratio
     let w = 0, h = 0;
 
     const resize = () => {
@@ -30,7 +36,7 @@ export default function BackgroundAI({
     window.addEventListener("resize", resize);
 
     const rand = (a, b) => a + Math.random() * (b - a);
-    const nodes = Array.from({ length: nodeCount }).map(() => ({
+    const nodes = Array.from({ length: finalNodeCount }).map(() => ({
       x: Math.random() * w,
       y: Math.random() * h,
       vx: rand(-0.15, 0.15),
@@ -61,8 +67,15 @@ export default function BackgroundAI({
     const lerp = (a,b,t)=>a+(b-a)*t;
 
     let lastScrollY = window.scrollY;
+    let frameCount = 0;
 
     const tick = () => {
+      frameCount++;
+      // Throttle to 30fps instead of 60fps for better performance
+      if (frameCount % 2 !== 0) {
+        rafRef.current = requestAnimationFrame(tick);
+        return;
+      }
       cursor.x = lerp(cursor.x, cursor.tx, 0.15);
       cursor.y = lerp(cursor.y, cursor.ty, 0.15);
 
@@ -103,8 +116,8 @@ export default function BackgroundAI({
         const dx = cursor.x - n.x;
         const dy = cursor.y - n.y;
         const dist = Math.hypot(dx, dy);
-        if (dist < cursorLinkDistance) {
-          const force = (cursorLinkDistance - dist) / cursorLinkDistance;
+        if (dist < finalCursorLinkDistance) {
+          const force = (finalCursorLinkDistance - dist) / finalCursorLinkDistance;
           const pull = 0.08 * (0.4 + 0.6 * n.z) * force;
           n.x += dx * pull;
           n.y += dy * pull;
@@ -116,8 +129,8 @@ export default function BackgroundAI({
           const a = nodes[i], b = nodes[j];
           const dx = a.x - b.x, dy = a.y - b.y;
           const d = Math.hypot(dx, dy);
-          if (d < linkDistance) {
-            const op = clamp(1 - d / linkDistance, 0, 1) * (0.35 + 0.65 * (a.z + b.z) / 2);
+          if (d < finalLinkDistance) {
+            const op = clamp(1 - d / finalLinkDistance, 0, 1) * (0.35 + 0.65 * (a.z + b.z) / 2);
             const lw = 1 + 1.2 * op;
             ctx.strokeStyle = `${lineColor}${op})`;
             ctx.lineWidth = lw;
@@ -129,15 +142,13 @@ export default function BackgroundAI({
         }
       }
 
+      // Simplified node rendering without shadows for better performance
+      ctx.fillStyle = nodeColor;
       for (let n of nodes) {
         const size = 1.2 + n.z * 2.2;
         ctx.beginPath();
         ctx.arc(n.x, n.y, size, 0, Math.PI * 2);
-        ctx.fillStyle = nodeColor;
-        ctx.shadowBlur = 12 * n.z;
-        ctx.shadowColor = "rgba(12,242,93,0.6)"; // Bright Green shadow
         ctx.fill();
-        ctx.shadowBlur = 0;
       }
 
       const haloR = 80;
@@ -160,7 +171,7 @@ export default function BackgroundAI({
       window.removeEventListener("mousedown", onDown);
       window.removeEventListener("mouseup", onUp);
     };
-  }, [nodeCount, linkDistance, cursorLinkDistance, mode]);
+  }, [finalNodeCount, finalLinkDistance, finalCursorLinkDistance, mode]);
 
   // className changes by mode:
   const cls =

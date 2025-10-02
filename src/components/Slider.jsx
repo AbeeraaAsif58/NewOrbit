@@ -3,17 +3,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import SolarPoster from "./SolarPoster";
 
-/* ✅ Public folder ke assets ko hamesha leading slash ke sath use karein */
+/* ✅ Optimized local assets with correct Vite paths */
 const LEFT_IMGS = [
-  "public/ser1.webp","public/ser2.webp","public/ser3.webp","public/ser4.webp","public/ser5.webp",
-  "public/ser6.webp","public/ser7.webp","public/ser8.webp","public/ser9.webp","/public/ser10.webp",
-  "public/ser1.webp","public/ser2.webp","public/ser3.webp",
+  "/ser1.webp","/ser2.webp","/ser3.webp","/ser4.webp","/ser5.webp",
+  "/ser6.webp","/ser7.webp","/ser8.webp","/ser9.webp","/ser10.webp",
 ];
 
 const RIGHT_IMGS = [
-  "public/g1.png","public/g2.png","/public/g3.png","/public/g7.png","public/g5.png",
-  "public/g6.png","public/g7.png","public/g8.png","public/g9.png","public/g10.png",
-  "public/g11.png","public/g12.png","public/g13.png",
+  "/g1.png","/g2.png","/g3.png","/g4.png","/g5.png",
+  "/g6.png","/g7.png","/g8.png","/g9.png","/g10.png",
 ];
 
 const dup = (arr) => [...arr, ...arr];
@@ -135,10 +133,17 @@ export default function GalleryMarquee({
       <img
         src={src}
         alt={`gallery-${idx}`}
-        className="absolute inset-0 w-full h-full object-cover transition-transform duration-200 will-change-transform"
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-200"
         draggable="false"
         loading="lazy"
+        decoding="async"
         style={{ borderRadius: 0 }}
+        onLoad={(e) => {
+          e.target.style.opacity = '1';
+        }}
+        onError={(e) => {
+          e.target.style.display = 'none';
+        }}
       />
     </div>
   );
@@ -161,10 +166,9 @@ export default function GalleryMarquee({
       {/* —— Center block —— */}
       <div
         ref={middleRef}
-        className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center group my-6 sm:my-8"
+        className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center group my-6 sm:my-8 "
       >
-        {/* Decorative corners/glow ko frame samajh rahe ho to inko bhi remove kar diya */}
-        {/* (agar chahiye to uncomment kar sakte ho) */}
+ 
 
         <h1
           className="
@@ -174,6 +178,7 @@ export default function GalleryMarquee({
             drop-shadow-[0_6px_24px_rgba(0,0,0,.35)]
             transition-all duration-300 group-hover:scale-[1.02]
             cursor-pointer
+            mt-[10%]
           "
           style={{
             textShadow: isHovered 
@@ -186,7 +191,7 @@ export default function GalleryMarquee({
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          INTRODUCTION
+          Orbit Walls Powering the Future with Technology
           <span className="heading-shine" aria-hidden />
         </h1>
 
@@ -195,7 +200,7 @@ export default function GalleryMarquee({
         </div>
 
         <p 
-          className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed cursor-pointer transition-all duration-300"
+          className="mt-8 sm:mt-10 md:mt-12 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed cursor-pointer transition-all duration-300 "
           style={{
             textShadow: isHovered 
               ? '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)'
@@ -207,9 +212,18 @@ export default function GalleryMarquee({
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          orbits walls Projects Circle Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero, dolorum eaque atque temporibus unde delectus perferendis! Sapiente, tenetur corporis? Accusantium aliquid sunt iste dolores placeat? Ipsum enim libero officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quae voluptates molestias, magni excepturi doloremque ducimus tempore possimus repudiandae aliquam voluptatem quidem exercitationem nam enim, blanditiis dignissimos ipsam quas placeat.?
+          Orbit Walls LLC, we go beyond traditional construction and design — pioneering the future of innovative wall systems, advanced coatings, and architectural solutions. With a commitment to excellence and innovation, we deliver state-of-the-art interior and exterior solutions that combine strength, sustainability, and style.
+          <br />
+          <br />
+          We are not just a wall solutions company — we are a technology-driven partner for architects, developers, and businesses who seek cutting-edge design and long-lasting durability. Every project we undertake is guided by precision engineering, advanced materials, and a vision to reshape modern living and working spaces.
         </p>
       </div>
+
+
+
+
+
+
 
       {/* SolarPoster (as-is) */}
       <div className="mt-[-8vw] sm:mt-[-6%]">

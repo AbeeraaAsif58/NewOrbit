@@ -11,21 +11,21 @@ import React from "react";
  */
 export default function DualMarqueeSliders({
   imagesTop = [
-    "https://picsum.photos/seed/top1/1600/900",
-    "https://picsum.photos/seed/top2/1600/900",
-    "https://picsum.photos/seed/top3/1600/900",
-    "https://picsum.photos/seed/top4/1600/900",
-    "https://picsum.photos/seed/top5/1600/900",
+    "/heromeet1.jpg",
+    "/heromeet2.jpg",
+    "/heromeet3.jpg",
+    "/heromeet4.jpg",
+    "/heromeet5.jpg",
   ],
   imagesBottom = [
-    "https://picsum.photos/seed/bot1/1600/900",
-    "https://picsum.photos/seed/bot2/1600/900",
-    "https://picsum.photos/seed/bot3/1600/900",
-    "https://picsum.photos/seed/bot4/1600/900",
-    "https://picsum.photos/seed/bot5/1600/900",
+    "/busi1.jpg",
+    "/busi2.jpg",
+    "/busi3.jpg",
+    "/busi4.jpg",
+    "/busi5.jpg",
   ],
-  speedTop = 35,
-  speedBottom = 35,
+  speedTop = 50, // Increased speed to reduce GPU load
+  speedBottom = 50, // Increased speed to reduce GPU load
 }) {
   // ensure exactly 5 images per row
   const top5 = imagesTop.slice(0, 5);
