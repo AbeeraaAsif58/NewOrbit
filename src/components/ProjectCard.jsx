@@ -5,76 +5,81 @@ import { useState } from "react";
 const cardsData = [
   { id: 1,
     title: "Generative AI",
-    image: "/6746cd1fd5d31e9286475e66_GenAi3.webp" },
+    image: "/pro1.avif" },
   { id: 2,
     title: "Dynamics 365",
-    image: "/6746cd3786ddb52478d995d1_MS D365 ERP .webp" },
+    image: "/pro2.avif" },
   { id: 3,
     title: "Mobile App Development",
-    image: "/6746ccf546a2ad2c80d6df83_web and app.webp" },
+    image: "/pro3.avif" },
   { id: 4,
     title: "Staf Augmentation",
-    image: "/6746ce0fb9160e7c31f33a55_Staff Augmentation.webp" },
+    image: "/pro4.avif" },
   { id: 5,
     title: "Data Analytics & Insights",
-    image: "/6746cc482db1606ad0aab120_Data Analytics.webp" },
+    image: "/pro5.avif" },
   { id: 6,
     title: "Web Development",
-    image: "/6746cca947f72f4be4c576ef_Web & App dev.webp" },
+    image: "/pro6.avif" },
   { id: 7,
     title: "Cybersecurity",
-    image: "/6746ccb5852804634ccbdcd0_Cyber Security  copy.webp" },
+    image: "/pro7.avif" },
   { id: 8,
     title: "UI/UX Design",
-    image: "/6746ccfe797228be2c253ec9_UI_UX.webp" },
+    image: "/pro8.webp" },
   { id: 9,
     title: "Cloud Application",
-    image: "/6746cd6f18df7367c4bfe810_cloud application.webp" },
+    image: "/pro9.avif" },
   { id: 10,
     title: "Power Apps", 
-    image: "/6746cd60afa41380cb28c55d_Power Apps.webp" },
+    image: "/pro10.avif" },
   { id: 11,
     title: "Cloud Maintenance & Integration",
-    image: "/6746cd80bbd823d4a8b89c59_Cloud maintenance & integration.webp" },
+    image: "/pro 31.avif" },
   { id: 12,
     title: "DevOps",
-    image: "/6746cd081fcad6db7e6e9a4e_DevOps.webp" },
+    image: "/pro12.avif" },
   { id: 13,
     title: "MS D365 CRM",
-    image: "/6746cd49289bf06f07412563_MS D365 CRM.webp" },
+    image: "/pro13.avif" },
   { id: 14,
     title: "Metaverse",
-    image: "/6746cd95078adf7543546d09_Metaverse 2.webp" },
+    image: "/pro14.avif" },
   { id: 15,
     title: "Augmented Reality",
-    image: "/6746cda23ce467ab05d4006f_Augmented reality.webp" },
+    image: "/pro15.avif" },
   { id: 16,
     title: "Blochchain & Cryptography",
-    image: "/6746cdb586ddb52478da1c7f_Blockchain & Cryptography .webp" },
+    image: "/pro16.avif" },
   { id: 17,
     title: "Game Development",
-    image: "/6746cdc74b9b2aacdbf10606_game development.webp" },
+    image: "/pro17.avif" },
   { id: 18,
     title: "Web3 Gaming",
-    image: "/6746cddd2db1606ad0ac573e_Web3 - Gaming .webp" },
+    image: "/pro1.avif" },
   { id: 19,
     title: "AR/VR/XR Gaming",
-    image: "/6746cdef46a2ad2c80d7d88e_AR_VR_MV - Gaming .webp" },
+    image: "/pro19.avif" },
   { id: 20,
     title: "Gaming Art & Design",
-    image: "/6746cdfc081682b328fe072e_art and design.webp" },
+    image: "/pro20.avif" },
   { id: 21,
     title: "Cloud Migration & Cloud Ops",
-    image: "/676427212c412610f82ce9f3_Hero -p-1080.jpg" },
+    image: "/pro21.avif" },
   { id: 22,
     title: "Quality Assurance",
-    image: "/6746ce1f6f855821383d1c14_Quality Assurance .webp" },
+    image: "/pro22.avif" },
   { id: 23,
     title: "SaaS",
-    image: "/6746ce2de7c668dd873f6ef6_SaaS.webp" },
+    image: "/pro23.avif" },
   { id: 24,
     title: "Custom Software Development",
-    image: "/67888ffd8c2d8315d6d77a67_overview -p-1080.jpg" },
+    image: "/pro24.avif" },
+  { id: 25,
+    title: "Data Analytics & Insights",
+    image: "/pro25.avif" },
+ 
+    
   
 ];
 
@@ -83,15 +88,48 @@ const cardsData = [
 
   const buttonhandle = () => {
     setVisibleCards((prev) => (prev === 4 ? 24 : 4));
+    
+    // Smooth scroll to show more cards
+    setTimeout(() => {
+      const element = document.querySelector('.image-container');
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+      }
+    }, 100);
   };
 
   return (
-    <div className="h-auto w-full p-5">
+    <>
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .smooth-scroll {
+          scroll-behavior: smooth;
+        }
+      `}</style>
+      
+    <div className="h-auto w-full p-5 smooth-scroll">
     <div className="pl-[8vh] pr-[8vh] image-container flex flex-wrap justify-between gap-[2vh]">
       {cardsData.slice(0, visibleCards).map((card) => (
         <div
           key={card.id}
-          className="h-[50vh] w-[43vh] rounded-[10px] relative  overflow-hidden group"
+          className="h-[50vh] w-[43vh] rounded-[10px] relative overflow-hidden group transition-all duration-500 ease-in-out transform"
+          style={{
+            animation: card.id > 4 ? 'fadeInUp 0.6s ease-out forwards' : 'none',
+            animationDelay: card.id > 4 ? `${(card.id - 5) * 0.1}s` : '0s'
+          }}
         >
           <img
             className="h-full w-full rounded-[10px] object-cover transition-transform duration-300 group-hover:translate-y-[-2vh]"
@@ -110,16 +148,13 @@ const cardsData = [
     <div className="mt-[8.5vh] text-center justify-center flex items-center">
       <button
         onClick={buttonhandle}
-        className="flex gap-4 border-[1px] border-primary px-[1.2em] py-[1.2em] rounded-[100em] bg-transparent text-white font-semibold hover:bg-secondary hover:border-secondary"
+        className="border-[1px] border-primary px-[1.2em] py-[1.2em] rounded-[100em] bg-transparent text-white font-semibold hover:bg-secondary hover:border-secondary transition-all duration-300"
       >
-      <img
-      className="rotate-90"
-       src="/67330872fcc18762b4703730_right arrow (1).svg" alt="My Icon" style={{ width: "20px", height: "20px" }} />
       {visibleCards === 4 ? "View More Services" : "View Less"}
       </button>
     </div>
   </div>
-  
+  </>
 );
 }
 
