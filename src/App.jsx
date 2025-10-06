@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import SidebarNavbar from "./components/SidebarNavbar";
 import PerformanceMonitor from "./components/PerformanceMonitor";
 
 import Home from "./pages/Home";
@@ -55,12 +55,12 @@ export default function App() {
 
     
         <header className="">
-          <Navbar />
+          <SidebarNavbar />
         </header>
 
         <Cursor />
 
-        <main className="relative z-[1] flex-1 container-px py-10">
+        <main className="relative z-10 flex-1 px-4 py-10">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
