@@ -18,14 +18,14 @@ const Team = () => {
   const imagesRef = useRef([]);
 
   const data = [
-    { img: "public/TeamA.webp", title: "Ceyhan Özçivit", description: "Mid-Level Developer" },
-    { img: "public/TeamB.webp", title: "Amanulla Joey", description: "Founder & CEO" },
-    { img: "public/TeamC.webp", title: "William Ray", description: "Marketing Leader" },
-    { img: "public/TeamD.webp", title: "Albert Hyekin", description: "Co-Ordinator" },
-    { img: "public/TeamE.webp", title: "Steven Dirkse", description: "Merchandiser" },
-    { img: "public/TeamF.webp", title: "Marius Bützler", description: "Co-Ordinator" },
-    { img: "public/TeamG.webp", title: "Franz Nelissen", description: "Marketing Leader" },
-    { img: "public/TeamH.webp", title: "Samantha", description: "Developer" },
+    { img: "/TeamA.webp", title: "Ceyhan Özçivit", description: "Mid-Level Developer" },
+    { img: "/TeamB.webp", title: "Amanulla Joey", description: "Founder & CEO" },
+    { img: "/TeamC.webp", title: "William Ray", description: "Marketing Leader" },
+    { img: "/TeamD.webp", title: "Albert Hyekin", description: "Co-Ordinator" },
+    { img: "/TeamE.webp", title: "Steven Dirkse", description: "Merchandiser" },
+    { img: "/TeamF.webp", title: "Marius Bützler", description: "Co-Ordinator" },
+    { img: "/TeamG.webp", title: "Franz Nelissen", description: "Marketing Leader" },
+    { img: "/TeamH.webp", title: "Samantha", description: "Developer" },
   ];
 
   // entrance of hero container
@@ -117,7 +117,7 @@ const Team = () => {
               Want to serve global audiences and take your career to the next level? 
             </p> */}
             {/* NOTE: file name has a space; make sure the file really exists */}
-            <img className="text-[25px] " src="public/g4.png" alt="" />
+            <img className="text-[25px] " src="/g4.png" alt="" />
           </div>
 
           <div className="head">
@@ -150,7 +150,7 @@ const Team = () => {
           </div>
 
           <div className="team h-26 w-[99vw] sm:w-full xl:pt-10">
-            <img className="w-[99vw]" src="public/meet 3.png" alt="team feature" />
+            <img className="w-[99vw]" src="/meet 3.png" alt="team feature" />
           </div>
         </div>
 
@@ -191,15 +191,15 @@ const Team = () => {
           {/* 3-column boxes & counter B */}
           <div className="boxes pt-[5%] lg:pt-0 h-auto xl:h-[100vh] w-auto lg:flex">
             <div className="lg:w-[50%]">
-              <img className="h-full w-full p-[5px]" src="public/box-A.webp" alt="box A" />
+              <img className="h-full w-full p-[5px]" src="/box-A.webp" alt="box A" />
             </div>
 
             <div className="h-auto lg:w-[25vw]">
               <div className="lg:h-[50%]">
-                <img className="h-full w-full p-[5px]" src="public/box-B.webp" alt="box B" />
+                <img className="h-full w-full p-[5px]" src="/box-B.webp" alt="box B" />
               </div>
               <div className="h-[40vh] lg:h-[50%] p-[5px] relative">
-                <img className="h-full w-full bg-black" src="public/shapeA.png" alt="shape A" />
+                <img className="h-full w-full bg-black" src="/shapeA.png" alt="shape A" />
                 <div className="absolute top-10 left-2 bg-opacity-80 px-4 py-2 rounded-lg">
                   <p className="text-[30px] font-medium leading-[2rem] text-white">
                     We helped companies get 99M+ funding
@@ -211,7 +211,7 @@ const Team = () => {
             <div className="h-auto lg:w-[25vw]">
               <div className="h-[40vh] lg:h-[50%] relative">
                 {/* NOTE: file name looks like a typo (shpaeB). Make sure the actual file name matches. */}
-                <img className="h-full w-full p-[5px]" src="public/shapeA.png" alt="shape B" />
+                <img className="h-full w-full p-[5px]" src="/shapeA.png" alt="shape B" />
                 <div className="absolute top-10 left-5">
                   <p className="text-[30px] font-[400] leading-[2.3rem] text-white">We have 99+ satisfied clients</p>
                   <h1 ref={counterBRef} className="font-bold text-white text-[75px] text-center">
@@ -221,7 +221,7 @@ const Team = () => {
                 </div>
               </div>
               <div className="lg:h-[50%]">
-                <img className="h-full w-full p-[5px]" src="public/box-C.webp" alt="box C" />
+                <img className="h-full w-full p-[5px]" src="/box-C.webp" alt="box C" />
               </div>
             </div>
           </div>
@@ -231,11 +231,11 @@ const Team = () => {
             <ul className="text-[20px] font-[Kanit] flex gap-8 flex-wrap px-3 leading-[1.16em] sm:text-[18px] sm:gap-5 sm:px-3 md:justify-center md:text-[35px] md:gap-10 lg:gap-5 text-white">
               <li>Future</li>
               <li className="flex items-center md:gap-3">
-                <img className="h-[1.5vh] w-[1vw] md:h-[1vh] md:w-[.8vw]" src="public/g2.png" alt="" />
+                <img className="h-[1.5vh] w-[1vw] md:h-[1vh] md:w-[.8vw]" src="/g2.png" alt="" />
                 <span className="ml-3 lg:ml-1">Community</span>
               </li>
               <li className="flex items-center md:gap-3">
-                <img className="h-[1.5vh] w-[1vw] md:h-[1vh] md:w-[.8vw]" src="public/g2.png" alt="" />
+                <img className="h-[1.5vh] w-[1vw] md:h-[1vh] md:w-[.8vw]" src="/g2.png" alt="" />
                 <span className="ml-3 lg:ml-1">Honor</span>
               </li>
             </ul>
@@ -251,14 +251,14 @@ const Team = () => {
           <div className="md:flex md:gap-10 lg:px-2">
             <div className="flex flex-col p-3 gap-2 sm:flex-row sm:flex-wrap sm:p-0 sm:pl-1 sm:gap-1 sm:py-3 lg:gap-5">
               <div className="w-[32vw] sm:w-[50vw] md:w-[28vw] md:pt-5 lg:w-[23vw] lg:mt-20">
-                <img src="public/GalleryA.webp" alt="gallery A" />
+                <img src="/GalleryA.webp" alt="gallery A" />
               </div>
               <div className="w-[40vw] sm:w-[48vw] md:w-[37vw] lg:w-[39vw]">
-                <img src="public/GalleryB.webp" alt="gallery B" />
+                <img src="/GalleryB.webp" alt="gallery B" />
               </div>
               <div className="flex gap-3 md:flex-col-reverse md:gap-1 lg:gap-2 lg:pb-10">
-                <img className="w-[35vw] sm:w-[60vw] md:w-[30vw] lg:w-[25vw]" src="public/GalleryC.webp" alt="gallery D" />
-                <img className="w-[40vw] sm:w-[30vw] sm:h-[38vh] md:w-[30vw] md:h-[15vh] lg:w-[23vw] lg:h-auto" src="public/GalleryD.webp" alt="gallery C" />
+                <img className="w-[35vw] sm:w-[60vw] md:w-[30vw] lg:w-[25vw]" src="/GalleryC.webp" alt="gallery D" />
+                <img className="w-[40vw] sm:w-[30vw] sm:h-[38vh] md:w-[30vw] md:h-[15vh] lg:w-[23vw] lg:h-auto" src="/GalleryD.webp" alt="gallery C" />
               </div>
             </div>
           </div>

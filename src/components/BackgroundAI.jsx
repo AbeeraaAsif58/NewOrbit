@@ -1,183 +1,112 @@
+// src/components/BackgroundAI.jsx - Optimized Version
 import React, { useEffect, useRef } from "react";
-import { getAdaptiveSettings } from "../utils/performance";
 
 export default function BackgroundAI({
-  nodeCount,
-  linkDistance,
-  cursorLinkDistance,
-  mode = "fixed", // "fixed" | "scroll"
+  nodeCount = 20, // Reduced default
+  linkDistance = 80,
+  cursorLinkDistance = 100,
+  mode = "fixed",
 }) {
-  // Use adaptive settings based on device capabilities
-  const settings = getAdaptiveSettings();
-  const finalNodeCount = nodeCount || settings.nodeCount;
-  const finalLinkDistance = linkDistance || settings.linkDistance;
-  const finalCursorLinkDistance = cursorLinkDistance || (settings.linkDistance + 20);
   const canvasRef = useRef(null);
   const rafRef = useRef(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
+    
     const ctx = canvas.getContext("2d");
-
-    const DPR = Math.max(1, Math.min(window.devicePixelRatio || 1, 1.5)); // Reduced pixel ratio
-    let w = 0, h = 0;
-
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+    
     const resize = () => {
-      // viewport size if fixed, otherwise use current visible area
       w = window.innerWidth;
       h = window.innerHeight;
-      canvas.style.width = w + "px";
-      canvas.style.height = h + "px";
-      canvas.width = Math.floor(w * DPR);
-      canvas.height = Math.floor(h * DPR);
-      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      canvas.width = w;
+      canvas.height = h;
     };
     resize();
     window.addEventListener("resize", resize);
 
-    const rand = (a, b) => a + Math.random() * (b - a);
-    const nodes = Array.from({ length: finalNodeCount }).map(() => ({
+    // Simplified nodes
+    const nodes = Array.from({ length: nodeCount }).map(() => ({
       x: Math.random() * w,
       y: Math.random() * h,
-      vx: rand(-0.15, 0.15),
-      vy: rand(-0.15, 0.15),
-      z: Math.random(),
+      vx: (Math.random() - 0.5) * 0.5,
+      vy: (Math.random() - 0.5) * 0.5,
     }));
 
-    const cursor = { x: w / 2, y: h / 2, tx: w / 2, ty: h / 2, down: false };
+    const cursor = { x: w / 2, y: h / 2 };
+    
     const onMove = (e) => {
-      const rect = canvas.getBoundingClientRect();
-      cursor.tx = e.clientX - rect.left;
-      cursor.ty = e.clientY - rect.top;
+      cursor.x = e.clientX;
+      cursor.y = e.clientY;
     };
-    const onDown = () => (cursor.down = true);
-    const onUp = () => (cursor.down = false);
+    
+    window.addEventListener("mousemove", onMove, { passive: true });
 
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("mousedown", onDown);
-    window.addEventListener("mouseup", onUp);
+    const animate = () => {
+      ctx.clearRect(0, 0, w, h);
+      
+      // Update nodes
+      nodes.forEach(node => {
+        node.x += node.vx;
+        node.y += node.vy;
+        
+        if (node.x < 0 || node.x > w) node.vx *= -1;
+        if (node.y < 0 || node.y > h) node.vy *= -1;
+      });
 
-    // Theme colors converted to RGB - New Green/Teal Theme
-    const baseBg = "rgb(3, 65, 89)"; // Dark Teal (#034159)
-    const nodeColor = "rgba(2, 115, 94, 0.95)"; // Teal Green (#02735E)
-    const lineColor = "rgba(12,242,93,"; // Bright Green (#0CF25D)
-    const cursorHalo = "rgba(12,242,93,0.15)"; // Bright Green with opacity
-
-    const clamp = (v,a,b)=>Math.max(a,Math.min(v,b));
-    const lerp = (a,b,t)=>a+(b-a)*t;
-
-    let lastScrollY = window.scrollY;
-    let frameCount = 0;
-
-    const tick = () => {
-      frameCount++;
-      // Throttle to 30fps instead of 60fps for better performance
-      if (frameCount % 2 !== 0) {
-        rafRef.current = requestAnimationFrame(tick);
-        return;
-      }
-      cursor.x = lerp(cursor.x, cursor.tx, 0.15);
-      cursor.y = lerp(cursor.y, cursor.ty, 0.15);
-
-      // if mode = "scroll", add subtle parallax by scroll delta
-      let scrollDelta = 0;
-      if (mode === "scroll") {
-        const now = window.scrollY;
-        scrollDelta = now - lastScrollY;
-        lastScrollY = now;
-      }
-
-      const g = ctx.createLinearGradient(0, 0, 0, h);
-      g.addColorStop(0, "#025951"); // Dark Green gradient start
-      g.addColorStop(1, baseBg);
-      ctx.fillStyle = g;
-      ctx.fillRect(0, 0, w, h);
-
-      for (let i = 0; i < 12; i++) {
-        const r = Math.random() * 2 + 0.5;
-        ctx.beginPath();
-        ctx.arc(Math.random() * w, Math.random() * h, r, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(12,242,93,0.03)"; // Bright Green with low opacity
-        ctx.fill();
-      }
-
-      for (let n of nodes) {
-        n.x += n.vx;
-        n.y += n.vy;
-
-        // parallax scroll drift (front layers move a bit more)
-        if (mode === "scroll") n.y += scrollDelta * (0.15 + 0.35 * n.z);
-
-        if (n.x < -20) n.x = w + 20;
-        if (n.x > w + 20) n.x = -20;
-        if (n.y < -20) n.y = h + 20;
-        if (n.y > h + 20) n.y = -20;
-
-        const dx = cursor.x - n.x;
-        const dy = cursor.y - n.y;
-        const dist = Math.hypot(dx, dy);
-        if (dist < finalCursorLinkDistance) {
-          const force = (finalCursorLinkDistance - dist) / finalCursorLinkDistance;
-          const pull = 0.08 * (0.4 + 0.6 * n.z) * force;
-          n.x += dx * pull;
-          n.y += dy * pull;
-        }
-      }
-
+      // Draw connections
+      ctx.strokeStyle = "rgba(12, 242, 93, 0.1)";
+      ctx.lineWidth = 1;
+      
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
-          const a = nodes[i], b = nodes[j];
-          const dx = a.x - b.x, dy = a.y - b.y;
-          const d = Math.hypot(dx, dy);
-          if (d < finalLinkDistance) {
-            const op = clamp(1 - d / finalLinkDistance, 0, 1) * (0.35 + 0.65 * (a.z + b.z) / 2);
-            const lw = 1 + 1.2 * op;
-            ctx.strokeStyle = `${lineColor}${op})`;
-            ctx.lineWidth = lw;
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          
+          if (dist < linkDistance) {
             ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
             ctx.stroke();
           }
         }
+        
+        // Cursor connections
+        const dx = nodes[i].x - cursor.x;
+        const dy = nodes[i].y - cursor.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        
+        if (dist < cursorLinkDistance) {
+          ctx.strokeStyle = "rgba(12, 242, 93, 0.2)";
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x, nodes[i].y);
+          ctx.lineTo(cursor.x, cursor.y);
+          ctx.stroke();
+        }
       }
 
-      // Simplified node rendering without shadows for better performance
-      ctx.fillStyle = nodeColor;
-      for (let n of nodes) {
-        const size = 1.2 + n.z * 2.2;
-        ctx.beginPath();
-        ctx.arc(n.x, n.y, size, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      const haloR = 80;
-      const rad = ctx.createRadialGradient(cursor.x, cursor.y, 0, cursor.x, cursor.y, haloR);
-      rad.addColorStop(0, cursorHalo);
-      rad.addColorStop(1, "rgba(12,242,93,0)"); // Bright Green fade
-      ctx.fillStyle = rad;
-      ctx.beginPath();
-      ctx.arc(cursor.x, cursor.y, haloR, 0, Math.PI * 2);
-      ctx.fill();
-
-      rafRef.current = requestAnimationFrame(tick);
+      rafRef.current = requestAnimationFrame(animate);
     };
 
-    rafRef.current = requestAnimationFrame(tick);
+    animate();
+
     return () => {
       cancelAnimationFrame(rafRef.current);
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", onMove);
-      window.removeEventListener("mousedown", onDown);
-      window.removeEventListener("mouseup", onUp);
     };
-  }, [finalNodeCount, finalLinkDistance, finalCursorLinkDistance, mode]);
+  }, [nodeCount, linkDistance, cursorLinkDistance]);
 
-  // className changes by mode:
-  const cls =
-    mode === "fixed"
-      ? "fixed inset-0 z-0 pointer-events-none"
-      : "absolute inset-0 z-0 pointer-events-none"; // scrolls with page
-
-  return <canvas ref={canvasRef} className={cls} aria-hidden />;
+  return (
+    <canvas
+      ref={canvasRef}
+      className={`pointer-events-none ${
+        mode === "fixed" ? "fixed inset-0 -z-10" : "absolute inset-0 -z-10"
+      }`}
+      style={{ background: "transparent" }}
+    />
+  );
 }

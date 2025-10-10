@@ -109,7 +109,7 @@ export default function TalkBanner({
     <section
       ref={root}
       style={{ background: bg, color: textColor }}
-      className="relative w-full min-h-[60vh] flex flex-col items-center justify-center text-white overflow-hidden mt-0"
+      className="relative w-full min-h-[20vh] flex flex-col items-center justify-center text-white overflow-hidden mt-0 mb-4"
     >
       {/* small top label */}
       <div ref={helloRef} className="mb-6 flex items-center gap-2 text-lg font-semibold tracking-wider">

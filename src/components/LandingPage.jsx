@@ -16,7 +16,7 @@ function landingPage() {
                                 className='md:w-[8.5vw] sm:w-[25vw] md:h-[5.5vw] h-[14vw] rounded-xl overflow-hidden'>
                                 <img 
                                     className='w-full h-full object-cover bg-center rounded-xl' 
-                                    src="public/g6.png" 
+                                    src="/g6.png" 
                                     alt="" 
                                 />
                             </motion.div>

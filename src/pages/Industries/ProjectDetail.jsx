@@ -1313,7 +1313,7 @@ const ProjectDetail = () => {
       githubUrl: "https://github.com/nexagram",
       liveUrl: "https://nexagram.com"
     },
-    'janoo-dating-platform-like-tinder-badoo': {
+    'janoo-dating-platform-like-tinder-badoo-v2': {
       title: "Janoo – Dating Platform like Tinder/Badoo",
       category: "Entertainment",
       tags: ["Dating", "Entertainment", "Social", "Mobile Apps"],
@@ -1706,7 +1706,7 @@ const ProjectDetail = () => {
       githubUrl: "https://github.com/doctorcorps",
       liveUrl: "https://doctorcorps.com"
     },
-    'hospitalcore-complete-saas-hospital-management-system': {
+    'hospitalcore-complete-saas-hospital-management-system-v2': {
       title: "Hospitalcore – Complete SAAS Hospital management system",
       category: "HealthCare",
       tags: ["B2B", "HealthCare", "SAAS", "Hospital Management"],
@@ -1918,7 +1918,7 @@ const ProjectDetail = () => {
       liveUrl: "https://freelancemall.com"
     },
     // Matrimony Products
-    'futureshaadi-matrimony-web-application-android-ios-app': {
+    'futureshaadi-matrimony-web-application-android-ios-app-v2': {
       title: "Futureshaadi- Matrimony Web Application with Android and iOS app",
       category: "Matrimony",
       tags: ["Dating", "Matrimony", "Web App", "Mobile Apps"],
@@ -1948,7 +1948,7 @@ const ProjectDetail = () => {
       githubUrl: "https://github.com/futureshaadi",
       liveUrl: "https://futureshaadi.com"
     },
-    'rishtey-shaadi-clone-matrimony-android-ios-app': {
+    'rishtey-shaadi-clone-matrimony-android-ios-app-v2': {
       title: "Rishtey – Shaadi Clone Matrimony Android & iOS app",
       category: "Matrimony",
       tags: ["Dating", "Matrimony", "Mobile Apps", "Shaadi Clone"],

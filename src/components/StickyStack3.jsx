@@ -132,7 +132,7 @@ function HeroLayer({ colors }) {
                   development
                 </span>
                 <img
-                  src="public/g2.png"
+                  src="/g2.png"
                   alt=""
                   className="h-12 w-12 rounded-full object-cover ring-2"
                   style={{ ringColor: colors.border }}
@@ -153,7 +153,7 @@ function HeroLayer({ colors }) {
           <div className="relative mx-auto w-[68vw] max-w-[560px] aspect-square circle-clip overflow-hidden shadow-xl">
             {/* ✅ DIRECT SRC HERE */}
             <img
-              src="public/g4.png"
+              src="/g4.png"
               alt="hero"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -216,7 +216,7 @@ function ExploreLayer({ colors }) {
                 style={{ border: `1px solid ${colors.borderSoft}` }}
               >
                 {/* ✅ DIRECT SRC HERE */}
-                <img src="public/meet 2.png" alt="" className="h-full w-full object-cover" />
+                <img src="/meet 2.png" alt="" className="h-full w-full object-cover" />
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ function ExploreLayer({ colors }) {
             >
               {/* ✅ DIRECT SRC HERE */}
               <img
-                src="public/meet 1.png"
+                src="/meet 1.png"
                 alt=""
                 className="h-[420px] w-full object-cover sm:h-[520px]"
               />

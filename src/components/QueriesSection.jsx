@@ -279,10 +279,10 @@ export default function QueriesSection() {
           </form>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 opacity-90">
-            <img src="public/svg/linkedin-box-line.svg" alt="LinkedIn" className="h-8 social-icon" />
-            <img src="public/svg/facebook-circle-fill.svg" alt="Facebook" className="h-8 social-icon" />
-            <img src="public/svg/instagram-line.svg" alt="Instagram" className="h-6 social-icon" />
-            <img src="public/svg/twitter-x-line.svg" alt="X (Twitter)" className="h-6 social-icon" />
+            <img src="/svg/linkedin-box-line.svg" alt="LinkedIn" className="h-8 social-icon" />
+            <img src="/svg/facebook-circle-fill.svg" alt="Facebook" className="h-8 social-icon" />
+            <img src="/svg/instagram-line.svg" alt="Instagram" className="h-6 social-icon" />
+            <img src="/svg/twitter-x-line.svg" alt="X (Twitter)" className="h-6 social-icon" />
           </div>
         </div>
       </div>

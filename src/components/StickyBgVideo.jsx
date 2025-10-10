@@ -2,8 +2,8 @@
 import React from "react";
 
 export default function StickyBgVideo({
-  src = "public/logo/vid 1.mp4",   // apna video yahan
-  poster = "public/logo/vid 1.mp4", // optional fallback frame
+  src = "/logo/vid 1.mp4",   // apna video yahan
+  poster = "/logo/vid 1.mp4", // optional fallback frame
   topOffset = "0px",            // navbar height jitna offset (e.g. "64px")
   dark = 0.35,                  // overlay darkness (0–1)
   children,
