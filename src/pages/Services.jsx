@@ -107,8 +107,8 @@ const Services = () => {
               variants={fadeUp}
               className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow"
             >
-              We are "Orbit" — product and branding and creative agency
-              based in California
+              We are "Orbit" — software development and technology solutions company
+          
             </motion.h1>
             <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
               <div className="md:col-span-3">
@@ -118,7 +118,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
-                Launch your digital presence with solutions crafted to match Orbit Walls' identity and propel your business into the digital stratosphere.
+                Build powerful software solutions with cutting-edge technologies crafted to match Orbit's expertise and propel your business into the digital stratosphere.
               </div>
             </div>
           </motion.div>
@@ -424,126 +424,6 @@ const Services = () => {
             <Marquee />
           </div>
 
-          {/* Service Packages Section */}
-          <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
-            <div className="text-center mb-16 sm:mb-20 animate-fade-in">
-              <h3 className="group relative text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-white hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
-                Service Packages
-                <span className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-500 group-hover:w-full"></span>
-              </h3>
-              <p className="text-lg sm:text-xl md:text-2xl text-white/70">Choose the perfect package for your digital journey</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
-              {/* Starter Package */}
-              <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-400/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
-                <div className="text-center mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/30">
-                    <span className="text-3xl">🚀</span>
-                  </div>
-                  <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-500 transition-colors duration-300">Starter</h4>
-                  <div className="text-4xl font-bold text-teal-500 mb-2">$2,999</div>
-                  <div className="text-white/70">Perfect for small businesses</div>
-                </div>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Responsive Website Design
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Basic SEO Optimization
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Contact Form Integration
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    3 Months Support
-                  </li>
-                </ul>
-                <button className="w-full py-4 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 transition-all duration-300 hover:scale-105">
-                  Choose Starter
-                </button>
-              </div>
-
-              {/* Professional Package */}
-              <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-400/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden relative">
-                <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">POPULAR</div>
-                <div className="text-center mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/30">
-                    <span className="text-3xl">⭐</span>
-                  </div>
-                  <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-500 transition-colors duration-300">Professional</h4>
-                  <div className="text-4xl font-bold text-teal-500 mb-2">$7,999</div>
-                  <div className="text-white/70">Ideal for growing businesses</div>
-                </div>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Custom Web Application
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Advanced SEO & Analytics
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Database Integration
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Mobile App Development
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    6 Months Support
-                  </li>
-                </ul>
-                <button className="w-full py-4 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 transition-all duration-300 hover:scale-105">
-                  Choose Professional
-                </button>
-              </div>
-
-              {/* Enterprise Package */}
-              <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-400/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
-                <div className="text-center mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/30">
-                    <span className="text-3xl">👑</span>
-                  </div>
-                  <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-500 transition-colors duration-300">Enterprise</h4>
-                  <div className="text-4xl font-bold text-teal-500 mb-2">Custom</div>
-                  <div className="text-white/70">Tailored for large organizations</div>
-                </div>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Complete Digital Ecosystem
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    AI & Machine Learning
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Cloud Infrastructure
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    Dedicated Project Manager
-                  </li>
-                  <li className="flex items-center text-white/80">
-                    <span className="text-teal-500 mr-3">✓</span>
-                    12 Months Support
-                  </li>
-                </ul>
-                <button className="w-full py-4 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 transition-all duration-300 hover:scale-105">
-                  Contact Us
-                </button>
-              </div>
-            </div>
-          </div>
 
           {/* Call to Action Section */}
           <div className="mt-24 sm:mt-32 mb-16 sm:mb-20 text-center px-4 sm:px-8 md:px-12 lg:px-16">

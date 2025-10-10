@@ -50,8 +50,8 @@ const About = () => {
         {/* Minimal headline section (replacing About Orbit) */}
         <div className="mb-16 min-h-[80vh] flex flex-col justify-center">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow">
-            We are “Orbit” — product and branding and creative agency
-            based in California
+            We are "Orbit" — software development and technology solutions company
+            
           </h1>
           <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
             <div className="md:col-span-3">
@@ -61,8 +61,8 @@ const About = () => {
               </div>
             </div>
             <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
-              Unlocking creative horizons: the story behind “Orbit” — a digital
-              agency crafting experiences, building brands, and shaping success.
+              Unlocking technological horizons: the story behind "Orbit" — a software
+              company crafting innovative solutions, building robust applications, and shaping digital success.
             </div>
           </div>
         </div>
@@ -184,108 +184,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Quality Team Section */}
-        <div className="mt-32">
-          <div className="text-center mb-20 animate-fade-in">
-            <h3 className="group relative text-5xl font-bold mb-8 text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-teal-300 hover:via-teal-400 hover:to-teal-300 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
-              Our Quality Team
-              <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-400 to-teal-500 transition-all duration-500 group-hover:w-full"></span>
-            </h3>
-            <p className="text-2xl text-gray-400">Meet the stellar minds behind our cosmic success</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="Alex Johnson" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500 object-cover"
-                  />
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors duration-300">Alex Johnson</h4>
-                  <p className="text-teal-400 text-xl mb-6 font-semibold">CEO & Founder</p>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                    Visionary leader with over 10 years of experience in digital innovation and cosmic strategy. Alex founded Orbit with a mission to revolutionize how businesses navigate the digital universe.
-                  </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
-                    Under his leadership, Orbit has successfully launched over 150 projects into the digital stratosphere, helping companies achieve stellar growth and cosmic success across multiple galaxies.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-blue-400/50 hover:shadow-2xl hover:shadow-blue-500/20 overflow-hidden">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="Sarah Chen" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-blue-500/30 transition-all duration-500 object-cover"
-                  />
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">Sarah Chen</h4>
-                  <p className="text-blue-400 text-xl mb-6 font-semibold">Chief Technology Officer</p>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                    Technical genius specializing in cutting-edge space technology solutions. Sarah leads our engineering team with unparalleled expertise in cosmic-scale applications and innovative digital architectures.
-                  </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
-                    Her innovative approach to problem-solving has resulted in breakthrough technologies that have propelled our clients into new frontiers of digital excellence and stellar performance.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-purple-400/50 hover:shadow-2xl hover:shadow-purple-500/20 overflow-hidden">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="Mike Rodriguez" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-500 object-cover"
-                  />
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300">Mike Rodriguez</h4>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                    Full-stack developer with exceptional expertise in cosmic-scale applications. Mike brings years of experience in building robust, scalable solutions that can handle the demands of intergalactic digital operations.
-                  </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
-                    His mastery of cutting-edge technologies and passion for clean, efficient code has been instrumental in delivering projects that exceed client expectations and push the boundaries of what's possible in the digital universe.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-emerald-400/50 hover:shadow-2xl hover:shadow-emerald-500/20 overflow-hidden">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="Emily Davis" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-emerald-500/30 transition-all duration-500 object-cover"
-                  />
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-emerald-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">Emily Davis</h4>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                    Creative designer crafting stellar user experiences across the galaxy. Emily combines artistic vision with user-centered design principles to create interfaces that are both beautiful and intuitive.
-                  </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
-                    Her innovative design solutions have transformed complex digital experiences into seamless, engaging journeys that delight users and drive exceptional results for our clients across multiple planets and galaxies.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Company Values Section */}
         <div className="mt-32">

@@ -151,20 +151,20 @@ export default function Contact() {
 
             <div className="w-line space-y-6 text-lg">
               <div className="space-y-2">
-                <a href="tel:+881750660600" className="inline-block border-b border-slate-400 hover:border-slate-900 transition">
-                  +881 750 6606 00
+                <a href="tel:+97145706249" className="inline-block border-b border-slate-400 hover:border-slate-900 transition">
+                  +97145751374
                 </a>
               </div>
 
               <div className="space-y-2">
-                <a href="mailto:hello@arolax.com" className="inline-block border-b border-slate-400 hover:border-slate-900 transition">
-                  hello@orbit walls.com
+                <a href="mailto:info@orbitwalls.com" className="inline-block border-b border-slate-400 hover:border-slate-900 transition">
+                  info@orbitwalls.com
                 </a>
               </div>
 
               <div>
-                <p>230 alaska street dunasia</p>
-                <p>QC (USA) H8R 1A1</p>
+                <p>1104, 11th Floor, The Tower Plaza Hotel, Sheikh Zayad Road</p>
+                <p>Dubai, UAE</p>
               </div>
             </div>
           </div>
