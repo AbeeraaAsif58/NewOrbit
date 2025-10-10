@@ -180,7 +180,7 @@ export default function Navbar() {
           <img 
             src="/logo2.png" 
             alt="Orbit Walls Logo" 
-            className="h-[30vh] w-auto object-contain mt-[5%]"
+            className="h-[50vh] w-auto object-contain mt-[5%]"
           />
         </Link>
 

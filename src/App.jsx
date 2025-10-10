@@ -1,7 +1,6 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import SidebarNavbar from "./components/SidebarNavbar";
-import PerformanceMonitor from "./components/PerformanceMonitor";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -10,29 +9,29 @@ import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cursor from "./components/Cursor";
-// import FooterOrbit from "./components/FooterOrbit";
-// Industry pages
-import ArtificialIntelligence from "./pages/Industries/ArtificialIntelligence";
-import Automobile from "./pages/Industries/Automobile";
-import Blockchain from "./pages/Industries/Blockchain";
-import B2B from "./pages/Industries/B2B";
-import Companies from "./pages/Industries/Companies";
-import Dating from "./pages/Industries/Dating";
-import Finance from "./pages/Industries/Finance";
-import BrandingAgency from "./pages/Industries/BrandingAgency";
-import WebDesignAgency from "./pages/Industries/WebDesignAgency";
-import SEOAgency from "./pages/Industries/SEOAgency";
-import DesignStudio from "./pages/Industries/DesignStudio";
-import VideoProduction from "./pages/Industries/VideoProduction";
-import CreativeAgencyClassic from "./pages/Industries/CreativeAgencyClassic";
-import MarketingAgency from "./pages/Industries/MarketingAgency";
-import CorporateAgency from "./pages/Industries/CorporateAgency";
-import StartupAgency from "./pages/Industries/StartupAgency";
-import Freelancer from "./pages/Industries/Freelancer";
-import MarketingConsultancyAgency from "./pages/Industries/MarketingConsultancyAgency";
-import PersonalPortfolio from "./pages/Industries/PersonalPortfolio";
-import ITConsultancyAgency from "./pages/Industries/ITConsultancyAgency";
-import ProjectDetail from "./pages/Industries/ProjectDetail";
+
+// Lazy load industry pages for better performance
+const ArtificialIntelligence = lazy(() => import("./pages/Industries/ArtificialIntelligence"));
+const Automobile = lazy(() => import("./pages/Industries/Automobile"));
+const Blockchain = lazy(() => import("./pages/Industries/Blockchain"));
+const B2B = lazy(() => import("./pages/Industries/B2B"));
+const Companies = lazy(() => import("./pages/Industries/Companies"));
+const Dating = lazy(() => import("./pages/Industries/Dating"));
+const Finance = lazy(() => import("./pages/Industries/Finance"));
+const BrandingAgency = lazy(() => import("./pages/Industries/BrandingAgency"));
+const WebDesignAgency = lazy(() => import("./pages/Industries/WebDesignAgency"));
+const SEOAgency = lazy(() => import("./pages/Industries/SEOAgency"));
+const DesignStudio = lazy(() => import("./pages/Industries/DesignStudio"));
+const VideoProduction = lazy(() => import("./pages/Industries/VideoProduction"));
+const CreativeAgencyClassic = lazy(() => import("./pages/Industries/CreativeAgencyClassic"));
+const MarketingAgency = lazy(() => import("./pages/Industries/MarketingAgency"));
+const CorporateAgency = lazy(() => import("./pages/Industries/CorporateAgency"));
+const StartupAgency = lazy(() => import("./pages/Industries/StartupAgency"));
+const Freelancer = lazy(() => import("./pages/Industries/Freelancer"));
+const MarketingConsultancyAgency = lazy(() => import("./pages/Industries/MarketingConsultancyAgency"));
+const PersonalPortfolio = lazy(() => import("./pages/Industries/PersonalPortfolio"));
+const ITConsultancyAgency = lazy(() => import("./pages/Industries/ITConsultancyAgency"));
+const ProjectDetail = lazy(() => import("./pages/Industries/ProjectDetail"));
 
 
 // import BackgroundAI from "./components/BackgroundAI";
@@ -60,8 +59,9 @@ export default function App() {
 
         <Cursor />
 
-        <main className="relative z-10 flex-1 px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
-          <Routes>
+        <main className="relative z-10 flex-1 px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-10 pt-20 sm:pt-24 md:pt-28">
+          <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-32 w-32 border-b-2 border-green-500"></div></div>}>
+            <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
@@ -120,12 +120,10 @@ export default function App() {
             <Route path="/marketing-consultancy-agency" element={<MarketingConsultancyAgency />} />
             <Route path="/personal-portfolio" element={<PersonalPortfolio />} />
             <Route path="/it-consultancy-agency" element={<ITConsultancyAgency />} />
-          </Routes>
+            </Routes>
+          </Suspense>
         </main>
         
-        {/* Performance Monitor - only in development */}
-        <PerformanceMonitor enabled={process.env.NODE_ENV === 'development'} />
-       
            {/* Global footer (once) */}
         {/* <FooterOrbit /> */}
     

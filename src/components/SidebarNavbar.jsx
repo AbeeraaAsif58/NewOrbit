@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { gsap } from "gsap";
 
-const EVENTS = ["TechTalks", "CodeConnect", "DevInsights", "SkillUp", "LearnIT"];
 const LINKS = [
   { to: "/", label: "Home", end: true },
   { to: "/about", label: "About" },
@@ -36,12 +35,14 @@ const INDUSTRIES = [
 
 export default function SidebarNavbar() {
   const [open, setOpen] = useState(false);
-  const [eventsOpen, setEventsOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
   const [sidebarSearch, setSidebarSearch] = useState("");
   const [industriesSearch, setIndustriesSearch] = useState("");
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const drawerRef = useRef(null);
   const backdropRef = useRef(null);
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     if (open) {
@@ -60,6 +61,29 @@ export default function SidebarNavbar() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  // Scroll-based navbar hide/show functionality
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Only hide/show if scrolled more than 100px to avoid flickering
+      if (Math.abs(currentScrollY - lastScrollY) < 100) return;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down - hide navbar
+        setIsNavbarVisible(false);
+      } else {
+        // Scrolling up - show navbar
+        setIsNavbarVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   const handleHover = (e) => {
     gsap.to(e.currentTarget, { scale: 1.07, duration: 0.3, ease: "power3.out" });
     const underline = e.currentTarget.querySelector(".underline");
@@ -77,9 +101,6 @@ export default function SidebarNavbar() {
   const filteredSidebarLinks = LINKS.filter((item) => 
     item.label.toLowerCase().includes(sidebarSearch.toLowerCase())
   );
-  const filteredSidebarEvents = EVENTS.filter((item) => 
-    item.toLowerCase().includes(sidebarSearch.toLowerCase())
-  );
   const filteredIndustries = INDUSTRIES.filter((item) =>
     item.label.toLowerCase().includes(industriesSearch.toLowerCase())
   );
@@ -87,7 +108,12 @@ export default function SidebarNavbar() {
   return (
     <>
       {/* Top Navbar */}
-      <header className="sticky top-0 z-40 bg-gradient-to-r from-[#034159] via-[#025951] to-[#034159] text-white shadow-2xl border-b border-teal-500/30 backdrop-blur-md">
+      <header 
+        ref={navbarRef}
+        className={`fixed top-0 left-0 right-0 z-40 bg-gradient-to-r from-[#034159] via-[#025951] to-[#034159] text-white shadow-2xl border-b border-teal-500/30 backdrop-blur-md transition-transform duration-300 ease-in-out ${
+          isNavbarVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}
+      >
         <div className="h-12 sm:h-14 md:h-16 flex items-center px-3 sm:px-4 md:px-6 relative">
           <button
             onClick={() => setOpen(true)}
@@ -107,7 +133,7 @@ export default function SidebarNavbar() {
               <img 
                 src="/logo2.png" 
                 alt="Orbit Walls Logo" 
-                className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
+                className="h-20 sm:h-24 md:h-28 lg:h-32 xl:h-36 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
               />
             </Link>
           </div>
@@ -223,41 +249,6 @@ export default function SidebarNavbar() {
                 </NavLink>
               </li>
             ))}
-
-            <li className="pt-1">
-              <button 
-                onClick={() => toggleDropdown(setEventsOpen)} 
-                onMouseEnter={handleHover} 
-                onMouseLeave={handleLeave} 
-                className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-bold select-none hover:text-[#0CF25D] transition-all duration-300 px-3 sm:px-4 py-1 touch-manipulation"
-              >
-                Events
-                <svg 
-                  className={`w-5 h-5 sm:w-7 sm:h-7 transition-transform duration-300 ${eventsOpen ? "rotate-180" : ""}`} 
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" fill="none" />
-                </svg>
-              </button>
-
-              <div className={`overflow-hidden transition-all duration-500 ease-out ${eventsOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
-                <ul className="mt-1 pl-4 sm:pl-6 space-y-1">
-                  {filteredSidebarEvents.map((event, i) => (
-                    <li key={event} className="opacity-0" ref={(el) => { if (el && eventsOpen) gsap.to(el, { opacity: 1, y: 0, duration: 0.4, delay: i * 0.05, ease: "power3.out" }); }}>
-                      <a 
-                        href={`#${event.toLowerCase()}`} 
-                        onMouseEnter={handleHover} 
-                        onMouseLeave={handleLeave} 
-                        className="relative block text-base sm:text-lg md:text-xl text-white/90 hover:text-[#0CF25D] transition-all duration-300 px-2 sm:px-3 py-0.5 touch-manipulation"
-                      >
-                        {event}
-                        <span className="underline absolute left-2 sm:left-3 bottom-0 h-[1px] sm:h-[2px] w-0 bg-gradient-to-r from-[#0CF25D] to-[#0CF25D]/60 rounded-full"></span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
           </ul>
         </nav>
       </aside>

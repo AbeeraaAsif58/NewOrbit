@@ -127,7 +127,7 @@ useEffect(() => {
   return (
     <>
       <LoadingGate />
-      <BackgroundAI mode="scroll" nodeCount={40} linkDistance={100} cursorLinkDistance={120} />
+      <BackgroundAI mode="scroll" nodeCount={20} linkDistance={80} cursorLinkDistance={100} />
 
       <section
         ref={root}
@@ -150,7 +150,7 @@ useEffect(() => {
             style={{ transformStyle: "preserve-3d" }}
           >
             <img
-              src="public/moon.png"
+              src="/moon.png"
               alt="moon"
               className="moon-img relative z-10 w-[300px] sm:w-[400px] md:w-[620px] lg:w-[820px] select-none mt-[-20%] sm:mt-[-30%]"
               draggable="false"

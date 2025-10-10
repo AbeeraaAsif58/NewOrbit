@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import TalkBanner from "../../components/TalkBanner";
+import SimpleFooter from "../../components/SimpleFooter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,10 +71,13 @@ export default function Companies() {
         {/* Talk Banner */}
         <TalkBanner 
           email="hello@orbitwalls.com"
-          bg="#ff6b35"
+          bg="#034159"
           textColor="#ffffff"
-          subColor="#ff8c42"
+          subColor="#0CF25D"
         />
+        
+        {/* Footer */}
+        <SimpleFooter />
       </div>
     </div>
   );

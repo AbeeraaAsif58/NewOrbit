@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import TalkBanner from "../../components/TalkBanner";
+import SimpleFooter from "../../components/SimpleFooter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +66,7 @@ export default function ArtificialIntelligence() {
   }, []);
 
   return (
-    <div className="min-h-screen text-white selection:bg-orange-500/20">
+    <div className="min-h-screen text-white selection:bg-green-500/20">
       {/* Smooth scroll container */}
       <div data-scroll-container ref={scrollRoot}>
         <div className="px-4 py-8 sm:px-6 lg:px-8">
@@ -76,10 +77,13 @@ export default function ArtificialIntelligence() {
         {/* Talk Banner */}
         <TalkBanner 
           email="hello@orbitwalls.com"
-          bg="#ff6b35"
+          bg="#034159"
           textColor="#ffffff"
-          subColor="#ff8c42"
+          subColor="#0CF25D"
         />
+        
+        {/* Footer */}
+        <SimpleFooter />
       </div>
     </div>
   );
@@ -195,10 +199,10 @@ function ProjectCard({ project, index, navigate }) {
     <div 
       data-reveal
       onClick={handleCardClick}
-      className="group relative bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/30 rounded-2xl overflow-hidden hover:border-orange-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/20 cursor-pointer"
+      className="group relative bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/30 rounded-2xl overflow-hidden hover:border-green-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 cursor-pointer"
     >
       {/* Top Graphic Section */}
-      <div className="relative bg-gradient-to-b from-orange-100 to-orange-200 p-4">
+      <div className="relative bg-gradient-to-b from-green-100 to-green-200 p-4">
         {/* Project Image */}
         <div className="w-full h-32 rounded-lg overflow-hidden">
           <img 
@@ -213,7 +217,7 @@ function ProjectCard({ project, index, navigate }) {
       <div className="relative z-10 p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/70">
         {/* Tags */}
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          <span className="px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-medium rounded-full border border-orange-500/30">
+          <span className="px-3 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full border border-green-500/30">
             {project.category}
       </span>
           {project.tags.map((tag, i) => (
@@ -224,7 +228,7 @@ function ProjectCard({ project, index, navigate }) {
       </div>
         
         {/* Title */}
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors duration-300">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors duration-300">
           {project.title}
         </h3>
         
@@ -239,7 +243,7 @@ function ProjectCard({ project, index, navigate }) {
             {project.status}
           </div>
           {project.price && (
-            <div className="text-orange-400 text-sm font-bold">
+            <div className="text-green-400 text-sm font-bold">
               {project.price}
             </div>
           )}
