@@ -60,7 +60,7 @@ export default function App() {
 
         <Cursor />
 
-        <main className="relative z-10 flex-1 px-4 py-10">
+        <main className="relative z-10 flex-1 px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />

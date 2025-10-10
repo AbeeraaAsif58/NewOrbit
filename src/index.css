@@ -295,3 +295,49 @@ html, body {
     font-size: 7px;
   }
 }
+
+/* -------- Additional Responsive Utilities -------- */
+@media (max-width: 640px) {
+  /* Mobile-specific adjustments */
+  .hello, .hyisycis {
+    text-shadow:
+      0 1px 0 rgba(12,242,93,.6),
+      0 5px 15px rgba(12,242,93,.6),
+      0 0 20px rgba(12,242,93,.5);
+  }
+  
+  .hello::after, .hyisycis::after {
+    inset: -2% -1%;
+    filter: blur(5px);
+  }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  .service-circle:hover {
+    transform: translate(-50%, -50%) scale(1.05) !important;
+  }
+  
+  .service-circle-inner {
+    transition: transform 0.2s ease;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .stars, .stars2, .stars3 {
+    background-size: 110px 110px, 130px 130px, 180px 180px;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 896px) and (orientation: landscape) {
+  .service-circle {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .service-text {
+    font-size: 8px;
+  }
+}

@@ -101,41 +101,41 @@ const Services = () => {
             variants={fade}
             initial="hidden"
             animate={inView ? 'show' : 'hidden'}
-            className="mb-16 min-h-[80vh] flex flex-col justify-center px-8 md:px-12 lg:px-16"
+            className="mb-12 sm:mb-16 min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16"
           >
             <motion.h1
               variants={fadeUp}
-              className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow"
             >
               We are "Orbit" — product and branding and creative agency
               based in California
             </motion.h1>
-            <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+            <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
               <div className="md:col-span-3">
-                <div className="flex items-center gap-4 text-[11px] tracking-[0.18em] font-semibold uppercase text-gray-400">
+                <div className="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-[11px] tracking-[0.15em] sm:tracking-[0.18em] font-semibold uppercase text-gray-400">
                   <span>02. Our Services</span>
-                  <span className="h-px w-14 bg-gray-600" />
+                  <span className="h-px w-10 sm:w-14 bg-gray-600" />
                 </div>
               </div>
-              <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
+              <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
                 Launch your digital presence with solutions crafted to match Orbit Walls' identity and propel your business into the digital stratosphere.
               </div>
             </div>
           </motion.div>
 
           {/* Core Services Section */}
-          <div className="mb-32 px-8 md:px-12 lg:px-16">
+          <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
             <motion.div
               variants={staggerChildren}
               initial="hidden"
               animate={inView ? 'show' : 'hidden'}
-              className="text-center mb-20"
+              className="text-center mb-16 sm:mb-20"
             >
-              <motion.h3 variants={fadeUp} className="group relative text-5xl font-bold mb-8 text-white hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
+              <motion.h3 variants={fadeUp} className="group relative text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-white hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
                 Core Services
-                <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-500 group-hover:w-full"></span>
+                <span className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-500 group-hover:w-full"></span>
               </motion.h3>
-              <motion.p variants={fadeUp} className="text-2xl text-white/70">Essential services that power your digital journey</motion.p>
+              <motion.p variants={fadeUp} className="text-lg sm:text-xl md:text-2xl text-white/70">Essential services that power your digital journey</motion.p>
             </motion.div>
 
             <motion.div
@@ -143,10 +143,10 @@ const Services = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: '-100px' }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-12"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12"
             >
               {/* Web Development */}
-              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="relative mb-6">
                   <img 
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
@@ -158,11 +158,11 @@ const Services = () => {
                     <span className="text-2xl">💻</span>
                   </div>
                 </div>
-                <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-500 transition-colors duration-300">Web Development</h4>
-                <p className="text-white/80 text-lg leading-relaxed mb-4">
+                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">Web Development</h4>
+                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
                   Custom web applications built with cutting-edge technologies. We create responsive, scalable, and high-performance websites that launch your business into the digital stratosphere.
                 </p>
-                <p className="text-white/70 text-base leading-relaxed">
+                <p className="text-white/70 text-sm sm:text-base leading-relaxed">
                   From React and Next.js to full-stack solutions, we deliver modern web experiences that engage users and drive conversions across all devices and platforms.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
@@ -173,7 +173,7 @@ const Services = () => {
               </motion.div>
 
               {/* Mobile App Development */}
-              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="relative mb-6">
                   <img 
                     src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
@@ -185,11 +185,11 @@ const Services = () => {
                     <span className="text-2xl">📱</span>
                   </div>
                 </div>
-                <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-500 transition-colors duration-300">Mobile App Development</h4>
-                <p className="text-white/80 text-lg leading-relaxed mb-4">
+                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">Mobile App Development</h4>
+                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
                   Native and cross-platform mobile applications that deliver exceptional user experiences. We build apps that perform flawlessly across iOS and Android platforms.
                 </p>
-                <p className="text-white/70 text-base leading-relaxed">
+                <p className="text-white/70 text-sm sm:text-base leading-relaxed">
                   Using React Native and Flutter, we create stunning mobile apps with smooth animations, intuitive interfaces, and robust backend integration.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
@@ -200,7 +200,7 @@ const Services = () => {
               </motion.div>
 
               {/* UI/UX Design */}
-              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="relative mb-6">
                   <img 
                     src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
@@ -212,11 +212,11 @@ const Services = () => {
                     <span className="text-2xl">🎨</span>
                   </div>
                 </div>
-                <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-500 transition-colors duration-300">UI/UX Design</h4>
-                <p className="text-white/80 text-lg leading-relaxed mb-4">
+                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">UI/UX Design</h4>
+                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
                   Beautiful, intuitive designs that captivate users and drive engagement. We create user experiences that are both aesthetically pleasing and functionally superior.
                 </p>
-                <p className="text-white/70 text-base leading-relaxed">
+                <p className="text-white/70 text-sm sm:text-base leading-relaxed">
                   From wireframes to high-fidelity prototypes, our design process ensures every interaction feels natural and every visual element serves a purpose.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
@@ -229,17 +229,17 @@ const Services = () => {
           </div>
 
           {/* Full-Width Image Section */}
-          <div className="mt-32 mb-32 px-8 md:px-12 lg:px-16">
-          <div className="relative h-[80vh] rounded-3xl overflow-hidden">
+          <div className="mt-24 sm:mt-32 mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
+          <div className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] rounded-2xl sm:rounded-3xl overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
                 alt="Our Development Process" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-16 text-white">
-                <h3 className="text-5xl font-bold mb-6">Our Development Process</h3>
-                <p className="text-2xl text-white/80 max-w-3xl leading-relaxed">
+              <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-16 text-white">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Our Development Process</h3>
+                <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl leading-relaxed">
                   We follow a systematic approach to ensure every project launches successfully into the digital stratosphere with precision and excellence.
                 </p>
               </div>
@@ -248,13 +248,13 @@ const Services = () => {
           </div>
 
           {/* Advanced Services Section */}
-          <div className="mb-32 px-8 md:px-12 lg:px-16">
-            <div className="text-center mb-20 animate-fade-in">
-              <h3 className="group relative text-5xl font-bold mb-8 text-white hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
+          <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
+            <div className="text-center mb-16 sm:mb-20 animate-fade-in">
+              <h3 className="group relative text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-white hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
                 Advanced Services
-                <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-500 group-hover:w-full"></span>
+                <span className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-500 group-hover:w-full"></span>
               </h3>
-              <p className="text-2xl text-white/70">Specialized solutions for complex digital challenges</p>
+              <p className="text-lg sm:text-xl md:text-2xl text-white/70">Specialized solutions for complex digital challenges</p>
             </div>
             
             <motion.div
@@ -262,10 +262,10 @@ const Services = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: '-100px' }}
-              className="grid md:grid-cols-2 gap-12"
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12"
             >
               {/* Cloud Solutions */}
-              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="relative flex-shrink-0">
                     <img 
@@ -292,7 +292,7 @@ const Services = () => {
               </motion.div>
 
               {/* AI & Machine Learning */}
-              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="relative flex-shrink-0">
                     <img 
@@ -319,7 +319,7 @@ const Services = () => {
               </motion.div>
 
               {/* E-commerce Solutions */}
-              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="relative flex-shrink-0">
                     <img 
@@ -346,7 +346,7 @@ const Services = () => {
               </motion.div>
 
               {/* Digital Marketing */}
-              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="relative flex-shrink-0">
                     <img 
@@ -375,8 +375,8 @@ const Services = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="mb-32 px-8 md:px-12 lg:px-16">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {[
                 { label: 'Projects Delivered', value: 120 },
                 { label: 'Avg. Uplift in Conversions', value: 38, suffix: '%' },
@@ -389,11 +389,11 @@ const Services = () => {
           </div>
 
           {/* Testimonials */}
-          <div className="mb-32 px-8 md:px-12 lg:px-16">
-            <div className="text-center mb-12">
-              <h3 className="text-5xl font-bold text-white">What Clients Say</h3>
+          <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
+            <div className="text-center mb-10 sm:mb-12">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">What Clients Say</h3>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {[1,2,3].map((i) => (
                 <motion.div
                   key={i}
@@ -401,7 +401,7 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: '-120px' }}
-                  className="relative bg-gradient-to-br from-teal-900/60 to-teal-800/80 border border-teal-700/50 rounded-2xl p-8"
+                  className="relative bg-gradient-to-br from-teal-900/60 to-teal-800/80 border border-teal-700/50 rounded-xl sm:rounded-2xl p-6 sm:p-8"
                 >
                   <div className="absolute -top-6 left-8 w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-2xl shadow-lg">“</div>
                   <p className="mt-4 text-white/80 leading-relaxed">
@@ -425,18 +425,18 @@ const Services = () => {
           </div>
 
           {/* Service Packages Section */}
-          <div className="mb-32 px-8 md:px-12 lg:px-16">
-            <div className="text-center mb-20 animate-fade-in">
-              <h3 className="group relative text-5xl font-bold mb-8 text-white hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
+          <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
+            <div className="text-center mb-16 sm:mb-20 animate-fade-in">
+              <h3 className="group relative text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-white hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer">
                 Service Packages
-                <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-500 group-hover:w-full"></span>
+                <span className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-teal-500 to-teal-600 transition-all duration-500 group-hover:w-full"></span>
               </h3>
-              <p className="text-2xl text-white/70">Choose the perfect package for your digital journey</p>
+              <p className="text-lg sm:text-xl md:text-2xl text-white/70">Choose the perfect package for your digital journey</p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
               {/* Starter Package */}
-              <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-400/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-400/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="text-center mb-8">
                   <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/30">
                     <span className="text-3xl">🚀</span>
@@ -507,7 +507,7 @@ const Services = () => {
               </div>
 
               {/* Enterprise Package */}
-              <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-8 border border-teal-700/50 hover:border-teal-400/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
+              <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-400/60 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="text-center mb-8">
                   <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/30">
                     <span className="text-3xl">👑</span>
@@ -546,13 +546,13 @@ const Services = () => {
           </div>
 
           {/* Call to Action Section */}
-          <div className="mt-32 mb-20 text-center px-8 md:px-12 lg:px-16">
+          <div className="mt-24 sm:mt-32 mb-16 sm:mb-20 text-center px-4 sm:px-8 md:px-12 lg:px-16">
             <motion.div
               variants={scaleIn}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-3xl p-16 border border-teal-700/50 relative overflow-hidden"
+              className="bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 border border-teal-700/50 relative overflow-hidden"
             >
               {/* Background Effects */}
               <div className="absolute inset-0 opacity-10">
@@ -562,18 +562,18 @@ const Services = () => {
               </div>
               
               <div className="relative z-10">
-                <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(12,242,93,0.4)] cursor-pointer">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(12,242,93,0.4)] cursor-pointer">
                   Ready to Launch Your <span className="text-teal-500">Digital Project?</span>
                 </h2>
-                <p className="text-2xl text-white/80 mb-12 max-w-4xl mx-auto leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
                   Let's discuss your project requirements and create a custom solution that propels your business into the digital stratosphere. 
                   Our team is ready to make your vision a reality.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                  <button className="group px-12 py-6 bg-teal-600 text-white text-2xl font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-teal-700">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-teal-600 text-white text-lg sm:text-xl md:text-2xl font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-teal-700">
                     <span className="group-hover:tracking-wider transition-all duration-300">Start Your Project</span>
                   </button>
-                  <button className="group px-12 py-6 bg-transparent border-2 border-teal-400 text-teal-500 text-2xl font-bold rounded-full hover:bg-teal-500 hover:border-teal-500 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-transparent border-2 border-teal-400 text-teal-500 text-lg sm:text-xl md:text-2xl font-bold rounded-full hover:bg-teal-500 hover:border-teal-500 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <span className="group-hover:tracking-wider transition-all duration-300">View Portfolio</span>
                   </button>
                 </div>

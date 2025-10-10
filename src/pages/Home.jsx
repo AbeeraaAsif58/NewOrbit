@@ -140,7 +140,7 @@ useEffect(() => {
         className="relative min-h-[266svh] w-full overflow-hidden text-white "
       >
         {/* Centered big heading that scales in and stays (no left/right) */}
-        <div className="hero-head absolute top-[20%] h-[100vh] w-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-[6vw] font-bold text-center leading-tight">
+        <div className="hero-head absolute top-[15%] sm:top-[20%] h-[100vh] w-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-[8vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] font-bold text-center leading-tight px-4">
           <h1 className="hello">Beyond Walls</h1>
           <br />
           <h1 className="hyisycis">Towards Innovation</h1>
@@ -158,7 +158,7 @@ useEffect(() => {
             <img
               src="public/moon.png"
               alt="moon"
-              className="moon-img relative z-10 w-[620px] md:w-[820px] select-none mt-[-30%]"
+              className="moon-img relative z-10 w-[300px] sm:w-[400px] md:w-[620px] lg:w-[820px] select-none mt-[-20%] sm:mt-[-30%]"
               draggable="false"
             />
             <div
@@ -176,7 +176,7 @@ useEffect(() => {
 
         {/* Ambient glow */}
         <div
-          className="glow pointer-events-none absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 w-[780px] h-[780px] rounded-full blur-3xl opacity-0 border-2 border-primary"
+          className="glow pointer-events-none absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] md:w-[780px] h-[400px] sm:h-[600px] md:h-[780px] rounded-full blur-3xl opacity-0 border-2 border-primary"
           style={{
             background:
               "radial-gradient(closest-side, var(--color-primary), rgba(12,242,93,0))",
@@ -184,40 +184,40 @@ useEffect(() => {
           }}
         />
 
-        <div className="mt-[68%]">
-          <div className="group relative h-[70vh] overflow-hidden">
-            <div className="flex flex-col place-items-start gap-10 pl-[10%]">
+        <div className="mt-[60%] sm:mt-[68%]">
+          <div className="group relative h-[60vh] sm:h-[70vh] overflow-hidden">
+            <div className="flex flex-col place-items-start gap-6 sm:gap-10 pl-[5%] sm:pl-[10%] pr-[5%]">
               {/* 1) Gradient + glow + underline slide */}
               <h1
-                className="group/one relative cursor-pointer text-4xl md:text-4xl font-extrabold tracking-tight
+                className="group/one relative cursor-pointer text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight
                    text-white
                    transition-all duration-300 ease-out
                    hover:tracking-wider hover:scale-105 hover:drop-shadow-[0_0_18px_rgba(12,242,93,0.55)]"
               >
                 Transform your business <br /> with cutting-edge
                 <span
-                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-black to-primary
+                  className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-black to-primary
                        transition-all duration-500 group-hover/one:w-full"
                 ></span>
               </h1>
 
               {/* 2) Clean white -> neon shift + slight skew */}
               <h1
-                className="group/two relative cursor-pointer text-2xl md:text-4xl font-extrabold tracking-tight
+                className="group/two relative cursor-pointer text-xl sm:text-2xl md:text-4xl font-extrabold tracking-tight
                    text-white transition-all duration-300 ease-out
                    hover:text-white hover:translate-y-1 hover:skew-x-[2deg] hover:tracking-wider
                    hover:drop-shadow-[0_0_14px_rgba(12,242,93,0.6)]"
               >
                 fintech solutions powered by
                 <span
-                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-black to-primary
+                  className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-black to-primary
                        transition-all duration-500 group-hover/two:w-full"
                 ></span>
               </h1>
 
               {/* 3) Subtle -> teal gradient on hover + lift */}
               <h1
-                className="group/three relative cursor-pointer text-2xl md:text-4xl font-extrabold tracking-tight
+                className="group/three relative cursor-pointer text-xl sm:text-2xl md:text-4xl font-extrabold tracking-tight
                    text-white
                    transition-all duration-300 ease-out
                    hover:text-white hover:tracking-wider hover:-translate-y-1
@@ -225,7 +225,7 @@ useEffect(() => {
               >
                 ORBIT WALLS's <br /> innovative technology.
                 <span
-                  className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-black to-primary
+                  className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-black to-primary
                        transition-all duration-500 group-hover/three:w-full"
                 ></span>
               </h1>
@@ -248,7 +248,7 @@ useEffect(() => {
 
             <DualMarqueeSliders/>
       {/* Technology Company Introduction */}
-      <div className="relative py-20 px-8 md:px-16 bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 overflow-hidden">
+      <div className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-8 md:px-16 bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 via-transparent to-teal-600/5"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-teal-500/10 via-transparent to-teal-600/10"></div>
@@ -262,9 +262,9 @@ useEffect(() => {
         </div>
 
         <div className="max-w-8xl mx-auto text-center relative z-10">
-          <div className="mb-12">
+          <div className="mb-8 sm:mb-12">
             <h2 
-              className="text-4xl md:text-8xl font-bold text-white mb-6 cursor-pointer transition-all duration-300"
+              className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-4 sm:mb-6 cursor-pointer transition-all duration-300 px-4"
               style={{
                 textShadow: isGlowHovered 
                   ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
@@ -292,15 +292,15 @@ useEffect(() => {
               </span>
             </h2>
             
-            <div className="max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+            <div className="max-w-4xl mx-auto px-4">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-6 sm:mb-8">
                 At <span className="text-teal-500 font-semibold">Orbit Walls</span>, we are a cutting-edge technology company 
                 specializing in transformative digital solutions that revolutionize how businesses operate in the modern world. 
                 Our expertise spans across artificial intelligence, blockchain technology, fintech innovations, and enterprise-grade 
                 software development.
               </p>
               
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-6 sm:mb-8">
                 We combine deep technical knowledge with creative vision to deliver solutions that not only meet today's challenges 
                 but anticipate tomorrow's opportunities. From AI-powered automation and machine learning algorithms to secure blockchain 
                 implementations and scalable cloud architectures, we empower organizations to thrive in an increasingly digital landscape.
@@ -313,18 +313,18 @@ useEffect(() => {
 
 
           {/* Technology Highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-xl font-semibold text-white mb-3">AI & Machine Learning</h3>
-              <p className="text-gray-400">Advanced algorithms and intelligent automation solutions</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 px-4">
+            <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">AI & Machine Learning</h3>
+              <p className="text-sm sm:text-base text-gray-400">Advanced algorithms and intelligent automation solutions</p>
             </div>
-            <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-xl font-semibold text-white mb-3">Blockchain Technology</h3>
-              <p className="text-gray-400">Secure, decentralized solutions for modern enterprises</p>
+            <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">Blockchain Technology</h3>
+              <p className="text-sm sm:text-base text-gray-400">Secure, decentralized solutions for modern enterprises</p>
             </div>
-            <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-xl font-semibold text-white mb-3">Fintech Innovation</h3>
-              <p className="text-gray-400">Revolutionary financial technology and payment systems</p>
+            <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20 sm:col-span-2 lg:col-span-1">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">Fintech Innovation</h3>
+              <p className="text-sm sm:text-base text-gray-400">Revolutionary financial technology and payment systems</p>
             </div>
           </div>
         </div>
@@ -335,10 +335,10 @@ useEffect(() => {
 
 
 
-      <div className="relative h-auto grid place-items-center overflow-hidden mt-[-30%]">
+      <div className="relative h-auto grid place-items-center overflow-hidden mt-[-20%] sm:mt-[-30%] px-4">
         <h1 className="group relative text-center">
           <span
-            className="block mt-[15%] text-5xl md:text-8xl font-extrabold leading-none
+            className="block mt-[10%] sm:mt-[15%] text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold leading-none
             text-transparent bg-clip-text
             bg-gradient-to-r from-primary via-text to-secondary
             bg-[length:200%_100%] bg-left
@@ -349,7 +349,7 @@ useEffect(() => {
             Redefining Innovation <span className="text-white/90">Through Advanced Technology</span>
           </span>
 
-          <span className="mt-4 block text-text/70 text-lg text-center mx-auto max-w-6xl">
+          <span className="mt-4 sm:mt-6 block text-text/70 text-base sm:text-lg text-center mx-auto max-w-6xl px-4">
           Orbit Walls LLC, we believe that true innovation begins where technology and creativity meet. By harnessing the power of AI, automation, cloud computing, blockchain, and next-generation frameworks, we are redefining how businesses adopt and benefit from digital transformation. Our solutions go beyond functionality — they deliver scalability, performance, and long-term value. With a relentless focus on innovation, we empower organizations to stay ahead in a rapidly evolving digital world.
           </span>
         </h1>

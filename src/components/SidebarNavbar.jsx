@@ -87,15 +87,15 @@ export default function SidebarNavbar() {
   return (
     <>
       {/* Top Navbar */}
-      <header className="sticky top-0 z-40 bg-gradient-to-r from-[#034159] via-[#025951] to-[#034159] text-white shadow-lg border-b border-teal-500/20">
-        <div className="h-14 flex items-center px-4 relative">
+      <header className="sticky top-0 z-40 bg-gradient-to-r from-[#034159] via-[#025951] to-[#034159] text-white shadow-2xl border-b border-teal-500/30 backdrop-blur-md">
+        <div className="h-12 sm:h-14 md:h-16 flex items-center px-3 sm:px-4 md:px-6 relative">
           <button
             onClick={() => setOpen(true)}
             onMouseEnter={handleHover}
             onMouseLeave={handleLeave}
-            className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-[#0CF25D] hover:bg-[#0CF25D]/80 transition-colors text-white shadow-md"
+            className="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br from-[#0CF25D] to-[#0CF25D]/80 hover:from-[#0CF25D]/90 hover:to-[#0CF25D]/70 transition-all duration-300 text-white shadow-lg hover:shadow-xl hover:scale-105 transform touch-manipulation"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="20" height="20" className="sm:w-6 sm:h-6 md:w-6 md:h-6" viewBox="0 0 24 24" fill="currentColor">
               <rect x="4" y="6" width="16" height="2" rx="1" />
               <rect x="4" y="11" width="16" height="2" rx="1" />
               <rect x="4" y="16" width="16" height="2" rx="1" />
@@ -103,27 +103,28 @@ export default function SidebarNavbar() {
           </button>
 
           <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-            <Link to="/" className="pointer-events-auto">
+            <Link to="/" className="pointer-events-auto group">
               <img 
                 src="/logo2.png" 
                 alt="Orbit Walls Logo" 
-                className="h-8 w-auto object-contain"
+                className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
               />
             </Link>
           </div>
 
-          <div className="ml-auto flex items-center gap-4 relative">
-            {/* Industries Dropdown on Top Navbar */}
+          <div className="ml-auto flex items-center gap-2 sm:gap-4 relative">
+            {/* Industries Dropdown on Top Navbar - Responsive design */}
             <div className="relative">
               <button
                 onClick={() => toggleDropdown(setIndustriesOpen)}
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
-                className="px-4 h-10 rounded-lg bg-[#0CF25D] hover:bg-[#0CF25D]/80 font-semibold flex items-center gap-1 transition-colors shadow-md"
+                className="px-2 sm:px-3 md:px-4 lg:px-6 h-8 sm:h-10 md:h-12 rounded-lg sm:rounded-xl bg-gradient-to-r from-[#0CF25D] to-[#0CF25D]/90 hover:from-[#0CF25D]/90 hover:to-[#0CF25D]/80 font-semibold flex items-center gap-1 sm:gap-2 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform touch-manipulation text-xs sm:text-sm md:text-base"
               >
-                Industries
+                <span className="hidden lg:inline">Industries</span>
+                <span className="lg:hidden">Ind.</span>
                 <svg
-                  className={`w-4 h-4 transition-transform duration-300 ${industriesOpen ? "rotate-180" : ""}`}
+                  className={`w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 transition-transform duration-300 ${industriesOpen ? "rotate-180" : ""}`}
                   viewBox="0 0 24 24"
                 >
                   <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" fill="none" />
@@ -131,28 +132,28 @@ export default function SidebarNavbar() {
               </button>
 
               <div
-                className={`absolute right-0 mt-3 w-96 rounded-lg overflow-hidden bg-gradient-to-br from-[#034159] to-[#025951] text-white shadow-xl transform transition-all duration-400 ease-out origin-top border border-teal-500/20 ${
+                className={`absolute right-0 mt-2 sm:mt-4 w-[90vw] sm:w-80 md:w-96 max-w-sm sm:max-w-none rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-[#034159]/95 to-[#025951]/95 backdrop-blur-xl text-white shadow-2xl transform transition-all duration-400 ease-out origin-top border border-teal-500/30 z-50 ${
                   industriesOpen ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-3 pointer-events-none"
                 }`}
               >
-                <div className="p-3 border-b border-teal-500/20">
+                <div className="p-3 sm:p-4 border-b border-teal-500/30">
                   <input
                     type="text"
                     placeholder="Search industries..."
                     value={industriesSearch}
                     onChange={(e) => setIndustriesSearch(e.target.value)}
-                    className="w-full px-3 py-2 rounded-lg border border-teal-500/30 bg-teal-800/50 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0CF25D] focus:border-[#0CF25D]"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl border border-teal-500/40 bg-teal-800/60 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0CF25D] focus:border-[#0CF25D] transition-all duration-300 text-sm sm:text-base"
                   />
                 </div>
-                <ul className="grid grid-cols-2 divide-y divide-teal-500/20">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 divide-y divide-teal-500/30">
                   {filteredIndustries.map((item, index) => (
-                    <li key={item.to} className={`${index % 2 === 0 ? "border-r border-teal-500/20" : ""}`}>
+                    <li key={item.to} className={`${index % 2 === 0 && window.innerWidth >= 640 ? "sm:border-r border-teal-500/30" : ""}`}>
                       <NavLink
                         to={item.to}
                         onMouseEnter={handleHover}
                         onMouseLeave={handleLeave}
                         onClick={() => setIndustriesOpen(false)}
-                        className="block px-4 py-3 hover:bg-[#0CF25D] hover:text-[#034159] transition-colors"
+                        className="block px-4 sm:px-5 py-3 sm:py-4 hover:bg-gradient-to-r hover:from-[#0CF25D]/20 hover:to-[#0CF25D]/10 hover:text-[#0CF25D] transition-all duration-300 font-medium text-sm sm:text-base"
                       >
                         {item.label}
                       </NavLink>
@@ -168,41 +169,41 @@ export default function SidebarNavbar() {
       {/* Backdrop */}
       <div
         ref={backdropRef}
-        className="fixed inset-0 z-30 bg-black/40 opacity-0 pointer-events-none"
+        className="fixed inset-0 z-30 bg-black/60 opacity-0 pointer-events-none backdrop-blur-sm"
         onClick={() => setOpen(false)}
       />
 
       {/* Sidebar */}
       <aside
         ref={drawerRef}
-        className="fixed left-0 top-0 h-full w-[300px] max-w-[85%] bg-gradient-to-b from-[#034159] to-[#025951] text-white shadow-2xl border-r border-teal-500/20 -translate-x-full opacity-0 scale-95 z-40"
+        className="fixed left-0 top-0 h-full w-[280px] sm:w-[320px] max-w-[90%] sm:max-w-[85%] bg-gradient-to-b from-[#034159]/98 to-[#025951]/98 backdrop-blur-xl text-white shadow-2xl border-r border-teal-500/30 -translate-x-full opacity-0 scale-95 z-40"
       >
-        <div className="flex items-center justify-between px-5 py-4 border-b border-teal-500/20">
-          <div className="text-lg font-semibold tracking-wide">Menu</div>
+        <div className="flex items-center justify-between px-4 sm:px-6 py-4 sm:py-6 border-b border-teal-500/30">
+          <div className="text-lg sm:text-xl font-bold tracking-wide bg-gradient-to-r from-[#0CF25D] to-white bg-clip-text text-transparent">Menu</div>
           <button
             onClick={() => setOpen(false)}
             onMouseEnter={handleHover}
             onMouseLeave={handleLeave}
-            className="w-9 h-9 grid place-items-center rounded-full hover:bg-white/20 transition"
+            className="w-8 h-8 sm:w-10 sm:h-10 grid place-items-center rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 touch-manipulation"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" stroke="white" strokeWidth="2">
+            <svg width="20" height="20" className="sm:w-6 sm:h-6" viewBox="0 0 24 24" stroke="white" strokeWidth="2">
               <path d="M6 6L18 18M6 18L18 6" />
             </svg>
           </button>
         </div>
 
-        <nav className="p-5">
-          <div className="mb-4">
+        <nav className="p-4 sm:p-6">
+          <div className="mb-4 sm:mb-6">
             <input
               type="text"
               value={sidebarSearch}
               onChange={(e) => setSidebarSearch(e.target.value)}
               placeholder="Search..."
-              className="w-full px-3 py-2 rounded-lg border border-teal-500/30 bg-teal-800/50 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0CF25D] focus:border-[#0CF25D]"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl border border-teal-500/40 bg-teal-800/60 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0CF25D] focus:border-[#0CF25D] transition-all duration-300 shadow-lg text-sm sm:text-base"
             />
           </div>
 
-          <ul className="space-y-5">
+          <ul className="space-y-1">
             {filteredSidebarLinks.map((link) => (
               <li key={link.to}>
                 <NavLink
@@ -212,29 +213,27 @@ export default function SidebarNavbar() {
                   onMouseLeave={handleLeave}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) => 
-                    `relative block text-[22px] font-medium tracking-wide transition-colors ${
-                      isActive ? 'text-[#0CF25D]' : 'hover:text-[#0CF25D]'
+                    `relative block text-lg sm:text-xl md:text-2xl font-semibold tracking-wide transition-all duration-300 px-3 sm:px-4 py-1 touch-manipulation ${
+                      isActive ? 'text-white' : 'hover:text-[#0CF25D]'
                     }`
                   }
                 >
                   {link.label}
-                  <span className="underline absolute left-0 bottom-0 h-[2px] w-0 bg-[#0CF25D]"></span>
+                  <span className="underline absolute left-3 sm:left-4 bottom-0 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-[#0CF25D] to-[#0CF25D]/60 rounded-full"></span>
                 </NavLink>
               </li>
             ))}
 
-            <li className="pt-3">
+            <li className="pt-1">
               <button 
                 onClick={() => toggleDropdown(setEventsOpen)} 
                 onMouseEnter={handleHover} 
                 onMouseLeave={handleLeave} 
-                className="flex items-center gap-2 text-[22px] font-semibold select-none hover:text-[#0CF25D] transition"
+                className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-bold select-none hover:text-[#0CF25D] transition-all duration-300 px-3 sm:px-4 py-1 touch-manipulation"
               >
                 Events
                 <svg 
-                  className={`transition-transform duration-300 ${eventsOpen ? "rotate-180" : ""}`} 
-                  width="24" 
-                  height="24" 
+                  className={`w-5 h-5 sm:w-7 sm:h-7 transition-transform duration-300 ${eventsOpen ? "rotate-180" : ""}`} 
                   viewBox="0 0 24 24"
                 >
                   <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" fill="none" />
@@ -242,17 +241,17 @@ export default function SidebarNavbar() {
               </button>
 
               <div className={`overflow-hidden transition-all duration-500 ease-out ${eventsOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
-                <ul className="mt-2 pl-3 space-y-2">
+                <ul className="mt-1 pl-4 sm:pl-6 space-y-1">
                   {filteredSidebarEvents.map((event, i) => (
                     <li key={event} className="opacity-0" ref={(el) => { if (el && eventsOpen) gsap.to(el, { opacity: 1, y: 0, duration: 0.4, delay: i * 0.05, ease: "power3.out" }); }}>
                       <a 
                         href={`#${event.toLowerCase()}`} 
                         onMouseEnter={handleHover} 
                         onMouseLeave={handleLeave} 
-                        className="relative block text-[18px] text-white/90 hover:text-white transition"
+                        className="relative block text-base sm:text-lg md:text-xl text-white/90 hover:text-[#0CF25D] transition-all duration-300 px-2 sm:px-3 py-0.5 touch-manipulation"
                       >
                         {event}
-                        <span className="underline absolute left-0 bottom-0 h-[1.5px] w-0 bg-[#0CF25D]"></span>
+                        <span className="underline absolute left-2 sm:left-3 bottom-0 h-[1px] sm:h-[2px] w-0 bg-gradient-to-r from-[#0CF25D] to-[#0CF25D]/60 rounded-full"></span>
                       </a>
                     </li>
                   ))}
