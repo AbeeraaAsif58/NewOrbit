@@ -19,12 +19,6 @@ import FooterOrbit from "../components/FooterOrbit";
 import Playfull from "../components/Playfull";
 import DualMarqueeSliders from "../components/DualMarqueeSliders";
 
-
-
-
-
-
-
 export default function Home() {
   const root = useRef(null);
   const moonWrap = useRef(null);   // 3D tilt wrapper
@@ -140,7 +134,7 @@ useEffect(() => {
         className="relative min-h-[266svh] w-full overflow-hidden text-white "
       >
         {/* Centered big heading that scales in and stays (no left/right) */}
-        <div className="hero-head absolute top-[15%] sm:top-[20%] h-[100vh] w-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-[8vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] font-bold text-center leading-tight px-4">
+        <div className="hero-head absolute top-[25%] sm:top-[20%] h-[100vh] w-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold text-center leading-tight px-4">
           <h1 className="hello">Beyond Walls</h1>
           <br />
           <h1 className="hyisycis">Towards Innovation</h1>
@@ -184,12 +178,12 @@ useEffect(() => {
           }}
         />
 
-        <div className="mt-[60%] sm:mt-[68%]">
+        <div className="mt-[65%] sm:mt-[68%]">
           <div className="group relative h-[60vh] sm:h-[70vh] overflow-hidden">
-            <div className="flex flex-col place-items-start gap-6 sm:gap-10 pl-[5%] sm:pl-[10%] pr-[5%]">
+            <div className="flex flex-col place-items-start gap-0 sm:gap-10 pl-[5%] sm:pl-[10%] pr-[5%]">
               {/* 1) Gradient + glow + underline slide */}
               <h1
-                className="group/one relative cursor-pointer text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight
+                className="group/one relative cursor-pointer text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight
                    text-white
                    transition-all duration-300 ease-out
                    hover:tracking-wider hover:scale-105 hover:drop-shadow-[0_0_18px_rgba(12,242,93,0.55)]"
@@ -203,7 +197,7 @@ useEffect(() => {
 
               {/* 2) Clean white -> neon shift + slight skew */}
               <h1
-                className="group/two relative cursor-pointer text-xl sm:text-2xl md:text-4xl font-extrabold tracking-tight
+                className="group/two relative cursor-pointer text-lg sm:text-2xl md:text-4xl font-extrabold tracking-tight
                    text-white transition-all duration-300 ease-out
                    hover:text-white hover:translate-y-1 hover:skew-x-[2deg] hover:tracking-wider
                    hover:drop-shadow-[0_0_14px_rgba(12,242,93,0.6)]"
@@ -217,7 +211,7 @@ useEffect(() => {
 
               {/* 3) Subtle -> teal gradient on hover + lift */}
               <h1
-                className="group/three relative cursor-pointer text-xl sm:text-2xl md:text-4xl font-extrabold tracking-tight
+                className="group/three relative cursor-pointer text-lg sm:text-2xl md:text-4xl font-extrabold tracking-tight
                    text-white
                    transition-all duration-300 ease-out
                    hover:text-white hover:tracking-wider hover:-translate-y-1
@@ -232,7 +226,9 @@ useEffect(() => {
             </div>
           </div>
 
-            <Slider />
+            <div className="-mt-24 sm:mt-0">
+              <Slider />
+            </div>
           
         </div>
       </section>

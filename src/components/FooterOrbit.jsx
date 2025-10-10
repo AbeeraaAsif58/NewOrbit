@@ -152,10 +152,10 @@ export default function FooterOrbitMoonTech() {
             <ul className="mt-4 space-y-3">
               <li className="ft-stagger">
                 <a
-                  href="mailto:info@ufglab.com"
+                  href="mailto:info@orbitwalls.com"
                   className="text-white/80 hover:text-white transition"
                 >
-                  info@ORBIT WALLSlab.com
+                  info@orbitwalls.com
                 </a>
               </li>
               <li className="ft-stagger">

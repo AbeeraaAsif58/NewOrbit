@@ -4,30 +4,29 @@ import { gsap } from "gsap";
 
 const DEFAULT_ITEMS = [
   {
-    title: "RUSSET",
-    subtitle: "Warm earth tones",
+    title: "",
+    subtitle: "",
     image:
       "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?q=80&w=1600&auto=format&fit=crop",
   },
   {
-    title: "DEEP BLUE",
-    subtitle: "Oceanic calm",
-    video: "https://cdn.coverr.co/videos/coverr-pouring-a-drink-3464/1080p.mp4",
+    title: "",
+    subtitle: "",
     image: "https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg",
   },
   {
-    title: "PINK",
-    subtitle: "Playful energy",
+    title: "",
+    subtitle: "",
     image: "https://images.pexels.com/photos/33814349/pexels-photo-33814349.jpeg",
   },
   {
-    title: "EMERALD",
-    subtitle: "Cool & crisp",
+    title: "",
+    subtitle: "",
     image: "https://images.pexels.com/photos/9783350/pexels-photo-9783350.jpeg",
   },
   {
-    title: "AURUM",
-    subtitle: "Subtle luxury",
+    title: "",
+    subtitle: "",
     image: "https://images.pexels.com/photos/5473950/pexels-photo-5473950.jpeg",
   },
 ];

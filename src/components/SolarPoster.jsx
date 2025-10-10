@@ -80,9 +80,11 @@ export default function SolarPoster({
 
   return (
     <section
-      className={`relative w-screen h-[40svh] overflow-hidden ${className}`}
-      style={{ background: "transparent" }}
-    >
+    className={`relative w-screen h-[40svh] md:h-[100svh] lg:h-[140svh] overflow-hidden ${className}`}
+    style={{ background: "transparent" }}
+  >
+
+  
       <svg viewBox={`0 0 ${width} ${height}`} className="absolute inset-0 w-full h-full" role="img">
         <defs>
           {/* Moon glow in theme primary green */}
