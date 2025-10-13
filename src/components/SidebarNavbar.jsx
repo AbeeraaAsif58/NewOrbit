@@ -47,9 +47,9 @@ export default function SidebarNavbar() {
 
   // Custom font style for sidebar navbar
   const sidebarFontStyle = {
-    fontFamily: "'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif",
-    fontWeight: "500",
-    letterSpacing: "0.025em"
+    fontFamily: "'DM Serif Text', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, serif",
+    fontWeight: "400",
+    letterSpacing: "0.02em"
   };
 
   useEffect(() => {
