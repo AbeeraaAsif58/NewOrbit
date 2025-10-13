@@ -116,24 +116,52 @@ html, body {
   to   { transform: translateY(-1000px); }
 }
 
-/* -------- Headings glow (optional) -------- */
+/* -------- Headings (no glow) -------- */
 .hello, .hyisycis {
   color: var(--color-text) !important;
-  text-shadow:
-    0 2px 0 rgba(12,242,93,.6),
-    0 10px 30px rgba(12,242,93,.6),
-    0 0 40px rgba(12,242,93,.5);
   position: relative;
   display: inline-block;
+  text-shadow: none !important;
+  filter: none !important;
+  box-shadow: none !important;
 }
+
 .hello::after, .hyisycis::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: -4% -2%;
-  border-radius: 999px;
-  background: radial-gradient(closest-side, rgba(12,242,93,.45), rgba(0,0,0,0) 75%);
-  filter: blur(10px);
+  display: none !important;
+}
+
+.hello::before, .hyisycis::before {
+  display: none !important;
+}
+
+/* -------- Force remove any glow effects -------- */
+.hero-head * {
+  text-shadow: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.hero-head .hello,
+.hero-head .hyisycis {
+  text-shadow: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+/* -------- Override any Tailwind glow effects -------- */
+.drop-shadow-none {
+  filter: none !important;
+}
+
+.text-shadow-none {
+  text-shadow: none !important;
+}
+
+/* -------- Global glow removal for Home page -------- */
+section[class*="hero"] * {
+  text-shadow: none !important;
+  filter: none !important;
+  box-shadow: none !important;
 }
 
 /* -------- Typing Animation -------- */
@@ -299,17 +327,6 @@ html, body {
 /* -------- Additional Responsive Utilities -------- */
 @media (max-width: 640px) {
   /* Mobile-specific adjustments */
-  .hello, .hyisycis {
-    text-shadow:
-      0 1px 0 rgba(12,242,93,.6),
-      0 5px 15px rgba(12,242,93,.6),
-      0 0 20px rgba(12,242,93,.5);
-  }
-  
-  .hello::after, .hyisycis::after {
-    inset: -2% -1%;
-    filter: blur(5px);
-  }
 }
 
 /* Touch-friendly interactions */
