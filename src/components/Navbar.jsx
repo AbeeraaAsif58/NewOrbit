@@ -178,9 +178,9 @@ export default function Navbar() {
           className="transition-all duration-300 hover:scale-105"
         >
           <img 
-            src="/logo2.png" 
+            src="/newlogo.png" 
             alt="Orbit Walls Logo" 
-            className="h-[50vh] w-auto object-contain mt-[5%]"
+            className="h-[30vh] w-auto object-contain mt-[5%]"
           />
         </Link>
 

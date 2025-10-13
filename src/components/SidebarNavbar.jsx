@@ -8,6 +8,7 @@ const LINKS = [
   { to: "/services", label: "Services" },
   { to: "/projects", label: "Projects" },
   { to: "/gallery", label: "Gallery" },
+  { to: "/business-partners", label: "Business Partners" },
   { to: "/contact", label: "Contact" }
 ];
 
@@ -43,6 +44,13 @@ export default function SidebarNavbar() {
   const drawerRef = useRef(null);
   const backdropRef = useRef(null);
   const navbarRef = useRef(null);
+
+  // Custom font style for sidebar navbar
+  const sidebarFontStyle = {
+    fontFamily: "'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif",
+    fontWeight: "500",
+    letterSpacing: "0.025em"
+  };
 
   useEffect(() => {
     if (open) {
@@ -131,9 +139,9 @@ export default function SidebarNavbar() {
           <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
             <Link to="/" className="pointer-events-auto group">
               <img 
-                src="/logo2.png" 
+                src="/newlogo.png" 
                 alt="Orbit Walls Logo" 
-                className="h-20 sm:h-24 md:h-28 lg:h-32 xl:h-36 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
+                className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
               />
             </Link>
           </div>
@@ -146,6 +154,7 @@ export default function SidebarNavbar() {
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
                 className="px-2 sm:px-3 md:px-4 lg:px-6 h-8 sm:h-10 md:h-12 rounded-lg sm:rounded-xl bg-gradient-to-r from-[#0CF25D] to-[#0CF25D]/90 hover:from-[#0CF25D]/90 hover:to-[#0CF25D]/80 font-semibold flex items-center gap-1 sm:gap-2 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform touch-manipulation text-xs sm:text-sm md:text-base"
+                style={sidebarFontStyle}
               >
                 <span className="hidden lg:inline">Industries</span>
                 <span className="lg:hidden">Ind.</span>
@@ -169,6 +178,7 @@ export default function SidebarNavbar() {
                     value={industriesSearch}
                     onChange={(e) => setIndustriesSearch(e.target.value)}
                     className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl border border-teal-500/40 bg-teal-800/60 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0CF25D] focus:border-[#0CF25D] transition-all duration-300 text-sm sm:text-base"
+                    style={sidebarFontStyle}
                   />
                 </div>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 divide-y divide-teal-500/30">
@@ -180,6 +190,7 @@ export default function SidebarNavbar() {
                         onMouseLeave={handleLeave}
                         onClick={() => setIndustriesOpen(false)}
                         className="block px-4 sm:px-5 py-3 sm:py-4 hover:bg-gradient-to-r hover:from-[#0CF25D]/20 hover:to-[#0CF25D]/10 hover:text-[#0CF25D] transition-all duration-300 font-medium text-sm sm:text-base"
+                        style={sidebarFontStyle}
                       >
                         {item.label}
                       </NavLink>
@@ -205,7 +216,7 @@ export default function SidebarNavbar() {
         className="fixed left-0 top-0 h-full w-[280px] sm:w-[320px] max-w-[90%] sm:max-w-[85%] bg-gradient-to-b from-[#034159]/98 to-[#025951]/98 backdrop-blur-xl text-white shadow-2xl border-r border-teal-500/30 -translate-x-full opacity-0 scale-95 z-40"
       >
         <div className="flex items-center justify-between px-4 sm:px-6 py-4 sm:py-6 border-b border-teal-500/30">
-          <div className="text-lg sm:text-xl font-bold tracking-wide bg-gradient-to-r from-[#0CF25D] to-white bg-clip-text text-transparent">Menu</div>
+          <div className="text-lg sm:text-xl font-bold tracking-wide bg-gradient-to-r from-[#0CF25D] to-white bg-clip-text text-transparent" style={sidebarFontStyle}>Menu</div>
           <button
             onClick={() => setOpen(false)}
             onMouseEnter={handleHover}
@@ -226,6 +237,7 @@ export default function SidebarNavbar() {
               onChange={(e) => setSidebarSearch(e.target.value)}
               placeholder="Search..."
               className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl border border-teal-500/40 bg-teal-800/60 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0CF25D] focus:border-[#0CF25D] transition-all duration-300 shadow-lg text-sm sm:text-base"
+              style={sidebarFontStyle}
             />
           </div>
 
@@ -243,6 +255,7 @@ export default function SidebarNavbar() {
                       isActive ? 'text-white' : 'hover:text-[#0CF25D]'
                     }`
                   }
+                  style={sidebarFontStyle}
                 >
                   {link.label}
                   <span className="underline absolute left-3 sm:left-4 bottom-0 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-[#0CF25D] to-[#0CF25D]/60 rounded-full"></span>

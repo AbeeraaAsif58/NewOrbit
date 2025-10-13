@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import BusinessPartners from "./pages/BusinessPartners";
 import Cursor from "./components/Cursor";
 
 // Lazy load industry pages for better performance
@@ -67,6 +68,7 @@ export default function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
+            <Route path="/business-partners" element={<BusinessPartners />} />
             <Route path="/contact" element={<Contact />} />
             {/* Industry routes */}
             <Route path="/artificial-intelligence" element={<ArtificialIntelligence />} />

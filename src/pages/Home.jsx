@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -7,26 +8,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 import Slider from "../components/Slider";
 import LoadingGate from "../components/LoadingGate";
-import BackgroundAI from "../components/BackgroundAI";
 // import MoonText from "../components/MoonText";
 import ArcCarousel from "../components/ArcCarousel";
 // import StickyBgVideo from "../components/StickyBgVideo"
 import StickyStack3 from "../components/StickyStack3";
 import QueriesSection from "../components/QueriesSection";
-import Marquee from "../components/Marquee";
 import TalkBanner from "../components/TalkBanner"
 import FooterOrbit from "../components/FooterOrbit";
-import Playfull from "../components/Playfull";
 import DualMarqueeSliders from "../components/DualMarqueeSliders";
 
 export default function Home() {
   const root = useRef(null);
-  const moonWrap = useRef(null);   // 3D tilt wrapper
-  const lightRef = useRef(null);   // cursor spotlight
   const [isGlowHovered, setIsGlowHovered] = useState(false);
 
-  // Initial headline POP (center scale-in) + idle moon drift
- // Initial headline POP (center scale-in) + idle moon drift
+  // Initial headline POP (center scale-in)
 useEffect(() => {
   const ctx = gsap.context(() => {
     // Headline hidden initially
@@ -42,14 +37,6 @@ useEffect(() => {
       .to(".hero-head", { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.9 })
       .to(".hero-head", { scale: 1.06, duration: 0.45 }, "-=0.2")
       .to(".hero-head", { scale: 1.0, duration: 0.45, ease: "power2.out" });
-
-    // Idle drift (moon subtle rotation)
-    gsap.to(".moon-img", {
-      rotate: 40,
-      duration: 30,
-      yoyo: true,
-      repeat: -1,
-    });
   }, root);
 
   return () => ctx.revert();
@@ -67,7 +54,6 @@ useEffect(() => {
             scrub: true,
           },
         })
-        .fromTo(".moon-img", { y: 90, scale: 0.98 }, { y: -60, scale: 1.06 }, 0)
         .fromTo(".hero-title", { y: 24, opacity: 0 }, { y: 0, opacity: 1 }, 0.1)
         .to(".glow", { opacity: 1 }, 0.2);
 
@@ -83,92 +69,93 @@ useEffect(() => {
 
       tl
         .to(".line-one", { xPercent: -45, opacity: 0.9, ease: "power2.out" }, 0)
-        .to(".line-two", { xPercent: 45, opacity: 0.9, ease: "power2.out" }, 0)
-        .to(
-          moonWrap.current,
-          {
-            scale: 0.55,
-            xPercent: 79,  // move to right
-            yPercent: 160, // move to bottom
-            transformOrigin: "50% 50%",
-          },
-          0.1
-        );
+        .to(".line-two", { xPercent: 45, opacity: 0.9, ease: "power2.out" }, 0);
     }, root);
 
     return () => ctx.revert();
   }, []);
 
   // (REMOVED) The old scroll effect that pushed .hello/.hyisycis left/right
-  // => nothing here anymore so the headline won’t slide sideways
-
-  // MOON: soft glow + gentle idle wobble (no hover light)
-  // useEffect(() => {
-  //   const wrap = moonWrap.current;
-  //   const img = wrap?.querySelector(".moon-img");
-  //   if (!wrap || !img) return;
-
-  //   gsap.set(wrap, { transformPerspective: 900, transformStyle: "preserve-3d" });
-  //   gsap.set(img, {
-  //     willChange: "transform, filter",
-  //     filter: "drop-shadow(0 0 40px rgba(157, 70, 15, 0.32))",
-  //     rotateX: 0,
-  //     rotateY: 0,
-  //   });
-
-  //   const idle = gsap.timeline({ repeat: -1, yoyo: true });
-  //   idle
-  //     .to(img, { y: -12, duration: 2.4, ease: "sine.inOut" }, 0)
-  //     .to(img, { rotateY: 3, rotateX: -2, duration: 1, ease: "sine.inOut" }, 0);
-
-  //   return () => idle.kill();
-  // }, []);
+  // => nothing here anymore so the headline won't slide sideways
 
   return (
     <>
       <LoadingGate />
-      <BackgroundAI mode="scroll" nodeCount={20} linkDistance={80} cursorLinkDistance={100} />
 
       <section
         ref={root}
-        className="relative min-h-[266svh] w-full overflow-hidden text-white "
+        className="relative h-screen w-screen overflow-hidden text-white fixed inset-0 m-0 p-0 -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 -my-6 sm:-my-8 md:-my-10 -mt-20 sm:-mt-24 md:-mt-28"
       >
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{ objectFit: 'cover' }}
+          onError={(e) => console.log('Video error:', e)}
+          onLoadStart={() => console.log('Video loading started')}
+          onCanPlay={() => console.log('Video can play')}
+        >
+          <source src="/backvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         {/* Centered big heading that scales in and stays (no left/right) */}
-        <div className="hero-head absolute top-[25%] sm:top-[20%] h-[100vh] w-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold text-center leading-tight px-4">
-          <h1 className="hello">Beyond Walls</h1>
-          <br />
-          <h1 className="hyisycis">Towards Innovation</h1>
-        </div>
-
-        {/* Starfield now provided globally in App.jsx */}
-
-        {/* Moon + Spotlight */}
-        <div className="absolute inset-0 flex justify-center items-start pt-16 md:pt-24">
-          <div
-            ref={moonWrap}
-            className="relative will-change-transform"
-            style={{ transformStyle: "preserve-3d" }}
-          >
-            <img
-              src="/moon.png"
-              alt="moon"
-              className="moon-img relative z-10 w-[300px] sm:w-[400px] md:w-[620px] lg:w-[820px] select-none mt-[-20%] sm:mt-[-30%]"
-              draggable="false"
-            />
-            <div
-              ref={lightRef}
-              className="pointer-events-none absolute inset-0 rounded-full z-20 opacity-0"
-              style={{
-                background:
-                  "radial-gradient(circle at var(--lx,50%) var(--ly,50%), rgba(217,217,217,0.9) 0%, rgba(217,217,217,0.6) 20%, rgba(217,217,217,0.2) 38%, rgba(217,217,217,0) 60%)",
-                mixBlendMode: "screen",
-                filter: "blur(1.5px)",
-              }}
-            />
+        <div className="hero-head absolute top-0 h-[100vh] w-full left-0 z-10 text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold text-center leading-tight px-4 flex items-center justify-center">
+          <div>
+            <h1 className="hello">Beyond Walls</h1>
+            <br />
+            <h1 className="hyisycis">Towards Innovation</h1>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <Link to="/about" className="bg-teal-500 hover:bg-teal-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
+                Why ORBIT WALLS
+                <span className="text-white">→</span>
+              </Link>
+              <Link to="/contact" className="border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
+                Let's Talk
+                <span className="text-teal-500 hover:text-white">→</span>
+              </Link>
+            </div>
           </div>
         </div>
 
-        {/* Ambient glow */}
+
+
+
+
+
+
+
+
+
+        
+      </section>
+
+      {/* Experience Section */}
+      <div className="py-20 px-4 sm:px-8 md:px-16">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8">
+            Over four decades<br />
+            of global experience
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
+            With local sales and delivery centers spread across 4 continents, we have over 40 years of experience delivering cutting-edge solutions and consultancy services to some of the top companies in the world.
+          </p>
+        </div>
+      </div>
+
+      {/* Spacer for fixed red box */}
+    
+
+
+        
+
+    
         <div
           className="glow pointer-events-none absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] md:w-[780px] h-[400px] sm:h-[600px] md:h-[780px] rounded-full blur-3xl opacity-0 border-2 border-primary"
           style={{
@@ -178,60 +165,22 @@ useEffect(() => {
           }}
         />
 
-        <div className="mt-[65%] sm:mt-[68%]">
-          <div className="group relative h-[60vh] sm:h-[70vh] overflow-hidden">
-            <div className="flex flex-col place-items-start gap-0 sm:gap-10 pl-[5%] sm:pl-[10%] pr-[5%]">
-              {/* 1) Gradient + glow + underline slide */}
-              <h1
-                className="group/one relative cursor-pointer text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight
-                   text-white
-                   transition-all duration-300 ease-out
-                   hover:tracking-wider hover:scale-105 hover:drop-shadow-[0_0_18px_rgba(12,242,93,0.55)]"
-              >
-                Transform your business <br /> with cutting-edge
-                <span
-                  className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-black to-primary
-                       transition-all duration-500 group-hover/one:w-full"
-                ></span>
-              </h1>
+  
 
-              {/* 2) Clean white -> neon shift + slight skew */}
-              <h1
-                className="group/two relative cursor-pointer text-lg sm:text-2xl md:text-4xl font-extrabold tracking-tight
-                   text-white transition-all duration-300 ease-out
-                   hover:text-white hover:translate-y-1 hover:skew-x-[2deg] hover:tracking-wider
-                   hover:drop-shadow-[0_0_14px_rgba(12,242,93,0.6)]"
-              >
-                fintech solutions powered by
-                <span
-                  className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-black to-primary
-                       transition-all duration-500 group-hover/two:w-full"
-                ></span>
-              </h1>
 
-              {/* 3) Subtle -> teal gradient on hover + lift */}
-              <h1
-                className="group/three relative cursor-pointer text-lg sm:text-2xl md:text-4xl font-extrabold tracking-tight
-                   text-white
-                   transition-all duration-300 ease-out
-                   hover:text-white hover:tracking-wider hover:-translate-y-1
-                   hover:drop-shadow-[0_0_18px_rgba(12,242,93,0.55)]"
-              >
-                ORBIT WALLS's <br /> innovative technology.
-                <span
-                  className="block mx-auto mt-2 h-[2px] sm:h-[3px] w-0 bg-gradient-to-r from-black to-primary
-                       transition-all duration-500 group-hover/three:w-full"
-                ></span>
-              </h1>
-            </div>
-          </div>
+
 
             <div className="-mt-24 sm:mt-0">
               <Slider />
-            </div>
-          
-        </div>
-      </section>
+            </div> 
+
+
+
+
+
+
+
+
 
       <StickyStack3
         topOffset="64px"
@@ -325,16 +274,11 @@ useEffect(() => {
           </div>
         </div>
       </div>
-<div className="mt-[-20%]">
-  <Playfull/>
-</div>
 
-
-
-      <div className="relative h-auto grid place-items-center overflow-hidden mt-[-20%] sm:mt-[-30%] px-4">
+      <div className="relative h-auto grid place-items-center overflow-hidden px-4">
         <h1 className="group relative text-center">
           <span
-            className="block mt-[10%] sm:mt-[15%] text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold leading-none
+            className="block mt-[10%] sm:mt-[15%] text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-none
             text-transparent bg-clip-text
             bg-gradient-to-r from-primary via-text to-secondary
             bg-[length:200%_100%] bg-left
@@ -350,16 +294,11 @@ useEffect(() => {
           </span>
         </h1>
       </div>
-      <div className="mt-[5%]">
-
-      <Marquee />
-      </div>
         <ArcCarousel />
       {/* <TestimonialsStack/> */}
       <QueriesSection />
       <TalkBanner/>
       <FooterOrbit/>
-      {/* <Playfull/> */}
     </>
   );
 }

@@ -121,7 +121,7 @@ export default function TalkBanner({
       <div className="text-center leading-[0.9] font-extrabold uppercase select-none px-4">
         <h1
           ref={line1Ref}
-          className="text-[clamp(40px,10vw,180px)] tracking-tight cursor-pointer transition-all duration-300"
+          className="text-[clamp(24px,6vw,120px)] tracking-tight cursor-pointer transition-all duration-300"
           style={{
             textShadow: isHovered 
               ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
@@ -133,11 +133,11 @@ export default function TalkBanner({
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          LET'S TALK
+          EMPOWERING BUSINESSES
         </h1>
         <h2
           ref={line2Ref}
-          className="text-[clamp(40px,10vw,180px)] tracking-tight cursor-pointer transition-all duration-300"
+          className="text-[clamp(24px,6vw,120px)] tracking-tight cursor-pointer transition-all duration-300"
           style={{
             textShadow: isHovered 
               ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
@@ -149,7 +149,7 @@ export default function TalkBanner({
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          WITH US
+          WITH TECHNOLOGY
         </h2>
       </div>
 
