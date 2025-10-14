@@ -199,11 +199,8 @@ export default function GalleryMarquee({
             filter: 'none'
           }}
         >
-          Orbit Walls LLC, we go beyond traditional construction and design — pioneering the future of innovative wall systems, advanced coatings, and architectural solutions. With a commitment to excellence and innovation, we deliver state-of-the-art interior and exterior solutions that combine strength, sustainability, and style.
-          <br />
-          <br />
-          We are not just a wall solutions company — we are a technology-driven partner for architects, developers, and businesses who seek cutting-edge design and long-lasting durability. Every project we undertake is guided by precision engineering, advanced materials, and a vision to reshape modern living and working spaces.
-        </p>
+          Orbit Walls Information Technology LLC, we are redefining the future of finance through innovation and technology. Our platform integrates revenue-sharing P2P funding and advanced tokenization systems to empower businesses and investors with seamless access to digital opportunities. Acting as a bridge between traditional finance and digital assets, we enable a smooth transition into the decentralized economy. With expertise in tokenization bridges, payment gateway solutions, digital deposits, and central bank digital currency (CBDC) integration, Orbit Walls stands at the forefront of next-generation fintech infrastructure — driving transparency, accessibility, and growth across the global financial ecosystem.
+          </p>
       </div>
 
 

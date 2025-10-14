@@ -1,6 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import SidebarNavbar from "./components/SidebarNavbar";
+import ScrollToTop from "./components/ScrollToTop";
+import PerformanceMonitor from "./components/PerformanceMonitor";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -40,6 +42,9 @@ const ProjectDetail = lazy(() => import("./pages/Industries/ProjectDetail"));
 export default function App() {
   return (
     <>
+      {/* Scroll to top on route change */}
+      <ScrollToTop />
+      
       {/* Agar stars use karna chahte ho aur wo bhi scroll hon,
           unki CSS me position: absolute kar dena (fixed ki jagah). */}
 
@@ -130,6 +135,9 @@ export default function App() {
         {/* <FooterOrbit /> */}
     
       </div>
+      
+      {/* Performance Monitor (development only) */}
+      <PerformanceMonitor />
     </>
   );
 }

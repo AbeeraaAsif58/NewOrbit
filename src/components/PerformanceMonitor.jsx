@@ -1,56 +1,81 @@
 import React, { useEffect, useState } from 'react';
 
-const PerformanceMonitor = ({ enabled = false }) => {
+const PerformanceMonitor = () => {
   const [metrics, setMetrics] = useState({
-    fps: 0,
-    memory: 0,
     loadTime: 0,
+    renderTime: 0,
+    memoryUsage: 0,
+    imageLoadTime: 0
   });
 
   useEffect(() => {
-    if (!enabled) return;
+    const startTime = performance.now();
+    
+    // Monitor page load time
+    window.addEventListener('load', () => {
+      const loadTime = performance.now() - startTime;
+      setMetrics(prev => ({ ...prev, loadTime }));
+    });
 
-    let frameCount = 0;
-    let lastTime = performance.now();
-    let animationId;
-
-    const measureFPS = () => {
-      frameCount++;
-      const currentTime = performance.now();
-      
-      if (currentTime >= lastTime + 1000) {
-        const fps = Math.round((frameCount * 1000) / (currentTime - lastTime));
-        
-        setMetrics(prev => ({
-          ...prev,
-          fps,
-          memory: performance.memory ? Math.round(performance.memory.usedJSHeapSize / 1048576) : 0,
-          loadTime: Math.round(performance.now())
+    // Monitor memory usage
+    if ('memory' in performance) {
+      const updateMemoryUsage = () => {
+        const memory = performance.memory;
+        setMetrics(prev => ({ 
+          ...prev, 
+          memoryUsage: Math.round(memory.usedJSHeapSize / 1024 / 1024) 
         }));
-        
-        frameCount = 0;
-        lastTime = currentTime;
-      }
+      };
       
-      animationId = requestAnimationFrame(measureFPS);
-    };
+      updateMemoryUsage();
+      const memoryInterval = setInterval(updateMemoryUsage, 5000);
+      
+      return () => clearInterval(memoryInterval);
+    }
 
-    measureFPS();
-
-    return () => {
-      if (animationId) {
-        cancelAnimationFrame(animationId);
+    // Monitor image loading performance
+    const images = document.querySelectorAll('img');
+    let loadedImages = 0;
+    const totalImages = images.length;
+    
+    if (totalImages > 0) {
+      const imageLoadStart = performance.now();
+      
+      images.forEach(img => {
+        if (img.complete) {
+          loadedImages++;
+        } else {
+          img.addEventListener('load', () => {
+            loadedImages++;
+            if (loadedImages === totalImages) {
+              const imageLoadTime = performance.now() - imageLoadStart;
+              setMetrics(prev => ({ ...prev, imageLoadTime }));
+            }
+          });
+        }
+      });
+      
+      if (loadedImages === totalImages) {
+        const imageLoadTime = performance.now() - imageLoadStart;
+        setMetrics(prev => ({ ...prev, imageLoadTime }));
       }
-    };
-  }, [enabled]);
+    }
+  }, []);
 
-  if (!enabled) return null;
+  // Only show in development
+  if (process.env.NODE_ENV !== 'development') {
+    return null;
+  }
 
   return (
-    <div className="fixed top-4 right-4 bg-black/80 text-white p-3 rounded-lg text-sm font-mono z-50">
-      <div>FPS: {metrics.fps}</div>
-      <div>Memory: {metrics.memory}MB</div>
-      <div>Load: {metrics.loadTime}ms</div>
+    <div className="fixed bottom-4 right-4 bg-black/80 text-white p-4 rounded-lg text-xs font-mono z-50 backdrop-blur-sm">
+      <div className="mb-2 font-bold text-green-400">Performance Monitor</div>
+      <div>Load Time: <span className="text-yellow-400">{metrics.loadTime.toFixed(0)}ms</span></div>
+      <div>Memory: <span className="text-blue-400">{metrics.memoryUsage}MB</span></div>
+      <div>Images: <span className="text-purple-400">{metrics.imageLoadTime.toFixed(0)}ms</span></div>
+      <div className="mt-2 text-green-300 text-[10px]">
+        Optimized Industry Pages
+      </div>
     </div>
   );
 };

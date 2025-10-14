@@ -2595,7 +2595,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="min-h-screen text-white selection:bg-orange-500/20">
+    <div className="min-h-screen text-white selection:bg-teal-500/20">
       {/* Smooth scroll container */}
       <div data-scroll-container ref={scrollRoot}>
         
@@ -2605,9 +2605,9 @@ const ProjectDetail = () => {
             {/* Breadcrumb */}
             <div className="mb-8" data-reveal>
               <nav className="flex items-center space-x-2 text-sm text-gray-400">
-                <a href="/" className="hover:text-orange-400 transition-colors">Home</a>
+                <a href="/" className="hover:text-teal-400 transition-colors">Home</a>
                 <span>/</span>
-                <a href={`/${project.category.toLowerCase().replace(/\s+/g, '-').replace('&', '')}`} className="hover:text-orange-400 transition-colors">{project.category}</a>
+                <a href={`/${project.category.toLowerCase().replace(/\s+/g, '-').replace('&', '')}`} className="hover:text-teal-400 transition-colors">{project.category}</a>
                 <span>/</span>
                 <span className="text-white">{project.title}</span>
               </nav>
@@ -2617,7 +2617,7 @@ const ProjectDetail = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
               <div data-reveal>
                 <div className="mb-6">
-                  <span className="inline-block px-4 py-2 bg-orange-500/20 text-orange-400 text-sm font-medium rounded-full border border-orange-500/30">
+                  <span className="inline-block px-4 py-2 bg-teal-500/20 text-teal-400 text-sm font-medium rounded-full border border-teal-500/30">
                     {project.category}
                   </span>
                 </div>
@@ -2633,10 +2633,10 @@ const ProjectDetail = () => {
                 {/* Status and Pricing */}
                 <div className="flex items-center gap-6 mb-8">
                   <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                    <span className="text-orange-400 font-medium">{project.status}</span>
+                    <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+                    <span className="text-teal-400 font-medium">{project.status}</span>
                   </div>
-                  <div className="text-orange-400 font-bold">{project.price}</div>
+                  <div className="text-teal-400 font-bold">{project.price}</div>
                 </div>
 
                 {/* Action Buttons */}
@@ -2645,7 +2645,7 @@ const ProjectDetail = () => {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-orange-500 text-black font-semibold rounded-lg hover:bg-orange-400 transition-colors duration-300 text-center"
+                    className="px-6 py-3 bg-teal-500 text-black font-semibold rounded-lg hover:bg-teal-400 transition-colors duration-300 text-center"
                   >
                     View Demo
                   </a>
@@ -2653,7 +2653,7 @@ const ProjectDetail = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 border border-orange-500 text-orange-400 font-semibold rounded-lg hover:bg-orange-500/10 transition-colors duration-300 text-center"
+                    className="px-6 py-3 border border-teal-500 text-teal-400 font-semibold rounded-lg hover:bg-teal-500/10 transition-colors duration-300 text-center"
                   >
                     Live Website
                   </a>
@@ -2702,11 +2702,11 @@ const ProjectDetail = () => {
                 <div 
                   key={index}
                   data-reveal
-                  className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300"
+                  className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-teal-500/50 transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-4 h-4 bg-orange-500 rounded-full"></div>
+                    <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-4 h-4 bg-teal-500 rounded-full"></div>
                     </div>
                     <p className="text-white font-medium">{feature}</p>
                   </div>
@@ -2729,7 +2729,7 @@ const ProjectDetail = () => {
               {project.technologies.map((tech, index) => (
                 <div 
                   key={index}
-                  className="px-4 py-2 bg-gray-800/50 text-white font-medium rounded-lg border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-300"
+                  className="px-4 py-2 bg-gray-800/50 text-white font-medium rounded-lg border border-gray-700/50 hover:border-teal-500/50 transition-colors duration-300"
                 >
                   {tech}
                 </div>
@@ -2752,7 +2752,7 @@ const ProjectDetail = () => {
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-orange-500 text-black font-semibold rounded-lg hover:bg-orange-400 transition-colors duration-300"
+                className="px-8 py-4 bg-teal-500 text-black font-semibold rounded-lg hover:bg-teal-400 transition-colors duration-300"
               >
                 Try Demo
               </a>
@@ -2760,7 +2760,7 @@ const ProjectDetail = () => {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 border border-gray-600 text-gray-300 font-semibold rounded-lg hover:border-orange-500 hover:text-orange-400 transition-colors duration-300"
+                className="px-8 py-4 border border-gray-600 text-gray-300 font-semibold rounded-lg hover:border-teal-500 hover:text-teal-400 transition-colors duration-300"
               >
                 View Source
               </a>

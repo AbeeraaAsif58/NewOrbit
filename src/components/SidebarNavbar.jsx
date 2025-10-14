@@ -167,7 +167,7 @@ export default function SidebarNavbar() {
               </button>
 
               <div
-                className={`absolute right-0 mt-2 sm:mt-4 w-[90vw] sm:w-80 md:w-96 max-w-sm sm:max-w-none rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-[#034159]/95 to-[#025951]/95 backdrop-blur-xl text-white shadow-2xl transform transition-all duration-400 ease-out origin-top border border-teal-500/30 z-50 ${
+                className={`absolute right-0 mt-2 sm:mt-4 w-[90vw] sm:w-96 md:w-[28rem] lg:w-[32rem] max-w-sm sm:max-w-none rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-[#034159]/95 to-[#025951]/95 backdrop-blur-xl text-white shadow-2xl transform transition-all duration-400 ease-out origin-top border border-teal-500/30 z-50 ${
                   industriesOpen ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-3 pointer-events-none"
                 }`}
               >
@@ -181,9 +181,9 @@ export default function SidebarNavbar() {
                     style={sidebarFontStyle}
                   />
                 </div>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 divide-y divide-teal-500/30">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-y divide-teal-500/30">
                   {filteredIndustries.map((item, index) => (
-                    <li key={item.to} className={`${index % 2 === 0 && window.innerWidth >= 640 ? "sm:border-r border-teal-500/30" : ""}`}>
+                    <li key={item.to} className={`${index % 3 !== 2 && window.innerWidth >= 1024 ? "lg:border-r border-teal-500/30" : ""}`}>
                       <NavLink
                         to={item.to}
                         onMouseEnter={handleHover}

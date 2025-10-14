@@ -110,7 +110,7 @@ const About = () => {
               <img 
                 src="/mun.png" 
                 alt="Moon" 
-                className="w-[80vw] h-[100vh] object-contain filter drop-shadow-[0_0_20px_rgba(255,255,255,0.6)] drop-shadow-[0_0_40px_rgba(255,255,255,0.4)] drop-shadow-[0_0_80px_rgba(255,255,255,0.3)] group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] group-hover:drop-shadow-[0_0_60px_rgba(255,255,255,0.6)] group-hover:drop-shadow-[0_0_120px_rgba(255,255,255,0.5)] transition-all duration-500 ease-in-out"
+                className="w-[80vw] h-[100vh] object-contain filter drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] group-hover:drop-shadow-[0_0_60px_rgba(255,255,255,0.7)] transition-all duration-500 ease-in-out"
               />
               {/* Additional glow effect */}
               <div className="absolute inset-0 rounded-full bg-white/10 opacity-60 blur-3xl scale-150"></div>
