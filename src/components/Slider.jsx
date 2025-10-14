@@ -199,7 +199,7 @@ export default function GalleryMarquee({
             filter: 'none'
           }}
         >
-          Orbit Walls Information Technology LLC, we are redefining the future of finance through innovation and technology. Our platform integrates revenue-sharing P2P funding and advanced tokenization systems to empower businesses and investors with seamless access to digital opportunities. Acting as a bridge between traditional finance and digital assets, we enable a smooth transition into the decentralized economy. With expertise in tokenization bridges, payment gateway solutions, digital deposits, and central bank digital currency (CBDC) integration, Orbit Walls stands at the forefront of next-generation fintech infrastructure — driving transparency, accessibility, and growth across the global financial ecosystem.
+          Obrit is a leading Web3 solutions provider specializing in peer-to-peer funding and tokenization platforms. Our innovative platform facilitates revenue sharing and seamlessly connects traditional financial systems with digital assets. Our mission is to enable a secure and effortless bridge between conventional finance and the digital economy through advanced payment gateway solutions, tokenized deposits, and Central Bank Digital Currency (CBDC) integration.
           </p>
       </div>
 
