@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
+import Blogs from "./pages/Blogs";
+import BlogDetail from "./pages/BlogDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import BusinessPartners from "./pages/BusinessPartners";
@@ -72,6 +74,8 @@ export default function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:slug" element={<BlogDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/business-partners" element={<BusinessPartners />} />
             <Route path="/contact" element={<Contact />} />
