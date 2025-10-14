@@ -1,5 +1,5 @@
 // src/pages/Home.jsx
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -19,7 +19,6 @@ import DualMarqueeSliders from "../components/DualMarqueeSliders";
 
 export default function Home() {
   const root = useRef(null);
-  const [isGlowHovered, setIsGlowHovered] = useState(false);
 
   // Initial headline POP (center scale-in)
 useEffect(() => {
@@ -211,27 +210,17 @@ useEffect(() => {
             <h2 
               className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-4 sm:mb-6 cursor-pointer transition-all duration-300 px-4"
               style={{
-                textShadow: isGlowHovered 
-                  ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
-                  : '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)',
-                filter: isGlowHovered 
-                  ? 'drop-shadow(0 0 30px rgba(12,242,93,0.8))'
-                  : 'drop-shadow(0 0 20px rgba(12,242,93,0.6))'
+                textShadow: 'none',
+                filter: 'none'
               }}
-              onMouseEnter={() => setIsGlowHovered(true)}
-              onMouseLeave={() => setIsGlowHovered(false)}
             >
               Pioneering the Future of 
               <span 
                 className="text-teal-500 block transition-all duration-300"
                 style={{
-                  textShadow: isGlowHovered 
-                    ? '0 0 25px rgba(20,184,166,0.8), 0 0 50px rgba(20,184,166,0.6), 0 0 75px rgba(20,184,166,0.4)'
-                    : '0 0 15px rgba(20,184,166,0.6), 0 0 30px rgba(20,184,166,0.4), 0 0 45px rgba(20,184,166,0.2)',
-                  filter: isGlowHovered 
-                    ? 'drop-shadow(0 0 25px rgba(20,184,166,0.8))'
-                    : 'drop-shadow(0 0 15px rgba(20,184,166,0.6))'
-                  }}
+                  textShadow: 'none',
+                  filter: 'none'
+                }}
               >
                 Digital Innovation
               </span>

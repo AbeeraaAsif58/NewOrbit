@@ -55,7 +55,6 @@ export default function GalleryMarquee({
   rightImages = RIGHT_IMGS,
 }) {
   const { gap, w: itemWidth, h: itemHeight, speedLeft, speedRight } = useResponsiveSizes();
-  const [isHovered, setIsHovered] = useState(false);
 
   const rootRef = useRef(null);
   const leftRef = useRef(null);
@@ -181,15 +180,9 @@ export default function GalleryMarquee({
             mt-[10%]
           "
           style={{
-            textShadow: isHovered 
-              ? '0 0 30px rgba(12,242,93,0.8), 0 0 60px rgba(12,242,93,0.6), 0 0 90px rgba(12,242,93,0.4)'
-              : '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)',
-            filter: isHovered 
-              ? 'drop-shadow(0 0 30px rgba(12,242,93,0.8))'
-              : 'drop-shadow(0 0 20px rgba(12,242,93,0.6))'
+            textShadow: 'none',
+            filter: 'none'
           }}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
           Orbit Walls Powering the Future with Technology
           <span className="heading-shine" aria-hidden />
@@ -200,17 +193,11 @@ export default function GalleryMarquee({
         </div>
 
         <p 
-          className="mt-8 sm:mt-10 md:mt-12 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed cursor-pointer transition-all duration-300 "
+          className="mt-8 sm:mt-10 md:mt-12 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed cursor-pointer transition-all duration-300"
           style={{
-            textShadow: isHovered 
-              ? '0 0 20px rgba(12,242,93,0.6), 0 0 40px rgba(12,242,93,0.4), 0 0 60px rgba(12,242,93,0.2)'
-              : '0 0 10px rgba(12,242,93,0.4), 0 0 20px rgba(12,242,93,0.2), 0 0 30px rgba(12,242,93,0.1)',
-            filter: isHovered 
-              ? 'drop-shadow(0 0 20px rgba(12,242,93,0.6))'
-              : 'drop-shadow(0 0 10px rgba(12,242,93,0.4))'
+            textShadow: 'none',
+            filter: 'none'
           }}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
           Orbit Walls LLC, we go beyond traditional construction and design — pioneering the future of innovative wall systems, advanced coatings, and architectural solutions. With a commitment to excellence and innovation, we deliver state-of-the-art interior and exterior solutions that combine strength, sustainability, and style.
           <br />
