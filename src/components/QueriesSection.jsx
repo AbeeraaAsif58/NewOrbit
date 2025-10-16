@@ -6,15 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* ——— Theme Palette ——— */
 const PALETTE = {
-  INK: "#0f4c75", // background - Dark Teal
-  INK_SOFT: "rgba(15,76,117,.65)", // background with opacity
+  INK: "#034159", // background - Dark Teal (your theme background)
+  INK_SOFT: "rgba(6, 183, 62, 0.65)", // background with opacity
   SHEEN: "#ffffff", // white text
-  CYAN: "#00d4aa", // primary - Bright Green
-  CYAN_DARK: "#0f4c75", // text - Dark Teal
-  PURPLE: "#00d4aa", // primary - Bright Green
+  CYAN: "#0CF25D", // primary - Bright Green (your theme primary)
+  CYAN_DARK: "#025951", // secondary - Dark Green (your theme secondary)
+  PURPLE: "#0CF25D", // primary - Bright Green (same as CYAN)
   CARD: "rgba(255,255,255,.06)",
   CARD_BORDER: "rgba(255,255,255,.14)",
-  CARD_BORDER_HOVER: "rgba(0,212,170,.55)", // primary with opacity
+  CARD_BORDER_HOVER: "rgba(12,242,93,.55)", // primary with opacity
   WHITE: "#ffffff",
   MUTED: "rgba(255,255,255,.7)", // white with opacity
 };
@@ -123,7 +123,7 @@ export default function QueriesSection() {
       style={{
         // soft radial vignette for depth on dark bg
         background:
-          "radial-gradient(1200px 600px at 10% -10%, rgba(0,212,170,.08), transparent 50%), radial-gradient(1000px 600px at 110% -20%, rgba(0,212,170,.08), transparent 50%)",
+          "radial-gradient(1200px 600px at 10% -10%, rgba(12,242,93,.08), transparent 50%), radial-gradient(1000px 600px at 110% -20%, rgba(12,242,93,.08), transparent 50%)",
       }}
     >
       <div className="relative z-10 mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12">
@@ -331,7 +331,7 @@ export default function QueriesSection() {
         .field::placeholder{ color: ${PALETTE.MUTED}; }
         .field:focus{
           border:1px solid ${PALETTE.CYAN};
-          box-shadow: 0 0 0 3px rgba(71,214,255,.2);
+          box-shadow: 0 0 0 3px rgba(12,242,93,.2);
           background: rgba(10,14,24,.45);
         }
 
@@ -341,7 +341,7 @@ export default function QueriesSection() {
           padding:.9rem 1.2rem;
           border-radius:14px;
           font-weight:700;
-          color:${PALETTE.WHITE};
+          color:#000000;
           background: linear-gradient(90deg, ${PALETTE.CYAN}, ${PALETTE.PURPLE});
           box-shadow: 0 14px 30px -14px ${PALETTE.CYAN};
           transition: transform .15s ease, filter .2s ease, box-shadow .2s ease;

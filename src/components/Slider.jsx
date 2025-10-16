@@ -10,7 +10,7 @@ const LEFT_IMGS = [
 ];
 
 const RIGHT_IMGS = [
-  "/g1.png","/g2.png","/g3.png","/g4.png","/g5.png",
+  "/g1.png","/g2.png","/g3.png","/g8.png","/g5.png",
   "/g6.png","/g7.png","/g8.png","/g9.png","/g10.png",
 ];
 

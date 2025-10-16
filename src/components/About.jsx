@@ -1,44 +1,36 @@
-import React from 'react';
+import React, { useMemo, useCallback } from 'react';
 
 const About = () => {
   return (
     <section id="about" className="py-20 min-h-screen relative overflow-hidden">
       {/* Starfield provided globally in App.jsx */}
 
-      {/* Animated Background Elements */}
+      {/* Optimized Background Elements - Reduced for Performance */}
       <div className="absolute inset-0 -z-[1] overflow-hidden">
-        {/* Floating Stars */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-teal-400 rounded-full animate-pulse opacity-80"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-teal-500 rounded-full animate-ping"></div>
-        <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse opacity-70"></div>
-        <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-teal-300 rounded-full animate-ping"></div>
-        <div className="absolute bottom-20 right-10 w-2 h-2 bg-teal-300 rounded-full animate-pulse opacity-60"></div>
-        <div className="absolute top-1/3 left-1/3 w-1 h-1 bg-teal-500 rounded-full animate-ping"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse"></div>
+        {/* Reduced floating elements for better performance */}
+        <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full opacity-60"></div>
+        <div className="absolute top-40 right-20 w-1 h-1 bg-primary rounded-full opacity-40"></div>
+        <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-primary rounded-full opacity-50"></div>
         
-        {/* Orbital Rings */}
-        <div className="absolute top-1/4 left-1/4 w-40 h-40 border border-teal-700/30 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-teal-500/20 rounded-full animate-spin" style={{animationDuration: '20s', animationDirection: 'reverse'}}></div>
-        <div className="absolute bottom-1/4 right-1/4 w-36 h-36 border border-teal-600/25 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
-        <div className="absolute bottom-1/4 right-1/4 w-28 h-28 border border-teal-500/15 rounded-full animate-spin" style={{animationDuration: '18s', animationDirection: 'reverse'}}></div>
+        {/* Simplified orbital rings - reduced count */}
+        <div className="absolute top-1/4 left-1/4 w-40 h-40 border border-primary/30 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-36 h-36 border border-primary/25 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
         
-        {/* Central Orbit */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-teal-800/20 rounded-full animate-spin" style={{animationDuration: '40s'}}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-teal-400/10 rounded-full animate-spin" style={{animationDuration: '35s', animationDirection: 'reverse'}}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-teal-500/15 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
+        {/* Single central orbit */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-primary/20 rounded-full animate-spin" style={{animationDuration: '40s'}}></div>
       </div>
 
-      {/* Ambient Glow Effects */}
+      {/* Simplified Ambient Glow Effects */}
       <div className="absolute inset-0 -z-[1] pointer-events-none">
         <div 
-          className="absolute left-1/4 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl opacity-20"
+          className="absolute left-1/4 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full blur-3xl opacity-15"
           style={{
             background: "radial-gradient(closest-side, rgba(12,242,93,.25), rgba(12,242,93,0))",
             mixBlendMode: "screen",
           }}
         />
         <div 
-          className="absolute right-1/4 bottom-1/3 translate-x-1/2 translate-y-1/2 w-[300px] h-[300px] rounded-full blur-3xl opacity-15"
+          className="absolute right-1/4 bottom-1/3 translate-x-1/2 translate-y-1/2 w-[250px] h-[250px] rounded-full blur-3xl opacity-10"
           style={{
             background: "radial-gradient(closest-side, rgba(12,242,93,.2), rgba(12,242,93,0))",
             mixBlendMode: "screen",
@@ -50,7 +42,7 @@ const About = () => {
         {/* Minimal headline section (replacing About Orbit) */}
         <div className="mb-16 min-h-[80vh] flex flex-col justify-center">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow">
-            We are "Orbit" — software development and technology solutions company
+            We are "Orbit" — WEB 3 Solution Provider company
             
           </h1>
           <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
@@ -110,6 +102,8 @@ const About = () => {
               <img 
                 src="/mun.png" 
                 alt="Moon" 
+                loading="lazy"
+                decoding="async"
                 className="w-[80vw] h-[100vh] object-contain filter drop-shadow-[0_0_40px_rgba(255,255,255,0.5)] group-hover:drop-shadow-[0_0_60px_rgba(255,255,255,0.7)] transition-all duration-500 ease-in-out"
               />
               {/* Additional glow effect */}
@@ -170,8 +164,10 @@ const About = () => {
         <div className="mt-32 mb-32">
           <div className="relative h-[80vh] rounded-3xl overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+              src="/busi1.jpg" 
               alt="Our Workspace" 
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
@@ -198,11 +194,13 @@ const About = () => {
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-emerald-400/70 hover:shadow-2xl hover:shadow-emerald-500/20 overflow-hidden">
               <div className="relative mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                  alt="Excellence" 
-                  className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-emerald-500/30 transition-all duration-500"
-                />
+                  <img 
+                    src="/busi2.jpg" 
+                    alt="Excellence" 
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-emerald-500/30 transition-all duration-500"
+                  />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-emerald-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/30">
                   <span className="text-2xl">⭐</span>
@@ -219,11 +217,13 @@ const About = () => {
             
             <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-teal-400/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
               <div className="relative mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                  alt="Innovation" 
-                  className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500"
-                />
+                  <img 
+                    src="/busi3.jpg" 
+                    alt="Innovation" 
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500"
+                  />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
                   <span className="text-2xl">🌌</span>
@@ -240,11 +240,13 @@ const About = () => {
             
             <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-purple-400/70 hover:shadow-2xl hover:shadow-purple-500/20 overflow-hidden">
               <div className="relative mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                  alt="Collaboration" 
-                  className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-500"
-                />
+                  <img 
+                    src="/busi4.jpg" 
+                    alt="Collaboration" 
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-500"
+                  />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/30">
                   <span className="text-2xl">🤝</span>
@@ -312,11 +314,13 @@ const About = () => {
                       When we talk about Orbit, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Orbit our best ally for success!
                     </p>
                     <div className="flex items-center justify-center gap-4">
-                      <img 
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
-                        alt="Mike David" 
-                        className="w-16 h-16 rounded-full border-2 border-white/20"
-                      />
+                        <img 
+                          src="/TeamA.webp" 
+                          alt="Mike David" 
+                          loading="lazy"
+                          decoding="async"
+                          className="w-16 h-16 rounded-full border-2 border-white/20"
+                        />
                       <div className="text-left">
                         <div className="text-white text-xl font-semibold">Mike David</div>
                         <div className="text-gray-300">Developer</div>
@@ -333,11 +337,13 @@ const About = () => {
                       Orbit transformed our digital presence completely. Their innovative approach and stellar execution helped us launch into new markets successfully. The precision and creativity of their team is unmatched.
                     </p>
                     <div className="flex items-center justify-center gap-4">
-                      <img 
-                        src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
-                        alt="Sarah Johnson" 
-                        className="w-16 h-16 rounded-full border-2 border-white/20"
-                      />
+                        <img 
+                          src="/TeamB.webp" 
+                          alt="Sarah Johnson" 
+                          loading="lazy"
+                          decoding="async"
+                          className="w-16 h-16 rounded-full border-2 border-white/20"
+                        />
                       <div className="text-left">
                         <div className="text-white text-xl font-semibold">Sarah Johnson</div>
                         <div className="text-gray-300">CEO, TechCorp</div>
@@ -354,11 +360,13 @@ const About = () => {
                       Working with Orbit was like having a rocket ship for our business. They launched us into the digital stratosphere with incredible results. Their team delivered our project ahead of schedule and exceeded all expectations.
                     </p>
                     <div className="flex items-center justify-center gap-4">
-                      <img 
-                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
-                        alt="Emily Rodriguez" 
-                        className="w-16 h-16 rounded-full border-2 border-white/20"
-                      />
+                        <img 
+                          src="/TeamC.webp" 
+                          alt="Emily Rodriguez" 
+                          loading="lazy"
+                          decoding="async"
+                          className="w-16 h-16 rounded-full border-2 border-white/20"
+                        />
                       <div className="text-left">
                         <div className="text-white text-xl font-semibold">Emily Rodriguez</div>
                         <div className="text-gray-300">Founder, StartupX</div>
@@ -416,11 +424,13 @@ const About = () => {
             <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="Projects Completed" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500 object-cover"
-                  />
+                    <img 
+                      src="/pro1.avif" 
+                      alt="Projects Completed" 
+                      loading="lazy"
+                      decoding="async"
+                      className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-teal-500/30 transition-all duration-500 object-cover"
+                    />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
                     <span className="text-2xl font-bold text-white">150+</span>
@@ -442,11 +452,13 @@ const About = () => {
             <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-emerald-400/50 hover:shadow-2xl hover:shadow-emerald-500/20 overflow-hidden">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="Client Satisfaction" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-emerald-500/30 transition-all duration-500 object-cover"
-                  />
+                    <img 
+                      src="/pro2.avif" 
+                      alt="Client Satisfaction" 
+                      loading="lazy"
+                      decoding="async"
+                      className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-emerald-500/30 transition-all duration-500 object-cover"
+                    />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-emerald-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/30">
                     <span className="text-xl font-bold text-white">98%</span>
@@ -468,11 +480,13 @@ const About = () => {
             <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-purple-400/50 hover:shadow-2xl hover:shadow-purple-500/20 overflow-hidden">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="Years Experience" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-500 object-cover"
-                  />
+                    <img 
+                      src="/pro3.avif" 
+                      alt="Years Experience" 
+                      loading="lazy"
+                      decoding="async"
+                      className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-500 object-cover"
+                    />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/30">
                     <span className="text-xl font-bold text-white">5+</span>
@@ -494,11 +508,13 @@ const About = () => {
             <div className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-8 border border-gray-700/50 hover:border-orange-400/50 hover:shadow-2xl hover:shadow-orange-500/20 overflow-hidden">
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="relative flex-shrink-0">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                    alt="24/7 Support" 
-                    className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-orange-500/30 transition-all duration-500 object-cover"
-                  />
+                    <img 
+                      src="/pro4.avif" 
+                      alt="24/7 Support" 
+                      loading="lazy"
+                      decoding="async"
+                      className="w-48 h-48 rounded-2xl mx-auto md:mx-0 shadow-2xl group-hover:shadow-orange-500/30 transition-all duration-500 object-cover"
+                    />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-orange-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-lg shadow-orange-500/30">
                     <span className="text-sm font-bold text-white">24/7</span>
@@ -523,8 +539,10 @@ const About = () => {
         <div className="mt-32 mb-32">
           <div className="relative h-[70vh] rounded-3xl overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+              src="/busi5.jpg" 
               alt="Our Team in Action" 
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
@@ -543,29 +561,29 @@ const About = () => {
         </div>
 
 
-        {/* Call to Action Section */}
+        {/* Call to Action Section - Updated Theme Colors */}
         <div className="mt-32 mb-20 text-center">
-          <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/80 rounded-3xl p-16 border border-gray-700/50 relative overflow-hidden">
+          <div className="bg-gradient-to-br from-primary/20 to-secondary/30 rounded-3xl p-16 border border-primary/30 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-8 left-8 w-16 h-16 border border-cyan-400 rounded-full animate-spin" style={{animationDuration: '12s'}}></div>
-              <div className="absolute bottom-8 right-8 w-12 h-12 border border-emerald-400 rounded-full animate-spin" style={{animationDuration: '8s', animationDirection: 'reverse'}}></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-purple-400 rounded-full animate-spin" style={{animationDuration: '15s'}}></div>
+              <div className="absolute top-8 left-8 w-16 h-16 border border-primary rounded-full animate-spin" style={{animationDuration: '12s'}}></div>
+              <div className="absolute bottom-8 right-8 w-12 h-12 border border-white/60 rounded-full animate-spin" style={{animationDuration: '8s', animationDirection: 'reverse'}}></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-primary rounded-full animate-spin" style={{animationDuration: '15s'}}></div>
             </div>
             
             <div className="relative z-10">
-              <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-300 hover:via-blue-400 hover:to-purple-500 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(56,189,248,0.4)] cursor-pointer">
-                Ready to Launch Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">Digital Journey?</span>
+              <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 hover:text-primary transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(12,242,93,0.4)] cursor-pointer">
+                Ready to Launch Your <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Digital</span> <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Journey?</span>
               </h2>
-              <p className="text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-2xl text-white/80 mb-12 max-w-4xl mx-auto leading-relaxed">
                 Join the cosmic revolution and let Orbit propel your business into the digital stratosphere. 
                 Our stellar team is ready to make your vision a reality.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button className="group px-12 py-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-2xl font-bold rounded-full hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/30">
+                <button className="group px-12 py-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-2xl font-bold rounded-full hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/30">
                   <span className="group-hover:tracking-wider transition-all duration-300">Start Your Mission</span>
                 </button>
-                <button className="group px-12 py-6 bg-transparent border-2 border-cyan-400 text-teal-400 text-2xl font-bold rounded-full hover:bg-cyan-400 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/30">
+                <button className="group px-12 py-6 bg-transparent border-2 border-primary text-white text-2xl font-bold rounded-full hover:bg-primary hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/30">
                   <span className="group-hover:tracking-wider transition-all duration-300">Learn More</span>
                 </button>
               </div>
@@ -575,6 +593,7 @@ const About = () => {
       </div>
 
       <style jsx>{`
+        /* Optimized animations for better performance */
         @keyframes fade-in {
           from { opacity: 0; }
           to { opacity: 1; }
@@ -583,7 +602,7 @@ const About = () => {
         @keyframes slide-up {
           from { 
             opacity: 0; 
-            transform: translateY(50px); 
+            transform: translateY(30px); /* Reduced movement */
           }
           to { 
             opacity: 1; 
@@ -594,7 +613,7 @@ const About = () => {
         @keyframes slide-in-left {
           from { 
             opacity: 0; 
-            transform: translateX(-80px); 
+            transform: translateX(-50px); /* Reduced movement */
           }
           to { 
             opacity: 1; 
@@ -605,7 +624,7 @@ const About = () => {
         @keyframes slide-in-right {
           from { 
             opacity: 0; 
-            transform: translateX(80px); 
+            transform: translateX(50px); /* Reduced movement */
           }
           to { 
             opacity: 1; 
@@ -613,46 +632,60 @@ const About = () => {
           }
         }
         
-        .animate-fade-in {
-          animation: fade-in 1.2s ease-out;
-        }
-        
-        .animate-slide-up {
-          animation: slide-up 1.2s ease-out;
-        }
-        
-        .animate-slide-up-delay {
-          animation: slide-up 1.2s ease-out 0.4s both;
-        }
-        
-        .animate-slide-in-left {
-          animation: slide-in-left 1.2s ease-out 0.6s both;
-        }
-        
-        .animate-slide-in-right {
-          animation: slide-in-right 1.2s ease-out 0.8s both;
-        }
-
         @keyframes text-grow {
           0% {
             opacity: 0;
-            transform: scale(0.92);
-          }
-          60% {
-            opacity: 1;
-            transform: scale(1.03);
+            transform: scale(0.95); /* Reduced scale for smoother animation */
           }
           100% {
             opacity: 1;
             transform: scale(1);
           }
         }
+        
+        /* Optimized animation classes with reduced duration */
+        .animate-fade-in {
+          animation: fade-in 0.8s ease-out;
+          will-change: opacity; /* Optimize for GPU */
+        }
+        
+        .animate-slide-up {
+          animation: slide-up 0.8s ease-out;
+          will-change: transform, opacity;
+        }
+        
+        .animate-slide-up-delay {
+          animation: slide-up 0.8s ease-out 0.2s both; /* Reduced delay */
+          will-change: transform, opacity;
+        }
+        
+        .animate-slide-in-left {
+          animation: slide-in-left 0.8s ease-out 0.4s both; /* Faster animation */
+          will-change: transform, opacity;
+        }
+        
+        .animate-slide-in-right {
+          animation: slide-in-right 0.8s ease-out 0.6s both; /* Faster animation */
+          will-change: transform, opacity;
+        }
+        
         .animate-text-grow {
-          animation: text-grow 900ms ease-out 300ms both;
+          animation: text-grow 0.6s ease-out 0.1s both; /* Faster animation */
+          will-change: transform, opacity;
+        }
+
+        /* Performance optimizations */
+        .group:hover {
+          will-change: transform; /* Optimize hover animations */
+        }
+        
+        img {
+          will-change: transform; /* Optimize image animations */
         }
       `}</style>
     </section>
   );
 };
 
-export default About;
+// Memoize the component to prevent unnecessary re-renders
+export default React.memo(About);

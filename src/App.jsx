@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import SidebarNavbar from "./components/SidebarNavbar";
 import ScrollToTop from "./components/ScrollToTop";
-import PerformanceMonitor from "./components/PerformanceMonitor";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -66,6 +66,9 @@ export default function App() {
         </header>
 
         <Cursor />
+        
+        {/* WhatsApp Button */}
+        <WhatsAppButton />
 
         <main className="relative z-10 flex-1 px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-10 pt-20 sm:pt-24 md:pt-28">
           <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-32 w-32 border-b-2 border-green-500"></div></div>}>
@@ -140,8 +143,6 @@ export default function App() {
     
       </div>
       
-      {/* Performance Monitor (development only) */}
-      <PerformanceMonitor />
     </>
   );
 }

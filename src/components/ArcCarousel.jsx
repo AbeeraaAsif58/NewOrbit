@@ -6,28 +6,27 @@ const DEFAULT_ITEMS = [
   {
     title: "",
     subtitle: "",
-    image:
-      "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?q=80&w=1600&auto=format&fit=crop",
+    image: "/card1.png",
   },
   {
     title: "",
     subtitle: "",
-    image: "https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg",
+    image: "/card2.png",
   },
   {
     title: "",
     subtitle: "",
-    image: "https://images.pexels.com/photos/33814349/pexels-photo-33814349.jpeg",
+    image: "/card3.png",
   },
   {
     title: "",
     subtitle: "",
-    image: "https://images.pexels.com/photos/9783350/pexels-photo-9783350.jpeg",
+    image: "/card4.png",
   },
   {
     title: "",
     subtitle: "",
-    image: "https://images.pexels.com/photos/5473950/pexels-photo-5473950.jpeg",
+    image: "/card5.png",
   },
 ];
 

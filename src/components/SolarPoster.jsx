@@ -11,15 +11,14 @@ const COLOR = {
 };
 
 const DEFAULT_PLANETS = [
-  { name: "Neptune", ring: 5, angle: 320, size: 70,  img: "/planets/ceres.png",   href: "https://www.cashcare.co/" },
-  { name: "Uranus",  ring: 4, angle: 205, size: 50,  img: "/planets/earth.png",   href: "https://ticksntravel.com/" },
-  { name: "Jupiter", ring: 3, angle: 172, size: 110, img: "/planets/jupiter.png", href: "#" },
-  { name: "Saturn",  ring: 5, angle: 350, size: 110, img: "/planets/neptune.png", href: "#" },
-  { name: "Mars",    ring: 4, angle:  20, size: 80,  img: "/planets/saturn.png",  href: "#" },
-  { name: "Earth",   ring: 4, angle: 265, size: 95,  img: "/planets/mars.png",    href: "#" },
-  { name: "Mercury", ring: 2, angle:  85, size: 38,  img: "/planets/mercury.png", href: "#" },
-  { name: "Venus",   ring: 3, angle:  90, size: 58,  img: "/planets/uranus.png",  href: "#" },
-  { name: "Ceres",   ring: 3, angle: 225, size: 26,  img: "/planets/ceres.png",     href: "#" },
+  { name: "Project 1", ring: 5, angle: 320, size: 70,  img: "/planets/pro1.png",   href: "#" },
+  { name: "Project 2", ring: 4, angle: 205, size: 50,  img: "/planets/pro2.png",   href: "#" },
+  { name: "Project 3", ring: 3, angle: 172, size: 110, img: "/planets/pro3.png", href: "#" },
+  { name: "Project 4", ring: 5, angle: 350, size: 110, img: "/planets/pro4.png", href: "#" },
+  { name: "Project 5", ring: 4, angle:  20, size: 80,  img: "/planets/pro5.png",  href: "#" },
+  { name: "Project 6", ring: 4, angle: 265, size: 95,  img: "/planets/pro6.png",    href: "#" },
+  { name: "Project 7", ring: 2, angle:  85, size: 38,  img: "/planets/pro7.png", href: "#" },
+  { name: "Project 8", ring: 3, angle:  90, size: 58,  img: "/planets/pro8.png",  href: "#" },
 ];
 
 export default function SolarPoster({

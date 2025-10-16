@@ -103,11 +103,11 @@ useEffect(() => {
         </video>
 
         {/* Centered big heading that scales in and stays (no left/right) */}
-        <div className="hero-head absolute top-0 h-[100vh] w-full left-0 z-10 text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold text-center leading-tight px-4 flex items-center justify-center">
+        <div className="hero-head absolute top-0 h-[100vh] w-full left-0 z-10 text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold text-center leading-tight px-4 flex items-center justify-center font-orbitron">
           <div>
-            <h1 className="hello">Beyond Walls</h1>
+            <h1 className="hello font-orbitron">Beyond Walls</h1>
             <br />
-            <h1 className="hyisycis">Towards Innovation</h1>
+            <h1 className="hyisycis font-orbitron">Towards Innovation</h1>
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
@@ -208,7 +208,7 @@ useEffect(() => {
         <div className="max-w-8xl mx-auto text-center relative z-10">
           <div className="mb-8 sm:mb-12">
             <h2 
-              className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-4 sm:mb-6 cursor-pointer transition-all duration-300 px-4"
+              className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-4 sm:mb-6 cursor-pointer transition-all duration-300 px-4 font-orbitron"
               style={{
                 textShadow: 'none',
                 filter: 'none'
@@ -216,7 +216,7 @@ useEffect(() => {
             >
               Pioneering the Future of 
               <span 
-                className="text-teal-500 block transition-all duration-300"
+                className="text-teal-500 block transition-all duration-300 font-orbitron"
                 style={{
                   textShadow: 'none',
                   filter: 'none'
@@ -249,15 +249,15 @@ useEffect(() => {
           {/* Technology Highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 px-4">
             <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">AI & Machine Learning</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 font-orbitron">AI & Machine Learning</h3>
               <p className="text-sm sm:text-base text-gray-400">Advanced algorithms and intelligent automation solutions</p>
             </div>
             <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">Blockchain Technology</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 font-orbitron">Blockchain Technology</h3>
               <p className="text-sm sm:text-base text-gray-400">Secure, decentralized solutions for modern enterprises</p>
             </div>
             <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20 sm:col-span-2 lg:col-span-1">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">Fintech Innovation</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 font-orbitron">Fintech Innovation</h3>
               <p className="text-sm sm:text-base text-gray-400">Revolutionary financial technology and payment systems</p>
             </div>
           </div>
@@ -267,7 +267,7 @@ useEffect(() => {
       <div className="relative h-auto grid place-items-center overflow-hidden px-4">
         <h1 className="group relative text-center">
           <span
-            className="block mt-[10%] sm:mt-[15%] text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-none
+            className="block mt-[10%] sm:mt-[15%] text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-none font-orbitron
             text-transparent bg-clip-text
             bg-gradient-to-r from-primary via-text to-secondary
             bg-[length:200%_100%] bg-left
@@ -275,7 +275,7 @@ useEffect(() => {
             hover:bg-right hover:tracking-wider hover:scale-[1.02]
             drop-shadow-[0_0_14px_rgba(12,242,93,0.28)]"
             >
-            Redefining Innovation <span className="text-white/90">Through Advanced Technology</span>
+            Redefining Innovation <span className="text-white/90 font-orbitron">Through Advanced Technology</span>
           </span>
 
           <span className="mt-4 sm:mt-6 block text-text/70 text-base sm:text-lg text-center mx-auto max-w-6xl px-4">

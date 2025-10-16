@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TalkBanner from "../components/TalkBanner";
@@ -149,41 +149,68 @@ const Projects = () => {
     }
   ];
 
+  // Performance optimization: Memoize projects data
+  const memoizedProjects = useMemo(() => projects, []);
+  
+  // State management with performance optimization
+  const [visibleCards, setVisibleCards] = useState(6);
+  const [isLoading, setIsLoading] = useState(false);
 
-  // entrance of hero container
+  // Optimized button handler with debouncing
+  const buttonhandle = useCallback(() => {
+    if (isLoading) return;
+    
+    setIsLoading(true);
+    setTimeout(() => {
+      setVisibleCards(prev => prev === 6 ? 15 : 6);
+      setIsLoading(false);
+    }, 300);
+  }, [isLoading]);
+
+  // Memoized visible projects to prevent unnecessary recalculations
+  const visibleProjects = useMemo(() => memoizedProjects.slice(0, visibleCards), [memoizedProjects, visibleCards]);
+
+  // Optimized entrance animation with reduced complexity
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(containerRef.current, {
         y: 20,
         opacity: 0,
-        duration: 1.2,
-        ease: "power3.out",
+        duration: 0.8, // Reduced duration for faster loading
+        ease: "power2.out", // Simpler easing for better performance
       });
     });
     return () => ctx.revert();
   }, []);
 
-  // projects reveal animation
+  // Optimized projects reveal animation with intersection observer
   useEffect(() => {
     const ctx = gsap.context(() => {
-      projectsRef.current.forEach((el, i) => {
+      // Only animate visible projects to improve performance
+      visibleProjects.forEach((_, i) => {
+        const el = projectsRef.current[i];
         if (!el) return;
+        
         gsap.fromTo(
           el,
-          { y: 50, opacity: 0 },
+          { y: 30, opacity: 0 }, // Reduced movement for smoother animation
           {
             y: 0,
             opacity: 1,
-            duration: 0.8,
+            duration: 0.6, // Faster animation
             ease: "power2.out",
-            delay: i * 0.1,
-            scrollTrigger: { trigger: el, start: "top 85%" },
+            delay: i * 0.05, // Reduced delay for faster loading
+            scrollTrigger: { 
+              trigger: el, 
+              start: "top 90%", // Earlier trigger for better UX
+              toggleActions: "play none none reverse" // Optimized trigger actions
+            },
           }
         );
       });
     });
     return () => ctx.revert();
-  }, []);
+  }, [visibleProjects]); // Re-run when visible projects change
 
 
   return (
@@ -193,40 +220,32 @@ const Projects = () => {
         <section className="py-20 min-h-screen relative overflow-hidden">
           {/* Starfield provided globally */}
 
-          {/* Animated Background Elements */}
+          {/* Animated Background Elements - Optimized for Performance */}
           <div className="absolute inset-0 overflow-hidden">
-            {/* Floating Stars */}
-            <div className="absolute top-20 left-10 w-2 h-2 bg-white rounded-full animate-pulse opacity-80"></div>
-            <div className="absolute top-40 right-20 w-1 h-1 bg-white/80 rounded-full animate-ping"></div>
-            <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-teal-500 rounded-full animate-pulse opacity-70"></div>
-            <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-white/70 rounded-full animate-ping"></div>
-            <div className="absolute bottom-20 right-10 w-2 h-2 bg-white/70 rounded-full animate-pulse opacity-60"></div>
-            <div className="absolute top-1/3 left-1/3 w-1 h-1 bg-teal-500 rounded-full animate-ping"></div>
-            <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse"></div>
+            {/* Reduced floating elements for better performance */}
+            <div className="absolute top-20 left-10 w-2 h-2 bg-white rounded-full opacity-60"></div>
+            <div className="absolute top-40 right-20 w-1 h-1 bg-white/80 rounded-full opacity-40"></div>
+            <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-white rounded-full opacity-50"></div>
             
-            {/* Orbital Rings */}
+            {/* Simplified orbital rings - reduced count */}
             <div className="absolute top-1/4 left-1/4 w-40 h-40 border border-teal-700/30 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
-            <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-teal-500/20 rounded-full animate-spin" style={{animationDuration: '20s', animationDirection: 'reverse'}}></div>
             <div className="absolute bottom-1/4 right-1/4 w-36 h-36 border border-teal-600/25 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
-            <div className="absolute bottom-1/4 right-1/4 w-28 h-28 border border-white/15 rounded-full animate-spin" style={{animationDuration: '18s', animationDirection: 'reverse'}}></div>
             
-            {/* Central Orbit */}
+            {/* Single central orbit */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-teal-800/20 rounded-full animate-spin" style={{animationDuration: '40s'}}></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-teal-400/15 rounded-full animate-spin" style={{animationDuration: '35s', animationDirection: 'reverse'}}></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-white/15 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
           </div>
 
-          {/* Ambient Glow Effects */}
+          {/* Simplified Ambient Glow Effects */}
           <div className="absolute inset-0 pointer-events-none">
             <div 
-              className="absolute left-1/4 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl opacity-20"
+              className="absolute left-1/4 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full blur-3xl opacity-15"
               style={{
                 background: "radial-gradient(closest-side, rgba(12,242,93,.25), rgba(37,99,235,0))",
                 mixBlendMode: "screen",
               }}
             />
             <div 
-              className="absolute right-1/4 bottom-1/3 translate-x-1/2 translate-y-1/2 w-[300px] h-[300px] rounded-full blur-3xl opacity-15"
+              className="absolute right-1/4 bottom-1/3 translate-x-1/2 translate-y-1/2 w-[250px] h-[250px] rounded-full blur-3xl opacity-10"
               style={{
                 background: "radial-gradient(closest-side, rgba(255,255,255,.18), rgba(255,255,255,0))",
                 mixBlendMode: "screen",
@@ -238,7 +257,7 @@ const Projects = () => {
             {/* Hero Content */}
             <div className="mb-12 sm:mb-16 min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-center">
               <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow">
-                Our Work
+              Transforming the Digital Future — One Project at a Time.
             </h1>
               <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
                 <div className="md:col-span-3">
@@ -246,6 +265,7 @@ const Projects = () => {
                     <span>03. Our Projects</span>
                     <span className="h-px w-10 sm:w-14 bg-gray-600" />
                   </div>
+
                 </div>
                 <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
                   Explore our portfolio of successful projects and digital transformations.
@@ -266,9 +286,9 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Projects Grid */}
+          {/* Projects Grid - Optimized with lazy loading */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
-            {projects.map((project, index) => (
+            {visibleProjects.map((project, index) => (
               <div
                 key={project.id}
                 ref={(el) => (projectsRef.current[index] = el)}
@@ -278,7 +298,9 @@ const Projects = () => {
                   <img 
                     src={project.image} 
                     alt={project.name} 
+                    loading="lazy" // Lazy loading for better performance
                     className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-500"
+                    decoding="async" // Async decoding for better performance
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-teal-500/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
@@ -300,15 +322,33 @@ const Projects = () => {
                       {tag}
                     </span>
                   ))}
-          </div>
+                </div>
                 <button 
                   className="w-full py-3 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 transition-all duration-300 hover:scale-105"
                   onClick={() => window.open(project.url, '_blank')}
                 >
                   View Project
                 </button>
-        </div>
+              </div>
             ))}
+          </div>
+
+          {/* Load More Button - Optimized */}
+          <div className="text-center mt-12 sm:mt-16">
+            <button
+              onClick={buttonhandle}
+              disabled={isLoading}
+              className="border-[1px] border-primary px-6 sm:px-8 md:px-[1.2em] py-3 sm:py-4 md:py-[1.2em] rounded-full bg-transparent text-white font-semibold hover:bg-secondary hover:border-secondary transition-all duration-300 text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isLoading ? (
+                <span className="flex items-center gap-2">
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  Loading...
+                </span>
+              ) : (
+                visibleCards === 6 ? "View More Projects" : "View Less Projects"
+              )}
+            </button>
           </div>
         </section>
 
@@ -363,28 +403,28 @@ const Projects = () => {
           </div>
         </section>
 
-        {/* Call to Action */}
+        {/* Call to Action - Updated Theme Colors */}
         <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-16">
           <div className="text-center">
-            <div className="bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 border border-teal-700/50 relative overflow-hidden">
+            <div className="bg-gradient-to-br from-primary/20 to-secondary/30 rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 border border-primary/30 relative overflow-hidden">
               <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-8 left-8 w-16 h-16 border border-teal-400 rounded-full animate-spin" style={{animationDuration: '12s'}}></div>
+                <div className="absolute top-8 left-8 w-16 h-16 border border-primary rounded-full animate-spin" style={{animationDuration: '12s'}}></div>
                 <div className="absolute bottom-8 right-8 w-12 h-12 border border-white/60 rounded-full animate-spin" style={{animationDuration: '8s', animationDirection: 'reverse'}}></div>
               </div>
               
               <div className="relative z-10">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(12,242,93,0.4)] cursor-pointer">
-                  Ready to Transform Your <span className="text-teal-500">Digital Presence?</span>
+                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 hover:text-primary transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(12,242,93,0.4)] cursor-pointer">
+                  Ready to Launch Your <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Digital</span> <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Journey?</span>
                 </h2>
                 <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
-                  Let's work together to bring your vision to life. Our team of experts is ready to help you create something extraordinary.
+                  Join the cosmic revolution and let Orbit propel your business into the digital stratosphere. Our stellar team is ready to make your vision a reality.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-teal-600 text-white text-lg sm:text-xl md:text-2xl font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-teal-700">
-                    <span className="group-hover:tracking-wider transition-all duration-300">Start Your Project</span>
+                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-lg sm:text-xl md:text-2xl font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:from-cyan-600 hover:to-blue-700">
+                    <span className="group-hover:tracking-wider transition-all duration-300">Start Your Mission</span>
                   </button>
-                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-transparent border-2 border-teal-400 text-teal-500 text-lg sm:text-xl md:text-2xl font-bold rounded-full hover:bg-teal-500 hover:border-teal-500 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <span className="group-hover:tracking-wider transition-all duration-300">Schedule a Call</span>
+                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-transparent border-2 border-primary text-white text-lg sm:text-xl md:text-2xl font-bold rounded-full hover:bg-primary hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <span className="group-hover:tracking-wider transition-all duration-300">Learn More</span>
                   </button>
                 </div>
               </div>
@@ -400,4 +440,6 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+// Memoize the component to prevent unnecessary re-renders
+export default React.memo(Projects);
+

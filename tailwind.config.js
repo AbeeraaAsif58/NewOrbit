@@ -35,8 +35,10 @@ export default {
           "radial-gradient(120% 120% at 50% 15%, #0b1020 0%, #070a15 60%, #05070f 100%)",
       },
       fontFamily: {
-        display: ["Poppins", "sans-serif"], // headings
-        sans: ["Poppins", "ui-sans-serif", "system-ui"],
+        orbitron: ["Orbitron", "monospace"], // Orbitron font for headings only
+        display: ["Orbitron", "monospace"], // headings
+        sans: ["Poppins", "Inter", "ui-sans-serif", "system-ui"], // Poppins for body text
+        body: ["Poppins", "Inter", "ui-sans-serif", "system-ui"], // Poppins for body text
       },
     },
   },
