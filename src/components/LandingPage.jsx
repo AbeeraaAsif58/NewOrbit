@@ -25,7 +25,7 @@ function landingPage() {
                             initial={{ y: "100%" }} 
                             animate={{ y: 0 }} 
                             transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }} 
-                            className='font-[FG] uppercase md:text-[8.5vw] sm:text-[15vw] text-[15vw] md:leading-[6.5vw] sm:leading-[12vw] leading-[13vw] font-semibold'>
+                            className='font-poppins uppercase md:text-[8.5vw] sm:text-[15vw] text-[15vw] md:leading-[6.5vw] sm:leading-[12vw] leading-[13vw] font-semibold'>
                             {item}
                         </motion.h1>
                     </div>
@@ -36,7 +36,7 @@ function landingPage() {
                 {["For public and private companies", "From the first pitch to IPO"].map((item, index) => (
                     <p 
                         key={index} 
-                        className='text-lg sm:text-xl font-normal tracking-tight leading-none'>
+                        className='text-lg sm:text-xl font-normal tracking-tight leading-none font-poppins'>
                         {item}
                     </p>
                 ))}
@@ -44,12 +44,12 @@ function landingPage() {
                 <div id='startProject' className="start flex gap-3 items-center group cursor-pointer">
                     <motion.div 
                         whileHover={{ backgroundColor: "var(--color-primary)", color: "var(--color-secondary)" }} 
-                        className="px-5 py-1 border-[1px] rounded-full border-primary uppercase sm:text-xl text-lg font-medium transition duration-700">
+                        className="px-5 py-1 border-[1px] rounded-full border-primary uppercase sm:text-xl text-lg font-medium transition duration-700 font-poppins">
                         Start the project
                     </motion.div>
                     <motion.div 
                         whileHover={{ backgroundColor: "var(--color-primary)", color: "var(--color-secondary)" }} 
-                        className="text-xl p-2 rounded-full border-[1px] border-primary font-medium transition duration-700">
+                        className="text-xl p-2 rounded-full border-[1px] border-primary font-medium transition duration-700 font-poppins">
                         <MdArrowOutward />
                     </motion.div>
                 </div>

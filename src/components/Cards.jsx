@@ -15,7 +15,7 @@ function Cards() {
                 <div className='w-full h-[80%] sm:h-[85%] grid place-items-center'>   
                     <img className='w-[30vw] sm:w-[20vw] md:w-[8vw] h-[8vh] sm:h-[10vh] rounded-lg sm:rounded-xl object-contain' src={`${items.logo}`} alt="" />        
                 </div>
-                <button className='px-2 sm:px-3 text-white py-1 sm:py-2 border-2 border-gray-500 rounded-full text-xs sm:text-sm md:text-sm w-full sm:w-auto'>{items.btn}</button>
+                <button className='px-2 sm:px-3 text-white py-1 sm:py-2 border-2 border-gray-500 rounded-full text-xs sm:text-sm md:text-sm w-full sm:w-auto font-poppins'>{items.btn}</button>
             </div> 
         ))}
     </div>

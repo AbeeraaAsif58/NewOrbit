@@ -5,8 +5,10 @@ import SolarPoster from "./SolarPoster";
 
 /* ✅ Optimized local assets with correct Vite paths */
 const LEFT_IMGS = [
-  "/ser1.webp","/ser2.webp","/ser3.webp","/ser4.webp","/ser5.webp",
-  "/ser6.webp","/ser7.webp","/ser8.webp","/ser9.webp","/ser10.webp",
+  "/slider1.png","/slider2.png","/slider3.png","/slider4.png",
+  "/visa,logo.png","/master-card-logo2.png","/paypal-logo.png",
+  "/jsbank logo.png","/peace homes-logo.png","/Booking.com-logo.png","/iata-logo.png",
+  "/lbank-logo.png","/NIB_Bank_Logo (2).png","/bkash-logo.png","/payTM-logo.png",
 ];
 
 const RIGHT_IMGS = [
@@ -29,11 +31,11 @@ function useResponsiveSizes() {
     const mXl = window.matchMedia("(min-width: 1280px)");
 
     const apply = () => {
-      let next = { gap: 16, w: 140, h: 92, speedLeft: 120, speedRight: 110 };
-      if (mSm.matches) next = { gap: 18, w: 160, h: 104, speedLeft: 130, speedRight: 120 };
-      if (mMd.matches) next = { gap: 22, w: 180, h: 118, speedLeft: 150, speedRight: 135 };
-      if (mLg.matches) next = { gap: 26, w: 210, h: 132, speedLeft: 160, speedRight: 145 };
-      if (mXl.matches) next = { gap: 30, w: 240, h: 150, speedLeft: 170, speedRight: 155 };
+      let next = { gap: 16, w: 120, h: 80, speedLeft: 120, speedRight: 110 }; // mobile - smaller for logos
+      if (mSm.matches) next = { gap: 18, w: 140, h: 90, speedLeft: 130, speedRight: 120 };
+      if (mMd.matches) next = { gap: 22, w: 160, h: 100, speedLeft: 150, speedRight: 135 };
+      if (mLg.matches) next = { gap: 26, w: 180, h: 110, speedLeft: 160, speedRight: 145 };
+      if (mXl.matches) next = { gap: 30, w: 200, h: 120, speedLeft: 170, speedRight: 155 };
       setUi(next);
     };
 
@@ -122,12 +124,49 @@ export default function GalleryMarquee({
     gsap.to(middleRef.current, { y: -6, duration: 3, repeat: -1, yoyo: true, ease: "sine.inOut" });
   }, []);
 
-  /* ---- Item: FRAME REMOVED (no shadow/rounded/bg) ---- */
-  const Item = ({ src, idx }) => (
+  /* ---- Left Item: Optimized for logos with green-themed frame ---- */
+  const LeftItem = ({ src, idx }) => (
+    <div
+      data-imgitem
+      className="relative shrink-0 overflow-hidden bg-white rounded-lg shadow-lg"
+      style={{ 
+        width: `${itemWidth}px`, 
+        height: `${itemHeight}px`,
+        padding: '8px',
+        border: '2px solid #0CF25D',
+        boxShadow: '0 4px 12px rgba(12, 242, 93, 0.3)'
+      }}
+    >
+      <img
+        src={src}
+        alt={`logo-${idx}`}
+        className="absolute inset-0 w-full h-full object-contain transition-transform duration-200"
+        draggable="false"
+        loading="lazy"
+        decoding="async"
+        style={{ 
+          borderRadius: '4px',
+          padding: '4px'
+        }}
+        onLoad={(e) => {
+          e.target.style.opacity = '1';
+        }}
+        onError={(e) => {
+          e.target.style.display = 'none';
+        }}
+      />
+    </div>
+  );
+
+  /* ---- Right Item: Simple gallery images without frame ---- */
+  const RightItem = ({ src, idx }) => (
     <div
       data-imgitem
       className="relative shrink-0 overflow-hidden"
-      style={{ width: `${itemWidth}px`, height: `${itemHeight}px` }}
+      style={{ 
+        width: `${itemWidth}px`, 
+        height: `${itemHeight}px`
+      }}
     >
       <img
         src={src}
@@ -153,26 +192,39 @@ export default function GalleryMarquee({
       className="relative w-full overflow-hidden py-8 sm:py-10 md:py-12 select-none"
       aria-label="Gallery dual marquee"
     >
-      {/* Top row → LEFT */}
-      <div
-        ref={leftRef}
-        className="flex items-center"
-        style={{ gap: `${gap}px`, width: "max-content", marginBottom: "14px" }}
-      >
-        {dup(leftImages).map((src, i) => <Item key={`L-${i}`} src={src} idx={i} />)}
+      {/* Top row → LEFT with gradient background */}
+      <div className="relative w-full mb-4">
+        {/* Gradient background div behind left images */}
+        <div 
+          className="absolute inset-0 rounded-lg"
+          style={{ 
+            height: `${itemHeight + 20}px`, // Add some padding
+            top: '-10px',
+            left: '-20px',
+            right: '-20px',
+            background: 'linear-gradient(135deg, #034159 0%, #025951 30%, #02735E 70%, #0CF25D 100%)'
+          }}
+        />
+        <div
+          ref={leftRef}
+          className="relative flex items-center z-10"
+          style={{ gap: `${gap}px`, width: "max-content" }}
+        >
+          {dup(leftImages).map((src, i) => <LeftItem key={`L-${i}`} src={src} idx={i} />)}
+        </div>
       </div>
 
       {/* —— Center block —— */}
       <div
         ref={middleRef}
-        className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center group my-6 sm:my-8 "
+        className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center group my-6 sm:my-8"
       >
  
 
         <h1
           className="
-            text-image-fill relative inline-block
-            text-[12vw] sm:text-[9vw] md:text-[7vw] lg:text-[6vw]
+            text-image-fill relative inline-block text-center
+            text-[12vw] sm:text-[9vw] md:text-[6vw] lg:text-[5vw]
             leading-none font-extrabold
             drop-shadow-[0_6px_24px_rgba(0,0,0,.35)]
             transition-all duration-300 group-hover:scale-[1.02]
@@ -181,19 +233,20 @@ export default function GalleryMarquee({
           "
           style={{
             textShadow: 'none',
-            filter: 'none'
+            filter: 'none',
+            color: '#0CF25D'
           }}
         >
           Orbit Walls Powering the Future with Technology
           <span className="heading-shine" aria-hidden />
         </h1>
 
-        <div className="mx-auto mt-3 h-[3px] w-20 sm:w-24 bg-primary/70 rounded-full overflow-hidden">
-          <div className="h-full w-0 bg-primary/70 transition-all duration-500 group-hover:w-full" />
+        <div className="mx-auto mt-3 h-[3px] w-20 sm:w-24 rounded-full overflow-hidden" style={{ background: 'rgba(12, 242, 93, 0.3)' }}>
+          <div className="h-full w-0 transition-all duration-500 group-hover:w-full" style={{ background: '#0CF25D' }} />
         </div>
 
         <p 
-          className="mt-8 sm:mt-10 md:mt-12 text-base sm:text-lg md:text-xl text-text/90 leading-relaxed cursor-pointer transition-all duration-300"
+          className="mt-8 sm:mt-10 md:mt-12 text-base sm:text-lg md:text-xl text-white leading-relaxed cursor-pointer transition-all duration-300 text-center max-w-4xl mx-auto"
           style={{
             textShadow: 'none',
             filter: 'none'
@@ -220,7 +273,7 @@ export default function GalleryMarquee({
         className="flex items-center"
         style={{ gap: `${gap}px`, width: "max-content" }}
       >
-        {dup(rightImages).map((src, i) => <Item key={`R-${i}`} src={src} idx={i} />)}
+        {dup(rightImages).map((src, i) => <RightItem key={`R-${i}`} src={src} idx={i} />)}
       </div>
     </div>
   );

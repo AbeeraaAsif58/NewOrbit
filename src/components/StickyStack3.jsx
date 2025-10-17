@@ -108,10 +108,10 @@ function HeroLayer({ colors }) {
         {/* LEFT: Headline */}
         <div>
           <div className="space-y-2">
-            {["WE ARE", "SKILLED IN"].map((t, i) => (
+            {["Empowering Finance", "Through Technology"].map((t, i) => (
               <h1
                 key={i}
-                className="font-black leading-[0.95] tracking-tight text-[14vw] sm:text-[12vw] lg:text-[8.2vw]"
+                className="font-black leading-[0.95] tracking-tight text-[14vw] sm:text-[12vw] lg:text-[6vw] font-poppins"
                 style={{ color: colors.text }}
               >
                 {t}
@@ -119,17 +119,17 @@ function HeroLayer({ colors }) {
             ))}
             <div className="flex items-center gap-3">
               <h1
-                className="font-black leading-[0.95] tracking-tight text-[14vw] sm:text-[12vw] lg:text-[8.2vw]"
+                className="font-black leading-[0.95] tracking-tight text-[14vw] sm:text-[12vw] lg:text-[8.2vw] font-poppins"
                 style={{ color: colors.text }}
               >
-                AND
+              
               </h1>
               <span className="hidden sm:flex items-center gap-2">
                 <span
                   className="inline-block rounded-[22px] px-3 py-2 text-[11px] font-semibold uppercase tracking-wider"
                   style={{ background: colors.dark, color: colors.text, border:`1px solid ${colors.border}` }}
                 >
-                  development
+                <span className="font-sans">development</span>
                 </span>
                 <img
                   src="/g2.png"
@@ -141,10 +141,8 @@ function HeroLayer({ colors }) {
             </div>
           </div>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed" style={{ color: colors.sub }}>
-            We are a full-service digital agency that builds fascinating user
-            experiences. Our team creates exceptional UI design and flawless
-            functionality.
+          <p className="mt-8 max-w-xl text-lg leading-relaxed font-sans" style={{ color: colors.sub }}>
+           We are Obit shaping the future of finance meets decentralization
           </p>
         </div>
 
@@ -196,7 +194,7 @@ function ExploreLayer({ colors }) {
                   background: "transparent",
                 }}
               >
-                <span>Explore Us More</span>
+                <span className="font-sans">Explore Us More</span>
                 <span
                   className="grid h-8 w-8 place-items-center rounded-full transition-transform group-hover:translate-x-0.5"
                   style={{ border: `1px solid ${colors.border}` }}
@@ -241,7 +239,7 @@ function ExploreLayer({ colors }) {
               style={{ background: colors.dark, border: `1px solid ${colors.border}` }}
             >
               <div className="text-2xl" style={{ color: colors.blue }}>”</div>
-              <p className="mt-3 text-sm sm:text-base" style={{ color: colors.sub }}>
+              <p className="mt-3 text-sm sm:text-base font-sans" style={{ color: colors.sub }}>
                 Make your business prosper with our great team of experts. We’ll
                 make your project faster & better.
               </p>
@@ -249,7 +247,7 @@ function ExploreLayer({ colors }) {
                 <div className="text-6xl font-black" style={{ color: colors.text }}>
                   1.8<span className="text-3xl align-top" style={{ color: colors.blue }}>x</span>
                 </div>
-                <div className="mt-2 text-sm font-extrabold tracking-widest" style={{ color: colors.mid }}>
+                <div className="mt-2 text-sm font-extrabold tracking-widest font-sans" style={{ color: colors.mid }}>
                   FASTER SERVICE
                 </div>
               </div>
@@ -278,7 +276,7 @@ function CloserLayer({ colors }) {
       </div>
       <div className="mx-auto flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 text-center relative z-10">
         <h2
-          className="font-black tracking-tight text-[12vw] sm:text-[10vw] lg:text-[6vw]"
+          className="font-black tracking-tight text-[12vw] sm:text-[10vw] lg:text-[6vw] font-poppins"
           style={{ color: colors.text }}
         >
           WE CREATE MAGIC

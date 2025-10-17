@@ -107,7 +107,7 @@ const Services = () => {
               variants={fadeUp}
               className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow"
             >
-              We are "Orbit" — software development and technology solutions company
+              Innovating beyond boundaries- derivering future ready fintech & Web3 solutions
           
             </motion.h1>
             <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">

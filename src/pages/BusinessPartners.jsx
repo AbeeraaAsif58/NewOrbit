@@ -18,7 +18,7 @@ export default function BusinessPartners() {
         }}
       >
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white drop-shadow-2xl">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
             Business Partners
           </h1>
           <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto drop-shadow-lg">
@@ -30,17 +30,17 @@ export default function BusinessPartners() {
       {/* Get Started Section */}
       <div className="content-section py-20 px-4 sm:px-8 md:px-16 text-white" style={{ background: "linear-gradient(135deg, #0f4c75 0%, #1a5f7a 50%, #2a7c8a 100%)" }}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white font-poppins">
             Ready to Get Started?
           </h2>
           <p className="text-lg text-gray-200 mb-8">
             Contact us today to learn more about our partnership opportunities and how we can work together to achieve mutual success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105">
+            <button className="bg-white hover:bg-gray-100 text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
               Contact Us
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105">
+            <button className="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
               Learn More
             </button>
           </div>
@@ -60,7 +60,7 @@ export default function BusinessPartners() {
         }}
       >
         <div className="text-center z-10 px-4">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
             Why Partner With Us?
           </h2>
           <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
@@ -77,7 +77,7 @@ export default function BusinessPartners() {
               <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <span className="text-2xl">🤝</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">Mutual Growth</h3>
+              <h3 className="text-xl font-semibold mb-3 text-white font-poppins">Mutual Growth</h3>
               <p className="text-gray-200">
                 We believe in partnerships that drive mutual success and sustainable growth for all parties involved.
               </p>
@@ -87,7 +87,7 @@ export default function BusinessPartners() {
               <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <span className="text-2xl">🚀</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">Innovation Focus</h3>
+              <h3 className="text-xl font-semibold mb-3 text-white font-poppins">Innovation Focus</h3>
               <p className="text-gray-200">
                 Together, we push the boundaries of technology and deliver cutting-edge solutions to our clients.
               </p>
@@ -97,7 +97,7 @@ export default function BusinessPartners() {
               <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <span className="text-2xl">🌐</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">Global Reach</h3>
+              <h3 className="text-xl font-semibold mb-3 text-white font-poppins">Global Reach</h3>
               <p className="text-gray-200">
                 Our partnership network spans across continents, enabling us to serve clients worldwide.
               </p>
@@ -118,7 +118,7 @@ export default function BusinessPartners() {
         }}
       >
         <div className="text-center z-10 px-4">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
             Interested in Partnership?
           </h2>
           <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
@@ -165,7 +165,7 @@ export default function BusinessPartners() {
               <div className="flex flex-col items-center justify-center h-32">
                  <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
                    <img 
-                     src="/mastercard.png" 
+                     src="/master-card-logo2.png" 
                      alt="MasterCard Logo" 
                      className="max-w-full max-h-full object-contain"
                      draggable={false}
@@ -375,9 +375,9 @@ export default function BusinessPartners() {
           <div className="rounded-3xl p-8 md:p-12 mb-16 border border-white/20" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div className="group">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                  15+
-                </div>
+                 <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+                   50+
+                 </div>
                 <div className="text-lg font-semibold text-gray-200 mb-1">Trusted Partners</div>
                 <div className="text-sm text-gray-300">Leading companies across industries</div>
               </div>
@@ -412,7 +412,7 @@ export default function BusinessPartners() {
         }}
       >
         <div className="text-center z-10 px-4">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
             Let's Build Something Amazing Together
           </h2>
           <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">

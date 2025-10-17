@@ -112,13 +112,13 @@ export default function TalkBanner({
       className="relative w-full min-h-[20vh] flex flex-col items-center justify-center text-white overflow-hidden mt-0 mb-4"
     >
       {/* small top label */}
-      <div ref={helloRef} className="mb-6 flex items-center gap-2 text-lg font-semibold tracking-wider">
+      <div ref={helloRef} className="mb-6 flex items-center gap-2 text-lg font-semibold tracking-wider font-poppins">
         <span role="img" aria-label="wave">👋</span>
         <span className="uppercase">Hello !</span>
       </div>
 
       {/* giant headline */}
-      <div className="text-center leading-[0.9] font-extrabold uppercase select-none px-4">
+      <div className="text-center leading-[0.9] font-extrabold uppercase select-none px-4 font-poppins">
         <h1
           ref={line1Ref}
           className="text-[clamp(24px,6vw,120px)] tracking-tight cursor-pointer transition-all duration-300"
@@ -162,14 +162,14 @@ export default function TalkBanner({
           textShadow: '0 0 15px rgba(12,242,93,0.5), 0 0 30px rgba(12,242,93,0.3)',
           filter: 'drop-shadow(0 0 15px rgba(12,242,93,0.5))'
         }}
-        className="mt-10 text-[clamp(18px,2.5vw,44px)] font-medium tracking-wide hover:opacity-90 transition-all duration-300 hover:scale-105"
+        className="mt-10 text-[clamp(18px,2.5vw,44px)] font-medium tracking-wide hover:opacity-90 transition-all duration-300 hover:scale-105 font-poppins"
       >
         {email}
       </a>
 
       {/* footer links row */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-full max-w-4xl px-6">
-        <div className="flex items-center justify-center gap-10 text-xs sm:text-sm font-extrabold tracking-widest uppercase opacity-90">
+        <div className="flex items-center justify-center gap-10 text-xs sm:text-sm font-extrabold tracking-widest uppercase opacity-90 font-poppins">
           <a href="#" className="hover:opacity-70">Company</a>
           <a href="#" className="hover:opacity-70">Careers</a>
           <a href="#" className="hover:opacity-70">Privacy</a>
