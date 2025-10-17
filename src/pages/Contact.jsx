@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TalkBanner from "../components/TalkBanner";
-import Marquee from "../components/Marquee";
 import FooterOrbitMoonTech from "../components/FooterOrbit";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,7 +91,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           {/* Left huge copy */}
           <div ref={hero} className="lg:col-span-6">
-            <h1 className="leading-[0.95] font-semibold tracking-[-0.02em] text-[16vw] md:text-[10vw] lg:text-[7vw]">
+            <h1 className="leading-[0.95] font-semibold tracking-[-0.02em] text-[16vw] md:text-[5vw] lg:text-[5vw]">
               <span className="hero-line block">Any questions?</span>
               <span className="hero-line block">simply</span>
               <span className="hero-line block">ask us this</span>
@@ -130,9 +129,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-   
- <Marquee/>
-
+ 
       <section className="mx-auto max-w-[1400px] px-6 pt-24 pb-24">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           {/* Big headline */}

@@ -225,6 +225,22 @@ useEffect(() => {
                 Our expertise spans across artificial intelligence, blockchain technology, fintech innovations, and enterprise-grade 
                 software development.
               </p>
+            {/* Core domains: Web3, Fintech, AI, Gaming */}
+            <div className="mt-6 mb-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+              {[
+                { label: 'Web3', color: 'from-emerald-500/20 to-teal-500/10' },
+                { label: 'Fintech', color: 'from-teal-500/20 to-emerald-500/10' },
+                { label: 'AI', color: 'from-cyan-500/20 to-teal-500/10' },
+                { label: 'Gaming', color: 'from-lime-500/20 to-teal-500/10' },
+              ].map((tag) => (
+                <span
+                  key={tag.label}
+                  className={`px-4 py-2 rounded-full border border-teal-500/30 bg-gradient-to-br ${tag.color} text-white/90 text-sm sm:text-base font-semibold tracking-wide backdrop-blur-sm`}
+                >
+                  {tag.label}
+                </span>
+              ))}
+            </div>
               
               <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-6 sm:mb-8 font-sans">
                 We combine deep technical knowledge with creative vision to deliver solutions that not only meet today's challenges 
