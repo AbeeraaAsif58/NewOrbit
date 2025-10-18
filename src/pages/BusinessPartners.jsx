@@ -32,7 +32,7 @@ export default function BusinessPartners() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white font-poppins">
             Ready to Get Started?
-          </h2>
+            </h2>
           <p className="text-lg text-gray-200 mb-8">
             Contact us today to learn more about our partnership opportunities and how we can work together to achieve mutual success.
           </p>
@@ -43,9 +43,9 @@ export default function BusinessPartners() {
             <button className="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
               Learn More
             </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
 
       {/* Second Parallax Section */}
@@ -136,7 +136,7 @@ export default function BusinessPartners() {
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
               Our Partners
-            </h2>
+          </h2>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               We're proud to work with industry leaders and innovative companies that share our commitment to excellence and innovation.
             </p>

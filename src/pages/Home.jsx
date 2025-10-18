@@ -6,7 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
-import Slider from "../components/Slider";
+import ProfessionalPartners from "../components/Slider";
+import SolarPoster from "../components/SolarPoster";
 import LoadingGate from "../components/LoadingGate";
 // import MoonText from "../components/MoonText";
 import ArcCarousel from "../components/ArcCarousel";
@@ -127,18 +128,6 @@ useEffect(() => {
 
       </section>
 
-      {/* Experience Section */}
-      <div className="py-20 px-4 sm:px-8 md:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8">
-            Over four decades<br />
-            of global experience
-          </h2>
-          <p className="text-lg sm:text-xl text-gray-300 leading-relaxed font-sans">
-            With local sales and delivery centers spread across 4 continents, we are delivering cutting-edge solutions and consultancy services to some of the top companies in the world.
-          </p>
-        </div>
-      </div>
 
       {/* Spacer for fixed red box */}
     
@@ -162,11 +151,33 @@ useEffect(() => {
 
 
             <div className="-mt-24 sm:mt-0">
-              <Slider />
+              {/* Orbit Walls Powering Section */}
+              <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center py-16">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-green-400 mb-6 leading-tight">
+                  Orbit Walls
+                  <span className="block text-white/90">Powering the Future</span>
+                  <span className="block text-green-400">with Technology</span>
+                </h1>
+
+                <div className="w-24 h-1 bg-green-500 mx-auto rounded-full mb-8" />
+
+                <p className="text-lg sm:text-xl text-white/80 leading-relaxed max-w-4xl mx-auto mb-8 text-justify">
+                  Orbit Walls is a leading Web3 solutions provider specializing in peer-to-peer funding and tokenization platforms. 
+                  Our innovative platform facilitates revenue sharing and seamlessly connects traditional financial systems with digital assets.
+                </p>
+
+              </div>
+
+              {/* Professional Partners */}
+              <div className="mt-2">
+                <ProfessionalPartners />
+              </div>
             </div> 
 
-
-
+            {/* Moving Objects Section - SolarPoster */}
+            <div className="mt-4 mb-8">
+              <SolarPoster animate={true} speed={1.4} />
+            </div>
 
 
 
@@ -219,7 +230,7 @@ useEffect(() => {
             </h2>
             
             <div className="max-w-4xl mx-auto px-4">
-              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-6 sm:mb-8 font-sans">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-6 sm:mb-8 font-sans text-justify">
                 At <span className="text-teal-500 font-semibold">Orbit Walls</span>, we are a cutting-edge technology company 
                 specializing in transformative digital solutions that revolutionize how businesses operate in the modern world. 
                 Our expertise spans across artificial intelligence, blockchain technology, fintech innovations, and enterprise-grade 
@@ -242,7 +253,7 @@ useEffect(() => {
               ))}
             </div>
               
-              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-6 sm:mb-8 font-sans">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-6 sm:mb-8 font-sans text-justify">
                 We combine deep technical knowledge with creative vision to deliver solutions that not only meet today's challenges 
                 but anticipate tomorrow's opportunities. From AI-powered automation and machine learning algorithms to secure blockchain 
                 implementations and scalable cloud architectures, we empower organizations to thrive in an increasingly digital landscape.
@@ -258,15 +269,15 @@ useEffect(() => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 px-4">
             <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 font-poppins">AI & Machine Learning</h3>
-              <p className="text-sm sm:text-base text-gray-400 font-sans">Advanced algorithms and intelligent automation solutions</p>
+              <p className="text-sm sm:text-base text-gray-400 font-sans text-justify">Advanced algorithms and intelligent automation solutions</p>
             </div>
             <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 font-poppins">Blockchain Technology</h3>
-              <p className="text-sm sm:text-base text-gray-400 font-sans">Secure, decentralized solutions for modern enterprises</p>
+              <p className="text-sm sm:text-base text-gray-400 font-sans text-justify">Secure, decentralized solutions for modern enterprises</p>
             </div>
             <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/10 p-4 sm:p-6 rounded-xl border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20 sm:col-span-2 lg:col-span-1">
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 font-poppins">Fintech Innovation</h3>
-              <p className="text-sm sm:text-base text-gray-400 font-sans">Revolutionary financial technology and payment systems</p>
+              <p className="text-sm sm:text-base text-gray-400 font-sans text-justify">Revolutionary financial technology and payment systems</p>
             </div>
           </div>
         </div>
@@ -286,7 +297,7 @@ useEffect(() => {
             Redefining Innovation <span className="text-white/90 font-poppins">Through Advanced Technology</span>
           </span>
 
-          <span className="mt-4 sm:mt-6 block text-text/70 text-base sm:text-lg text-center mx-auto max-w-6xl px-4 font-sans">
+          <span className="mt-4 sm:mt-6 block text-text/70 text-base sm:text-lg text-center mx-auto max-w-6xl px-4 font-sans text-justify">
           Orbit Walls LLC, we believe that true innovation begins where technology and creativity meet. By harnessing the power of AI, automation, cloud computing, blockchain, and next-generation frameworks, we are redefining how businesses adopt and benefit from digital transformation. Our solutions go beyond functionality — they deliver scalability, performance, and long-term value. With a relentless focus on innovation, we empower organizations to stay ahead in a rapidly evolving digital world.
           </span>
         </h1>
