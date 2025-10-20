@@ -110,15 +110,12 @@ const Services = () => {
               Innovating beyond boundaries- derivering future ready fintech & Web3 solutions
           
             </motion.h1>
-            <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
+            <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start border-2 border-gray-600">
               <div className="md:col-span-3">
-                <div className="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-[11px] tracking-[0.15em] sm:tracking-[0.18em] font-semibold uppercase text-gray-400">
-                  <span>02. Our Services</span>
-                  <span className="h-px w-10 sm:w-14 bg-gray-600" />
-                </div>
+         
               </div>
-              <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
-                Build powerful software solutions with cutting-edge technologies crafted to match Orbit's expertise and propel your business into the digital stratosphere.
+              <div className=" border-2 border-gray-600 md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
+                Build powerful software solutions with cutting-edge <br /> technologies crafted to match Orbit's expertise and propel your business into the digital stratosphere.
               </div>
             </div>
           </motion.div>

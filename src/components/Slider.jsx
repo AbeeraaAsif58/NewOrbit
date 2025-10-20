@@ -4,60 +4,52 @@ import { useNavigate } from "react-router-dom";
 
 /* Selected Partners Only */
 const ALL_PARTNERS = [
-  { name: "Visa", category: "Payment Processing", logo: "/visa,logo.png" },
-  { name: "Mastercard", category: "Payment Processing", logo: "/master-card-logo2.png" },
-  { name: "PayPal", category: "Digital Payments", logo: "/paypal-logo.png" },
-  { name: "Coin Payment", category: "Cryptocurrency", logo: "/coin payment.logo.png" },
-  { name: "Stripe", category: "Payment Gateway", logo: "/stripe-logo.png" },
-  { name: "JS Bank", category: "Banking", logo: "/jsbank logo.png" },
-  { name: "Al Ansari Exchange", category: "Money Exchange", logo: "/Al Ansari Exchange- logo.png" },
-  { name: "Peace Homes", category: "Real Estate", logo: "/peace homes-logo.png" },
-  { name: "Booking.com", category: "Travel Platform", logo: "/Booking.com-logo.png" },
-  { name: "Tata", category: "Conglomerate", logo: "/tata-logo.png" },
-  { name: "LBank", category: "Financial Services", logo: "/lbank-logo.png" },
-  { name: "bKash", category: "Mobile Banking", logo: "/bkash-logo.png" },
-  { name: "Paytm", category: "Digital Wallet", logo: "/payTM-logo.png" },
-  { name: "CBD", category: "Banking", logo: "/CBD bank logo.png" }
+  { name: "", logo: "/visa,logo.png" },
+  { name: "", logo: "/master-card-logo2.png" },
+  { name: "", logo: "/slider5.png" },
+  { name: "", logo: "/slider1.png" },
+  { name: "", logo: "/slider3.png" },
+  { name: "", logo: "/jsbank logo.png" },
+  { name: "", logo: "/slider7.png" },
+  { name: "", logo: "/peace homes-logo.png" },
+  { name: "", logo: "/slider6.png" },
+  { name: "", logo: "/iata-logo.png" },
+  { name: "", logo: "/lbank-logo.png" },
+  { name: "", logo: "/bkash-logo.png" },
+  { name: "", logo: "/payTM-logo.png" },
+  { name: "", logo: "/slider4.png" }
 ];
 
-/* Professional Partner Card Component */
-const PartnerCard = ({ partner }) => {
+/* Clean Partner Logo Component */
+const PartnerLogo = ({ partner }) => {
   return (
-    <div className="
-      group relative p-6 rounded-xl border backdrop-blur-sm
-      bg-gradient-to-br from-green-500/10 to-green-600/5 
-      border-green-500/30 hover:border-green-400/50 
-      hover:bg-green-500/20 text-green-300 hover:text-green-200
-      transition-all duration-300 hover:scale-105 hover:shadow-xl
-      hover:shadow-green-500/20
-    ">
-      <div className="text-center">
-        {/* Logo Container */}
-        <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-2 group-hover:scale-110 transition-transform duration-300">
-          <img 
-            src={partner.logo} 
-            alt={`${partner.name} Logo`}
-            className="max-w-full max-h-full object-contain"
-            draggable={false}
-        onError={(e) => {
-          e.target.style.display = 'none';
-        }}
-      />
-    </div>
-        
-        {/* Company Name */}
-        <h3 className="text-lg font-bold mb-2 group-hover:text-white transition-colors duration-300">
-          {partner.name}
-        </h3>
-        
-        {/* Category */}
-        <p className="text-sm opacity-70 group-hover:opacity-100 transition-opacity duration-300">
-          {partner.category}
-          </p>
+    <div className="flex flex-col items-center justify-center text-center p-4">
+      {/* Logo Container */}
+      <div className="
+        w-24 h-24 mb-4 
+        bg-white rounded-lg flex items-center justify-center p-4 
+        hover:scale-105 transition-all duration-300 ease-out
+        shadow-sm hover:shadow-md
+        border border-gray-200
+      ">
+        <img 
+          src={partner.logo} 
+          alt={`${partner.name} Logo`}
+          className="max-w-full max-h-full object-contain"
+          draggable={false}
+          onError={(e) => {
+            e.target.style.display = 'none';
+          }}
+        />
       </div>
-
-      {/* Hover effect overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      
+      {/* Company Name */}
+      <h3 className="
+        text-sm font-semibold text-gray-700
+        transition-colors duration-300
+      ">
+        {partner.name}
+      </h3>
     </div>
   );
 };
@@ -71,33 +63,39 @@ export default function ProfessionalPartners() {
   };
 
   return (
-    <div className="relative w-full py-2 sm:py-4 md:py-6">
-      {/* Professional Partners Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4">
+    <div className="relative w-full py-16 px-6 bg-white">
+      <div className="max-w-6xl mx-auto">
+        
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Our Partners
+          </h2>
+          <div className="w-16 h-1 bg-orange-500 mx-auto rounded-full"></div>
+        </div>
+
+        {/* Partners Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-6 sm:gap-8">
           {ALL_PARTNERS.map((partner, index) => (
-            <PartnerCard 
+            <PartnerLogo 
               key={`partner-${index}`} 
               partner={partner} 
             />
           ))}
-      </div>
+        </div>
 
         {/* View All Partners Button */}
-        <div className="mt-4 text-center">
+        <div className="text-center mt-12">
           <button
             onClick={handleViewAllPartners}
             className="
-              px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 
-              text-white font-semibold text-lg rounded-xl
-              hover:from-green-600 hover:to-green-700 
-              hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30
+              px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg
+              hover:bg-blue-700 hover:scale-105 hover:shadow-lg
               transition-all duration-300 ease-in-out
-              border border-green-400/30
             "
           >
             View All Partners
-            <svg className="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
