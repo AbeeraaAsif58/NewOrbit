@@ -84,7 +84,7 @@ useEffect(() => {
 
       <section
         ref={root}
-        className="relative h-screen w-screen overflow-hidden text-white fixed inset-0 m-0 p-0 -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 -my-6 sm:-my-8 md:-my-10 -mt-20 sm:-mt-24 md:-mt-28"
+        className="relative h-screen w-screen overflow-hidden text-white -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 -my-6 sm:-my-8 md:-my-10 -mt-20 sm:-mt-24 md:-mt-28"
       >
         {/* Background Video */}
         <video
@@ -150,7 +150,7 @@ useEffect(() => {
 
 
 
-            <div className="-mt-24 sm:mt-0">
+            <div className="mt-8 sm:mt-0">
               {/* Orbit Walls Powering Section */}
               <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center py-16">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-green-400 mb-6 leading-tight">

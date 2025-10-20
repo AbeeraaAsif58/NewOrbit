@@ -23,14 +23,12 @@ const ALL_PARTNERS = [
 /* Clean Partner Logo Component */
 const PartnerLogo = ({ partner }) => {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-4">
+    <div className="flex flex-col items-center justify-center text-center p-2">
       {/* Logo Container */}
       <div className="
-        w-24 h-24 mb-4 
-        bg-white rounded-lg flex items-center justify-center p-4 
+        w-32 h-32 mb-4 
+        flex items-center justify-center
         hover:scale-105 transition-all duration-300 ease-out
-        shadow-sm hover:shadow-md
-        border border-gray-200
       ">
         <img 
           src={partner.logo} 
@@ -63,19 +61,19 @@ export default function ProfessionalPartners() {
   };
 
   return (
-    <div className="relative w-full py-16 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <div className="relative w-screen -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 py-16 bg-white/80 z-20">
+      <div className="max-w-6xl mx-auto px-6">
         
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Our Partners
           </h2>
-          <div className="w-16 h-1 bg-orange-500 mx-auto rounded-full"></div>
+          <div className="w-16 h-1 bg-green-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Partners Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-6 sm:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-8 sm:gap-10">
           {ALL_PARTNERS.map((partner, index) => (
             <PartnerLogo 
               key={`partner-${index}`} 
@@ -89,8 +87,9 @@ export default function ProfessionalPartners() {
           <button
             onClick={handleViewAllPartners}
             className="
-              px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg
-              hover:bg-blue-700 hover:scale-105 hover:shadow-lg
+              px-8 py-3 text-white font-semibold rounded-lg
+              bg-gradient-to-r from-teal-500 to-teal-600
+              hover:from-teal-600 hover:to-teal-700 hover:scale-105 hover:shadow-lg
               transition-all duration-300 ease-in-out
             "
           >
