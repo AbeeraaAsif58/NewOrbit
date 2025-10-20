@@ -84,7 +84,7 @@ useEffect(() => {
 
       <section
         ref={root}
-        className="relative h-screen w-screen overflow-hidden text-white -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 -my-6 sm:-my-8 md:-my-10 -mt-20 sm:-mt-24 md:-mt-28"
+        className="relative h-screen w-screen overflow-hidden text-white fixed inset-0 m-0 p-0 -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 -my-6 sm:-my-8 md:-my-10 -mt-20 sm:-mt-24 md:-mt-28"
       >
         {/* Background Video */}
         <video
@@ -104,25 +104,43 @@ useEffect(() => {
         </video>
 
         {/* Centered big heading that scales in and stays (no left/right) */}
-        <div className="hero-head absolute top-0 h-[100vh] w-full left-0 z-10 text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold text-center leading-tight px-4 flex items-center justify-center font-poppins">
-          <div>
-            <h1 className="hello font-poppins">Beyond Walls</h1>
-            <br />
-            <h1 className="hyisycis font-poppins">Towards Innovation</h1>
-            
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Link to="/about" className="bg-teal-500 hover:bg-teal-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
-                Why ORBIT WALLS
-                <span className="text-white">→</span>
-              </Link>
-              <Link to="/contact" className="border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
-                Let's Talk
-                <span className="text-teal-500 hover:text-white">→</span>
-              </Link>
-            </div>
-          </div>
-        </div>
+      
+        <div className="hero-head absolute top-0 left-0 h-[100vh] w-full z-10 flex flex-col items-center justify-center text-center font-poppins px-4">
+  <div>
+    <h1 className="hello font-poppins text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold leading-tight">
+      Beyond Walls
+    </h1>
+    <h1 className="hyisycis font-poppins text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[6vw] font-bold leading-tight mt-2">
+      Towards Innovation
+    </h1>
+
+    {/* Action Buttons */}
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-6 sm:mt-8 items-center">
+      <Link
+        to="/about"
+        className="bg-teal-500 hover:bg-teal-600 text-white font-medium 
+        py-2 px-4 text-xs w-[150px]
+        sm:py-3 sm:px-6 sm:text-base sm:w-auto
+        rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+      >
+        latest New
+        <span className="text-white">→</span>
+      </Link>
+
+      <Link
+        to="/contact"
+        className="border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white 
+        font-medium py-2 px-4 text-xs w-[150px]
+        sm:py-3 sm:px-6 sm:text-base sm:w-auto
+        rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+      >
+        Let's Talk
+        <span className="text-teal-500 hover:text-white">→</span>
+      </Link>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -150,7 +168,7 @@ useEffect(() => {
 
 
 
-            <div className="mt-8 sm:mt-0">
+            <div className="-mt-24 sm:mt-0">
               {/* Orbit Walls Powering Section */}
               <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center py-16">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-green-400 mb-6 leading-tight">
