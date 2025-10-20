@@ -48,11 +48,10 @@ const About = () => {
           <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
             <div className="md:col-span-3">
               <div className="flex items-center gap-4 text-[11px] tracking-[0.18em] font-semibold uppercase text-gray-400 font-poppins">
-                <span>01. About us</span>
                 <span className="h-px w-14 bg-gray-600" />
               </div>
             </div>
-            <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
+            <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center text-justify max-w-3xl mx-auto animate-text-grow">
               Unlocking technological horizons: the story behind "Orbit" — a software
               company crafting innovative solutions, building robust applications, and shaping digital success.
             </div>
@@ -65,12 +64,12 @@ const About = () => {
                Our Journey Through Space
                <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-400 to-teal-500 transition-all duration-500 group-hover:w-full"></span>
              </h3>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed text-justify">
               Founded in 2020, Orbit has been navigating the digital cosmos, pushing boundaries 
               and exploring new frontiers in technology. We believe in the infinite potential 
               of digital innovation to connect worlds and transform realities.
             </p>
-            <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+            <p className="text-xl text-gray-300 mb-12 leading-relaxed text-justify">
               Our team of space engineers combines cosmic creativity with stellar technical 
               excellence to deliver solutions that launch your business into the stratosphere 
               of success.
@@ -130,7 +129,7 @@ const About = () => {
                 <span className="text-4xl">🚀</span>
               </div>
               <h4 className="text-3xl font-bold text-white mb-6 group-hover:text-teal-400 transition-colors duration-300">Innovation</h4>
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <p className="text-gray-400 text-lg leading-relaxed text-justify">
                 We stay ahead of the cosmic curve with cutting-edge technologies and 
                 innovative approaches that push the boundaries of what's possible in the digital universe.
               </p>
@@ -141,7 +140,7 @@ const About = () => {
                 <span className="text-4xl">🎯</span>
               </div>
               <h4 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors duration-300">Precision</h4>
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <p className="text-gray-400 text-lg leading-relaxed text-justify">
                 Every mission is executed with stellar precision and the highest standards 
                 of quality, ensuring your success in the digital universe.
               </p>
@@ -152,7 +151,7 @@ const About = () => {
                 <span className="text-4xl">🤝</span>
               </div>
               <h4 className="text-3xl font-bold text-white mb-6 group-hover:text-purple-400 transition-colors duration-300">Partnership</h4>
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <p className="text-gray-400 text-lg leading-relaxed text-justify">
                 We work closely with our clients as co-pilots on this cosmic journey, 
                 ensuring their success is our shared mission across the galaxy.
               </p>
@@ -173,7 +172,7 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-16 text-white">
               <h3 className="text-5xl font-bold mb-6">Our Creative Workspace</h3>
-              <p className="text-2xl text-gray-300 max-w-3xl leading-relaxed">
+              <p className="text-2xl text-gray-300 max-w-3xl leading-relaxed text-justify">
                 Where innovation meets creativity, our team collaborates to bring your digital dreams to life in an environment designed for stellar success.
               </p>
             </div>
@@ -207,10 +206,10 @@ const About = () => {
                 </div>
               </div>
               <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-emerald-400 transition-colors duration-300">Excellence</h4>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+              <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                 We strive for stellar excellence in every project, delivering solutions that exceed expectations and push the boundaries of innovation. Our commitment to quality ensures that every digital mission we undertake reaches new heights of success.
               </p>
-              <p className="text-gray-400 text-base leading-relaxed">
+              <p className="text-gray-400 text-base leading-relaxed text-justify">
                 From initial concept to final deployment, we maintain the highest standards of excellence, ensuring that our clients receive solutions that not only meet their requirements but surpass their wildest expectations in the digital cosmos.
               </p>
             </div>
@@ -230,10 +229,10 @@ const About = () => {
                 </div>
               </div>
               <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-teal-400 transition-colors duration-300">Innovation</h4>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+              <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                 We embrace cutting-edge technologies and creative thinking to solve complex challenges and explore new frontiers in the digital universe. Our innovative approach drives breakthrough solutions that transform industries.
               </p>
-              <p className="text-gray-400 text-base leading-relaxed">
+              <p className="text-gray-400 text-base leading-relaxed text-justify">
                 By staying ahead of technological trends and constantly pushing the boundaries of what's possible, we help our clients navigate uncharted territories and achieve unprecedented success in their digital endeavors.
               </p>
             </div>
@@ -253,10 +252,10 @@ const About = () => {
                 </div>
               </div>
               <h4 className="text-3xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors duration-300">Collaboration</h4>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+              <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                 We believe in the power of teamwork and partnership, working closely with our clients to achieve shared success across the galaxy. Our collaborative approach ensures that every project benefits from diverse perspectives and expertise.
               </p>
-              <p className="text-gray-400 text-base leading-relaxed">
+              <p className="text-gray-400 text-base leading-relaxed text-justify">
                 Through open communication, shared vision, and mutual respect, we build lasting partnerships that extend beyond individual projects, creating a network of success that spans across multiple digital galaxies.
               </p>
             </div>
@@ -310,7 +309,7 @@ const About = () => {
                 <div className="w-full flex-shrink-0 bg-white/5 backdrop-blur-sm rounded-3xl p-16 border border-white/10 relative">
                   <div className="absolute top-8 left-8 text-8xl text-white/20 font-bold">"</div>
                   <div className="text-center max-w-4xl mx-auto">
-                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium">
+                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium text-justify">
                       When we talk about Orbit, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Orbit our best ally for success!
                     </p>
                     <div className="flex items-center justify-center gap-4">
@@ -333,7 +332,7 @@ const About = () => {
                 <div className="w-full flex-shrink-0 bg-white/5 backdrop-blur-sm rounded-3xl p-16 border border-white/10 relative">
                   <div className="absolute top-8 left-8 text-8xl text-white/20 font-bold">"</div>
                   <div className="text-center max-w-4xl mx-auto">
-                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium">
+                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium text-justify">
                       Orbit transformed our digital presence completely. Their innovative approach and stellar execution helped us launch into new markets successfully. The precision and creativity of their team is unmatched.
                     </p>
                     <div className="flex items-center justify-center gap-4">
@@ -356,7 +355,7 @@ const About = () => {
                 <div className="w-full flex-shrink-0 bg-white/5 backdrop-blur-sm rounded-3xl p-16 border border-white/10 relative">
                   <div className="absolute top-8 left-8 text-8xl text-white/20 font-bold">"</div>
                   <div className="text-center max-w-4xl mx-auto">
-                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium">
+                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium text-justify">
                       Working with Orbit was like having a rocket ship for our business. They launched us into the digital stratosphere with incredible results. Their team delivered our project ahead of schedule and exceeded all expectations.
                     </p>
                     <div className="flex items-center justify-center gap-4">
@@ -439,10 +438,10 @@ const About = () => {
                 <div className="flex-1">
                   <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors duration-300">Projects Completed</h4>
                   <p className="text-teal-400 text-xl mb-6 font-semibold">Successfully Launched</p>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                     We have successfully completed over 150 projects across various industries, each one carefully crafted and launched into the digital stratosphere with precision and excellence.
                   </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
+                  <p className="text-gray-400 text-base leading-relaxed text-justify">
                     From small startups to enterprise-level corporations, our projects span multiple galaxies, helping businesses achieve their digital transformation goals and reach new heights of success.
                   </p>
                 </div>
@@ -467,10 +466,10 @@ const About = () => {
                 <div className="flex-1">
                   <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">Client Satisfaction</h4>
                   <p className="text-emerald-400 text-xl mb-6 font-semibold">Happy Customers</p>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                     Our commitment to excellence has resulted in a 98% client satisfaction rate, with customers across multiple galaxies praising our innovative solutions and stellar service delivery.
                   </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
+                  <p className="text-gray-400 text-base leading-relaxed text-justify">
                     We measure our success not just by project completion, but by the lasting relationships we build with our clients and their continued growth in the digital universe.
                   </p>
                 </div>
@@ -495,10 +494,10 @@ const About = () => {
                 <div className="flex-1">
                   <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300">Years Experience</h4>
                   <p className="text-purple-400 text-xl mb-6 font-semibold">Digital Cosmos Navigation</p>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                     With over 5 years of experience navigating the digital cosmos, our team has accumulated deep knowledge and expertise in cutting-edge technologies and innovative solutions.
                   </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
+                  <p className="text-gray-400 text-base leading-relaxed text-justify">
                     Our journey through the digital universe has taught us valuable lessons about what works, what doesn't, and how to consistently deliver exceptional results for our clients.
                   </p>
                 </div>
@@ -523,10 +522,10 @@ const About = () => {
                 <div className="flex-1">
                   <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors duration-300">Support Available</h4>
                   <p className="text-orange-400 text-xl mb-6 font-semibold">Mission Control Ready</p>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                     Our mission control center operates 24/7, ensuring that our clients receive continuous support and assistance whenever they need it, regardless of their location in the digital galaxy.
                   </p>
-                  <p className="text-gray-400 text-base leading-relaxed">
+                  <p className="text-gray-400 text-base leading-relaxed text-justify">
                     Whether it's a critical issue that needs immediate attention or a simple question about your digital journey, our dedicated support team is always ready to help you navigate any challenges.
                   </p>
                 </div>
@@ -535,30 +534,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Full-Width Team Image Section */}
-        <div className="mt-32 mb-32">
-          <div className="relative h-[70vh] rounded-3xl overflow-hidden">
-            <img 
-              src="/busi5.jpg" 
-              alt="Our Team in Action" 
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
-            <div className="absolute left-0 top-0 bottom-0 flex items-center p-16 text-white max-w-2xl">
-              <div>
-                <h3 className="text-5xl font-bold mb-6">Meet Our Stellar Team</h3>
-                <p className="text-2xl text-gray-300 leading-relaxed mb-8">
-                  Our diverse team of cosmic innovators brings together expertise from across the digital galaxy to deliver exceptional results.
-                </p>
-                <button className="group px-8 py-4 bg-white text-black text-xl font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                  <span className="group-hover:tracking-wider transition-all duration-300">VIEW TEAM</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
 
 
         {/* Call to Action Section - Updated Theme Colors */}
@@ -575,7 +550,7 @@ const About = () => {
               <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 hover:text-primary transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(12,242,93,0.4)] cursor-pointer">
                 Ready to Launch Your <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Digital</span> <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Journey?</span>
               </h2>
-              <p className="text-2xl text-white/80 mb-12 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-2xl text-white/80 mb-12 max-w-4xl mx-auto leading-relaxed text-justify">
                 Join the cosmic revolution and let Orbit propel your business into the digital stratosphere. 
                 Our stellar team is ready to make your vision a reality.
               </p>

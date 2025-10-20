@@ -1,9 +1,15 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState, Suspense, lazy } from 'react';
 import Navigation from '../components/Navigation';
-import TalkBanner from '../components/TalkBanner';
-import Marquee from '../components/Marquee';
-import FooterOrbitMoonTech from '../components/FooterOrbit';
+// Lazy load heavy sections to speed up initial render
+const TalkBanner = lazy(() => import('../components/TalkBanner'));
+const FooterOrbitMoonTech = lazy(() => import('../components/FooterOrbit'));
 import { motion, useInView } from 'framer-motion';
+
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-[160px]">
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-teal-500"></div>
+  </div>
+);
 
 function useCounter(target, start = 0, durationMs = 1600, when = true) {
   const [value, setValue] = useState(start);
@@ -110,11 +116,11 @@ const Services = () => {
               Innovating beyond boundaries- derivering future ready fintech & Web3 solutions
           
             </motion.h1>
-            <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start border-2 border-gray-600">
+            <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
               <div className="md:col-span-3">
          
               </div>
-              <div className=" border-2 border-gray-600 md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto animate-text-grow">
+              <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center text-justify max-w-3xl mx-auto animate-text-grow">
                 Build powerful software solutions with cutting-edge <br /> technologies crafted to match Orbit's expertise and propel your business into the digital stratosphere.
               </div>
             </div>
@@ -142,84 +148,84 @@ const Services = () => {
               viewport={{ once: true, margin: '-100px' }}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12"
             >
-              {/* Web Development */}
+              {/* FinTech */}
               <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="relative mb-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="Web Development" 
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="FinTech" 
                     className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-cyan-500/30 transition-all duration-500"
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-teal-500/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
-                    <span className="text-2xl">💻</span>
+                    <span className="text-2xl">💰</span>
                   </div>
                 </div>
-                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">Web Development</h4>
-                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
-                  Custom web applications built with cutting-edge technologies. We create responsive, scalable, and high-performance websites that launch your business into the digital stratosphere.
+                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">FinTech</h4>
+                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4 text-justify">
+                  Revolutionary financial technology solutions that transform how businesses handle payments, transactions, and financial operations. We build secure, scalable fintech platforms that drive digital transformation.
                 </p>
-                <p className="text-white/70 text-sm sm:text-base leading-relaxed">
-                  From React and Next.js to full-stack solutions, we deliver modern web experiences that engage users and drive conversions across all devices and platforms.
+                <p className="text-white/70 text-sm sm:text-base leading-relaxed text-justify">
+                  From payment gateways and digital wallets to blockchain-based financial systems, we deliver cutting-edge fintech solutions that enhance user experience and ensure regulatory compliance.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">React</span>
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Next.js</span>
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Node.js</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Blockchain</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Payments</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Security</span>
                 </div>
               </motion.div>
 
-              {/* Mobile App Development */}
+              {/* Gaming */}
               <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="relative mb-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="Mobile App Development" 
+                    src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Gaming" 
                     className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-emerald-500/30 transition-all duration-500"
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-teal-500/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
-                    <span className="text-2xl">📱</span>
+                    <span className="text-2xl">🎮</span>
                   </div>
                 </div>
-                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">Mobile App Development</h4>
-                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
-                  Native and cross-platform mobile applications that deliver exceptional user experiences. We build apps that perform flawlessly across iOS and Android platforms.
+                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">Gaming</h4>
+                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4 text-justify">
+                  Immersive gaming experiences that captivate players and drive engagement. We develop high-performance games with stunning graphics, smooth gameplay, and innovative mechanics across multiple platforms.
                 </p>
-                <p className="text-white/70 text-sm sm:text-base leading-relaxed">
-                  Using React Native and Flutter, we create stunning mobile apps with smooth animations, intuitive interfaces, and robust backend integration.
+                <p className="text-white/70 text-sm sm:text-base leading-relaxed text-justify">
+                  From mobile games and web-based gaming to VR/AR experiences, we create interactive entertainment solutions that push the boundaries of what's possible in the gaming industry.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">React Native</span>
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Flutter</span>
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">iOS</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Unity</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Unreal</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">VR/AR</span>
                 </div>
               </motion.div>
 
-              {/* UI/UX Design */}
+              {/* Web3 */}
               <motion.div variants={scaleIn} className="group hover:scale-105 transition-all duration-700 bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden">
                 <div className="relative mb-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="UI/UX Design" 
+                    src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Web3" 
                     className="w-full h-48 rounded-2xl object-cover shadow-2xl group-hover:shadow-purple-500/30 transition-all duration-500"
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-teal-500/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
-                    <span className="text-2xl">🎨</span>
+                    <span className="text-2xl">🌐</span>
                   </div>
                 </div>
-                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">UI/UX Design</h4>
-                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
-                  Beautiful, intuitive designs that captivate users and drive engagement. We create user experiences that are both aesthetically pleasing and functionally superior.
+                <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500 transition-colors duration-300">Web3</h4>
+                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4 text-justify">
+                  Next-generation decentralized applications that revolutionize how we interact with the internet. We build Web3 solutions that empower users with true digital ownership and decentralized control.
                 </p>
-                <p className="text-white/70 text-sm sm:text-base leading-relaxed">
-                  From wireframes to high-fidelity prototypes, our design process ensures every interaction feels natural and every visual element serves a purpose.
+                <p className="text-white/70 text-sm sm:text-base leading-relaxed text-justify">
+                  From DeFi protocols and NFT marketplaces to DAOs and smart contracts, we create innovative Web3 applications that shape the future of the decentralized web.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Figma</span>
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Adobe XD</span>
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Sketch</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Ethereum</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">Smart Contracts</span>
+                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">DeFi</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -236,7 +242,7 @@ const Services = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-16 text-white">
                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Our Development Process</h3>
-                <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl leading-relaxed text-justify">
                   We follow a systematic approach to ensure every project launches successfully into the digital stratosphere with precision and excellence.
                 </p>
               </div>
@@ -278,10 +284,10 @@ const Services = () => {
                   <div className="flex-1">
                     <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-500 transition-colors duration-300">Cloud Solutions</h4>
                     <p className="text-teal-500 text-xl mb-6 font-semibold">Scalable Infrastructure</p>
-                    <p className="text-white/80 text-lg leading-relaxed mb-4">
+                    <p className="text-white/80 text-lg leading-relaxed mb-4 text-justify">
                       Comprehensive cloud infrastructure solutions that scale with your business. We design, deploy, and manage cloud environments that ensure optimal performance and reliability.
                     </p>
-                    <p className="text-white/70 text-base leading-relaxed">
+                    <p className="text-white/70 text-base leading-relaxed text-justify">
                       From AWS and Azure to Google Cloud, we help you migrate to the cloud and optimize your infrastructure for maximum efficiency and cost-effectiveness.
                     </p>
                   </div>
@@ -305,10 +311,10 @@ const Services = () => {
                   <div className="flex-1">
                     <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-500 transition-colors duration-300">AI & Machine Learning</h4>
                     <p className="text-teal-500 text-xl mb-6 font-semibold">Intelligent Solutions</p>
-                    <p className="text-white/80 text-lg leading-relaxed mb-4">
+                    <p className="text-white/80 text-lg leading-relaxed mb-4 text-justify">
                       Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent applications that adapt and learn from user behavior.
                     </p>
-                    <p className="text-white/70 text-base leading-relaxed">
+                    <p className="text-white/70 text-base leading-relaxed text-justify">
                       From chatbots and recommendation engines to predictive analytics and computer vision, we implement AI solutions that transform your business operations.
                     </p>
                   </div>
@@ -332,10 +338,10 @@ const Services = () => {
                   <div className="flex-1">
                     <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-500 transition-colors duration-300">E-commerce Solutions</h4>
                     <p className="text-teal-500 text-xl mb-6 font-semibold">Digital Storefronts</p>
-                    <p className="text-white/80 text-lg leading-relaxed mb-4">
+                    <p className="text-white/80 text-lg leading-relaxed mb-4 text-justify">
                       Complete e-commerce platforms that drive sales and provide exceptional shopping experiences. We build online stores that convert visitors into loyal customers.
                     </p>
-                    <p className="text-white/70 text-base leading-relaxed">
+                    <p className="text-white/70 text-base leading-relaxed text-justify">
                       From Shopify and WooCommerce to custom solutions, we create secure, scalable e-commerce platforms with integrated payment processing and inventory management.
                     </p>
                   </div>
@@ -359,10 +365,10 @@ const Services = () => {
                   <div className="flex-1">
                     <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-teal-500 transition-colors duration-300">Digital Marketing</h4>
                     <p className="text-teal-500 text-xl mb-6 font-semibold">Growth Strategies</p>
-                    <p className="text-white/80 text-lg leading-relaxed mb-4">
+                    <p className="text-white/80 text-lg leading-relaxed mb-4 text-justify">
                       Comprehensive digital marketing strategies that increase brand visibility, drive traffic, and generate qualified leads for your business.
                     </p>
-                    <p className="text-white/70 text-base leading-relaxed">
+                    <p className="text-white/70 text-base leading-relaxed text-justify">
                       From SEO and social media marketing to PPC campaigns and content strategy, we help you reach your target audience and achieve your business goals.
                     </p>
                   </div>
@@ -371,19 +377,6 @@ const Services = () => {
             </motion.div>
           </div>
 
-          {/* Stats Section */}
-          <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {[
-                { label: 'Projects Delivered', value: 120 },
-                { label: 'Avg. Uplift in Conversions', value: 38, suffix: '%' },
-                { label: 'Client Satisfaction', value: 97, suffix: '%' },
-                { label: 'Years Experience', value: 7 },
-              ].map((s) => (
-                <StatCard key={s.label} label={s.label} value={s.value} suffix={s.suffix} />
-              ))}
-            </div>
-          </div>
 
           {/* Testimonials */}
           <div className="mb-24 sm:mb-32 px-4 sm:px-8 md:px-12 lg:px-16">
@@ -401,7 +394,7 @@ const Services = () => {
                   className="relative bg-gradient-to-br from-teal-900/60 to-teal-800/80 border border-teal-700/50 rounded-xl sm:rounded-2xl p-6 sm:p-8"
                 >
                   <div className="absolute -top-6 left-8 w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-2xl shadow-lg">“</div>
-                  <p className="mt-4 text-white/80 leading-relaxed">
+                  <p className="mt-4 text-white/80 leading-relaxed text-justify">
                     Orbit Walls transformed our product experience. Ship velocity improved and metrics followed.
                   </p>
                   <div className="mt-6 flex items-center gap-4">
@@ -416,10 +409,6 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Marquee Section */}
-          <div className="mb-32">
-            <Marquee />
-          </div>
 
 
           {/* Call to Action Section */}
@@ -442,7 +431,7 @@ const Services = () => {
                 <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 hover:text-teal-500 transition-all duration-500 hover:drop-shadow-[0_0_20px_rgba(12,242,93,0.4)] cursor-pointer">
                   Ready to Launch Your <span className="text-teal-500">Digital Project?</span>
                 </h2>
-                <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed text-justify">
                   Let's discuss your project requirements and create a custom solution that propels your business into the digital stratosphere. 
                   Our team is ready to make your vision a reality.
                 </p>
@@ -546,8 +535,12 @@ const Services = () => {
         `}</style>
       </section>
       
-      <TalkBanner />
-      <FooterOrbitMoonTech />
+      <Suspense fallback={<LoadingFallback />}>
+        <TalkBanner />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <FooterOrbitMoonTech />
+      </Suspense>
     </div>
   );
 };
@@ -572,7 +565,7 @@ function Accordion({ title, children }) {
         transition={{ duration: 0.35, ease: 'easeOut' }}
         className="overflow-hidden"
       >
-        <div className="px-6 pb-6 text-white/80 leading-relaxed">{children}</div>
+        <div className="px-6 pb-6 text-white/80 leading-relaxed text-justify">{children}</div>
       </motion.div>
     </div>
   );
