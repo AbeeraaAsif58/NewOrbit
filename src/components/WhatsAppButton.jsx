@@ -4,7 +4,7 @@ const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   
   // WhatsApp number - replace with your actual WhatsApp number
-  const whatsappNumber = "1234567890"; // Replace with your WhatsApp number (include country code, no + sign)
+  const whatsappNumber = "971525267879"; // UAE (Dubai) number in international format, no leading 0, no +
   
   // Default message that will be pre-filled
   const defaultMessage = "Hello! I'm interested in your services. Can you help me?";

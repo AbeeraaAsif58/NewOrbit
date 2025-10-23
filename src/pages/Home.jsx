@@ -168,7 +168,7 @@ useEffect(() => {
 
 
 
-            <div className="-mt-24 sm:mt-0">
+            <div className="mt-8 sm:mt-0">
               {/* Orbit Walls Powering Section */}
               <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center py-16">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-green-400 mb-6 leading-tight">
@@ -328,4 +328,5 @@ useEffect(() => {
     </>
   );
 }
+
 

@@ -5,22 +5,22 @@ function Featured() {
     let data = [
         {
             title: "FYDE",
-            image: "https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg",
+            image: "/meet2.png",
             subArr: ["AUDIT","COPYWRITING","SALES DECK","SLIDES DESIGN"]
         },
         {
             title: "VISE",
-            image: "https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg",
+            image: "/meet3.png",
             subArr: ["AGENCY","COMPANY PRESENTATION"]
         },
         {
             title: "PREMIUM BLEND",
-            image: "https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg",
+            image: "/meet1.png",
             subArr: ["BRANDED TEMPLATE"]
         },
         {
             title: "TRAWA",
-            image: "https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg",
+            image: "/meet2.png",
             subArr: ["BRAND IDENTITY","DESIGN RESEARCH","INVESTOR DECK"]
         },
     ]
@@ -33,6 +33,14 @@ function Featured() {
 
     const handleMouseLeave = () => {
         setHoveredIndex(null);
+    };
+
+    const fallbackIfMissing = (e) => {
+        const src = e.currentTarget.getAttribute('src') || '';
+        const withSpace = src.replace(/meet(\d)\.png$/, 'meet $1.png');
+        if (withSpace !== src) {
+            e.currentTarget.src = withSpace;
+        }
     };
 
     return (
@@ -65,10 +73,13 @@ function Featured() {
                                     </motion.span>
                                 ))}
                             </h2>
-                            <div 
-                                className="scale-[100%] rounded-xl w-full h-full bg-cover bg-center"
-                                style={{ backgroundImage: `url(${card.image})` }}
-                            ></div>
+                            <img 
+                                src={card.image}
+                                alt={card.title}
+                                className='scale-[100%] rounded-xl w-full h-full object-cover object-center'
+                                onError={fallbackIfMissing}
+                                draggable={false}
+                            />
                         </div>
                         <div className='flex gap-3 mt-5'>
                             {card.subArr.map((tag, index) => (

@@ -61,7 +61,18 @@ const projects = [
     price: "$750 – $1,375",
     slug: "aitini-chatgpt-saas-writing-assistant",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+  },
+  {
+    title: "Aitini – ChatGPT SaaS Writing Assistant",
+    category: "Artificial Intelligence",
+    tags: ["SaaS", "Tools and Utilities"],
+    description: "AI writing assistant and content creator powered by ChatGPT technology",
+    status: "Available",
+    price: "$750 – $1,375",
+    slug: "aitini-chatgpt-saas-writing-assistant",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
   }
+
 ];
 
 export default function ArtificialIntelligence() {

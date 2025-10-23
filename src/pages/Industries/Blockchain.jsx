@@ -13,7 +13,17 @@ const projects = [
     "status": "Available",
     "price": "$5,000 – $10,000",
     "slug": "defi-platform",
-    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop&crop=center"
+    "image": "https://images.unsplash.com/photo-1631864032970-68d79f6b7158?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331"
+  },
+  {
+    title: "Aitini – ChatGPT SaaS Writing Assistant",
+    category: "Artificial Intelligence",
+    tags: ["SaaS", "Tools and Utilities"],
+    description: "AI writing assistant and content creator powered by ChatGPT technology",
+    status: "Available",
+    price: "$750 – $1,375",
+    slug: "aitini-chatgpt-saas-writing-assistant",
+    image: "https://images.unsplash.com/photo-1651130535991-17513bf59fc0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
   }
 ];
 

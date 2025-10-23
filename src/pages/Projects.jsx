@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState, useMemo, useCallback } from "react"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TalkBanner from "../components/TalkBanner";
-import Marquee from "../components/Marquee";
 import FooterOrbitMoonTech from "../components/FooterOrbit";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -262,8 +261,7 @@ const Projects = () => {
               <div className="mt-6 sm:mt-8 mb-16 sm:mb-24 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
                 <div className="md:col-span-3">
                   <div className="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-[11px] tracking-[0.15em] sm:tracking-[0.18em] font-semibold uppercase text-gray-400">
-                    <span>03. Our Projects</span>
-                    <span className="h-px w-10 sm:w-14 bg-gray-600" />
+                  
                   </div>
 
                 </div>
@@ -433,7 +431,6 @@ const Projects = () => {
         </section>
       </div>
 
-      <Marquee />
       <TalkBanner />
       <FooterOrbitMoonTech />
     </div>

@@ -45,15 +45,14 @@ const About = () => {
             We are "Orbit" — WEB 3 Solution Provider company
             
           </h1>
-          <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <div className="border-2 border-blue-500 mt-8 mb-24 flex items-left">
             <div className="md:col-span-3">
               <div className="flex items-center gap-4 text-[11px] tracking-[0.18em] font-semibold uppercase text-gray-400 font-poppins">
                 <span className="h-px w-14 bg-gray-600" />
               </div>
             </div>
-            <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center text-justify max-w-3xl mx-auto animate-text-grow">
-              Unlocking technological horizons: the story behind "Orbit" — a software
-              company crafting innovative solutions, building robust applications, and shaping digital success.
+            <div className="border-2 border-red-500 md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center text-justify max-w-3xl mx-auto animate-text-grow">
+              Redefining finance invnovation with decentralized Web 3 techologies and next generation fintech solution built for the digital era.
             </div>
           </div>
         </div>
