@@ -38,40 +38,32 @@ const About = () => {
         />
       </div>
 
-      <div className="mx-auto max-w-[1400px] px-6 relative z-10">
-        {/* Minimal headline section (replacing About Orbit) */}
-        <div className="mb-16 min-h-[80vh] flex flex-col justify-center">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow font-poppins">
-            We are "Orbit" — WEB 3 Solution Provider company
-            
-          </h1>
-          <div className="border-2 border-blue-500 mt-8 mb-24 flex items-left">
-            <div className="md:col-span-3">
-              <div className="flex items-center gap-4 text-[11px] tracking-[0.18em] font-semibold uppercase text-gray-400 font-poppins">
-                <span className="h-px w-14 bg-gray-600" />
-              </div>
-            </div>
-            <div className="border-2 border-red-500 md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-center text-justify max-w-3xl mx-auto animate-text-grow">
-              Redefining finance invnovation with decentralized Web 3 techologies and next generation fintech solution built for the digital era.
-            </div>
+      {/* Minimal headline section (replacing About Orbit) - Full width */}
+      <div className="mb-16 min-h-[80vh] flex flex-col justify-center px-4 sm:px-6 md:px-8 lg:px-12">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow font-poppins">
+          We are "Orbit" — WEB 3 Solution Provider company
+          
+        </h1>
+        <div className="mt-8 mb-24">
+          <div className="text-gray-300 text-xl md:text-2xl leading-relaxed text-justify max-w-3xl animate-text-grow">
+            Redefining finance invnovation with decentralized Web 3 techologies and next generation fintech solution built for the digital era.
           </div>
         </div>
+      </div>
+
+      <div className="mx-auto max-w-[1400px] px-6 relative z-10">
         
         <div className="grid md:grid-cols-2 gap-20 items-center mb-24">
           <div className="animate-slide-in-left">
              <h3 className="group relative text-5xl font-bold mb-10 text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-teal-300 hover:via-teal-400 hover:to-teal-300 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(12,242,93,0.4)] cursor-pointer font-poppins">
-               Our Journey Through Space
+               Our Journey
                <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-400 to-teal-500 transition-all duration-500 group-hover:w-full"></span>
              </h3>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed text-justify">
-              Founded in 2020, Orbit has been navigating the digital cosmos, pushing boundaries 
-              and exploring new frontiers in technology. We believe in the infinite potential 
-              of digital innovation to connect worlds and transform realities.
+            Orbit is redefining the digital landscape bye combining innovation, technology, and creativity. Qw specialize in Web3 developmen, Fintect gateway solutions, and next generation gaming expereience designed to accelerate digital transformation,
             </p>
             <p className="text-xl text-gray-300 mb-12 leading-relaxed text-justify">
-              Our team of space engineers combines cosmic creativity with stellar technical 
-              excellence to deliver solutions that launch your business into the stratosphere 
-              of success.
+            At Orbit, we believe the future belongs to those who innovation beyond boundaries, our team blends blockchain experties, decentralized systems, and financial technology to create seamless, secure, and scalable digital ecosystem.
             </p>
             
             <div className="grid grid-cols-2 gap-8">

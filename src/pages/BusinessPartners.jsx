@@ -130,271 +130,242 @@ export default function BusinessPartners() {
         </div>
       </div>
 
-      {/* Our Partners Section */}
-      <div className="content-section py-20 px-4 sm:px-8 md:px-16 text-white" style={{ background: "linear-gradient(135deg, #0f4c75 0%, #1a5f7a 50%, #2a7c8a 100%)" }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
-              Our Partners
-          </h2>
-            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
-              We're proud to work with industry leaders and innovative companies that share our commitment to excellence and innovation.
-            </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-white to-gray-300 mx-auto mt-6 rounded-full"></div>
-          </div>
+      {/* Our Partners Section - Exact Copy from Home Page */}
+      <div className="relative w-screen -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 py-16 bg-white/80 z-20">
+        <div className="max-w-6xl mx-auto px-6">
           
-          {/* Business Partners Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-16">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Our Partners
+            </h2>
+            <div className="w-16 h-1 bg-green-500 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Partners Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-8 sm:gap-10">
             {/* Visa */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/visa,logo.png" 
-                     alt="Visa Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">Visa</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/visa,logo.png" 
+                  alt="Visa Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Visa</h3>
             </div>
 
             {/* MasterCard */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/master-card-logo2.png" 
-                     alt="MasterCard Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">MasterCard</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/master-card-logo2.png" 
+                  alt="MasterCard Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">MasterCard</h3>
             </div>
 
             {/* PayPal */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/paypal-logo.png" 
-                     alt="PayPal Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">PayPal</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/paypal-logo.png" 
+                  alt="PayPal Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">PayPal</h3>
             </div>
 
-            {/* Coin Payment */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/coin payment.logo.png" 
-                     alt="CoinPayment Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">CoinPayment</h3>
+            {/* CoinPayment */}
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/coin payment.logo.png" 
+                  alt="CoinPayment Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">CoinPayment</h3>
             </div>
 
             {/* Stripe */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/stripe-logo.png" 
-                     alt="Stripe Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">Stripe</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/stripe-logo.png" 
+                  alt="Stripe Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Stripe</h3>
             </div>
 
             {/* JS Bank */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/jsbank logo.png" 
-                     alt="JS Bank Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">JS Bank</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/jsbank logo.png" 
+                  alt="JS Bank Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">JS Bank</h3>
             </div>
 
             {/* Al Ansari Exchange */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/Al Ansari Exchange- logo.png" 
-                     alt="Al Ansari Exchange Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">Al Ansari Exchange</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/Al Ansari Exchange- logo.png" 
+                  alt="Al Ansari Exchange Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Al Ansari Exchange</h3>
             </div>
 
             {/* Peace Home */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/peace homes-logo.png" 
-                     alt="Peace Home Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">Peace Home</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/peace homes-logo.png" 
+                  alt="Peace Home Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Peace Home</h3>
             </div>
 
             {/* Booking.com */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/Booking.com-logo.png" 
-                     alt="Booking.com Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">Booking.com</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/Booking.com-logo.png" 
+                  alt="Booking.com Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Booking.com</h3>
             </div>
 
             {/* IATA */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/iata-logo.png" 
-                     alt="IATA Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">IATA</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/iata-logo.png" 
+                  alt="IATA Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">IATA</h3>
             </div>
 
             {/* L Bank */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/lbank-logo.png" 
-                     alt="L Bank Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">L Bank</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/lbank-logo.png" 
+                  alt="L Bank Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
-            </div>
-
-            {/* NIB */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/NIB_Bank_Logo (2).png" 
-                     alt="NIB Bank Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">NIB Bank</h3>
-              </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">L Bank</h3>
             </div>
 
             {/* Bkash */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/bkash-logo.png" 
-                     alt="Bkash Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">Bkash</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/bkash-logo.png" 
+                  alt="Bkash Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Bkash</h3>
             </div>
 
             {/* PayTM */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/payTM-logo.png" 
-                     alt="PayTM Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">PayTM</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/payTM-logo.png" 
+                  alt="PayTM Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">PayTM</h3>
             </div>
 
             {/* CBD */}
-            <div className="group rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-2 border border-white/20 hover:border-white/40" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="flex flex-col items-center justify-center h-32">
-                 <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 p-3">
-                   <img 
-                     src="/CBD bank logo.png" 
-                     alt="CBD Bank Logo" 
-                     className="max-w-full max-h-full object-contain"
-                     draggable={false}
-                   />
-                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-gray-200 transition-colors duration-300">CBD</h3>
+            <div className="flex flex-col items-center justify-center text-center p-2">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+                <img 
+                  src="/CBD bank logo.png" 
+                  alt="CBD Bank Logo"
+                  className="max-w-full max-h-full object-contain"
+                  draggable={false}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
-            </div>
-          </div>
-
-          {/* Statistics Section */}
-          <div className="rounded-3xl p-8 md:p-12 mb-16 border border-white/20" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div className="group">
-                 <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                   50+
-                 </div>
-                <div className="text-lg font-semibold text-gray-200 mb-1">Trusted Partners</div>
-                <div className="text-sm text-gray-300">Leading companies across industries</div>
-              </div>
-              <div className="group">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                  50+
-                </div>
-                <div className="text-lg font-semibold text-gray-200 mb-1">Countries Served</div>
-                <div className="text-sm text-gray-300">Global reach and impact</div>
-              </div>
-              <div className="group">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                  99%
-                </div>
-                <div className="text-lg font-semibold text-gray-200 mb-1">Client Satisfaction</div>
-                <div className="text-sm text-gray-300">Proven track record</div>
-              </div>
+              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">CBD</h3>
             </div>
           </div>
         </div>

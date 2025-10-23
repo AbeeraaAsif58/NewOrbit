@@ -37,7 +37,7 @@ const blogPosts = [
     readTime: "7 min read",
     category: "Healthcare",
     tags: ["Healthcare", "Software Development", "Digital Transformation"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop&crop=center",
+    image: "https://b2461891.smushcdn.com/2461891/wp-content/uploads/2021/10/hospital-management-system.jpg?lossy=1&strip=1&webp=1",
     slug: "modern-hospital-management-software-essential"
   },
   {
@@ -175,7 +175,7 @@ const blogPosts = [
     readTime: "9 min read",
     category: "Healthcare",
     tags: ["Healthcare", "Telemedicine", "Digital Health", "Patient Care"],
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba0ef08?w=800&h=400&fit=crop&crop=center",
+    image: "https://diceus.com/wp-content/uploads/2021/08/telemedicine_software_development_1.png",
     slug: "telemedicine-software-benefits-virtual-care"
   },
   {

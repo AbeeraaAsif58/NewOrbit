@@ -120,8 +120,8 @@ const Services = () => {
               <div className="md:col-span-3">
          
               </div>
-              <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center text-justify max-w-3xl mx-auto animate-text-grow">
-                Build powerful software solutions with cutting-edge <br /> technologies crafted to match Orbit's expertise and propel your business into the digital stratosphere.
+              <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-left max-w-3xl animate-text-grow">
+              Empowering businesses with cutting-edge FinTech, Web3, and gaming solutions that redefine digital innovation. We bridge technology and creativity to shape the future of decentralized experiences.
               </div>
             </div>
           </motion.div>
