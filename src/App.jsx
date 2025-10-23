@@ -33,6 +33,7 @@ const MarketingAgency = lazy(() => import("./pages/Industries/MarketingAgency"))
 const CorporateAgency = lazy(() => import("./pages/Industries/CorporateAgency"));
 const StartupAgency = lazy(() => import("./pages/Industries/StartupAgency"));
 const Freelancer = lazy(() => import("./pages/Industries/Freelancer"));
+const Travel = lazy(() => import("./pages/Industries/Travel"));
 const MarketingConsultancyAgency = lazy(() => import("./pages/Industries/MarketingConsultancyAgency"));
 const PersonalPortfolio = lazy(() => import("./pages/Industries/PersonalPortfolio"));
 const ITConsultancyAgency = lazy(() => import("./pages/Industries/ITConsultancyAgency"));
@@ -119,7 +120,7 @@ export default function App() {
             <Route path="/real-estate/:projectSlug" element={<ProjectDetail />} />
             <Route path="/restaurant" element={<Companies />} />
             <Route path="/restaurant/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/travel" element={<Companies />} />
+            <Route path="/travel" element={<Travel />} />
             <Route path="/travel/:projectSlug" element={<ProjectDetail />} />
             <Route path="/branding-agency" element={<BrandingAgency />} />
             <Route path="/web-design-agency" element={<WebDesignAgency />} />
