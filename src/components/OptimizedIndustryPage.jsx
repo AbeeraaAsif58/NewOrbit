@@ -1,42 +1,28 @@
-import React, { useEffect, useRef, useState, useMemo, useCallback } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TalkBanner from "./TalkBanner";
 import SimpleFooter from "./SimpleFooter";
 
-gsap.registerPlugin(ScrollTrigger);
-
 // Optimized Project Card Component
 const ProjectCard = React.memo(({ project, navigate, basePath }) => {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  
   const handleCardClick = useCallback(() => {
     navigate(`${basePath}/${project.slug}`);
   }, [navigate, project.slug, basePath]);
 
   return (
     <div 
-      data-reveal
       onClick={handleCardClick}
-      className="group relative bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/30 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/20 cursor-pointer"
+      className="relative bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/30 rounded-2xl overflow-hidden cursor-pointer"
     >
       {/* Top Graphic Section */}
       <div className="relative bg-gradient-to-b from-teal-100 to-teal-200 p-4">
-        {/* Project Image with Lazy Loading */}
+        {/* Project Image */}
         <div className="w-full h-32 rounded-lg overflow-hidden bg-gray-800">
-          {!imageLoaded && (
-            <div className="w-full h-full bg-gray-800 animate-pulse flex items-center justify-center">
-              <div className="w-8 h-8 border-2 border-gray-600 border-t-teal-400 rounded-full animate-spin"></div>
-            </div>
-          )}
           <img 
             src={project.image}
             alt={project.title}
-            className={`w-full h-full object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+            className="w-full h-full object-cover"
             loading="lazy"
-            onLoad={() => setImageLoaded(true)}
-            onError={() => setImageLoaded(true)}
           />
         </div>
       </div>
@@ -56,7 +42,7 @@ const ProjectCard = React.memo(({ project, navigate, basePath }) => {
         </div>
         
         {/* Title */}
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors duration-300">
+        <h3 className="text-xl font-bold text-white mb-3">
           {project.title}
         </h3>
         
@@ -131,32 +117,6 @@ export default function OptimizedIndustryPage({
   textColor = "#ffffff",
   subColor = "#0CF25D"
 }) {
-  const scrollRoot = useRef(null);
-
-  useEffect(() => {
-    // Simplified animations without LocomotiveScroll for better performance
-    const ctx = gsap.context(() => {
-      // reveal animations with reduced complexity
-      gsap.utils.toArray("[data-reveal]").forEach((el, i) => {
-        gsap.from(el, {
-          opacity: 0,
-          y: 20,
-          duration: 0.5,
-          ease: "power2.out",
-          delay: i * 0.05,
-          scrollTrigger: { 
-            trigger: el, 
-            start: "top 85%",
-            toggleActions: "play none none reverse"
-          },
-        });
-      });
-    });
-
-    return () => {
-      ctx.revert();
-    };
-  }, []);
 
   return (
     <div className="min-h-screen text-white selection:bg-teal-500/20">

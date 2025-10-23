@@ -3,43 +3,43 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "Dating Solution",
+    "title": "Futureshaadi-Matrimony Web Application with Android and iOS app",
     "category": "Dating",
     "tags": [
-      "SaaS",
-      "Professional"
+      "Dating",
+      "Matrimony"
     ],
-    "description": "Professional dating solution with modern features and user-friendly interface",
+    "description": "Futureshaadi- Matrimony Web Application with Android and IOS app",
     "status": "Available",
-    "price": "$2,000 – $4,000",
-    "slug": "dating-solution",
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+    "price": "$750 – $1,500",
+    "slug": "futureshaadi-matrimony-web-application-android-ios-app",
+    "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "Dating Solution",
+    "title": "Rishtey-Shaadi Clone Matrimony Android & iOS app",
     "category": "Dating",
     "tags": [
-      "SaaS",
-      "Professional"
+      "Dating",
+      "Matrimony"
     ],
-    "description": "Professional dating solution with modern features and user-friendly interface",
+    "description": "A feature-packed Shaadi Clone Matrimonial Mobile Application to seamlessly manage your Users, Preference, Membership, Payments, Promotion and more. Mobile App Features this app is for matrimonial services.",
     "status": "Available",
-    "price": "$2,000 – $4,000",
-    "slug": "dating-solution",
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+    "price": "$750 – $1,500",
+    "slug": "rishtey-shaadi-clone-matrimony-android-ios-app",
+    "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "Dating Solution",
+    "title": "Janoo-Dating Platform like Tinder/Badoo",
     "category": "Dating",
     "tags": [
-      "SaaS",
-      "Professional"
+      "Dating",
+      "Entertainment"
     ],
-    "description": "Professional dating solution with modern features and user-friendly interface",
+    "description": "Fast and secured Dating social platform User Features Upload Images: Upload any image from your device and share it online with other users High performance & Capability: it handles advanced matching algorithms.",
     "status": "Available",
-    "price": "$2,000 – $4,000",
-    "slug": "dating-solution",
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+    "price": "$750 – $1,500",
+    "slug": "janoo-dating-platform-like-tinder-badoo",
+    "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop&crop=center"
   },
 ];
 

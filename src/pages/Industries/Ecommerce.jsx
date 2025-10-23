@@ -1,0 +1,86 @@
+import React from "react";
+import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
+
+const projects = [
+  {
+    "title": "Shopify Clone - Complete E-commerce Platform",
+    "category": "E-commerce",
+    "tags": [
+      "E-commerce",
+      "Online Store",
+      "Shopping Cart"
+    ],
+    "description": "A comprehensive e-commerce platform with advanced features including product management, inventory tracking, payment processing, and customer management.",
+    "status": "Available",
+    "price": "$1,500 – $3,000",
+    "slug": "shopify-clone-complete-ecommerce-platform",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Amazon Clone - Multi-vendor Marketplace",
+    "category": "E-commerce",
+    "tags": [
+      "Marketplace",
+      "Multi-vendor",
+      "E-commerce"
+    ],
+    "description": "A complete multi-vendor marketplace platform similar to Amazon with vendor management, product listings, order processing, and commission tracking.",
+    "status": "Available",
+    "price": "$2,500 – $5,000",
+    "slug": "amazon-clone-multi-vendor-marketplace",
+    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "WooCommerce Alternative - WordPress E-commerce",
+    "category": "E-commerce",
+    "tags": [
+      "WordPress",
+      "E-commerce",
+      "CMS"
+    ],
+    "description": "A powerful WordPress-based e-commerce solution with custom themes, payment gateways, and advanced product management features.",
+    "status": "Available",
+    "price": "$1,200 – $2,500",
+    "slug": "woocommerce-alternative-wordpress-ecommerce",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Food Delivery App - Restaurant E-commerce",
+    "category": "E-commerce",
+    "tags": [
+      "Food Delivery",
+      "Restaurant",
+      "Mobile App"
+    ],
+    "description": "Complete food delivery platform with restaurant management, order tracking, payment integration, and delivery management system.",
+    "status": "Available",
+    "price": "$2,000 – $4,000",
+    "slug": "food-delivery-app-restaurant-ecommerce",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Digital Products Store - SaaS E-commerce",
+    "category": "E-commerce",
+    "tags": [
+      "Digital Products",
+      "SaaS",
+      "Downloads"
+    ],
+    "description": "Specialized e-commerce platform for digital products with instant downloads, license management, and automated delivery system.",
+    "status": "Available",
+    "price": "$1,800 – $3,500",
+    "slug": "digital-products-store-saas-ecommerce",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+  }
+];
+
+export default function Ecommerce() {
+  return (
+    <OptimizedIndustryPage
+      title="E-commerce Solutions"
+      description="Professional e-commerce services and solutions. Discover our verified and tested e-commerce projects ready for deployment."
+      projects={projects}
+      basePath="/ecommerce"
+    />
+  );
+}

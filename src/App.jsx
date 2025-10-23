@@ -20,7 +20,9 @@ const ArtificialIntelligence = lazy(() => import("./pages/Industries/ArtificialI
 const Automobile = lazy(() => import("./pages/Industries/Automobile"));
 const Blockchain = lazy(() => import("./pages/Industries/Blockchain"));
 const B2B = lazy(() => import("./pages/Industries/B2B"));
-const Companies = lazy(() => import("./pages/Industries/Companies"));
+const Directory = lazy(() => import("./pages/Industries/Directory"));
+const Ecommerce = lazy(() => import("./pages/Industries/Ecommerce"));
+const Education = lazy(() => import("./pages/Industries/Education"));
 const Dating = lazy(() => import("./pages/Industries/Dating"));
 const Finance = lazy(() => import("./pages/Industries/Finance"));
 const BrandingAgency = lazy(() => import("./pages/Industries/BrandingAgency"));
@@ -91,35 +93,35 @@ export default function App() {
             <Route path="/blockchain/:projectSlug" element={<ProjectDetail />} />
             <Route path="/b2b" element={<B2B />} />
             <Route path="/b2b/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/companies" element={<Companies />} />
-            <Route path="/companies/:projectSlug" element={<ProjectDetail />} />
+            <Route path="/directory" element={<Directory />} />
+            <Route path="/directory/:projectSlug" element={<ProjectDetail />} />
             <Route path="/dating" element={<Dating />} />
             <Route path="/dating/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/ecommerce" element={<Companies />} />
+            <Route path="/ecommerce" element={<Ecommerce />} />
             <Route path="/ecommerce/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/education" element={<Companies />} />
+            <Route path="/education" element={<Education />} />
             <Route path="/education/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/entertainment" element={<Companies />} />
+            <Route path="/entertainment" element={<Directory />} />
             <Route path="/entertainment/:projectSlug" element={<ProjectDetail />} />
             <Route path="/finance" element={<Finance />} />
             <Route path="/finance/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/games" element={<Companies />} />
+            <Route path="/games" element={<Directory />} />
             <Route path="/games/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/grocery" element={<Companies />} />
+            <Route path="/grocery" element={<Directory />} />
             <Route path="/grocery/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/healthcare" element={<Companies />} />
+            <Route path="/healthcare" element={<Directory />} />
             <Route path="/healthcare/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/human-resource" element={<Companies />} />
+            <Route path="/human-resource" element={<Directory />} />
             <Route path="/human-resource/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/matrimony" element={<Companies />} />
+            <Route path="/matrimony" element={<Directory />} />
             <Route path="/matrimony/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/news-media" element={<Companies />} />
+            <Route path="/news-media" element={<Directory />} />
             <Route path="/news-media/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/real-estate" element={<Companies />} />
+            <Route path="/real-estate" element={<Directory />} />
             <Route path="/real-estate/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/restaurant" element={<Companies />} />
+            <Route path="/restaurant" element={<Directory />} />
             <Route path="/restaurant/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/travel" element={<Companies />} />
+            <Route path="/travel" element={<Directory />} />
             <Route path="/travel/:projectSlug" element={<ProjectDetail />} />
             <Route path="/branding-agency" element={<BrandingAgency />} />
             <Route path="/web-design-agency" element={<WebDesignAgency />} />
