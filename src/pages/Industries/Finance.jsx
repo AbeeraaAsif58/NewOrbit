@@ -3,38 +3,90 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "Finance Solution",
+    "title": "ProperLoan-NBFC Finance Mortgage Startup Sourcing Loans/Credit Cards",
     "category": "Finance",
     "tags": [
-      "SaaS",
-      "Professional"
+      "Finance",
+      "NBFC",
+      "Loans",
+      "Credit Cards",
+      "Mortgage"
     ],
-    "description": "Professional finance solution with modern features and user-friendly interface",
+    "description": "The world's first neutral online marketplace for instant customized rate quotes on loans and credit cards. Shop for loans & cards just like you buy everything else now – online.",
     "status": "Available",
-    "price": "$2,000 – $4,000",
-    "slug": "finance-solution",
-    "image": "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169"
+    "slug": "properloan-nbfc-finance-mortgage-startup-sourcing-loans-credit-cards",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop&crop=center"
   },
   {
-    title: "Aitini – ChatGPT SaaS Writing Assistant",
-    category: "Artificial Intelligence",
-    tags: ["SaaS", "Tools and Utilities"],
-    description: "AI writing assistant and content creator powered by ChatGPT technology",
-    status: "Available",
-    price: "$750 – $1,375",
-    slug: "aitini-chatgpt-saas-writing-assistant",
-    image: "https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+    "title": "InvestDrive- HYIP Crypto Investment Management Platform",
+    "category": "Finance",
+    "tags": [
+      "Finance",
+      "Crypto Investment",
+      "HYIP",
+      "Investment Management"
+    ],
+    "description": "With this Application, you can easily create a HYIP Crypto Investment Management Platform with all the features of any modern HYIP Crypto Investment Management Platform.",
+    "status": "Available",
+    "slug": "investdrive-hyip-crypto-investment-management-platform",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
   },
   {
-    title: "Aitini – ChatGPT SaaS Writing Assistant",
-    category: "Artificial Intelligence",
-    tags: ["SaaS", "Tools and Utilities"],
-    description: "AI writing assistant and content creator powered by ChatGPT technology",
-    status: "Available",
-    price: "$750 – $1,375",
-    slug: "aitini-chatgpt-saas-writing-assistant",
-    image: "https://images.unsplash.com/photo-1742308518213-c28192d056d4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+    "title": "Quotora-Live Trading Market Analysis Portfolio Watching List Subscriptions",
+    "category": "Finance",
+    "tags": [
+      "Finance",
+      "Trading",
+      "Market Analysis",
+      "Portfolio Management"
+    ],
+    "description": "Features More Than 2100+ Crypto Currencies & Tokens, Live Trading, Market Analysis, Portfolio Management, Watching List, Subscriptions",
+    "status": "Available",
+    "slug": "quotora-live-trading-market-analysis-portfolio-watching-list-subscriptions",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop&crop=center"
   },
+  {
+    "title": "Bankovia - Online Banking With DPS & Loan",
+    "category": "Finance",
+    "tags": [
+      "Finance",
+      "Online Banking",
+      "DPS",
+      "Loan Management"
+    ],
+    "description": "This is a Complete Online Banking With DPS & Loan Management System with all the features of any modern Online Banking With DPS & Loan Management System.",
+    "status": "Available",
+    "slug": "bankovia-online-banking-with-dps-loan",
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "PayoutCard - Complete virtual Credit card solution",
+    "category": "Finance",
+    "tags": [
+      "Finance",
+      "Virtual Credit Card",
+      "Payment Solution",
+      "Fintech"
+    ],
+    "description": "Trusted virtual credit card solution for your business with all the features of any modern virtual credit card solution.",
+    "status": "Available",
+    "slug": "payoutcard-complete-virtual-credit-card-solution",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "CapturePay-Start your own Secure Online Payment Gateway",
+    "category": "Finance",
+    "tags": [
+      "Finance",
+      "Payment Gateway",
+      "Online Payments",
+      "Fintech"
+    ],
+    "description": "The most secure and reliable online payment gateway solution for your business with all the features of any modern online payment gateway solution.",
+    "status": "Available",
+    "slug": "capturepay-start-your-own-secure-online-payment-gateway",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop&crop=center"
+  }
 ];
 
 export default function Finance() {

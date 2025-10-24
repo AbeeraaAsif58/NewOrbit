@@ -3,88 +3,88 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "LMS - Learning Management System",
+    "title": "School Silo – Multi-School Management System",
     "category": "Education",
     "tags": [
-      "LMS",
-      "E-learning",
-      "Online Courses"
+      "Education",
+      "ERP & CRM",
+      "Multi-School",
+      "Management"
     ],
-    "description": "A comprehensive Learning Management System with course creation, student management, progress tracking, and assessment tools for educational institutions.",
-    "status": "Available",
-    "price": "$2,000 – $4,500",
-    "slug": "lms-learning-management-system",
+    "description": "Comprehensive multi-school management system with advanced features for managing multiple educational institutions from a single platform.",
+    "status": "89 Sales",
+    "slug": "school-silo-multi-school-management-system",
+    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Skillsly – Ultimate eLearning Website",
+    "category": "Education",
+    "tags": [
+      "Education",
+      "eLearning",
+      "LMS",
+      "Enterprise Grade"
+    ],
+    "description": "It is an Enterprise grade Learning management system Website for Class 9th to 12th, JEE, NEET, and other exams. It is a complete system with all the features of any modern LMS.",
+    "status": "82 Sales",
+    "slug": "skillsly-ultimate-elearning-website",
     "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "Online Academy - Course Platform",
+    "title": "Hostelstead – Hostel/Room Management System",
     "category": "Education",
     "tags": [
-      "Online Academy",
-      "Courses",
-      "Video Learning"
+      "Education",
+      "Hostel Management",
+      "Room Booking",
+      "Student Housing"
     ],
-    "description": "Complete online academy platform with video courses, quizzes, certificates, and student progress tracking for educational content creators.",
-    "status": "Available",
-    "price": "$1,800 – $3,500",
-    "slug": "online-academy-course-platform",
-    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&crop=center"
+    "description": "Complete hostel and room management system for educational institutions with booking, payment, and maintenance features.",
+    "status": "76 Sales",
+    "slug": "hostelstead-hostel-room-management-system",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "School Management System",
+    "title": "Libroxo – Library Management System with Website",
     "category": "Education",
     "tags": [
-      "School Management",
-      "Student Portal",
-      "Administration"
+      "Education",
+      "Library Management",
+      "Digital Resources",
+      "Book Cataloging"
     ],
-    "description": "Complete school management solution with student enrollment, attendance tracking, grade management, and parent communication portal.",
-    "status": "Available",
-    "price": "$2,500 – $5,000",
-    "slug": "school-management-system",
-    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop&crop=center"
-  },
-  {
-    "title": "Tutoring Platform - One-on-One Learning",
-    "category": "Education",
-    "tags": [
-      "Tutoring",
-      "Video Calls",
-      "Scheduling"
-    ],
-    "description": "Online tutoring platform connecting students with tutors through video calls, scheduling system, and payment processing.",
-    "status": "Available",
-    "price": "$1,500 – $3,000",
-    "slug": "tutoring-platform-one-on-one-learning",
+    "description": "Library management system with integrated website for book cataloging, borrowing, and digital resource management.",
+    "status": "65 Sales",
+    "slug": "libroxo-library-management-system-website",
     "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "University Portal - Student Information System",
+    "title": "Skillbuzz – Udemy Clone - Online Courses and Learning Management System",
     "category": "Education",
     "tags": [
-      "University",
-      "Student Portal",
-      "Information System"
+      "Education",
+      "Udemy Clone",
+      "Online Courses",
+      "LMS"
     ],
-    "description": "Comprehensive university portal with student registration, course enrollment, academic records, and faculty management system.",
-    "status": "Available",
-    "price": "$3,000 – $6,000",
-    "slug": "university-portal-student-information-system",
+    "description": "Complete Udemy clone with online course management, instructor dashboard, and learning management system.",
+    "status": "72 Sales",
+    "slug": "skillbuzz-udemy-clone-online-courses-learning-management-system",
     "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "Language Learning App - Duolingo Clone",
+    "title": "QuizMatics – Real Money Quiz Game/App",
     "category": "Education",
     "tags": [
-      "Language Learning",
-      "Mobile App",
+      "Education",
+      "Quiz Game",
+      "Real Money",
       "Gamification"
     ],
-    "description": "Interactive language learning platform with gamified lessons, progress tracking, and multiple language support similar to Duolingo.",
-    "status": "Available",
-    "price": "$2,200 – $4,200",
-    "slug": "language-learning-app-duolingo-clone",
-    "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop&crop=center"
+    "description": "With more fun, advanced security, and real money rewards, this quiz game app is a perfect way to learn and earn.",
+    "status": "58 Sales",
+    "slug": "quizmatics-real-money-quiz-game-app",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
   }
 ];
 

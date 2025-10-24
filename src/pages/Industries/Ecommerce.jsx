@@ -3,74 +3,88 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "Shopify Clone - Complete E-commerce Platform",
-    "category": "E-commerce",
+    "title": "Grocery Space – Grocery Multi-Store with Customer, Store and Driver apps – BigBasket Clone",
+    "category": "eCommerce",
     "tags": [
-      "E-commerce",
-      "Online Store",
-      "Shopping Cart"
+      "eCommerce",
+      "Grocery",
+      "Mobile Apps",
+      "Multi-Store"
     ],
-    "description": "A comprehensive e-commerce platform with advanced features including product management, inventory tracking, payment processing, and customer management.",
-    "status": "Available",
-    "price": "$1,500 – $3,000",
-    "slug": "shopify-clone-complete-ecommerce-platform",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
+    "description": "Complete grocery delivery platform with customer, store, and driver apps - BigBasket clone with multi-store management capabilities.",
+    "status": "120 Sales",
+    "slug": "grocery-space-grocery-multi-store-customer-store-driver-apps-bigbasket-clone",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "Amazon Clone - Multi-vendor Marketplace",
-    "category": "E-commerce",
+    "title": "Buyyu – Fashion & Lifestyle eCommerce Platform with Mobileapp",
+    "category": "eCommerce",
     "tags": [
-      "Marketplace",
-      "Multi-vendor",
-      "E-commerce"
+      "eCommerce",
+      "Fashion",
+      "Lifestyle",
+      "Mobile App"
     ],
-    "description": "A complete multi-vendor marketplace platform similar to Amazon with vendor management, product listings, order processing, and commission tracking.",
-    "status": "Available",
-    "price": "$2,500 – $5,000",
-    "slug": "amazon-clone-multi-vendor-marketplace",
-    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop&crop=center"
+    "description": "Comprehensive fashion and lifestyle eCommerce platform with mobile app support for modern retail businesses.",
+    "status": "95 Sales",
+    "slug": "buyyu-fashion-lifestyle-ecommerce-platform-mobileapp",
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "WooCommerce Alternative - WordPress E-commerce",
-    "category": "E-commerce",
+    "title": "Bunnpay – Complete eCommerce Platform",
+    "category": "eCommerce",
     "tags": [
+      "eCommerce",
+      "Payment",
       "WordPress",
-      "E-commerce",
       "CMS"
     ],
-    "description": "A powerful WordPress-based e-commerce solution with custom themes, payment gateways, and advanced product management features.",
-    "status": "Available",
-    "price": "$1,200 – $2,500",
-    "slug": "woocommerce-alternative-wordpress-ecommerce",
+    "description": "All-in-one eCommerce platform with advanced features for online retail businesses.",
+    "status": "75 Sales",
+    "slug": "bunnpay-complete-ecommerce",
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "Food Delivery App - Restaurant E-commerce",
-    "category": "E-commerce",
+    "title": "Skillsly – Ultimate E-learning Website",
+    "category": "eCommerce",
     "tags": [
-      "Food Delivery",
-      "Restaurant",
-      "Mobile App"
+      "eCommerce",
+      "E-learning",
+      "Education",
+      "LMS"
     ],
-    "description": "Complete food delivery platform with restaurant management, order tracking, payment integration, and delivery management system.",
-    "status": "Available",
-    "price": "$2,000 – $4,000",
-    "slug": "food-delivery-app-restaurant-ecommerce",
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=600&fit=crop&crop=center"
+    "description": "Enterprise-grade learning management system with advanced features for online learning businesses.",
+    "status": "85 Sales",
+    "slug": "skillsly-ultimate-elearning-website",
+    "image": "https://www.ufglab.com/projects/lms-350x247.jpg"
   },
   {
-    "title": "Digital Products Store - SaaS E-commerce",
-    "category": "E-commerce",
+    "title": "Skillbuzz – Udemy Clone - Online Courses and Learning Management System",
+    "category": "eCommerce",
     "tags": [
-      "Digital Products",
-      "SaaS",
-      "Downloads"
+      "eCommerce",
+      "E-learning",
+      "Courses",
+      "Marketplace"
     ],
-    "description": "Specialized e-commerce platform for digital products with instant downloads, license management, and automated delivery system.",
-    "status": "Available",
-    "price": "$1,800 – $3,500",
-    "slug": "digital-products-store-saas-ecommerce",
+    "description": "Marketplace for online courses and learning management system similar to Udemy.",
+    "status": "65 Sales",
+    "slug": "skillbuzz-udemy-clone-online-courses-learning-management-system",
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Bona Kart – Multi-vendor eCommerce Platform with Android & iOS apps",
+    "category": "eCommerce",
+    "tags": [
+      "eCommerce",
+      "Multi-vendor",
+      "Marketplace",
+      "Mobile Apps"
+    ],
+    "description": "Multi-vendor eCommerce platform with Android and iOS apps built on Bootstrap and Laravel.",
+    "status": "55 Sales",
+    "slug": "bona-kart-multivendor-ecommerce-platform-android-ios-apps",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
   }
 ];
 

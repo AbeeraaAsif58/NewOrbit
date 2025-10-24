@@ -37,7 +37,7 @@ export default function Navbar() {
     { to: "/blockchain", label: "Blockchain" },
     { to: "/b2b", label: "B2B" },
     { to: "/dating", label: "Dating" },
-    { to: "/companies", label: "Directory" },
+    { to: "/directory", label: "Directory" },
     { to: "/ecommerce", label: "eCommerce" },
     { to: "/education", label: "Education" },
     { to: "/entertainment", label: "Entertainment" },
@@ -148,6 +148,27 @@ export default function Navbar() {
     });
     setOpenIndustries(false);
   };
+
+  // Click outside handler for industries popup
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (openIndustries && 
+          industriesBtnRef.current && 
+          industriesPanelRef.current &&
+          !industriesBtnRef.current.contains(event.target) &&
+          !industriesPanelRef.current.contains(event.target)) {
+        closeIndustries();
+      }
+    };
+
+    if (openIndustries) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [openIndustries]);
 
   const toggleLeft = () => (openLeft ? closeLeft() : openLeftMenu());
   const setItemRef = (el, i) => (itemRefs.current[i] = el);

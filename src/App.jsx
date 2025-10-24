@@ -21,10 +21,19 @@ const Automobile = lazy(() => import("./pages/Industries/Automobile"));
 const Blockchain = lazy(() => import("./pages/Industries/Blockchain"));
 const B2B = lazy(() => import("./pages/Industries/B2B"));
 const Directory = lazy(() => import("./pages/Industries/Directory"));
+const Matrimony = lazy(() => import("./pages/Industries/Matrimony"));
+const NewsMedia = lazy(() => import("./pages/Industries/NewsMedia"));
+const RealEstate = lazy(() => import("./pages/Industries/RealEstate"));
+const Restaurant = lazy(() => import("./pages/Industries/Restaurant"));
 const Ecommerce = lazy(() => import("./pages/Industries/Ecommerce"));
 const Education = lazy(() => import("./pages/Industries/Education"));
+const Entertainment = lazy(() => import("./pages/Industries/Entertainment"));
 const Dating = lazy(() => import("./pages/Industries/Dating"));
 const Finance = lazy(() => import("./pages/Industries/Finance"));
+const Games = lazy(() => import("./pages/Industries/Games"));
+const Grocery = lazy(() => import("./pages/Industries/Grocery"));
+const Healthcare = lazy(() => import("./pages/Industries/Healthcare"));
+const HumanResource = lazy(() => import("./pages/Industries/HumanResource"));
 const BrandingAgency = lazy(() => import("./pages/Industries/BrandingAgency"));
 const WebDesignAgency = lazy(() => import("./pages/Industries/WebDesignAgency"));
 const SEOAgency = lazy(() => import("./pages/Industries/SEOAgency"));
@@ -35,6 +44,7 @@ const MarketingAgency = lazy(() => import("./pages/Industries/MarketingAgency"))
 const CorporateAgency = lazy(() => import("./pages/Industries/CorporateAgency"));
 const StartupAgency = lazy(() => import("./pages/Industries/StartupAgency"));
 const Freelancer = lazy(() => import("./pages/Industries/Freelancer"));
+const Travel = lazy(() => import("./pages/Industries/Travel"));
 const MarketingConsultancyAgency = lazy(() => import("./pages/Industries/MarketingConsultancyAgency"));
 const PersonalPortfolio = lazy(() => import("./pages/Industries/PersonalPortfolio"));
 const ITConsultancyAgency = lazy(() => import("./pages/Industries/ITConsultancyAgency"));
@@ -101,27 +111,27 @@ export default function App() {
             <Route path="/ecommerce/:projectSlug" element={<ProjectDetail />} />
             <Route path="/education" element={<Education />} />
             <Route path="/education/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/entertainment" element={<Directory />} />
+            <Route path="/entertainment" element={<Entertainment />} />
             <Route path="/entertainment/:projectSlug" element={<ProjectDetail />} />
             <Route path="/finance" element={<Finance />} />
             <Route path="/finance/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/games" element={<Directory />} />
+            <Route path="/games" element={<Games />} />
             <Route path="/games/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/grocery" element={<Directory />} />
+            <Route path="/grocery" element={<Grocery />} />
             <Route path="/grocery/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/healthcare" element={<Directory />} />
+            <Route path="/healthcare" element={<Healthcare />} />
             <Route path="/healthcare/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/human-resource" element={<Directory />} />
+            <Route path="/human-resource" element={<HumanResource />} />
             <Route path="/human-resource/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/matrimony" element={<Directory />} />
+            <Route path="/matrimony" element={<Matrimony />} />
             <Route path="/matrimony/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/news-media" element={<Directory />} />
+            <Route path="/news-media" element={<NewsMedia />} />
             <Route path="/news-media/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/real-estate" element={<Directory />} />
+            <Route path="/real-estate" element={<RealEstate />} />
             <Route path="/real-estate/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/restaurant" element={<Directory />} />
+            <Route path="/restaurant" element={<Restaurant />} />
             <Route path="/restaurant/:projectSlug" element={<ProjectDetail />} />
-            <Route path="/travel" element={<Directory />} />
+            <Route path="/travel" element={<Travel />} />
             <Route path="/travel/:projectSlug" element={<ProjectDetail />} />
             <Route path="/branding-agency" element={<BrandingAgency />} />
             <Route path="/web-design-agency" element={<WebDesignAgency />} />

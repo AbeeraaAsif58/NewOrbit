@@ -9,7 +9,7 @@ const Projects = () => {
   const containerRef = useRef(null);
   const projectsRef = useRef([]);
 
-  // UFG LAB Projects Data
+  // Projects Data
   const projects = [
     {
       id: 1,
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       id: 2,
       name: "CareCash",
-      description: "Next-gen financial and banking facilities powered by UFG, featuring mortgages, lending/borrowing with UFG, and residency via investment.",
+      description: "Next-gen financial and banking facilities featuring mortgages, lending/borrowing, and residency via investment.",
       category: "Banking",
       tags: ["Mortgage", "Investment"],
       image: "/pro2.avif",
@@ -32,7 +32,7 @@ const Projects = () => {
     {
       id: 3,
       name: "Gamiverz",
-      description: "Gamers and developers can transact through UFG to trade in-game assets while building a diverse gaming community.",
+      description: "Gamers and developers can transact to trade in-game assets while building a diverse gaming community.",
       category: "Gaming",
       tags: ["NFT", "Community"],
       image: "/pro3.avif",
@@ -68,7 +68,7 @@ const Projects = () => {
     {
       id: 7,
       name: "Chain Homes",
-      description: "Disrupting traditional real estate, using next-gen solutions to list and invest in properties, transacting directly through UFG with the owner.",
+      description: "Disrupting traditional real estate, using next-gen solutions to list and invest in properties, transacting directly with the owner.",
       category: "Real Estate",
       tags: ["Investment", "Blockchain"],
       image: "/pro7.avif",
@@ -86,7 +86,7 @@ const Projects = () => {
     {
       id: 9,
       name: "Coin Pulse",
-      description: "A luxury experience through UFG specialized ATM kiosks globally, allowing users to convert between fiat and crypto, and debit/credit cards.",
+      description: "A luxury experience through specialized ATM kiosks globally, allowing users to convert between fiat and crypto, and debit/credit cards.",
       category: "ATM",
       tags: ["Crypto", "Payments"],
       image: "/pro9.avif",
@@ -104,7 +104,7 @@ const Projects = () => {
     {
       id: 11,
       name: "Excluvio",
-      description: "Premium services, experiences and amenities ranging from entertainment, UFG-exclusive networking events, social events, F & B and more.",
+      description: "Premium services, experiences and amenities ranging from entertainment, exclusive networking events, social events, F & B and more.",
       category: "Luxury",
       tags: ["Events", "Networking"],
       image: "/pro12.avif",
@@ -122,7 +122,7 @@ const Projects = () => {
     {
       id: 13,
       name: "Lotto Luck",
-      description: "Raise the stakes the next-gen way. Purchase lotto's through UFG and win a UFG jackpot, and interact with other players.",
+      description: "Raise the stakes the next-gen way. Purchase lotto's and win jackpots, and interact with other players.",
       category: "Lottery",
       tags: ["Gaming", "Blockchain"],
       image: "/pro14.avif",
@@ -140,7 +140,7 @@ const Projects = () => {
     {
       id: 15,
       name: "Bond Vortex",
-      description: "Inclusivity and efficiency through crypto bonds driven by UFG, enabling governments, corporations and institutions to raise capital.",
+      description: "Inclusivity and efficiency through crypto bonds, enabling governments, corporations and institutions to raise capital.",
       category: "Bonds",
       tags: ["Investment", "Institution"],
       image: "/pro16.avif",
@@ -367,12 +367,12 @@ const Projects = () => {
               {
                 name: "Afzal Iqbal",
                 role: "CEO, Bluestream Shipping Services",
-                quote: "UFG LAB transformed our business with their innovative solutions. Their team's expertise and dedication were exceptional."
+                quote: "The team transformed our business with their innovative solutions. Their team's expertise and dedication were exceptional."
               },
               {
                 name: "Mohammed Zulfekhar Altaf",
                 role: "CTO, Recaz Chemicals",
-                quote: "Working with UFG LAB was a game-changer. They delivered beyond our expectations and provided outstanding support."
+                quote: "Working with the team was a game-changer. They delivered beyond our expectations and provided outstanding support."
               },
               {
                 name: "Bathula Jaya Teja",

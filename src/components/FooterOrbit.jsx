@@ -68,8 +68,7 @@ export default function FooterOrbitMoonTech() {
               ORBIT WALLS
             </h3>
             <p className="ft-stagger mt-3 max-w-xs leading-relaxed text-white/90">
-              Crafting digital excellence through custom
-              software solutions.
+              Pioneering fintech innovation with Web3 technologies and advanced payment gateway solutions for the digital economy.
             </p>
 
             <div className="ft-social ft-stagger mt-5 flex items-center gap-3 text-white">
@@ -103,18 +102,17 @@ export default function FooterOrbitMoonTech() {
             </h4>
             <ul className="mt-4 space-y-3">
               {[
-                ["Custom Software Development", "/services/custom-software"],
-                ["Web Application Development", "/services/web-apps"],
-                ["Mobile App Development", "/services/mobile-apps"],
-                ["UI/UX Design Solutions", "/services/ui-ux"],
-              ].map(([label, href]) => (
+                "Fintech Solutions",
+                "Web3 Development", 
+                "Payment Gateway Integration",
+                "Blockchain Applications",
+                "Cryptocurrency Platforms",
+                "DeFi Solutions",
+              ].map((label) => (
                 <li key={label} className="ft-stagger">
-                  <a
-                    href={href}
-                    className="text-white/80 hover:text-white transition"
-                  >
+                  <span className="text-white/80">
                     {label}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -159,12 +157,14 @@ export default function FooterOrbitMoonTech() {
                 </a>
               </li>
               <li className="ft-stagger">
-                <a
-                  href="tel:+97145706249"
-                  className="text-white/80 hover:text-white transition"
-                >
+                <span className="text-white/80">
                   +97145706249
-                </a>
+                </span>
+              </li>
+              <li className="ft-stagger">
+                <span className="text-white/60 text-sm">
+                  1104, 11th Floor, The Tower Plaza Hotel, Sheikh Zayad Road UAE.
+                </span>
               </li>
             </ul>
           </div>

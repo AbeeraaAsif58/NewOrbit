@@ -3,17 +3,73 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "Directory Solution",
+    "title": "City Listing – Classified Ads Website and Mobile app – OLX, Quikr, Craigslist Clone",
     "category": "Directory",
     "tags": [
-      "SaaS",
-      "Professional"
+      "Directory",
+      "eCommerce",
+      "Classified Ads",
+      "Mobile Apps"
     ],
-    "description": "Professional directory solution with modern features and user-friendly interface",
+    "description": "A comprehensive classified ads platform similar to OLX, Quikr, and Craigslist with website and mobile app functionality for buying and selling various items.",
+    "status": "66 Sales",
+    "slug": "city-listing-classified-ads-website-mobile-app-olx-quikr-craigslist-clone",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Fantica – Premium Content Creators SaaS platform, Onlyfans Clone",
+    "category": "Directory",
+    "tags": [
+      "Digital Marketing",
+      "Directory",
+      "SAAS",
+      "Social"
+    ],
+    "description": "This is a fully-featured PHP platform that allows you to start your own premium content-based social media platform in no time. The experience is powered by a mobile-first, clean and easy-to-use design, with Dark and Light mode themes, RTL, and localization capabilities. It allows your creators to sell their premium content via monthly subscriptions, offers, bundles, tips, and pay to unlock posts.",
+    "status": "56 Sales",
+    "slug": "fantica-premium-content-creators-saas-platform-onlyfans-clone",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Carinian - Used Car Buy/Sell & Dealership Website & Apps",
+    "category": "Directory",
+    "tags": [
+      "Automobile",
+      "Directory",
+      "Dealership",
+      "Marketplace"
+    ],
+    "description": "We have developed most advanced and comprehensive auto dealer Website with all ad posting features including comparison, search filter, modern gallery, Review System, default layout, Bump up Ads & much more.",
     "status": "Available",
-    "price": "$2,000 – $4,000",
-    "slug": "directory-solution",
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+    "slug": "carinian-used-car-buy-sell-dealership-website-apps",
+    "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Urban Better – Home Services, Business Listing, Handyman Booking App",
+    "category": "Directory",
+    "tags": [
+      "Directory",
+      "eCommerce",
+      "Home Services",
+      "Booking"
+    ],
+    "description": "Complete home services platform with business listings and handyman booking functionality for various home improvement services.",
+    "status": "30 Sales",
+    "slug": "urban-better-home-services-business-listing-handyman-booking-app",
+    "image": "https://www.ufglab.com/projects/home-service-350x184.jpg"
+  },
+  {
+    "title": "Binnic – Business Suite",
+    "category": "Directory",
+    "tags": [
+      "Directory",
+      "eCommerce",
+      "Business Management"
+    ],
+    "description": "Comprehensive business suite platform providing directory services and eCommerce solutions for businesses of all sizes.",
+    "status": "25 Sales",
+    "slug": "binnic-business-suite",
+    "image": "https://www.ufglab.com/projects/business-suite-350x183.jpg"
   }
 ];
 

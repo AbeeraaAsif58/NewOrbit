@@ -38,20 +38,21 @@ const About = () => {
         />
       </div>
 
-      {/* Minimal headline section (replacing About Orbit) - Full width */}
-      <div className="mb-16 min-h-[80vh] flex flex-col justify-center px-4 sm:px-6 md:px-8 lg:px-12">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow font-poppins">
-          We are "Orbit" — WEB 3 Solution Provider company
-          
-        </h1>
-        <div className="mt-8 mb-24">
-          <div className="text-gray-300 text-xl md:text-2xl leading-relaxed text-justify max-w-3xl animate-text-grow">
-            Redefining finance invnovation with decentralized Web 3 techologies and next generation fintech solution built for the digital era.
+      <div className="mx-auto max-w-[1400px] px-6 relative z-10">
+        {/* Minimal headline section (replacing About Orbit) */}
+        <div className="mb-16 min-h-[80vh] flex flex-col justify-center">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight text-white animate-text-grow font-poppins">
+            We are "Orbit" — WEB 3 Solution Provider company
+          </h1>
+          <div className="mt-8 mb-24 items-left">
+            <div className="md:col-span-3">
+             
+            </div>
+            <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-left animate-text-grow">
+              Redefining finance innovation with decentralized Web 3 technologies <br /> and next generation fintech solution built for the digital era.
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="mx-auto max-w-[1400px] px-6 relative z-10">
         
         <div className="grid md:grid-cols-2 gap-20 items-center mb-24">
           <div className="animate-slide-in-left">
@@ -59,12 +60,12 @@ const About = () => {
                Our Journey
                <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-teal-400 to-teal-500 transition-all duration-500 group-hover:w-full"></span>
              </h3>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed text-justify">
-            Orbit is redefining the digital landscape bye combining innovation, technology, and creativity. Qw specialize in Web3 developmen, Fintect gateway solutions, and next generation gaming expereience designed to accelerate digital transformation,
-            </p>
-            <p className="text-xl text-gray-300 mb-12 leading-relaxed text-justify">
-            At Orbit, we believe the future belongs to those who innovation beyond boundaries, our team blends blockchain experties, decentralized systems, and financial technology to create seamless, secure, and scalable digital ecosystem.
-            </p>
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed" style={{textAlign: 'left'}}>
+             Orbit is redefining the digital landscape by combining innovation, technology, and creativity. We specialize in Web3 development, Fintech gateway solutions, and next generation gaming experience designed to accelerate digital transformation.
+              </p>
+              <p className="text-xl text-gray-300 mb-12 leading-relaxed" style={{textAlign: 'left'}}>
+             At Orbit, we believe the future belongs to those who innovate beyond boundaries. Our team blends blockchain expertise, decentralized systems, and financial technology to create seamless, secure, and scalable digital ecosystem.
+              </p>
             
             <div className="grid grid-cols-2 gap-8">
               <div className="text-center group hover:scale-110 transition-all duration-500 bg-teal-900/30 rounded-2xl p-6 border border-teal-700/50 hover:border-teal-400/50">
@@ -253,152 +254,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Client Testimonials Slider Section */}
-        <div className="mt-32">
-          <div className="text-center mb-20 animate-fade-in">
-            <h3 className="group relative text-5xl font-bold mb-8 text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-indigo-300 hover:via-purple-400 hover:to-pink-500 transition-all duration-500 hover:drop-shadow-[0_0_15px_rgba(147,51,234,0.4)] cursor-pointer">
-              Client Testimonials
-              <span className="block mx-auto mt-2 h-[3px] w-0 bg-gradient-to-r from-indigo-400 to-purple-400 transition-all duration-500 group-hover:w-full"></span>
-            </h3>
-            <p className="text-2xl text-gray-400">What our clients say about their cosmic journey with us</p>
-          </div>
-          
-          {/* Testimonial Slider */}
-          <div className="relative max-w-6xl mx-auto">
-            {/* Navigation Arrows */}
-            <button 
-              onClick={() => {
-                const slider = document.getElementById('testimonial-slider');
-                if (slider) {
-                  slider.scrollBy({ left: -slider.offsetWidth, behavior: 'smooth' });
-                }
-              }}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110 z-10"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button 
-              onClick={() => {
-                const slider = document.getElementById('testimonial-slider');
-                if (slider) {
-                  slider.scrollBy({ left: slider.offsetWidth, behavior: 'smooth' });
-                }
-              }}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110 z-10"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-
-            {/* Testimonial Content Container */}
-            <div id="testimonial-slider" className="overflow-hidden rounded-3xl">
-              <div className="flex transition-transform duration-500 ease-in-out">
-                {/* Testimonial 1 */}
-                <div className="w-full flex-shrink-0 bg-white/5 backdrop-blur-sm rounded-3xl p-16 border border-white/10 relative">
-                  <div className="absolute top-8 left-8 text-8xl text-white/20 font-bold">"</div>
-                  <div className="text-center max-w-4xl mx-auto">
-                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium text-justify">
-                      When we talk about Orbit, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Orbit our best ally for success!
-                    </p>
-                    <div className="flex items-center justify-center gap-4">
-                        <img 
-                          src="/TeamA.webp" 
-                          alt="Mike David" 
-                          loading="lazy"
-                          decoding="async"
-                          className="w-16 h-16 rounded-full border-2 border-white/20"
-                        />
-                      <div className="text-left">
-                        <div className="text-white text-xl font-semibold">Mike David</div>
-                        <div className="text-gray-300">Developer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Testimonial 2 */}
-                <div className="w-full flex-shrink-0 bg-white/5 backdrop-blur-sm rounded-3xl p-16 border border-white/10 relative">
-                  <div className="absolute top-8 left-8 text-8xl text-white/20 font-bold">"</div>
-                  <div className="text-center max-w-4xl mx-auto">
-                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium text-justify">
-                      Orbit transformed our digital presence completely. Their innovative approach and stellar execution helped us launch into new markets successfully. The precision and creativity of their team is unmatched.
-                    </p>
-                    <div className="flex items-center justify-center gap-4">
-                        <img 
-                          src="/TeamB.webp" 
-                          alt="Sarah Johnson" 
-                          loading="lazy"
-                          decoding="async"
-                          className="w-16 h-16 rounded-full border-2 border-white/20"
-                        />
-                      <div className="text-left">
-                        <div className="text-white text-xl font-semibold">Sarah Johnson</div>
-                        <div className="text-gray-300">CEO, TechCorp</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Testimonial 3 */}
-                <div className="w-full flex-shrink-0 bg-white/5 backdrop-blur-sm rounded-3xl p-16 border border-white/10 relative">
-                  <div className="absolute top-8 left-8 text-8xl text-white/20 font-bold">"</div>
-                  <div className="text-center max-w-4xl mx-auto">
-                    <p className="text-2xl text-white leading-relaxed mb-8 font-medium text-justify">
-                      Working with Orbit was like having a rocket ship for our business. They launched us into the digital stratosphere with incredible results. Their team delivered our project ahead of schedule and exceeded all expectations.
-                    </p>
-                    <div className="flex items-center justify-center gap-4">
-                        <img 
-                          src="/TeamC.webp" 
-                          alt="Emily Rodriguez" 
-                          loading="lazy"
-                          decoding="async"
-                          className="w-16 h-16 rounded-full border-2 border-white/20"
-                        />
-                      <div className="text-left">
-                        <div className="text-white text-xl font-semibold">Emily Rodriguez</div>
-                        <div className="text-gray-300">Founder, StartupX</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Slider Indicators */}
-            <div className="flex justify-center gap-3 mt-8">
-              <button 
-                onClick={() => {
-                  const slider = document.getElementById('testimonial-slider');
-                  if (slider) {
-                    slider.scrollTo({ left: 0, behavior: 'smooth' });
-                  }
-                }}
-                className="w-3 h-3 bg-white rounded-full hover:scale-125 transition-all duration-300"
-              ></button>
-              <button 
-                onClick={() => {
-                  const slider = document.getElementById('testimonial-slider');
-                  if (slider) {
-                    slider.scrollTo({ left: slider.offsetWidth, behavior: 'smooth' });
-                  }
-                }}
-                className="w-3 h-3 bg-white/30 rounded-full hover:scale-125 transition-all duration-300"
-              ></button>
-              <button 
-                onClick={() => {
-                  const slider = document.getElementById('testimonial-slider');
-                  if (slider) {
-                    slider.scrollTo({ left: slider.offsetWidth * 2, behavior: 'smooth' });
-                  }
-                }}
-                className="w-3 h-3 bg-white/30 rounded-full hover:scale-125 transition-all duration-300"
-              ></button>
-            </div>
-          </div>
-        </div>
 
         {/* Statistics & Achievements Section */}
         <div className="mt-32">

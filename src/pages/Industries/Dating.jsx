@@ -13,7 +13,7 @@ const projects = [
     "status": "Available",
     "price": "$750 – $1,500",
     "slug": "futureshaadi-matrimony-web-application-android-ios-app",
-    "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/matrimonial-portal-350x190.jpg"
   },
   {
     "title": "Rishtey-Shaadi Clone Matrimony Android & iOS app",
@@ -26,7 +26,7 @@ const projects = [
     "status": "Available",
     "price": "$750 – $1,500",
     "slug": "rishtey-shaadi-clone-matrimony-android-ios-app",
-    "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/rishtey-350x202.jpg"
   },
   {
     "title": "Janoo-Dating Platform like Tinder/Badoo",
@@ -39,7 +39,7 @@ const projects = [
     "status": "Available",
     "price": "$750 – $1,500",
     "slug": "janoo-dating-platform-like-tinder-badoo",
-    "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/social-dating-350x194.png"
   },
 ];
 

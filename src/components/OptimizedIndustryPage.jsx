@@ -51,16 +51,11 @@ const ProjectCard = React.memo(({ project, navigate, basePath }) => {
           {project.description}
         </p>
         
-        {/* Status and Price */}
-        <div className="flex justify-between items-center">
+        {/* Status */}
+        <div className="flex justify-start items-center">
           <div className="text-white text-sm font-medium">
             {project.status}
           </div>
-          {project.price && (
-            <div className="text-teal-400 text-sm font-bold">
-              {project.price}
-            </div>
-          )}
         </div>
       </div>
     </div>

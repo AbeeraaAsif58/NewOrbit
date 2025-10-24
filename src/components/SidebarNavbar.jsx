@@ -19,7 +19,7 @@ const INDUSTRIES = [
   { to: "/blockchain", label: "Blockchain" },
   { to: "/b2b", label: "B2B" },
   { to: "/dating", label: "Dating" },
-  { to: "/companies", label: "Directory" },
+  { to: "/directory", label: "Directory" },
   { to: "/ecommerce", label: "eCommerce" },
   { to: "/education", label: "Education" },
   { to: "/entertainment", label: "Entertainment" },
@@ -45,6 +45,8 @@ export default function SidebarNavbar() {
   const drawerRef = useRef(null);
   const backdropRef = useRef(null);
   const navbarRef = useRef(null);
+  const industriesBtnRef = useRef(null);
+  const industriesDropdownRef = useRef(null);
 
   // Custom font style for sidebar navbar
   const sidebarFontStyle = {
@@ -107,6 +109,27 @@ export default function SidebarNavbar() {
 
   const toggleDropdown = (setter) => setter((prev) => !prev);
 
+  // Click outside handler for industries dropdown
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (industriesOpen && 
+          industriesBtnRef.current && 
+          industriesDropdownRef.current &&
+          !industriesBtnRef.current.contains(event.target) &&
+          !industriesDropdownRef.current.contains(event.target)) {
+        setIndustriesOpen(false);
+      }
+    };
+
+    if (industriesOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [industriesOpen]);
+
   const filteredSidebarLinks = LINKS.filter((item) => 
     item.label.toLowerCase().includes(sidebarSearch.toLowerCase())
   );
@@ -151,6 +174,7 @@ export default function SidebarNavbar() {
             {/* Industries Dropdown on Top Navbar - Responsive design */}
             <div className="relative">
               <button
+                ref={industriesBtnRef}
                 onClick={() => toggleDropdown(setIndustriesOpen)}
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
@@ -168,6 +192,7 @@ export default function SidebarNavbar() {
               </button>
 
               <div
+                ref={industriesDropdownRef}
                 className={`absolute right-0 mt-2 sm:mt-4 w-[90vw] sm:w-96 md:w-[28rem] lg:w-[32rem] max-w-sm sm:max-w-none rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-[#034159]/95 to-[#025951]/95 backdrop-blur-xl text-white shadow-2xl transform transition-all duration-400 ease-out origin-top border border-teal-500/30 z-50 ${
                   industriesOpen ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-3 pointer-events-none"
                 }`}

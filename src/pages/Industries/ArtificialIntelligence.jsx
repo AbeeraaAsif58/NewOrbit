@@ -13,7 +13,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
   },
   {
-    title: "Classifiable – Classified Buy and Sell Marketplace Platform",
+    title: "Writingo – AI Content Writer & Copyright Generator",
     category: "Artificial Intelligence",
     tags: ["SaaS", "Tools and Utilities"],
     description: "AI-powered classified marketplace platform for buying and selling with intelligent matching and recommendations",
@@ -43,10 +43,10 @@ const projects = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
   },
   {
-    title: "Writingo – AI Content Writer & Copyright Generator",
+    title: "ThinkGPT – ChatGPT & OpenAI Mobile App",
     category: "Artificial Intelligence",
     tags: ["SaaS", "Tools and Utilities"],
-    description: "Advanced AI-powered content writing and copyright generation tool with SAAS capabilities",
+    description: "ChatGPT & OpenAI Mobile App with advanced features and analytics",
     status: "Available",
     price: "$750 – $1,375",
     slug: "writingo-ai-content-writer-copyright-generator",
@@ -62,16 +62,7 @@ const projects = [
     slug: "aitini-chatgpt-saas-writing-assistant",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
   },
-  {
-    title: "Aitini – ChatGPT SaaS Writing Assistant",
-    category: "Artificial Intelligence",
-    tags: ["SaaS", "Tools and Utilities"],
-    description: "AI writing assistant and content creator powered by ChatGPT technology",
-    status: "Available",
-    price: "$750 – $1,375",
-    slug: "aitini-chatgpt-saas-writing-assistant",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
-  }
+
 
 ];
 
