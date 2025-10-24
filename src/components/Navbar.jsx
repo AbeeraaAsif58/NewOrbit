@@ -46,6 +46,8 @@ export default function Navbar() {
     { to: "/grocery", label: "Grocery" },
     { to: "/healthcare", label: "HealthCare" },
     { to: "/human-resource", label: "Human Resource" },
+    { to: "/erp-crm", label: "ERP & CRM" },
+    { to: "/tools-and-utilities", label: "Tools and Utilities" },
     { to: "/matrimony", label: "Matrimony" },
     { to: "/news-media", label: "News & Media" },
     { to: "/real-estate", label: "Real Estate" },

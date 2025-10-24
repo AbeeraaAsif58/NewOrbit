@@ -34,6 +34,8 @@ const Games = lazy(() => import("./pages/Industries/Games"));
 const Grocery = lazy(() => import("./pages/Industries/Grocery"));
 const Healthcare = lazy(() => import("./pages/Industries/Healthcare"));
 const HumanResource = lazy(() => import("./pages/Industries/HumanResource"));
+const ErpCrm = lazy(() => import("./pages/Industries/ErpCrm"));
+const ToolsAndUtilities = lazy(() => import("./pages/Industries/ToolsAndUtilities"));
 const BrandingAgency = lazy(() => import("./pages/Industries/BrandingAgency"));
 const WebDesignAgency = lazy(() => import("./pages/Industries/WebDesignAgency"));
 const SEOAgency = lazy(() => import("./pages/Industries/SEOAgency"));
@@ -123,6 +125,10 @@ export default function App() {
             <Route path="/healthcare/:projectSlug" element={<ProjectDetail />} />
             <Route path="/human-resource" element={<HumanResource />} />
             <Route path="/human-resource/:projectSlug" element={<ProjectDetail />} />
+            <Route path="/erp-crm" element={<ErpCrm />} />
+            <Route path="/erp-crm/:projectSlug" element={<ProjectDetail />} />
+            <Route path="/tools-and-utilities" element={<ToolsAndUtilities />} />
+            <Route path="/tools-and-utilities/:projectSlug" element={<ProjectDetail />} />
             <Route path="/matrimony" element={<Matrimony />} />
             <Route path="/matrimony/:projectSlug" element={<ProjectDetail />} />
             <Route path="/news-media" element={<NewsMedia />} />

@@ -6806,9 +6806,9 @@ const ProjectDetail = () => {
 
       tags: ["ERP & CRM", "HealthCare", "Hospital Management"],
 
-      description: "Advanced hospital management system with doctor scheduling, patient management, and comprehensive healthcare administration.",
+      description: "Hospital Management System is the most complete and multi-functional hospital or medical center management system. It collaborates admin, patients, doctors, nurses, laboratorists, pharmacists, receptionist, accountants so that all the paperworks and manual tiresome works can be automated easily and efficiently.",
 
-      status: "52 Sales",
+      status: "Available",
 
 
       slug: "doctor-corps-hospital-management-system",
@@ -6817,33 +6817,187 @@ const ProjectDetail = () => {
 
       heroImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&h=600&fit=crop&crop=center",
 
-      overview: "Doctor Corps is an advanced hospital management system specifically designed for comprehensive healthcare administration. It provides doctor scheduling, patient management, and complete healthcare facility management capabilities.",
+      overview: "Doctor Corps Hospital Management System is the most complete and multi-functional hospital or medical center management system. It collaborates admin, patients, doctors, nurses, laboratorists, pharmacists, receptionist, accountants so that all the paperworks and manual tiresome works can be automated easily and efficiently. This comprehensive system provides hundreds of automation features with 8 types of user accounts for complete healthcare facility management.",
 
       features: [
 
-        "Doctor scheduling and management",
+        "Hundreds of automation features",
 
-        "Patient admission and discharge",
+        "8 type of user accounts",
 
-        "Medical record management",
+        "Easiest appointment booking system",
 
-        "Billing and insurance processing",
+        "Private communication with doctors",
 
-        "Staff scheduling",
+        "Easiest management of hospital accommodations",
 
-        "Equipment management",
+        "Tracking of medicines",
 
-        "Emergency room management",
+        "Records of blood donors",
 
-        "Analytics and reporting"
+        "Records of diagnostics and reports",
+
+        "Payroll management",
+
+        "User friendly accounting",
+
+        "Patient Management - Ability to request appointment with a doctor",
+
+        "Keep records of patient's prescriptions and medications",
+
+        "Keep track of patient's payments",
+
+        "See all diagnostics",
+
+        "Manage operation reports",
+
+        "Private communication between doctor and patient",
+
+        "Manage Doctors - Searchable doctor's list with full profile",
+
+        "Categorize doctors according to departments",
+
+        "Hospital management - Manage blood bank",
+
+        "Keep records of blood donors",
+
+        "Allotment of beds and cabins",
+
+        "Keep records of medicines",
+
+        "Ability to save reports",
+
+        "Payslip generation for hospital staffs",
+
+        "Take care of tiresome paperworks",
+
+        "Ability to add receptionists to take appointments",
+
+        "Add pharmacists to take care of medicines",
+
+        "Add nurses to look after patients' informations",
+
+        "Automated generation of diagnostic reports",
+
+        "Automated generation of prescriptions",
+
+        "Easiest billing system",
+
+        "Create your own website with your contents",
+
+        "Ability to set emergency contacts, opening/closing hours",
+
+        "Manage the services you provide",
+
+        "Ability for patients to request appointments from website",
+
+        "Simple yet convenient blog",
+
+        "Expose your hospital to the world",
+
+        "Web application",
+
+        "Webview Android application",
+
+        "Webview iOS application",
+
+        "Google Play Marketing (100 Reviews + Downloads)",
+
+        "Rebranding",
+
+        "Setup Web and Mobile Apps",
+
+        "Publishing Apps on Google Play",
+
+        "Complete Source Code",
+
+        "1 Year Support",
+
+        "Complete hospital management solution",
+
+        "Multi-functional medical center management",
+
+        "Admin, patients, doctors, nurses collaboration",
+
+        "Laboratorists, pharmacists, receptionist, accountants integration",
+
+        "Automated paperwork and manual tasks",
+
+        "Efficient healthcare operations",
+
+        "Comprehensive user account management",
+
+        "Advanced appointment booking",
+
+        "Doctor-patient communication",
+
+        "Hospital accommodation management",
+
+        "Medicine tracking system",
+
+        "Blood donor records management",
+
+        "Diagnostic reports management",
+
+        "Payroll and accounting system",
+
+        "Patient payment tracking",
+
+        "Operation reports management",
+
+        "Doctor profile management",
+
+        "Department categorization",
+
+        "Blood bank management",
+
+        "Bed and cabin allocation",
+
+        "Medicine records management",
+
+        "Report generation and saving",
+
+        "Staff payslip generation",
+
+        "Receptionist management",
+
+        "Pharmacist management",
+
+        "Nurse management",
+
+        "Automated diagnostic reports",
+
+        "Automated prescription generation",
+
+        "Billing system automation",
+
+        "Website creation capabilities",
+
+        "Emergency contact management",
+
+        "Service management",
+
+        "Patient appointment requests",
+
+        "Blog functionality",
+
+        "Hospital exposure and marketing",
+
+        "Mobile app support",
+
+        "Google Play Store integration",
+
+        "Complete source code access",
+
+        "Technical support"
 
       ],
 
       technologies: [
 
-        "React", "Node.js", "PostgreSQL", "Express", "Socket.io",
+        "PHP", "MySQL", "Native Android", "Java",
 
-        "AWS", "Stripe", "Redis", "Docker", "Healthcare APIs"
+        "Cloud Linux", "Unlimited Hosting Space", "SEO Optimized"
 
       ],
 
@@ -8053,6 +8207,244 @@ const ProjectDetail = () => {
       githubUrl: "https://github.com/realtorstack",
 
       liveUrl: "https://realtorstack.com"
+
+    },
+
+    'smartcitizens-property-management-system-tenant-maintenance': {
+
+      title: "SmartCitizens – Property Management System with Tenant & Maintenance",
+
+      category: "Real Estate",
+
+      tags: ["ERP & CRM", "Real Estate", "Tools and Utilities", "Property Management"],
+
+      description: "Property management refers to the administration, operation, and oversight of real estate properties on behalf of property owners. It involves various tasks such as marketing rental properties, finding tenants, collecting rent and ensuring legal compliance.",
+
+      status: "Available",
+
+
+      slug: "smartcitizens-property-management-system-tenant-maintenance",
+
+      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "SmartCitizens is a comprehensive property management system designed for the administration, operation, and oversight of real estate properties on behalf of property owners. It involves various tasks such as marketing rental properties, finding tenants, collecting rent and ensuring legal compliance. Property managers maintain accurate financial records, including income and expense tracking, budgeting, and providing owners with regular financial reports.",
+
+      features: [
+
+        "Informative Dashboard",
+
+        "User Management",
+
+        "User Roles and Permissions",
+
+        "Property Management",
+
+        "Tenant Management",
+
+        "Property Unit Management",
+
+        "Maintainer Management",
+
+        "Maintenance Request Management",
+
+        "Support System",
+
+        "Contact Management",
+
+        "Income / Expense Management",
+
+        "Company Settings",
+
+        "Account Settings",
+
+        "Application Settings",
+
+        "Email Settings",
+
+        "Multi Languages",
+
+        "Payment Settings",
+
+        "Manage Transaction",
+
+        "Subscription Packages Management",
+
+        "Subscription Coupon & Coupon History Management",
+
+        "Landing Page Enable/Disable Option",
+
+        "Register Page Enable/Disable Option",
+
+        "Multi Theme Colors",
+
+        "RTL/LTR Theme",
+
+        "Site SEO Setting",
+
+        "Google Recaptcha Setting",
+
+        "Property administration and operation",
+
+        "Real estate property oversight",
+
+        "Marketing rental properties",
+
+        "Finding tenants",
+
+        "Collecting rent",
+
+        "Ensuring legal compliance",
+
+        "Accurate financial records",
+
+        "Income and expense tracking",
+
+        "Budgeting",
+
+        "Regular financial reports",
+
+        "Property owner management",
+
+        "Tenant relationship management",
+
+        "Maintenance coordination",
+
+        "Financial reporting",
+
+        "Legal compliance tracking",
+
+        "Multi-language support",
+
+        "Theme customization",
+
+        "SEO optimization",
+
+        "Security features"
+
+      ],
+
+      technologies: [
+
+        "PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript",
+
+        "Cloud Linux", "Unlimited Hosting Space", "SEO Optimized"
+
+      ],
+
+
+      demoUrl: "https://smartcitizens.online",
+
+      githubUrl: "https://github.com/smartcitizens",
+
+      liveUrl: "https://smartcitizens.online"
+
+    },
+
+    'brickwick-real-estate-portal-multilingual': {
+
+      title: "Brickwick – Real Estate Portal (Multilingual)",
+
+      category: "Real Estate",
+
+      tags: ["Real Estate", "Multilingual", "Property Portal", "Web Portal"],
+
+      description: "This Startup has hundreds of unique features that makes it out of box. It is one of the most sleek and beautiful real estate design. Key Features Page, blog, menu, contact, real estate.. modules are provided with the use of components to avoid boilerplate code.",
+
+      status: "Available",
+
+
+      slug: "brickwick-real-estate-portal-multilingual",
+
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Brickwick is a comprehensive real estate portal with multilingual support that offers hundreds of unique features making it stand out from the box. It features one of the most sleek and beautiful real estate designs with key features including page, blog, menu, contact, and real estate modules provided with the use of components to avoid boilerplate code.",
+
+      features: [
+
+        "RSS feeds for posts",
+
+        "Agency panel with credit system to post their properties",
+
+        "Support payment methods: PayPal, Stripe, Razorpay, and Paystack to buy credits",
+
+        "Powerful media system, also support Amazon S3, DigitalOcean Spaces",
+
+        "SEO & sitemap support: access sitemap to see more",
+
+        "RESTful API using Laravel Sanctum",
+
+        "Multi language support",
+
+        "Unlimited number of languages",
+
+        "Google Analytics: display analytics data in admin panel",
+
+        "Translation tool: easy to translate front theme and admin panel to your language",
+
+        "Beautiful theme is ready to use",
+
+        "Powerful Permission System: Manage user, team, role by permissions",
+
+        "Easy to manage user by permissions",
+
+        "Admin template comes with color schemes to match your taste",
+
+        "Fully Responsive: Compatible with all screen resolutions",
+
+        "Coding Standard: All code follow coding standards PSR-2 and best practices",
+
+        "Hundreds of unique features",
+
+        "Sleek and beautiful real estate design",
+
+        "Page, blog, menu, contact, real estate modules",
+
+        "Components to avoid boilerplate code",
+
+        "Agency credit system",
+
+        "Multiple payment gateway support",
+
+        "Media system with cloud storage",
+
+        "SEO and sitemap optimization",
+
+        "RESTful API integration",
+
+        "Multi-language support",
+
+        "Analytics integration",
+
+        "Translation management",
+
+        "Permission-based user management",
+
+        "Responsive design",
+
+        "PSR-2 coding standards"
+
+      ],
+
+      technologies: [
+
+        "Laravel", "PHP", "MySQL", "Bootstrap", "JavaScript",
+
+        "Amazon S3", "DigitalOcean Spaces", "PayPal", "Stripe", "Razorpay", "Paystack",
+
+        "Google Analytics", "Laravel Sanctum", "Cloud Linux", "Unlimited Hosting Space", "SEO Optimized"
+
+      ],
+
+
+      demoUrl: "https://brickwick.online",
+
+      githubUrl: "https://github.com/brickwick",
+
+      liveUrl: "https://brickwick.online"
 
     },
 
@@ -12442,6 +12834,1079 @@ const ProjectDetail = () => {
 
       liveUrl: "https://payoutcard.online"
 
+    },
+
+    'vyapaar-complete-saas-business-stock-management-pos-invoicing': {
+
+      title: "Vyapaar – Complete SAAS Business for Stock Management, POS & Invoicing",
+
+      category: "ERP & CRM",
+
+      tags: ["ERP & CRM", "SAAS", "Stock Management", "POS System", "B2B"],
+
+      description: "This is a SAAS based Startup provides a CRM with some amazing features suitable for all businesses. With this application, you are assured to save time-consuming process of bookkeeping accounting and inventory information.",
+
+      status: "Available",
+
+
+      slug: "vyapaar-complete-saas-business-stock-management-pos-invoicing",
+
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Vyapaar is a comprehensive SAAS business solution for stock management, POS, and invoicing. This powerful CRM system provides amazing features suitable for all businesses, helping you save time on bookkeeping, accounting, and inventory management while providing detailed business analysis.",
+
+      features: [
+
+        "Multiple Business/Shops Management",
+
+        "Location/Storefront/Warehouse Management",
+
+        "Customize invoice layout and scheme",
+
+        "User & Role Management System",
+
+        "Predefined roles - Admin & Cashier",
+
+        "Create unlimited users with different roles",
+
+        "Contacts (Customer & Suppliers) Management",
+
+        "Mark contact as customer or supplier or both",
+
+        "View transaction details with contacts",
+
+        "Credit/Debit balance tracking",
+
+        "Payment terms and due date alerts",
+
+        "Product Management - Single & Variable products",
+
+        "Brand, Category, Sub-Category classification",
+
+        "SKU number management with auto-generation",
+
+        "Stock alerts on low stock",
+
+        "Auto-calculate selling price based on purchase price and profit margin",
+
+        "Variation templates for variable products",
+
+        "Purchase Management",
+
+        "Add purchases for different locations",
+
+        "Manage Paid/Due purchases",
+
+        "Due purchase notifications",
+
+        "Discounts & Taxes management",
+
+        "Simplified selling interface",
+
+        "Walk-In-Customer automatically added",
+
+        "Add new customer from POS screen",
+
+        "Ajax based selling screen",
+
+        "Draft or final invoice options",
+
+        "Multiple payment options",
+
+        "Expense Management",
+
+        "Add business expenses",
+
+        "Categorize expenses",
+
+        "Expense analysis by category and location",
+
+        "Comprehensive Reports",
+
+        "Purchase & Sale reports",
+
+        "Tax Reports",
+
+        "Contact Reports",
+
+        "Stock Reports",
+
+        "Expense Reports",
+
+        "Trending Products analysis",
+
+        "Cash Register Report",
+
+        "Sales Representative report",
+
+        "HRM Features",
+
+        "Leave management system",
+
+        "Leave types and maximum counts",
+
+        "Leave status tracking",
+
+        "Attendance management",
+
+        "Clock-In/Clock-Out functionality",
+
+        "Payroll based on attendance",
+
+        "Allowances and deductions",
+
+        "Holiday management",
+
+        "ToDo List functionality",
+
+        "Document Storage & Sharing",
+
+        "Cloud document storage",
+
+        "Share documents with users",
+
+        "Download and delete documents",
+
+        "Memo system",
+
+        "Reminder system with calendar view",
+
+        "Messaging system",
+
+        "SAAS Features",
+
+        "Unlimited subscription packages",
+
+        "Trial days and free packages",
+
+        "Daily/Monthly/Yearly intervals",
+
+        "Location and user limits",
+
+        "Business management",
+
+        "Payment gateways integration",
+
+        "WooCommerce synchronization",
+
+        "API settings and configuration",
+
+        "Multi-language support",
+
+        "Currency and timezone settings",
+
+        "Barcode sticker settings",
+
+        "Stock adjustment",
+
+        "Express checkout",
+
+        "Repair module",
+
+        "Manufacturing module",
+
+        "Recipe management",
+
+        "Production tracking",
+
+        "Cost calculations",
+
+        "Wastage calculations",
+
+        "Lot number management",
+
+        "Expiration date tracking"
+
+      ],
+
+      technologies: [
+
+        "PHP", "MySQL", "Laravel", "JavaScript", "Bootstrap",
+
+        "Stripe", "PayPal", "Razorpay", "WooCommerce API", "Cloud Hosting"
+
+      ],
+
+
+      demoUrl: "https://vyapaar.online",
+
+      githubUrl: "https://github.com/vyapaar",
+
+      liveUrl: "https://vyapaar.online"
+
+    },
+
+    'zyial-salon-booking-management-system': {
+
+      title: "Zyial- Salon Booking Management System",
+
+      category: "ERP & CRM",
+
+      tags: ["ERP & CRM", "Salon Management", "Booking System", "Appointment Management"],
+
+      description: "Salon Booking Management System can book their appointments easily. You can book Appointments with your favorite Agent. Cash By hand, Stripe and PayPal Payment Method Added.",
+
+      status: "Available",
+
+
+      slug: "zyial-salon-booking-management-system",
+
+      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Zyial is a comprehensive salon booking management system that allows customers to book appointments easily with their favorite agents. The system supports multiple payment methods including cash, Stripe, and PayPal, with a powerful admin panel for complete salon management.",
+
+      features: [
+
+        "Twilio Messaging System",
+
+        "User blocking from admin panel",
+
+        "Agent selection with booking",
+
+        "PayPal and Stripe payment integration",
+
+        "Weekend selection from admin",
+
+        "Client account management",
+
+        "Social login with Google & Facebook",
+
+        "Booking management system",
+
+        "Gallery image management",
+
+        "Top, Bottom & Pop ads support",
+
+        "Google reCAPTCHA integration",
+
+        "Blog support system",
+
+        "SMTP email support",
+
+        "Built-in contact form",
+
+        "Powerful admin panel",
+
+        "100% responsive design",
+
+        "AJAX based functionality",
+
+        "SEO ready",
+
+        "100% penetration tested security",
+
+        "Appointment scheduling",
+
+        "Agent management",
+
+        "Payment processing",
+
+        "Client management",
+
+        "Service management",
+
+        "Booking history",
+
+        "Invoice generation",
+
+        "Print invoice functionality",
+
+        "Website customization",
+
+        "Blog post management",
+
+        "Comment system integration",
+
+        "Social media integration",
+
+        "Analytics integration",
+
+        "Meta tags management",
+
+        "Email settings",
+
+        "Banner ads management",
+
+        "Gallery management",
+
+        "Service management",
+
+        "Booking management",
+
+        "User authentication",
+
+        "Role-based access control",
+
+        "Multi-language support",
+
+        "Mobile responsive design"
+
+      ],
+
+      technologies: [
+
+        "PHP", "MySQL", "Bootstrap 4", "jQuery", "JavaScript",
+
+        "Stripe", "PayPal", "Twilio", "Google API", "Facebook API"
+
+      ],
+
+
+      demoUrl: "https://zyial.com",
+
+      githubUrl: "https://github.com/zyial",
+
+      liveUrl: "https://zyial.com"
+
+    },
+
+    'heytext-bulk-sms-application-marketing': {
+
+      title: "HeyText – Bulk SMS Application For Marketing",
+
+      category: "ERP & CRM",
+
+      tags: ["ERP & CRM", "Digital Marketing", "Bulk SMS", "Marketing Automation"],
+
+      description: "This is a powerful, flexible, and User-friendly Bulk SMS Marketing Application. It's also an all-in-one solution for your SMS marketing. It's easy to use.",
+
+      status: "Available",
+
+
+      slug: "heytext-bulk-sms-application-marketing",
+
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "HeyText is a powerful and flexible bulk SMS marketing application designed for businesses of all sizes. With integration to 50+ SMS gateways and comprehensive marketing features, it provides an all-in-one solution for SMS marketing campaigns.",
+
+      features: [
+
+        "Client Management System",
+
+        "Campaign Builder",
+
+        "Contact Groups management",
+
+        "CSV file upload support",
+
+        "Scheduled SMS functionality",
+
+        "Recurring SMS campaigns",
+
+        "Two-way SMS communication",
+
+        "Clean SMS reports",
+
+        "Custom SMS templates",
+
+        "Contacts Groups/Contact List",
+
+        "Opt-in and opt-out keywords",
+
+        "Sender ID management",
+
+        "Dynamic SMS sender ID",
+
+        "Anti-Fraud message system",
+
+        "50+ SMS Gateway integrations",
+
+        "Build Your Own API",
+
+        "Price Plan management",
+
+        "Unlimited role management",
+
+        "Multi-language support",
+
+        "Popular payment gateways",
+
+        "PayPal and Stripe integration",
+
+        "Manual payment gateway",
+
+        "Easy customization",
+
+        "Twilio integration",
+
+        "Clickatel integration",
+
+        "Route Mobile integration",
+
+        "Plivo integration",
+
+        "Vonage (Nexmo) integration",
+
+        "Infobip integration",
+
+        "MessageBird integration",
+
+        "Amazon SNS integration",
+
+        "WhatsApp Chat API",
+
+        "SignalWire integration",
+
+        "Telnyx integration",
+
+        "Bandwidth integration",
+
+        "Text Local integration",
+
+        "SMS Global integration",
+
+        "Routee.net integration",
+
+        "Hutch.lk integration",
+
+        "Teletopia SMS integration",
+
+        "Broadcaster Mobile integration",
+
+        "Solutions4Mobiles integration",
+
+        "Beem Africa integration",
+
+        "Bulk SMS Online integration",
+
+        "Flowroute integration",
+
+        "Elitbuzz BD integration",
+
+        "Greenweb BD integration",
+
+        "Hablame integration",
+
+        "Zamtel integration",
+
+        "Cellcast integration",
+
+        "Africa's Talking integration",
+
+        "Caihcom integration",
+
+        "KeccelSMS integration",
+
+        "Johnson Connect integration",
+
+        "SMSala integration",
+
+        "Speedamobile integration",
+
+        "Text2World integration",
+
+        "EnableX integration",
+
+        "SpoofSend integration",
+
+        "Haj SMS integration",
+
+        "Sendroid Ultimate integration",
+
+        "RealSMS integration",
+
+        "Callr integration",
+
+        "Skyetel integration",
+
+        "SMS LRT integration",
+
+        "Bulk SMS Plans integration",
+
+        "Sinch integration",
+
+        "D7Networks integration",
+
+        "CMCOM integration",
+
+        "PitchWink integration",
+
+        "Wavy Global integration",
+
+        "Solucoes Digitais integration",
+
+        "SMS Marketing AE integration",
+
+        "Zipcom integration",
+
+        "GlobalSMSCN integration",
+
+        "Web2SMS integration",
+
+        "BongaTech integration",
+
+        "FloatSMS integration",
+
+        "YooAPI integration",
+
+        "MaisSMS integration",
+
+        "EasySMS integration",
+
+        "Sozuri integration",
+
+        "Expert Texting integration",
+
+        "Ejoin integration",
+
+        "Bulk SMS Nigeria integration",
+
+        "SendSMS Gate integration",
+
+        "Gateway360 integration",
+
+        "Ajura Tech integration",
+
+        "SMS Cloud integration",
+
+        "Lifetime SMS integration"
+
+      ],
+
+      technologies: [
+
+        "PHP", "MySQL", "JavaScript", "Bootstrap", "jQuery",
+
+        "Twilio", "Plivo", "Vonage", "Infobip", "MessageBird", "Amazon SNS", "WhatsApp API", "SignalWire", "Telnyx", "Bandwidth"
+
+      ],
+
+
+      demoUrl: "https://heytext.com",
+
+      githubUrl: "https://github.com/heytext",
+
+      liveUrl: "https://heytext.com"
+
+    },
+
+    'delivery-dart-bulk-email-sms-marketing-software': {
+
+      title: "Delivery Dart – Bulk Email And SMS Marketing Software",
+
+      category: "ERP & CRM",
+
+      tags: ["ERP & CRM", "Email Marketing", "SMS Marketing", "Bulk Marketing"],
+
+      description: "Complete bulk email and SMS marketing software with client management, campaign builder, and comprehensive reporting features.",
+
+      status: "Available",
+
+
+      slug: "delivery-dart-bulk-email-sms-marketing-software",
+
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Delivery Dart is a comprehensive bulk email and SMS marketing software that provides complete client management, campaign building, and detailed reporting features. It's designed for businesses looking to streamline their marketing efforts with powerful automation tools.",
+
+      features: [
+
+        "Client Management System",
+
+        "Add new clients",
+
+        "Client management interface",
+
+        "Set SMS or Email quota for specific clients",
+
+        "Clients Group management",
+
+        "All groups overview",
+
+        "Add new groups",
+
+        "Invoice management",
+
+        "All invoices tracking",
+
+        "Create new invoices",
+
+        "Bulk Email functionality",
+
+        "Send bulk emails",
+
+        "Send email from file",
+
+        "Email history tracking",
+
+        "Email providers integration",
+
+        "Bulk SMS functionality",
+
+        "Send bulk SMS",
+
+        "Send SMS from file",
+
+        "Send scheduled SMS",
+
+        "Send scheduled SMS from file",
+
+        "SMS history tracking",
+
+        "11+ SMS Gateways integration",
+
+        "Set different prices for different SMS gateways",
+
+        "SMS Price Plan management",
+
+        "Create SMS price plans",
+
+        "Add SMS price plan features",
+
+        "Support Tickets Management System",
+
+        "Create new tickets",
+
+        "Create support departments",
+
+        "Support ticket management",
+
+        "Support department management",
+
+        "Message replay between administrator and clients",
+
+        "Upload and download related support ticket files",
+
+        "Change support department",
+
+        "Change ticket status",
+
+        "Settings management",
+
+        "Add new administrators",
+
+        "Administrator management",
+
+        "Administrator role management",
+
+        "4 Payment Gateways integration",
+
+        "Email templates management",
+
+        "Customize company information",
+
+        "Translate application to any language",
+
+        "Language handler functionality",
+
+        "Disable SMS or Email options for specific clients",
+
+        "Disable SMS or Email options for full systems",
+
+        "Email notifications",
+
+        "Different panel for clients",
+
+        "Send email or SMS from client panel",
+
+        "Request for Email or SMS quota using payment gateways",
+
+        "Responsive design",
+
+        "Advanced reporting",
+
+        "Campaign analytics",
+
+        "Delivery tracking",
+
+        "Open rate tracking",
+
+        "Click rate tracking",
+
+        "Bounce rate tracking",
+
+        "Unsubscribe management",
+
+        "List segmentation",
+
+        "Automated campaigns",
+
+        "A/B testing",
+
+        "Template builder",
+
+        "Drag and drop editor",
+
+        "Mobile optimization",
+
+        "API integration",
+
+        "Webhook support",
+
+        "White-label solution",
+
+        "Multi-tenant architecture",
+
+        "Scalable infrastructure",
+
+        "Real-time analytics",
+
+        "Custom fields",
+
+        "Import/Export functionality",
+
+        "Scheduled campaigns",
+
+        "Recurring campaigns",
+
+        "Trigger-based campaigns",
+
+        "Advanced segmentation",
+
+        "Personalization features",
+
+        "Dynamic content",
+
+        "Landing page builder",
+
+        "Form builder",
+
+        "Lead scoring",
+
+        "CRM integration",
+
+        "Third-party integrations",
+
+        "Advanced security",
+
+        "GDPR compliance",
+
+        "Data encryption",
+
+        "Backup and recovery",
+
+        "Performance monitoring",
+
+        "Uptime monitoring",
+
+        "Customer support",
+
+        "Documentation",
+
+        "Training materials",
+
+        "Video tutorials",
+
+        "Community forum",
+
+        "Regular updates",
+
+        "Bug fixes",
+
+        "Feature requests",
+
+        "Custom development",
+
+        "Migration support",
+
+        "Onboarding assistance"
+
+      ],
+
+      technologies: [
+
+        "PHP", "MySQL", "JavaScript", "Bootstrap", "jQuery",
+
+        "Stripe", "PayPal", "Razorpay", "SMS Gateways", "Email Providers", "API Integration"
+
+      ],
+
+
+      demoUrl: "https://deliverydart.com",
+
+      githubUrl: "https://github.com/deliverydart",
+
+      liveUrl: "https://deliverydart.com"
+
+    },
+
+    'jiffymeet-video-conference-app-and-website-for-live-class-meeting-webinar-online-training': {
+      title: "JiffyMeet – Video Conference App and Website for Live Class, Meeting, Webinar, Online Training",
+      category: "Tools and Utilities",
+      tags: ["Video Conference", "Webinar", "Live Class", "Meeting"],
+      description: "Complete video meeting system with powerful admin panel for manage meeting, history, notification, analytics, app configuration and many more.",
+      status: "Available",
+      slug: "jiffymeet-video-conference-app-and-website-for-live-class-meeting-webinar-online-training",
+      image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=800&h=600&fit=crop&crop=center",
+      heroImage: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=1200&h=600&fit=crop&crop=center",
+      overview: "JiffyMeet is a complete video meeting system with powerful admin panel for managing meetings, history, notifications, analytics, app configuration and many more. Mobile apps are built with Flutter and compatible with both Android and iOS systems.",
+      features: [
+        "Free video and audio conference call",
+        "Social login (Facebook, Google, Phone)",
+        "Create Meeting and share code to join others",
+        "Join Meeting without login",
+        "Live Streaming to YouTube",
+        "Lock-protected rooms with password control",
+        "Schedule Meeting with calendar integration",
+        "Meeting History and rejoin functionality",
+        "Chat during meetings",
+        "High quality audio and video with Opus and VP8",
+        "Record Meetings",
+        "Secure and encrypted calls",
+        "Unlimited participants",
+        "Push Notifications",
+        "Brand New UI",
+        "Meeting App for Android and iOS",
+        "Host & Join Meeting From Web",
+        "Highly Configurable",
+        "Mandatory Login Enable/Disable",
+        "Unauthorized Meeting ID Protection",
+        "Flutter Based Mobile Platform",
+        "World Best SDK Used (Jitsi)",
+        "Rest API Based Application",
+        "Full GDPR Complaint",
+        "OneSignal Notification",
+        "Easy Monetize Your App by AdMob",
+        "Powerful Admin Panel (PHP+ CodeIgniter)"
+      ],
+      technologies: [
+        "Flutter",
+        "Dart",
+        "PHP",
+        "CodeIgniter",
+        "Jitsi SDK",
+        "OneSignal",
+        "AdMob",
+        "MySQL",
+        "REST API",
+        "WebRTC"
+      ],
+      demoUrl: "https://jiffymeet.com",
+      githubUrl: "https://github.com/jiffymeet",
+      liveUrl: "https://jiffymeet.com"
+    },
+
+    'propertyplus-society-property-tenant-and-maintenance-management-system': {
+      title: "PropertyPlus – Society, Property, Tenant and Maintenance Management System",
+      category: "Tools and Utilities",
+      tags: ["Property Management", "Society Management", "Tenant Management", "Maintenance"],
+      description: "Complete Property management software streamlines the day-to-day operations of property owners and managers with features like online rent payments, maintenance requests, and lease tracking.",
+      status: "Available",
+      slug: "propertyplus-society-property-tenant-and-maintenance-management-system",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
+      heroImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop&crop=center",
+      overview: "PropertyPlus is a complete property management software that streamlines the day-to-day operations of property owners and managers. The website has three different panels – Owner, Maintainer, and Tenant.",
+      features: [
+        "Built with Laravel & Bootstrap",
+        "Multiple Property manage",
+        "Multiple Tenant manage",
+        "Multiple Maintainer manage",
+        "Billing & Invoice",
+        "Expense manage",
+        "All Document manage",
+        "All Information manage",
+        "Support Ticket System",
+        "All popular payment gateway",
+        "Multi Language",
+        "Change theme color option",
+        "Change password",
+        "8 Popular Payment Methods",
+        "XSS: Protection from cross-site scripting",
+        "Secure Bcrypt password hashing",
+        "SMTP Support",
+        "Easy translation",
+        "Maintenance Mode",
+        "Advanced Report",
+        "Mobile Responsive",
+        "RTL Support",
+        "Cookies Settings"
+      ],
+      technologies: [
+        "Laravel",
+        "Bootstrap",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS3",
+        "HTML5",
+        "jQuery",
+        "Ajax",
+        "REST API"
+      ],
+      demoUrl: "https://propertyplus.com",
+      githubUrl: "https://github.com/propertyplus",
+      liveUrl: "https://propertyplus.com"
+    },
+
+    'smartcitizens-property-management-system-with-tenant-maintenance': {
+      title: "SmartCitizens – Property Management System with Tenant & Maintenance",
+      category: "Tools and Utilities",
+      tags: ["Property Management", "Tenant Management", "Maintenance", "Real Estate"],
+      description: "Property management refers to the administration, operation, and oversight of real estate properties on behalf of property owners with various tasks such as marketing rental properties, finding tenants, collecting rent and ensuring legal compliance.",
+      status: "Available",
+      slug: "smartcitizens-property-management-system-with-tenant-maintenance",
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop&crop=center",
+      heroImage: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=600&fit=crop&crop=center",
+      overview: "SmartCitizens is a comprehensive property management system that handles the administration, operation, and oversight of real estate properties. Property managers maintain accurate financial records, including income and expense tracking, budgeting, and providing owners with regular financial reports.",
+      features: [
+        "Informative Dashboard",
+        "User Management",
+        "User Roles and Permissions",
+        "Property Management",
+        "Tenant Management",
+        "Property Unit Management",
+        "Maintainer Management",
+        "Maintenance Request Management",
+        "Support System",
+        "Contact Management",
+        "Income / Expense Management",
+        "Company Settings",
+        "Account Settings",
+        "Application Settings",
+        "Email Settings",
+        "Multi Languages",
+        "Payment Settings",
+        "Manage Transaction",
+        "Subscription Packages Management",
+        "Subscription Coupon & Coupon History Management",
+        "Landing Page Enable/Disable Option",
+        "Register Page Enable/Disable Option",
+        "Multi Theme Colors",
+        "RTL/LTR Theme",
+        "Site SEO Setting",
+        "Google Recaptcha Setting"
+      ],
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "Bootstrap",
+        "JavaScript",
+        "jQuery",
+        "CSS3",
+        "HTML5",
+        "REST API",
+        "Ajax"
+      ],
+      demoUrl: "https://smartcitizens.com",
+      githubUrl: "https://github.com/smartcitizens",
+      liveUrl: "https://smartcitizens.com"
+    },
+
+    'writetalent-saas-openai-content-text-image-voice-chat-code-transcript-and-video-generator': {
+      title: "WriteTalent – SAAS OpenAI Content, Text, Image, Voice, Chat, Code, Transcript, and Video Generator",
+      category: "Tools and Utilities",
+      tags: ["AI Content", "OpenAI", "SaaS", "Text Generator", "Image Generator"],
+      description: "A powerful SaaS platform that allows create your AI SaaS Business in just minutes. Your subscribers will be able to use sophisticated OpenAI Artificial Intelligence technology to generate various Text Contents, Blog Posts, Long Articles, Ads, Media Content and so much more.",
+      status: "Available",
+      slug: "writetalent-saas-openai-content-text-image-voice-chat-code-transcript-and-video-generator",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&crop=center",
+      heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop&crop=center",
+      overview: "WriteTalent is a powerful SaaS platform that allows you to create your AI SaaS Business in just minutes. Your subscribers will be able to use sophisticated OpenAI Artificial Intelligence technology to generate various Text Contents, Blog Posts, Long Articles, Ads, Media Content and so much more in more than 53 languages using latest GPT-3.5-Turbo, GPT-4 models.",
+      features: [
+        "AI Content Generation",
+        "Text Generation",
+        "Image Generation",
+        "Voice Generation",
+        "Chat Functionality",
+        "Code Generation",
+        "Transcript Generation",
+        "Video Generation",
+        "Multi-language Support (53+ languages)",
+        "GPT-3.5-Turbo Integration",
+        "GPT-4 Integration",
+        "DALL-E-2 Integration",
+        "DALL-E-3 Integration",
+        "Stable Diffusion Integration",
+        "Advanced Dashboard",
+        "User Management",
+        "Subscription Plans",
+        "Payment Gateway Integration",
+        "Affiliate System",
+        "Analytics and Reporting",
+        "API Access",
+        "Custom Templates",
+        "Brand Voice Training",
+        "Team Collaboration",
+        "Cloud Storage Integration",
+        "Security Features",
+        "Mobile Responsive Design"
+      ],
+      technologies: [
+        "OpenAI API",
+        "GPT-3.5-Turbo",
+        "GPT-4",
+        "DALL-E-2",
+        "DALL-E-3",
+        "Stable Diffusion",
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "AWS",
+        "Stripe",
+        "PayPal",
+        "REST API"
+      ],
+      demoUrl: "https://writetalent.com",
+      githubUrl: "https://github.com/writetalent",
+      liveUrl: "https://writetalent.com"
+    },
+
+    'records-book-saas-digital-record-management-system': {
+      title: "Records Book – SAAS Digital Record Management System",
+      category: "Tools and Utilities",
+      tags: ["Record Management", "Document Management", "SaaS", "Digital Records"],
+      description: "Document and Records Management System software refers to the various features and functionalities that the software offers to help organizations manage their digital documents effectively.",
+      status: "Available",
+      slug: "records-book-saas-digital-record-management-system",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&crop=center",
+      overview: "Records Book is a comprehensive Document and Records Management System software that offers various features and functionalities to help organizations manage their digital documents effectively. It provides a complete solution for document storage, organization, and retrieval.",
+      features: [
+        "Informative Dashboard",
+        "User Management",
+        "User Roles and Permissions",
+        "Document Management",
+        "Reminder Management",
+        "Document Reminder Management",
+        "Document Comment Management",
+        "Share Document",
+        "Support System",
+        "Contact Management",
+        "Category / Sub Category Management",
+        "Company Settings",
+        "Account Settings",
+        "Application Settings",
+        "Email Settings",
+        "Multi Languages",
+        "Payment Settings",
+        "Manage Transaction",
+        "Subscription Coupon & Coupon History Management",
+        "Landing Page Enable/Disable Option",
+        "Register Page Enable/Disable Option",
+        "Multi Theme Colors",
+        "RTL/LTR Theme",
+        "Site SEO Setting",
+        "Google Recaptcha Setting"
+      ],
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "Bootstrap",
+        "JavaScript",
+        "jQuery",
+        "CSS3",
+        "HTML5",
+        "REST API",
+        "Ajax",
+        "File Storage",
+        "Search Engine"
+      ],
+      demoUrl: "https://recordsbook.com",
+      githubUrl: "https://github.com/recordsbook",
+      liveUrl: "https://recordsbook.com"
     }
 
   };

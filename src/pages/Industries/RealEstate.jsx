@@ -8,10 +8,11 @@ const projects = [
     "tags": [
       "Real Estate",
       "Mobile App",
-      "Multi-User"
+      "Multi-User",
+      "Property Portal"
     ],
-    "description": "Comprehensive real estate portal supporting multiple user types with dedicated Android application for property management and transactions.",
-    "status": "51 Sales",
+    "description": "This Startup has hundreds of unique features that makes it out of box. It is one of the most sleek and beautiful design that has in-built mortgage calculator, most intelligent and advance search filters, geo location search and Google suggestions. It allow admin and users add unlimited properties from front as well as backend.",
+    "status": "Available",
     "slug": "extraacre-real-estate-portal-multiple-users-android-app",
     "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center"
   },
@@ -24,7 +25,7 @@ const projects = [
       "Property Management"
     ],
     "description": "Complete real estate portal website with property listings, search functionality, and comprehensive real estate management features.",
-    "status": "45 Sales",
+    "status": "Available",
     "slug": "gigabrick-real-estate-portal-website",
     "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop&crop=center"
   },
@@ -34,10 +35,11 @@ const projects = [
     "tags": [
       "Real Estate",
       "Investment",
-      "Analytics"
+      "Analytics",
+      "Property Investment"
     ],
-    "description": "Innovative real estate investment platform with advanced analytics, property valuation, and investment management tools.",
-    "status": "15 Sales",
+    "description": "Are you an entrepreneur seeking to tap into the lucrative world of real estate investment? Look no further than the game-changing platform that empowers businesses to thrive in the dynamic property market. With this, you gain access to a robust and sophisticated real estate investment platform that offers unparalleled opportunities for growth and profitability.",
+    "status": "Available",
     "slug": "citysquid-innovative-real-estate-investment-platform",
     "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&crop=center"
   },
@@ -50,22 +52,37 @@ const projects = [
       "Tools and Utilities",
       "Property Management"
     ],
-    "description": "Comprehensive property management system for societies, properties, tenants, and maintenance with ERP and CRM functionality.",
-    "status": "4 Sales",
+    "description": "Complete Property management software streamlines the day-to-day operations of property owners and managers. With features like online rent payments, maintenance requests, and lease tracking, this software makes it easy to manage multiple properties from one centralized platform.",
+    "status": "Available",
     "slug": "propertyplus-society-property-tenant-maintenance-management-system",
     "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop&crop=center"
   },
   {
-    "title": "RealtorStack-Real Estate Property Buy-Rent-Sell Platform",
+    "title": "SmartCitizens – Property Management System with Tenant & Maintenance",
+    "category": "Real Estate",
+    "tags": [
+      "ERP & CRM",
+      "Real Estate",
+      "Tools and Utilities",
+      "Property Management"
+    ],
+    "description": "Property management refers to the administration, operation, and oversight of real estate properties on behalf of property owners. It involves various tasks such as marketing rental properties, finding tenants, collecting rent and ensuring legal compliance.",
+    "status": "Available",
+    "slug": "smartcitizens-property-management-system-tenant-maintenance",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "title": "Brickwick – Real Estate Portal (Multilingual)",
     "category": "Real Estate",
     "tags": [
       "Real Estate",
-      "Buy-Rent-Sell",
-      "Transaction Management"
+      "Multilingual",
+      "Property Portal",
+      "Web Portal"
     ],
-    "description": "Complete real estate platform for buying, renting, and selling properties with comprehensive transaction management.",
-    "status": "New",
-    "slug": "realtorstack-real-estate-property-buy-rent-sell-platform",
+    "description": "This Startup has hundreds of unique features that makes it out of box. It is one of the most sleek and beautiful real estate design. Key Features Page, blog, menu, contact, real estate.. modules are provided with the use of components to avoid boilerplate code.",
+    "status": "Available",
+    "slug": "brickwick-real-estate-portal-multilingual",
     "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center"
   }
 ];

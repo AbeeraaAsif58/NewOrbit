@@ -1,0 +1,104 @@
+// src/pages/Industries/ErpCrm.jsx
+import React from "react";
+import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
+
+const ErpCrm = () => {
+  const projects = [
+    {
+      "title": "Vyapaar – Complete SAAS Business for Stock Management, POS & Invoicing",
+      "category": "ERP & CRM",
+      "tags": [
+        "ERP & CRM",
+        "SAAS",
+        "Stock Management",
+        "POS System",
+        "B2B"
+      ],
+      "description": "This is a SAAS based Startup provides a CRM with some amazing features suitable for all businesses. With this application, you are assured to save time-consuming process of bookkeeping accounting and inventory information.",
+      "status": "Available",
+      "slug": "vyapaar-complete-saas-business-stock-management-pos-invoicing",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+    },
+    {
+      "title": "Healthy Web – Hospital Management System",
+      "category": "ERP & CRM",
+      "tags": [
+        "ERP & CRM",
+        "Healthcare",
+        "Hospital Management",
+        "Medical System"
+      ],
+      "description": "The best and number one Hospital Management System Software with Website. It has 40+ Features what you need to manage Hospital. Here has Insurance, Modern Billing System and SMS Gateway also.",
+      "status": "Available",
+      "slug": "healthy-web-hospital-management-system",
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center"
+    },
+    {
+      "title": "Zyial- Salon Booking Management System",
+      "category": "ERP & CRM",
+      "tags": [
+        "ERP & CRM",
+        "Salon Management",
+        "Booking System",
+        "Appointment Management"
+      ],
+      "description": "Salon Booking Management System can book their appointments easily. You can book Appointments with your favorite Agent. Cash By hand, Stripe and PayPal Payment Method Added.",
+      "status": "Available",
+      "slug": "zyial-salon-booking-management-system",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop&crop=center"
+    },
+    {
+      "title": "School Silo – Multi-School Management System",
+      "category": "ERP & CRM",
+      "tags": [
+        "ERP & CRM",
+        "Education",
+        "School Management",
+        "Multi-School"
+      ],
+      "description": "Complete multi-school management system for educational institutions with comprehensive features for student, teacher, and administrative management.",
+      "status": "Available",
+      "slug": "school-silo-multi-school-management-system",
+      "image": "https://www.ufglab.com/projects/lms4-350x235.png"
+    },
+    {
+      "title": "HeyText – Bulk SMS Application For Marketing",
+      "category": "ERP & CRM",
+      "tags": [
+        "ERP & CRM",
+        "Digital Marketing",
+        "Bulk SMS",
+        "Marketing Automation"
+      ],
+      "description": "This is a powerful, flexible, and User-friendly Bulk SMS Marketing Application. It's also an all-in-one solution for your SMS marketing. It's easy to use.",
+      "status": "Available",
+      "slug": "heytext-bulk-sms-application-marketing",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+    },
+    {
+      "title": "Delivery Dart – Bulk Email And SMS Marketing Software",
+      "category": "ERP & CRM",
+      "tags": [
+        "ERP & CRM",
+        "Email Marketing",
+        "SMS Marketing",
+        "Bulk Marketing"
+      ],
+      "description": "Complete bulk email and SMS marketing software with client management, campaign builder, and comprehensive reporting features.",
+      "status": "Available",
+      "slug": "delivery-dart-bulk-email-sms-marketing-software",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+    }
+  ];
+
+  return (
+    <OptimizedIndustryPage 
+      projects={projects} 
+      basePath="/erp-crm"
+      industryTitle="ERP & CRM Solutions"
+      industryDescription="Enterprise Resource Planning and Customer Relationship Management systems that integrate core business processes and customer data management."
+    />
+  );
+};
+
+export default ErpCrm;

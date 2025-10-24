@@ -27,109 +27,6 @@ export default function BusinessPartners() {
         </div>
       </div>
 
-      {/* Get Started Section */}
-      <div className="content-section py-20 px-4 sm:px-8 md:px-16 text-white" style={{ background: "linear-gradient(135deg, #0f4c75 0%, #1a5f7a 50%, #2a7c8a 100%)" }}>
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white font-poppins">
-            Ready to Get Started?
-            </h2>
-          <p className="text-lg text-gray-200 mb-8">
-            Contact us today to learn more about our partnership opportunities and how we can work together to achieve mutual success.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
-              Contact Us
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
-              Learn More
-            </button>
-              </div>
-            </div>
-          </div>
-
-
-      {/* Second Parallax Section */}
-      <div 
-        className="parallax-section h-screen flex items-center justify-center"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/busi2.jpg')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}
-      >
-        <div className="text-center z-10 px-4">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
-            Why Partner With Us?
-          </h2>
-          <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
-            We believe in partnerships that drive mutual success and sustainable growth for all parties involved.
-          </p>
-        </div>
-      </div>
-
-      {/* Benefits Content Section */}
-      <div className="content-section py-20 px-4 sm:px-8 md:px-16 text-white" style={{ background: "linear-gradient(135deg, #1a5f7a 0%, #2a7c8a 50%, #0f4c75 100%)" }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-xl shadow-lg border border-white/20" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">🤝</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-white font-poppins">Mutual Growth</h3>
-              <p className="text-gray-200">
-                We believe in partnerships that drive mutual success and sustainable growth for all parties involved.
-              </p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl shadow-lg border border-white/20" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">🚀</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-white font-poppins">Innovation Focus</h3>
-              <p className="text-gray-200">
-                Together, we push the boundaries of technology and deliver cutting-edge solutions to our clients.
-              </p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl shadow-lg border border-white/20" style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
-              <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl">🌐</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-white font-poppins">Global Reach</h3>
-              <p className="text-gray-200">
-                Our partnership network spans across continents, enabling us to serve clients worldwide.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Third Parallax Section */}
-      <div 
-        className="parallax-section h-screen flex items-center justify-center"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/busi3.jpg')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}
-      >
-        <div className="text-center z-10 px-4">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
-            Interested in Partnership?
-          </h2>
-          <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
-            Join our network of trusted partners and help us deliver exceptional solutions to clients worldwide.
-          </p>
-          <button className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20 text-lg">
-            Become a Partner
-          </button>
-        </div>
-      </div>
-
       {/* Our Partners Section - Exact Copy from Home Page */}
       <div className="relative w-screen -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 py-16 bg-white/80 z-20">
         <div className="max-w-6xl mx-auto px-6">
@@ -370,6 +267,73 @@ export default function BusinessPartners() {
           </div>
         </div>
       </div>
+
+
+      {/* Second Parallax Section */}
+      <div 
+        className="parallax-section h-screen flex items-center justify-center"
+        style={{
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/busi2.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
+        }}
+      >
+        <div className="text-center z-10 px-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
+            Why Partner With Us?
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
+            We believe in partnerships that drive mutual success and sustainable growth for all parties involved.
+          </p>
+        </div>
+      </div>
+
+
+      {/* Third Parallax Section */}
+      <div 
+        className="parallax-section h-screen flex items-center justify-center"
+        style={{
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/busi3.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
+        }}
+      >
+        <div className="text-center z-10 px-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl font-poppins">
+            Interested in Partnership?
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
+            Join our network of trusted partners and help us deliver exceptional solutions to clients worldwide.
+          </p>
+          <button className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20 text-lg">
+            Become a Partner
+          </button>
+        </div>
+      </div>
+
+      {/* Get Started Section */}
+      <div className="content-section py-20 px-4 sm:px-8 md:px-16 text-white" style={{ background: "linear-gradient(135deg, #0f4c75 0%, #1a5f7a 50%, #2a7c8a 100%)" }}>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white font-poppins">
+            Ready to Get Started?
+            </h2>
+          <p className="text-lg text-gray-200 mb-8">
+            Contact us today to learn more about our partnership opportunities and how we can work together to achieve mutual success.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white hover:bg-gray-100 text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
+              Contact Us
+            </button>
+            <button className="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
+              Learn More
+            </button>
+              </div>
+            </div>
+          </div>
 
       {/* Fourth Parallax Section */}
       <div 
