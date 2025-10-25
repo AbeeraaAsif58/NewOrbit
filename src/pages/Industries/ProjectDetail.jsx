@@ -5418,6 +5418,1030 @@ const ProjectDetail = () => {
 
     },
 
+    'fuzetube-video-sharing-platform-youtube-clone': {
+
+      title: "FuzeTube – Video Sharing Platform – YouTube Clone",
+
+      category: "Social",
+
+      tags: ["Social", "Video Sharing", "YouTube Clone", "Entertainment"],
+
+      description: "Fast and secured complete video sharing platform with advanced features including video upload, import from YouTube/Dailymotion/Vimeo, auto-import functionality, high performance capabilities handling 1B+ videos, WoWonder integration, like/dislike system, comments, subscriptions, user channels, advertisement system, and SEO optimization.",
+
+      status: "Available",
+
+      price: "$3,000 – $8,000",
+
+      slug: "fuzetube-video-sharing-platform-youtube-clone",
+
+      image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "FuzeTube is a comprehensive video sharing platform that replicates all the core features of YouTube. It provides a complete solution for creating your own video sharing website with advanced features like auto-import from multiple platforms, high-performance video handling, and comprehensive social features.",
+
+      features: [
+        "Upload Videos: Upload any video from your device and share it online",
+        "Import Videos: Import videos easily from YouTube, Dailymotion, and Vimeo",
+        "Auto Import Videos: Choose keywords and import thousands of videos automatically",
+        "High Performance: Handle more than 1B videos with high performance and speed",
+        "WoWonder Integration: One-click login using WoWonder Social Network",
+        "Like & Dislike: Users can like or dislike videos",
+        "Comments System: Users can comment on videos",
+        "Subscriptions: Subscribe to channels and manage subscriptions",
+        "History & Watch Later: Track viewing history and save videos for later",
+        "User Channels: Create unlimited channels and upload unlimited videos",
+        "Advertisement System: Full advertisement system for admin and users",
+        "SiteMap Generator: Generate powerful sitemaps and ping to Google/Bing",
+        "SEO Friendly: SEO optimized links and HTML code",
+        "Powerful Admin Panel: Manage settings, videos, design, and more",
+        "Modern UI: Beautiful and modern design"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "FFMPEG",
+        "AWS S3",
+        "Redis",
+        "Elasticsearch"
+      ],
+
+      demoUrl: "https://demo.fuzetube.com",
+
+      githubUrl: "https://github.com/fuzetube",
+
+      liveUrl: "https://fuzetube.com"
+
+    },
+
+    'friendza-social-networking-platform-facebook-clone': {
+
+      title: "Friendza – Social Networking Platform – Facebook Clone",
+
+      category: "Social",
+
+      tags: ["Social", "Social Network", "Facebook Clone", "Community"],
+
+      description: "Fast and secured complete social networking platform with high performance cache system, Wonder feature, RTL support, social login integration, user profiles, friends/follow system, news feed, timeline, pages, groups, games, video support, photo albums, privacy controls, notifications, hashtags, mentions, and live chat.",
+
+      status: "Available",
+
+      price: "$4,000 – $10,000",
+
+      slug: "friendza-social-networking-platform-facebook-clone",
+
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Friendza is a comprehensive social networking platform that replicates all the core features of Facebook. It includes advanced caching systems, social features, and comprehensive management tools for creating your own social network.",
+
+      features: [
+        "High Performance Cache System: Handle more than 1 Million users",
+        "Wonder Feature: Users can wonder posts, photos, videos",
+        "RTL Support: Supports right to left languages",
+        "Social Login: Login via Facebook, Twitter, Google+, LinkedIn, VK, Instagram",
+        "Easy URL System: Users, Pages, Groups all in one tiny URL",
+        "User Last Seen: Displays user's last seen/online status",
+        "Profile Visit Notification: Receive notifications from profile visitors",
+        "Friends & Follow System: Supports both friends and follow systems",
+        "Home/News Feed: Displays posts, photos, files, videos, and maps",
+        "User Timeline: Displays user profile with posts, photos, videos",
+        "Pages: Create unlimited pages and invite friends to like them",
+        "Groups: Create unlimited groups and invite/add friends",
+        "Games: Play unlimited flash games",
+        "Social Videos Support: Share videos from YouTube, Dailymotion, Vimeo",
+        "Photo Album: Create unlimited photo albums",
+        "Cover Picture: Dynamic cover for users",
+        "Profile Picture: Dynamic profile picture for users",
+        "User Privacy: Control who can message you, post on timeline, follow you",
+        "Notifications: Receive notifications for likes, comments, shares, etc.",
+        "Hashtags: Display trending and related topics",
+        "Mentions: Use @username to tag people",
+        "Post Publisher: Status, SoundCloud, YouTube, Vine, Google Maps, Videos, Files, Photos",
+        "Delete & Edit Posts: Users can delete and edit their own posts",
+        "Save Posts: Save posts to view them later",
+        "User Events: Share events like feelings, traveling, watching, playing",
+        "Recent Search: Save recent searches with ability to clear them",
+        "Post Privacy: Choose post privacy (Only me, Everyone, etc.)",
+        "Likes: Like or unlike posts, view list of people who liked",
+        "Dislike: Dislike posts, view list of people who disliked",
+        "Comments & Replies: Comment on posts, reply to comments",
+        "Search: Search for people and hashtags with filtered search",
+        "Reports: Report posts to be checked by administrators",
+        "Live Chat: Real-time live chat system with online/offline status",
+        "Messages: Send and receive private messages and share files",
+        "API: Retrieve user data, user posts, search for users via API",
+        "Activities: Display user's latest activities",
+        "Multi Languages: Support for Arabic, English, Russian, Turkish",
+        "Verified Profiles/Pages: Support for verified accounts",
+        "Fully Responsive: Works on all devices and browsers",
+        "Password Recovery: Password recovery by email",
+        "Online User Counter: Display online users on admin and home page",
+        "Comment Auto Detector: Auto-detect emoticons in comments"
+      ],
+
+      technologies: [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "Redis",
+        "Elasticsearch",
+        "AWS S3",
+        "WebRTC",
+        "Socket.io"
+      ],
+
+      demoUrl: "https://demo.friendza.com",
+
+      githubUrl: "https://github.com/friendza",
+
+      liveUrl: "https://friendza.com"
+
+    },
+
+    'qwestions-questions-and-answers-platform-like-quora': {
+
+      title: "Qwestions – Questions and answers platform like Quora",
+
+      category: "Social",
+
+      tags: ["Social", "Q&A Platform", "Quora Clone", "Forum"],
+
+      description: "Simple and lightweight forum platform for questions and answers. Features unlimited users, topics, answers, votes, shares, comments, views, modern browser compatibility, powerful admin interface, clean UI, unlimited topics, profile management, upvote/downvote, social sharing, search system, live chat, multi-language support, and comprehensive admin features.",
+
+      status: "Available",
+
+      price: "$2,000 – $5,000",
+
+      slug: "qwestions-questions-and-answers-platform-like-quora",
+
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Qwestions is a comprehensive Q&A platform inspired by Quora. It provides a complete solution for creating your own question and answer website with advanced features like voting, social sharing, and comprehensive moderation tools.",
+
+      features: [
+        "Modern Browser Compatibility: Support for modern browsers and cross-browser compatibility",
+        "Powerful Admin Interface: Strong and powerful admin interface",
+        "Clean UI: Clean and modern user interface",
+        "Unlimited Topics: Create unlimited topics",
+        "Vote System: UP Vote / Down Vote facility",
+        "Forum Categories: Forum / Category & Sub-category support",
+        "Social Share: Social share facility",
+        "User Profile: Forum-based user profile",
+        "User Bio: User bio and activity details",
+        "Views Counter: Views and comments counter",
+        "Search System: Tags and topic-based search system",
+        "Live Chat: Live chat with security captcha",
+        "Multi Language: Multi-language features",
+        "User Privacy: User privacy & TOS",
+        "Email Notification: Email notification & verification",
+        "SMS Notification: SMS notification & verification",
+        "2FA Security: Two-factor authentication security",
+        "Password Change: Change password functionality",
+        "Support Ticket: Support ticket system",
+        "Forum Management: Forum management",
+        "Category Management: Category and sub-category management",
+        "Topics Management: Topics management",
+        "Advertisements Management: Advertisements management",
+        "User Management: Manage users",
+        "Support Ticket Management: Support ticket management",
+        "General Settings: General settings",
+        "Logo & Favicon Management: Logo & favicon management",
+        "Extensions Management: Extensions management",
+        "Language Management: Language management",
+        "SEO Manager: SEO manager",
+        "Email Manager: Email manager",
+        "SMS Manager: SMS manager",
+        "Frontend Manager: Frontend manager",
+        "Template Management: Manage templates",
+        "Section Management: Manage sections",
+        "Contact Management: Contact us management",
+        "Policy Pages Management: Policy pages management",
+        "Social Icons Management: Social icons management",
+        "GDPR Cookie Management: GDPR cookie management",
+        "Custom CSS Management: Custom CSS management"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "Redis",
+        "Elasticsearch",
+        "AWS S3",
+        "WebRTC"
+      ],
+
+      demoUrl: "https://demo.qwestions.com",
+
+      githubUrl: "https://github.com/qwestions",
+
+      liveUrl: "https://qwestions.com"
+
+    },
+
+    'vyapaar-complete-saas-business-stock-management-pos-invoicing': {
+
+      title: "Vyapaar – Complete SAAS Business for Stock Management, POS & Invoicing",
+
+      category: "SAAS",
+
+      tags: ["SAAS", "B2B", "ERP & CRM", "Stock Management"],
+
+      description: "Complete SAAS business solution for stock management, POS, and invoicing. Features multiple business/shops setup, inventory & accounting, location management, user & role management, contacts management, products management, purchases, sales, expenses, reports, HRM features, and comprehensive SAAS functionality.",
+
+      status: "Available",
+
+      price: "$5,000 – $15,000",
+
+      slug: "vyapaar-complete-saas-business-stock-management-pos-invoicing",
+
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Vyapaar is a comprehensive SAAS business solution designed for stock management, POS, and invoicing. It provides a complete business management platform with advanced features for inventory management, accounting, location management, and comprehensive reporting.",
+
+      features: [
+        "Multiple Business/Shops: Set up multiple businesses with no restrictions",
+        "Location Management: Add multiple locations, storefronts, and warehouses",
+        "User & Role Management: Powerful user and role management system",
+        "Contacts Management: Manage customers and suppliers with transaction history",
+        "Products Management: Manage single and variable products with SKU generation",
+        "Purchases Management: Easily add purchases with location tracking",
+        "Sales Management: Simplified POS interface with walk-in customer support",
+        "Expenses Management: Categorize and analyze business expenses",
+        "Comprehensive Reports: Purchase, sale, tax, contact, stock, and expense reports",
+        "HRM Features: Leave management, attendance tracking, payroll management",
+        "Document Storage: Cloud document storage and sharing",
+        "Messaging System: Internal messaging and reminders",
+        "SAAS Features: Unlimited subscription packages with trial days",
+        "Payment Gateways: Stripe, PayPal, Razorpay, and offline payments",
+        "WooCommerce Integration: Synchronize products, orders, and categories",
+        "Manufacturing Module: Recipe management and production tracking",
+        "Repair Module: Device management and repair tracking"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "Redis",
+        "Elasticsearch",
+        "AWS S3",
+        "Stripe API",
+        "PayPal API"
+      ],
+
+      demoUrl: "https://demo.vyapaar.com",
+
+      githubUrl: "https://github.com/vyapaar",
+
+      liveUrl: "https://vyapaar.com"
+
+    },
+
+    'recruitrabbit-saas-human-resource-management': {
+
+      title: "Recruitrabbit – SAAS Human Resource Management",
+
+      category: "SAAS",
+
+      tags: ["SAAS", "Human Resource", "HRM", "Management"],
+
+      description: "Comprehensive SAAS Human Resource Management system featuring employees management, department organization, awards system, expense tracking, holidays management, attendance monitoring, leave applications, leave types, and notice board functionality.",
+
+      status: "Available",
+
+      price: "$3,000 – $8,000",
+
+      slug: "recruitrabbit-saas-human-resource-management",
+
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Recruitrabbit is a comprehensive SAAS Human Resource Management system designed to streamline HR operations. It provides complete employee management, attendance tracking, leave management, and organizational tools for modern businesses.",
+
+      features: [
+        "Employee Management: Complete employee database and profile management",
+        "Department Organization: Organize employees by departments and roles",
+        "Awards System: Track and manage employee awards and recognition",
+        "Expense Tracking: Monitor and categorize employee expenses",
+        "Holidays Management: Manage company holidays and vacation schedules",
+        "Attendance Monitoring: Track employee attendance and working hours",
+        "Leave Applications: Handle leave requests and approvals",
+        "Leave Types: Configure different types of leave (sick, vacation, personal)",
+        "Notice Board: Internal communication and announcements",
+        "Payroll Integration: Integrated payroll management system",
+        "Performance Tracking: Monitor employee performance and goals",
+        "Document Management: Store and manage HR documents",
+        "Reporting: Comprehensive HR reports and analytics",
+        "Multi-tenant SAAS: Support for multiple organizations",
+        "Role-based Access: Different access levels for HR staff",
+        "Mobile App: Mobile application for employees and managers"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "Redis",
+        "AWS S3",
+        "Stripe API",
+        "PayPal API"
+      ],
+
+      demoUrl: "https://demo.recruitrabbit.com",
+
+      githubUrl: "https://github.com/recruitrabbit",
+
+      liveUrl: "https://recruitrabbit.com"
+
+    },
+
+    'resumesy-complete-saas-resume-builder': {
+
+      title: "Resumesy – Complete SAAS Resume Builder",
+
+      category: "SAAS",
+
+      tags: ["SAAS", "Human Resource", "Resume Builder", "Recruitment"],
+
+      description: "Complete SAAS Recruitment Manager and Resume Builder. Web application to manage recruitment process with job seekers applying directly on website, admin panel management, recurring payments, cover letter builder, multiple resume templates, PDF export, Google captcha, social login, analytics, multi-language support, and SEO optimization.",
+
+      status: "Available",
+
+      price: "$2,500 – $6,000",
+
+      slug: "resumesy-complete-saas-resume-builder",
+
+      image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Resumesy is a comprehensive SAAS Recruitment Manager and Resume Builder platform. It provides complete recruitment management with job posting, applicant tracking, resume building, and comprehensive admin tools for modern recruitment processes.",
+
+      features: [
+        "SAAS-based Solution: Complete software-as-a-service recruitment platform",
+        "Recurring Payments: Day, week, month, or year recurring payments",
+        "Cover Letter Builder: Advanced cover letter creation tools",
+        "Resume Templates: Multiple professional resume templates",
+        "Free Samples: Free cover letter and resume samples",
+        "PDF Export: Export resumes and cover letters as PDF",
+        "Google Captcha: Security with Google captcha integration",
+        "Social Login: Login with Facebook and Google",
+        "Google Analytics: Comprehensive analytics and tracking",
+        "User Management: Multi-user management system",
+        "Multi-language: Support for multiple languages",
+        "Multi Landing Pages: Multiple landing page options",
+        "SEO Optimized: Search engine optimized pages",
+        "Job Posting: Create and manage job postings",
+        "Applicant Tracking: Track job applicants and their progress",
+        "Interview Scheduling: Schedule and manage interviews",
+        "Email Notifications: Automated email notifications",
+        "Mobile Responsive: Fully responsive design for all devices"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "PDF Generator",
+        "Google APIs",
+        "Stripe API",
+        "AWS S3"
+      ],
+
+      demoUrl: "https://demo.resumesy.com",
+
+      githubUrl: "https://github.com/resumesy",
+
+      liveUrl: "https://resumesy.com"
+
+    },
+
+    'fooddeck-saas-contactless-multi-restaurant-qr-menu-maker': {
+
+      title: "FoodDeck – SaaS Contactless Multi-restaurant QR Menu Maker",
+
+      category: "SAAS",
+
+      tags: ["SAAS", "ERP & CRM", "Restaurant", "QR Menu"],
+
+      description: "Contactless Multi-restaurant QR Menu Maker SAAS solution. Start a contactless restaurant menu business within 5 minutes. Features QR code scanning, digital menu display, restaurant admin panel, order notifications, table management, subscription plans, store settings, waiter call options, and comprehensive restaurant management tools.",
+
+      status: "Available",
+
+      price: "$2,000 – $5,000",
+
+      slug: "fooddeck-saas-contactless-multi-restaurant-qr-menu-maker",
+
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "FoodDeck is a comprehensive SAAS solution for contactless restaurant menu management. It enables restaurants to create digital menus accessible via QR codes, providing a modern, contactless dining experience with comprehensive order management and restaurant administration tools.",
+
+      features: [
+        "QR Code Menu: Contactless menu access via QR code scanning",
+        "Digital Menu Display: Beautiful digital menu interface",
+        "Restaurant Admin Panel: Complete restaurant management dashboard",
+        "Order Notifications: Real-time order notifications with sound",
+        "Order Management: View, accept, reject, and update orders",
+        "Print Orders: Print order receipts and kitchen orders",
+        "Promo Banners: Display promotional banners and offers",
+        "Table Management: Manage restaurant tables and seating",
+        "Subscription Plans: Flexible subscription plans for restaurants",
+        "Store Settings: Comprehensive store configuration options",
+        "Ordering Options: Enable/disable ordering functionality",
+        "Waiter Call Option: Call waiter functionality for customers",
+        "Order Status Screen: Real-time order status tracking",
+        "Print QR Code: Generate and print QR codes for tables",
+        "Customer List: Manage customer database and history",
+        "Service Charge: Configure service charges and fees",
+        "Multi-currency: Store-wise currency support",
+        "Tax Management: Comprehensive tax configuration",
+        "Security Features: JWT authentication, CSRF protection, SQL injection protection",
+        "Secure Password Hashing: Bcrypt password hashing for security"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "QR Code Generator",
+        "WebRTC",
+        "Stripe API",
+        "PayPal API"
+      ],
+
+      demoUrl: "https://demo.fooddeck.com",
+
+      githubUrl: "https://github.com/fooddeck",
+
+      liveUrl: "https://fooddeck.com"
+
+    },
+
+    'cloudflow-complete-saas-business-management-platform': {
+
+      title: "CloudFlow – Complete SAAS Business Management Platform",
+
+      category: "SAAS",
+
+      tags: ["SAAS", "Business Management", "Cloud Platform", "Automation"],
+
+      description: "Complete SAAS business management platform with comprehensive features including customer management, project tracking, team collaboration, billing and invoicing, analytics dashboard, multi-tenant architecture, API integration, and customizable workflows for modern businesses.",
+
+      status: "Available",
+
+      price: "$4,500 – $12,000",
+
+      slug: "cloudflow-complete-saas-business-management-platform",
+
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "CloudFlow is a comprehensive SAAS business management platform designed to streamline business operations. It provides complete business management tools with advanced features for customer management, project tracking, team collaboration, and comprehensive analytics.",
+
+      features: [
+        "Customer Management: Complete customer database and relationship management",
+        "Project Tracking: Monitor projects from start to finish with real-time updates",
+        "Team Collaboration: Advanced collaboration tools for team members",
+        "Billing & Invoicing: Automated billing and invoicing system",
+        "Analytics Dashboard: Comprehensive analytics and reporting dashboard",
+        "Multi-tenant Architecture: Support for multiple organizations",
+        "API Integration: RESTful API for third-party integrations",
+        "Customizable Workflows: Create custom business workflows",
+        "Document Management: Store and manage business documents",
+        "Task Management: Create and assign tasks to team members",
+        "Time Tracking: Track time spent on projects and tasks",
+        "Expense Management: Track and categorize business expenses",
+        "Reporting: Generate comprehensive business reports",
+        "User Management: Role-based access control and user management",
+        "Mobile App: Mobile application for on-the-go management",
+        "Security: Enterprise-grade security with data encryption",
+        "Backup & Recovery: Automated backup and disaster recovery",
+        "Scalability: Cloud-based scalable infrastructure"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "Redis",
+        "AWS S3",
+        "Stripe API",
+        "PayPal API"
+      ],
+
+      demoUrl: "https://demo.cloudflow.com",
+
+      githubUrl: "https://github.com/cloudflow",
+
+      liveUrl: "https://cloudflow.com"
+
+    },
+
+    'ultreno-saas-project-management-system': {
+
+      title: "Ultreno – SAAS Project Management System",
+
+      category: "SAAS",
+
+      tags: ["SAAS", "ERP & CRM", "Project Management", "Collaboration"],
+
+      description: "Comprehensive SAAS Project Management System for team collaboration and real-time work. Features customer and lead management, client project tracking, employee management, attendance tracking, contract management with e-signatures, project progress tracking, Kanban taskboard, Gantt charts, invoice management, and comprehensive reporting.",
+
+      status: "Available",
+
+      price: "$4,000 – $10,000",
+
+      slug: "ultreno-saas-project-management-system",
+
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Ultreno is a comprehensive SAAS Project Management System designed for team collaboration and real-time project tracking. It provides complete project lifecycle management with advanced features for task management, team collaboration, and comprehensive reporting.",
+
+      features: [
+        "Customer & Lead Management: Track customers and leads effectively",
+        "Client Project Tracking: Monitor client projects and progress",
+        "Invoice & Proposal Management: Create and manage invoices and proposals",
+        "Employee Management: Add employees and track their performance",
+        "Attendance Tracking: Monitor employee attendance and working hours",
+        "Leave Management: Manage employee leaves and time-off requests",
+        "Contract Management: Create contracts with e-signature support",
+        "Project Management: Create projects and add project members",
+        "Progress Tracking: Track project progress, expenses, and earnings",
+        "Time Logs: Track time spent on projects and tasks",
+        "Task Management: Create and assign tasks to team members",
+        "Milestone Tracking: Set and track project milestones",
+        "Kanban Taskboard: Visualize work and tasks with Kanban boards",
+        "Gantt Charts: Plan project schedules with Gantt charts",
+        "Credit Notes: Convert invoices to credit notes",
+        "Product Management: Create products for invoices and purchases",
+        "Ticket System: Raise and manage support tickets",
+        "Internal Messaging: Team communication and chat system",
+        "Real-time Notifications: Slack, Pusher, and OneSignal integration",
+        "Theme Customization: Customize app appearance to reflect brand",
+        "Payment Gateways: PayPal, Stripe, and Razorpay integration",
+        "Custom Roles: Create custom roles with custom permissions",
+        "Comprehensive Reports: Task, timelog, finance, attendance, and leave reports",
+        "Configurable Options: Tons of configurable options for customization"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "WebRTC",
+        "Stripe API",
+        "PayPal API",
+        "OneSignal API"
+      ],
+
+      demoUrl: "https://demo.ultreno.com",
+
+      githubUrl: "https://github.com/ultreno",
+
+      liveUrl: "https://ultreno.com"
+
+    },
+
+    'aviator-real-money-aviator-game': {
+
+      title: "Aviator – Real Money Aviator Game",
+
+      category: "Fantasy",
+
+      tags: ["Fantasy", "Games", "Real Money", "Casino"],
+
+      description: "Aviator is not just a game; it's an experience. This unique game combines elements of risk and reward, offering players an immersive journey. Features multiplier levels, risk management, bonus rounds, interactive gameplay, tournaments, community engagement, and seamless desktop and mobile experience.",
+
+      status: "Available",
+
+      price: "$3,000 – $8,000",
+
+      slug: "aviator-real-money-aviator-game",
+
+      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Aviator is a unique aviation-themed casino game that combines elements of risk and reward for an exhilarating gaming experience. Players embark on a journey where multiplier levels, risk management, and bonus rounds play a crucial role in determining their success.",
+
+      features: [
+        "Multiplier Levels: Unique system of multiplier levels that increase as you progress",
+        "Risk and Reward: Core philosophy revolving around risk and reward mechanics",
+        "Interactive Gameplay: Dynamic visuals and engaging sound effects",
+        "Bonus Rounds: Enticing bonus rounds offering additional winning opportunities",
+        "Tournament System: Participate in tournaments with exclusive rewards",
+        "Community Engagement: Connect with fellow players and share strategies",
+        "Desktop Experience: Full visual splendor with detailed aviation-themed graphics",
+        "Mobile Flexibility: Same excitement and features on mobile devices",
+        "User-Friendly Interface: Optimized navigation for all platforms",
+        "Real-time Updates: Live game updates and instant results",
+        "Security Features: Secure gaming environment with encrypted transactions",
+        "Payment Integration: Multiple payment methods for deposits and withdrawals",
+        "Customer Support: 24/7 customer support for all players",
+        "Responsive Design: Seamless experience across all devices",
+        "Game Analytics: Track your gaming performance and statistics",
+        "Social Features: Share achievements and compete with friends"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "WebRTC",
+        "Stripe API",
+        "PayPal API",
+        "Redis"
+      ],
+
+      demoUrl: "https://demo.aviator.com",
+
+      githubUrl: "https://github.com/aviator",
+
+      liveUrl: "https://aviator.com"
+
+    },
+
+    'color-iq-real-money-colour-prediction-game': {
+
+      title: "Color IQ – Real Money Colour Prediction Game",
+
+      category: "Fantasy",
+
+      tags: ["Fantasy", "Games", "Prediction", "Real Money"],
+
+      description: "Color game is an exciting and popular predicting game that has been gaining traction. Players have three minutes to correctly predict the color of a given image, with successful prediction leading to victory. Features admin panel, user management, betting records, deposit/withdrawal management, referral system, and wallet management.",
+
+      status: "Available",
+
+      price: "$2,500 – $6,000",
+
+      slug: "color-iq-real-money-colour-prediction-game",
+
+      image: "https://images.unsplash.com/photo-1557683316-973673baf926?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1557683316-973673baf926?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Color IQ is an exciting and popular predicting game that has been gaining traction in recent days. Players have three minutes to correctly predict the color of a given image, with successful prediction leading to victory. This platform provides users the opportunity to make money while enjoying themselves.",
+
+      features: [
+        "Color Prediction Game: Three-minute color prediction gameplay",
+        "Real Money Gaming: Opportunity to make money through gameplay",
+        "Admin Panel: Complete admin dashboard for game management",
+        "User Management: Manage all registered users (edit, delete, update)",
+        "Betting Records: Monitor all betting records of the game",
+        "Deposit Management: Monitor all deposit records of users",
+        "Bank Records: Manage all bank records for withdrawals",
+        "Withdrawal System: Monitor and process withdrawal requests",
+        "Payment Processing: Send payments to users automatically",
+        "Referral System: Monitor referral records and commissions",
+        "Wallet Management: Manage wallet balance records",
+        "Game Rules: Update rules of the game dynamically",
+        "Privacy Policy: Update privacy policy and terms and conditions",
+        "Profit Monitoring: Monitor all profit records",
+        "User Authentication: Login with valid mobile number and password",
+        "Password Recovery: Forget password with security verification",
+        "Profile Management: Update user profile and password",
+        "Bank Integration: Update bank records for withdrawal",
+        "Referral Bonus: Earn money from referral program (20rs default bonus)"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "Stripe API",
+        "PayPal API",
+        "SMS Gateway",
+        "Redis"
+      ],
+
+      demoUrl: "https://demo.coloriq.com",
+
+      githubUrl: "https://github.com/coloriq",
+
+      liveUrl: "https://coloriq.com"
+
+    },
+
+    'byte-lottery-live-online-lottery-application-with-mlm': {
+
+      title: "Byte Lottery – Live Online Lottery Application with MLM",
+
+      category: "Fantasy",
+
+      tags: ["Fantasy", "Games", "Lottery", "MLM"],
+
+      description: "A Lottery Platform that will take your excitement to the next level! Features dynamic lottery system, auto phase creation, multi-level referral system, user-friendly interface, responsive design, two-factor authentication, lottery management, report manager, and comprehensive admin features.",
+
+      status: "Available",
+
+      price: "$4,000 – $10,000",
+
+      slug: "byte-lottery-live-online-lottery-application-with-mlm",
+
+      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Byte Lottery is a cutting-edge lottery platform that brings you the ultimate thrill of winning. Our platform boasts a dynamic and ever-evolving lottery system that keeps the excitement alive with surprises waiting at every turn.",
+
+      features: [
+        "Dynamic Lottery System: Ever-evolving lottery system with unique phases",
+        "Auto Phase Creation: Seamless transition from one exciting phase to another",
+        "Multi-Level Referral System: Share excitement and multiply rewards",
+        "User-Friendly Interface: Easy navigation and responsive design",
+        "Two-Factor Authentication: Advanced security system for account protection",
+        "Lottery Management: Complete lottery management system",
+        "Report Manager: Comprehensive reporting and analytics",
+        "Extension Management: Manage platform extensions and plugins",
+        "Language Management: Multi-language system support",
+        "Content Management: Dynamic content management system",
+        "SEO Manager: Search engine optimization tools",
+        "Page Builder: Custom page builder for lottery pages",
+        "Support Ticket Management: Customer support ticket system",
+        "System Settings: Complete system configuration",
+        "Email Notification System: Automated email notifications",
+        "SMS Notification System: SMS notifications and alerts",
+        "User Verification: Email & SMS verification system",
+        "Cross-Browser Compatibility: Support for modern browsers",
+        "Dynamic CRON Settings: Automated task scheduling",
+        "System Update Manager: Regular system updates"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "Redis",
+        "AWS S3",
+        "Stripe API",
+        "PayPal API"
+      ],
+
+      demoUrl: "https://demo.bytelottery.com",
+
+      githubUrl: "https://github.com/bytelottery",
+
+      liveUrl: "https://bytelottery.com"
+
+    },
+
+    'lottery-whale-live-lottery-betting-application': {
+
+      title: "Lottery Whale – Live Lottery Betting Application",
+
+      category: "Fantasy",
+
+      tags: ["Fantasy", "Games", "Lottery", "Betting"],
+
+      description: "Live Lottery platform that enables a great opportunity to start your own lottery website. Features premium design, responsive & cross-browser compatibility, automatic & manual payment gateway, referral bonus with level system, full dynamic lottery system, easy documentation, GDPR policy, and comprehensive user and admin features.",
+
+      status: "Available",
+
+      price: "$3,500 – $9,000",
+
+      slug: "lottery-whale-live-lottery-betting-application",
+
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Lottery Whale is a live lottery platform that enables a great opportunity to start your own lottery website. This unique lottery platform allows you to play real-time lottery whenever and wherever you like, accessible from PC and mobile devices.",
+
+      features: [
+        "Premium Design: High-quality, responsive design with cross-browser compatibility",
+        "Payment Gateway: Automatic & manual payment gateway & currency setup",
+        "Referral System: Referral bonus with level system for user growth",
+        "Dynamic Lottery System: Full dynamic lottery system with phase facility",
+        "Documentation: Easy documentation and GDPR policy compliance",
+        "Regular Updates: Regular updates facilities and feature request system",
+        "Admin Interface: Latest and powerful admin interface",
+        "User Interface: Clean and modern user interface",
+        "User Dashboard: Lotteries list, deposit manager, withdrawal manager",
+        "Transaction Manager: Complete transaction management system",
+        "Support System: Support ticket desk and live chat",
+        "Referral System: Referral system & commission logs",
+        "Profile Management: Complete user profile management",
+        "2FA Security: Two-factor authentication security",
+        "Win Tracking: Total win list and lottery list tracking",
+        "Notifications: Email and SMS notification & verification",
+        "GDPR Compliance: GDPR policy and privacy compliance",
+        "Multi-language: Multi-language features support",
+        "User Privacy: User privacy & terms of service",
+        "Admin Features: Referral commissions, lottery management, phase management",
+        "Payment Management: Payment gateways, deposits, and withdrawals management",
+        "Report System: Comprehensive reporting and logs system",
+        "System Settings: General settings, logo & favicon management",
+        "Content Management: Extensions, language, SEO, email, SMS management",
+        "Frontend Manager: Template, page, and section management",
+        "Custom CSS: Custom CSS management and cache clearing"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "Vue.js",
+        "Bootstrap",
+        "Redis",
+        "AWS S3",
+        "Stripe API",
+        "PayPal API"
+      ],
+
+      demoUrl: "https://demo.lotterywhale.com",
+
+      githubUrl: "https://github.com/lotterywhale",
+
+      liveUrl: "https://lotterywhale.com"
+
+    },
+
+    'fantasy-sports-pro-complete-fantasy-sports-platform': {
+
+      title: "Fantasy Sports Pro – Complete Fantasy Sports Platform",
+
+      category: "Fantasy",
+
+      tags: ["Fantasy", "Sports", "Games", "Platform"],
+
+      description: "Complete fantasy sports platform with comprehensive features including player management, team creation, live scoring, tournaments, leagues, prize pools, user profiles, social features, mobile app, real-time updates, and comprehensive admin panel for managing all aspects of fantasy sports.",
+
+      status: "Available",
+
+      price: "$5,000 – $15,000",
+
+      slug: "fantasy-sports-pro-complete-fantasy-sports-platform",
+
+      image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Fantasy Sports Pro is a comprehensive fantasy sports platform designed to provide the ultimate fantasy sports experience. It includes all the features needed to create and manage fantasy sports leagues, tournaments, and competitions.",
+
+      features: [
+        "Player Management: Complete player database and statistics management",
+        "Team Creation: Create and manage fantasy teams with player selection",
+        "Live Scoring: Real-time scoring system with live updates",
+        "Tournament System: Create and manage tournaments and competitions",
+        "League Management: Multiple league formats and management tools",
+        "Prize Pools: Set up prize pools and payout systems",
+        "User Profiles: Comprehensive user profile management",
+        "Social Features: Social interaction and community features",
+        "Mobile App: Native mobile application for iOS and Android",
+        "Real-time Updates: Live updates and notifications",
+        "Admin Panel: Comprehensive admin panel for platform management",
+        "Payment Integration: Secure payment processing for entry fees and prizes",
+        "Statistics Tracking: Detailed statistics and performance tracking",
+        "Draft System: Automated and manual draft systems",
+        "Waiver System: Player waiver and free agent systems",
+        "Trade System: Player trade management and approval system",
+        "Chat System: In-app messaging and communication",
+        "Leaderboards: Real-time leaderboards and rankings",
+        "Analytics: Comprehensive analytics and reporting",
+        "API Integration: RESTful API for third-party integrations"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "React Native",
+        "Vue.js",
+        "Bootstrap",
+        "Redis",
+        "AWS S3",
+        "Stripe API"
+      ],
+
+      demoUrl: "https://demo.fantasysportspro.com",
+
+      githubUrl: "https://github.com/fantasysportspro",
+
+      liveUrl: "https://fantasysportspro.com"
+
+    },
+
+    'virtual-casino-suite-complete-casino-gaming-platform': {
+
+      title: "Virtual Casino Suite – Complete Casino Gaming Platform",
+
+      category: "Fantasy",
+
+      tags: ["Fantasy", "Games", "Casino", "Gaming"],
+
+      description: "Complete casino gaming platform with multiple games including slots, poker, blackjack, roulette, and live dealer games. Features user management, payment processing, game management, tournament system, loyalty program, mobile app, and comprehensive admin panel for managing all casino operations.",
+
+      status: "Available",
+
+      price: "$6,000 – $18,000",
+
+      slug: "virtual-casino-suite-complete-casino-gaming-platform",
+
+      image: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=400&h=300&fit=crop&crop=center",
+
+      heroImage: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=1200&h=600&fit=crop&crop=center",
+
+      overview: "Virtual Casino Suite is a comprehensive casino gaming platform that provides a complete solution for online casino operations. It includes multiple casino games, user management, payment processing, and all the tools needed to run a successful online casino.",
+
+      features: [
+        "Multiple Games: Slots, poker, blackjack, roulette, and live dealer games",
+        "User Management: Complete user registration and account management",
+        "Payment Processing: Secure payment processing for deposits and withdrawals",
+        "Game Management: Comprehensive game management and configuration",
+        "Tournament System: Casino tournaments and competitions",
+        "Loyalty Program: Player loyalty and rewards program",
+        "Mobile App: Native mobile application for casino gaming",
+        "Admin Panel: Complete admin panel for casino management",
+        "Live Dealer Games: Real-time live dealer gaming experience",
+        "Security Features: Advanced security and fraud prevention",
+        "Responsive Design: Mobile-optimized design for all devices",
+        "Multi-language: Support for multiple languages",
+        "Currency Support: Multiple currency support",
+        "Bonus System: Welcome bonuses and promotional offers",
+        "Customer Support: 24/7 customer support system",
+        "Analytics: Comprehensive analytics and reporting",
+        "API Integration: RESTful API for third-party integrations",
+        "Game Statistics: Detailed game statistics and player analytics",
+        "Compliance: Regulatory compliance and licensing support",
+        "Backup System: Automated backup and disaster recovery"
+      ],
+
+      technologies: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "JavaScript",
+        "React Native",
+        "Vue.js",
+        "Bootstrap",
+        "WebRTC",
+        "Redis",
+        "AWS S3",
+        "Stripe API",
+        "PayPal API"
+      ],
+
+      demoUrl: "https://demo.virtualcasino.com",
+
+      githubUrl: "https://github.com/virtualcasino",
+
+      liveUrl: "https://virtualcasino.com"
+
+    },
+
     'bubblejug-tiktok-clone-short-video-app-live-streaming-app-complete-solution': {
 
       title: "BubbleJug – Tiktok Clone – Short Video App Live streaming App Complete Solution",

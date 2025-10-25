@@ -1,0 +1,106 @@
+import React from "react";
+import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
+
+const projects = [
+  {
+    "title": "Vyapaar – Complete SAAS Business for Stock Management, POS & Invoicing",
+    "category": "SAAS",
+    "tags": [
+      "SAAS",
+      "B2B",
+      "ERP & CRM",
+      "Stock Management"
+    ],
+    "description": "Complete SAAS business solution for stock management, POS, and invoicing. Features multiple business/shops setup, inventory & accounting, location management, user & role management, contacts management, products management, purchases, sales, expenses, reports, HRM features, and comprehensive SAAS functionality.",
+    "status": "Available",
+    "price": "$5,000 – $15,000",
+    "slug": "vyapaar-complete-saas-business-stock-management-pos-invoicing",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center"
+  },
+  {
+    "title": "Recruitrabbit – SAAS Human Resource Management",
+    "category": "SAAS",
+    "tags": [
+      "SAAS",
+      "Human Resource",
+      "HRM",
+      "Management"
+    ],
+    "description": "Comprehensive SAAS Human Resource Management system featuring employees management, department organization, awards system, expense tracking, holidays management, attendance monitoring, leave applications, leave types, and notice board functionality.",
+    "status": "Available",
+    "price": "$3,000 – $8,000",
+    "slug": "recruitrabbit-saas-human-resource-management",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop&crop=center"
+  },
+  {
+    "title": "Resumesy – Complete SAAS Resume Builder",
+    "category": "SAAS",
+    "tags": [
+      "SAAS",
+      "Human Resource",
+      "Resume Builder",
+      "Recruitment"
+    ],
+    "description": "Complete SAAS Recruitment Manager and Resume Builder. Web application to manage recruitment process with job seekers applying directly on website, admin panel management, recurring payments, cover letter builder, multiple resume templates, PDF export, Google captcha, social login, analytics, multi-language support, and SEO optimization.",
+    "status": "Available",
+    "price": "$2,500 – $6,000",
+    "slug": "resumesy-complete-saas-resume-builder",
+    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=300&fit=crop&crop=center"
+  },
+  {
+    "title": "FoodDeck – SaaS Contactless Multi-restaurant QR Menu Maker",
+    "category": "SAAS",
+    "tags": [
+      "SAAS",
+      "ERP & CRM",
+      "Restaurant",
+      "QR Menu"
+    ],
+    "description": "Contactless Multi-restaurant QR Menu Maker SAAS solution. Start a contactless restaurant menu business within 5 minutes. Features QR code scanning, digital menu display, restaurant admin panel, order notifications, table management, subscription plans, store settings, waiter call options, and comprehensive restaurant management tools.",
+    "status": "Available",
+    "price": "$2,000 – $5,000",
+    "slug": "fooddeck-saas-contactless-multi-restaurant-qr-menu-maker",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+  },
+  {
+    "title": "CloudFlow – Complete SAAS Business Management Platform",
+    "category": "SAAS",
+    "tags": [
+      "SAAS",
+      "Business Management",
+      "Cloud Platform",
+      "Automation"
+    ],
+    "description": "Complete SAAS business management platform with comprehensive features including customer management, project tracking, team collaboration, billing and invoicing, analytics dashboard, multi-tenant architecture, API integration, and customizable workflows for modern businesses.",
+    "status": "Available",
+    "price": "$4,500 – $12,000",
+    "slug": "cloudflow-complete-saas-business-management-platform",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center"
+  },
+  {
+    "title": "Ultreno – SAAS Project Management System",
+    "category": "SAAS",
+    "tags": [
+      "SAAS",
+      "ERP & CRM",
+      "Project Management",
+      "Collaboration"
+    ],
+    "description": "Comprehensive SAAS Project Management System for team collaboration and real-time work. Features customer and lead management, client project tracking, employee management, attendance tracking, contract management with e-signatures, project progress tracking, Kanban taskboard, Gantt charts, invoice management, and comprehensive reporting.",
+    "status": "Available",
+    "price": "$4,000 – $10,000",
+    "slug": "ultreno-saas-project-management-system",
+    "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center"
+  }
+];
+
+export default function SAAS() {
+  return (
+    <OptimizedIndustryPage
+      title="SAAS Solutions"
+      description="Software-as-a-Service solutions that provide cloud-based applications and services for businesses across various industries with subscription-based pricing models."
+      projects={projects}
+      basePath="/saas"
+    />
+  );
+}

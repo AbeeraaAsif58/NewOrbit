@@ -10,8 +10,9 @@ const projects = [
       "Booking",
       "Portal"
     ],
-    "description": "A Complete Travel Booking website and Marketplace for Travel Agency, Tour Operator, Car Transfer, Activity/Event, Hotel Booking, Room Bnb, Villa Rental, Resort Rental, Flight Booking, Make Affiliate Travel website. Easy to turn On/Off any service you would like to use for your purpose. Features: – Best optimized UI/UX and get in touch with travel trending in the world.",
+    "description": "A complete travel booking website and marketplace for travel agencies, tour operators, and hospitality businesses. Features multi-service booking, marketplace functionality, and comprehensive management tools.",
     "status": "Available",
+    "price": "$5,000 – $15,000",
     "slug": "travoila-complete-travel-portal",
     "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
   },
@@ -23,8 +24,9 @@ const projects = [
       "Travel",
       "Courier"
     ],
-    "description": "It is a software designed for companies that handle packages to monitor the logistics of storage and cargo handling to their final destination and managing employees and drivers so you can track all of your company.",
+    "description": "Complete courier management system for domestic and international package handling. Built with Laravel, features SMS notifications, dynamic workflow, multilingual support, and multi-currency capabilities.",
     "status": "Available",
+    "price": "$3,000 – $8,000",
     "slug": "cargosilo-courier-management-system",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
   },
@@ -36,8 +38,9 @@ const projects = [
       "Travel",
       "Bus"
     ],
-    "description": "Bus Reservation System is a very wonderful Bus and fleet Booking System. It is mostly useful for any Bus, Fleet and Ticket Selling Company. It has a variety of features on Bus ticket Management.",
+    "description": "Comprehensive bus and fleet booking system designed for bus companies and ticket sellers. Features advanced ticket management and reservation capabilities.",
     "status": "Available",
+    "price": "$2,000 – $5,000",
     "slug": "secretbus-bus-reservation-system",
     "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop&crop=center"
   },
@@ -49,8 +52,9 @@ const projects = [
       "Booking",
       "Portal"
     ],
-    "description": "A Complete Travel Booking website and Marketplace for Travel Agency, Tour Operator, Car Transfer, Activity/Event, Hotel Booking, Room Bnb, Villa Rental, Resort Rental, Flight Booking, Make Affiliate Travel website. Easy to turn On/Off any service you would like to use for your purpose. Features:",
+    "description": "Advanced travel booking portal with marketplace functionality for hotels, tours, flights, and activities. Features multi-service booking, partner management, and comprehensive analytics.",
     "status": "Available",
+    "price": "$5,000 – $15,000",
     "slug": "travelray-complete-travel-booking-portal",
     "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop&crop=center"
   },
@@ -62,8 +66,9 @@ const projects = [
       "Hotel",
       "Booking"
     ],
-    "description": "This is a clean, premium, and modern booking system. It is responsive on literally any screen size, this way you can worry less about the interface, and focus on what is important.",
+    "description": "Clean and modern hotel booking application with responsive design. Features room booking integration, admin panel, multi-language support, and customizable templates.",
     "status": "Available",
+    "price": "$1,500 – $4,000",
     "slug": "hoteltitan-hotel-resort-booking-application",
     "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop&crop=center"
   },
@@ -75,8 +80,9 @@ const projects = [
       "Hotel",
       "Booking"
     ],
-    "description": "This is a Laravel Hotel and Resort Booking system. It is a clean, premium, and modern booking system. It is responsive on literally any screen size, this way you can worry less about the interface, and focus on what is important.",
+    "description": "Laravel-based hotel and resort booking system with unlimited language support, full room booking integration, SEO optimization, and comprehensive admin management tools.",
     "status": "Available",
+    "price": "$2,500 – $6,000",
     "slug": "hotelnerd-hotel-resort-booking-system",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center"
   }

@@ -53,6 +53,9 @@ export default function Navbar() {
     { to: "/real-estate", label: "Real Estate" },
     { to: "/restaurant", label: "Restaurant" },
     { to: "/travel", label: "Travel" },
+    { to: "/social", label: "Social" },
+    { to: "/saas", label: "SAAS" },
+    { to: "/fantasy", label: "Fantasy" },
   ];
 
   const CREAM = "#ffffff"; // white text

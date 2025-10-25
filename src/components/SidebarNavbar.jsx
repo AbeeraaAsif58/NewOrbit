@@ -34,7 +34,10 @@ const INDUSTRIES = [
   { to: "/news-media", label: "News & Media" },
   { to: "/real-estate", label: "Real Estate" },
   { to: "/restaurant", label: "Restaurant" },
-  { to: "/travel", label: "Travel" }
+  { to: "/travel", label: "Travel" },
+  { to: "/social", label: "Social" },
+  { to: "/saas", label: "SAAS" },
+  { to: "/fantasy", label: "Fantasy" }
 ];
 
 export default function SidebarNavbar() {

@@ -47,6 +47,9 @@ const CorporateAgency = lazy(() => import("./pages/Industries/CorporateAgency"))
 const StartupAgency = lazy(() => import("./pages/Industries/StartupAgency"));
 const Freelancer = lazy(() => import("./pages/Industries/Freelancer"));
 const Travel = lazy(() => import("./pages/Industries/Travel"));
+const Social = lazy(() => import("./pages/Industries/Social"));
+const SAAS = lazy(() => import("./pages/Industries/SAAS"));
+const Fantasy = lazy(() => import("./pages/Industries/Fantasy"));
 const MarketingConsultancyAgency = lazy(() => import("./pages/Industries/MarketingConsultancyAgency"));
 const PersonalPortfolio = lazy(() => import("./pages/Industries/PersonalPortfolio"));
 const ITConsultancyAgency = lazy(() => import("./pages/Industries/ITConsultancyAgency"));
@@ -139,6 +142,12 @@ export default function App() {
             <Route path="/restaurant/:projectSlug" element={<ProjectDetail />} />
             <Route path="/travel" element={<Travel />} />
             <Route path="/travel/:projectSlug" element={<ProjectDetail />} />
+            <Route path="/social" element={<Social />} />
+            <Route path="/social/:projectSlug" element={<ProjectDetail />} />
+            <Route path="/saas" element={<SAAS />} />
+            <Route path="/saas/:projectSlug" element={<ProjectDetail />} />
+            <Route path="/fantasy" element={<Fantasy />} />
+            <Route path="/fantasy/:projectSlug" element={<ProjectDetail />} />
             <Route path="/branding-agency" element={<BrandingAgency />} />
             <Route path="/web-design-agency" element={<WebDesignAgency />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
