@@ -48,6 +48,8 @@ export default function Navbar() {
     { to: "/human-resource", label: "Human Resource" },
     { to: "/erp-crm", label: "ERP & CRM" },
     { to: "/tools-and-utilities", label: "Tools and Utilities" },
+    { to: "/companies", label: "Companies" },
+    { to: "/digital-marketing", label: "Digital Marketing" },
     { to: "/matrimony", label: "Matrimony" },
     { to: "/news-media", label: "News & Media" },
     { to: "/real-estate", label: "Real Estate" },
@@ -249,10 +251,10 @@ export default function Navbar() {
       {/* RIGHT — Industries Mega Menu */}
       <div
         ref={industriesPanelRef}
-        className="fixed right-0 top-[72px] z-[75] hidden w-[600px] bg-gradient-to-br from-teal-900/95 via-teal-800/95 to-teal-900/95 backdrop-blur-lg p-6 rounded-lg shadow-2xl border border-teal-500/20"
+        className="fixed right-0 top-[72px] z-[75] hidden w-[800px] bg-gradient-to-br from-teal-900/95 via-teal-800/95 to-teal-900/95 backdrop-blur-lg p-6 rounded-lg shadow-2xl border border-teal-500/20"
         onMouseLeave={closeIndustries}
       >
-        <div className="grid grid-cols-2 gap-3 text-white">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 text-white">
           {INDUSTRY_PAGES.map((item, i) => (
             <NavLink
               key={i}

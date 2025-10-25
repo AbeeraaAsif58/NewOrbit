@@ -47,7 +47,7 @@ const About = () => {
           <div className="mt-8 mb-24 items-left">
             <div className="md:col-span-3">
              
-            </div>
+              </div>
             <div className="md:col-span-12 text-gray-300 text-xl md:text-2xl leading-relaxed text-left animate-text-grow">
               Redefining finance innovation with decentralized Web 3 technologies <br /> and next generation fintech solution built for the digital era.
             </div>
@@ -65,7 +65,7 @@ const About = () => {
               </p>
               <p className="text-xl text-gray-300 mb-12 leading-relaxed" style={{textAlign: 'left'}}>
              At Orbit, we believe the future belongs to those who innovate beyond boundaries. Our team blends blockchain expertise, decentralized systems, and financial technology to create seamless, secure, and scalable digital ecosystem.
-              </p>
+            </p>
             
             <div className="grid grid-cols-2 gap-8">
               <div className="text-center group hover:scale-110 transition-all duration-500 bg-teal-900/30 rounded-2xl p-6 border border-teal-700/50 hover:border-teal-400/50">

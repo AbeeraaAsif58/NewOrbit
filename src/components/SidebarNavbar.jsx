@@ -30,6 +30,8 @@ const INDUSTRIES = [
   { to: "/human-resource", label: "Human Resource" },
   { to: "/erp-crm", label: "ERP & CRM" },
   { to: "/tools-and-utilities", label: "Tools and Utilities" },
+  { to: "/companies", label: "Companies" },
+  { to: "/digital-marketing", label: "Digital Marketing" },
   { to: "/matrimony", label: "Matrimony" },
   { to: "/news-media", label: "News & Media" },
   { to: "/real-estate", label: "Real Estate" },
@@ -198,7 +200,7 @@ export default function SidebarNavbar() {
 
               <div
                 ref={industriesDropdownRef}
-                className={`absolute right-0 mt-2 sm:mt-4 w-[90vw] sm:w-96 md:w-[28rem] lg:w-[32rem] max-w-sm sm:max-w-none rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-[#034159]/95 to-[#025951]/95 backdrop-blur-xl text-white shadow-2xl transform transition-all duration-400 ease-out origin-top border border-teal-500/30 z-50 ${
+                className={`absolute right-0 mt-2 sm:mt-4 w-[90vw] sm:w-96 md:w-[32rem] lg:w-[40rem] max-w-sm sm:max-w-none rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-[#034159]/95 to-[#025951]/95 backdrop-blur-xl text-white shadow-2xl transform transition-all duration-400 ease-out origin-top border border-teal-500/30 z-50 ${
                   industriesOpen ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-3 pointer-events-none"
                 }`}
               >
@@ -212,9 +214,9 @@ export default function SidebarNavbar() {
                     style={sidebarFontStyle}
                   />
                 </div>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-y divide-teal-500/30">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y divide-teal-500/30">
                   {filteredIndustries.map((item, index) => (
-                    <li key={item.to} className={`${index % 3 !== 2 && window.innerWidth >= 1024 ? "lg:border-r border-teal-500/30" : ""}`}>
+                    <li key={item.to} className={`${index % 4 !== 3 && window.innerWidth >= 1024 ? "lg:border-r border-teal-500/30" : ""}`}>
                       <NavLink
                         to={item.to}
                         onMouseEnter={handleHover}

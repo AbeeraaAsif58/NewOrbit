@@ -43,7 +43,7 @@ export default function BusinessPartners() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-8 sm:gap-10">
             {/* Visa */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/visa,logo.png" 
                   alt="Visa Logo"
@@ -54,12 +54,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Visa</h3>
             </div>
 
             {/* MasterCard */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/master-card-logo2.png" 
                   alt="MasterCard Logo"
@@ -70,12 +69,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">MasterCard</h3>
             </div>
 
             {/* PayPal */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/paypal-logo.png" 
                   alt="PayPal Logo"
@@ -86,12 +84,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">PayPal</h3>
             </div>
 
             {/* CoinPayment */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/coin payment.logo.png" 
                   alt="CoinPayment Logo"
@@ -102,12 +99,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">CoinPayment</h3>
             </div>
 
             {/* Stripe */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/stripe-logo.png" 
                   alt="Stripe Logo"
@@ -118,12 +114,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Stripe</h3>
             </div>
 
             {/* JS Bank */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/jsbank logo.png" 
                   alt="JS Bank Logo"
@@ -134,12 +129,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">JS Bank</h3>
             </div>
 
             {/* Al Ansari Exchange */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/Al Ansari Exchange- logo.png" 
                   alt="Al Ansari Exchange Logo"
@@ -150,12 +144,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Al Ansari Exchange</h3>
             </div>
 
             {/* Peace Home */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/peace homes-logo.png" 
                   alt="Peace Home Logo"
@@ -166,12 +159,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Peace Home</h3>
             </div>
 
             {/* Booking.com */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/Booking.com-logo.png" 
                   alt="Booking.com Logo"
@@ -182,12 +174,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Booking.com</h3>
             </div>
 
             {/* IATA */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/iata-logo.png" 
                   alt="IATA Logo"
@@ -198,12 +189,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">IATA</h3>
             </div>
 
             {/* L Bank */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/lbank-logo.png" 
                   alt="L Bank Logo"
@@ -214,12 +204,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">L Bank</h3>
             </div>
 
             {/* Bkash */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/bkash-logo.png" 
                   alt="Bkash Logo"
@@ -230,12 +219,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">Bkash</h3>
             </div>
 
             {/* PayTM */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/payTM-logo.png" 
                   alt="PayTM Logo"
@@ -246,12 +234,11 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">PayTM</h3>
             </div>
 
             {/* CBD */}
             <div className="flex flex-col items-center justify-center text-center p-2">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
+              <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
                   src="/CBD bank logo.png" 
                   alt="CBD Bank Logo"
@@ -262,7 +249,6 @@ export default function BusinessPartners() {
                   }}
                 />
               </div>
-              <h3 className="text-sm font-semibold text-gray-700 transition-colors duration-300">CBD</h3>
             </div>
           </div>
         </div>
