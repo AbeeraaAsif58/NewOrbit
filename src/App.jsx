@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import SidebarNavbar from "./components/SidebarNavbar";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -89,7 +89,7 @@ export default function App() {
         {/* WhatsApp Button */}
         <WhatsAppButton />
 
-        <main className="relative z-10 flex-1 px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-10 pt-20 sm:pt-24 md:pt-28">
+        <main className="relative z-10 flex-1 px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-10 pt-20 sm:pt-24 md:pt-28 min-h-screen">
           <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-32 w-32 border-b-2 border-green-500"></div></div>}>
             <Routes>
             <Route path="/" element={<Home />} />
@@ -132,6 +132,9 @@ export default function App() {
             <Route path="/human-resource/:projectSlug" element={<ProjectDetail />} />
             <Route path="/erp-crm" element={<ErpCrm />} />
             <Route path="/erp-crm/:projectSlug" element={<ProjectDetail />} />
+            {/* Redirect for common typo */}
+            <Route path="/erp--crm" element={<Navigate to="/erp-crm" replace />} />
+            <Route path="/erp--crm/:projectSlug" element={<Navigate to="/erp-crm/:projectSlug" replace />} />
             <Route path="/tools-and-utilities" element={<ToolsAndUtilities />} />
             <Route path="/tools-and-utilities/:projectSlug" element={<ProjectDetail />} />
             <Route path="/companies" element={<Companies />} />

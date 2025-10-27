@@ -322,7 +322,7 @@ export default function ArcCarousel({
   return (
     <section
       ref={rootRef}
-      className={`relative w-full min-h-[90vh] md:min-h-[80vh] py-10 md:py-16 text-white overflow-hidden ${className}`}
+      className={`relative w-full h-auto md:min-h-auto py-10 md:py-16 text-white overflow-hidden ${className}`}
       style={{ background: "transparent" }}
     >
       {/* Optional soft gradient backdrop (brand colors) */}

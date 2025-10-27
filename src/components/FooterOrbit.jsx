@@ -53,13 +53,15 @@ export default function FooterOrbitMoonTech() {
   return (
     <footer
       ref={root}
-      className="relative z-[100] w-full text-white mb-0"
+      className="relative z-[100] w-full text-white mb-0 block"
       style={{
         background:
           "linear-gradient(180deg, #034159 0%, #025951 20%, #02735E 100%)",
+        minHeight: '200px',
+        display: 'block'
       }}
     >
-      <div className="mx-auto max-w-7xl px-6 pt-12 pb-6">
+      <div className="mx-auto max-w-7xl px-6 pt-12 pb-6 block">
         {/* GRID */}
         <div className="grid gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand / intro */}

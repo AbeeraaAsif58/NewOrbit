@@ -170,10 +170,10 @@ export default function TalkBanner({
       {/* footer links row */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-full max-w-4xl px-6">
         <div className="flex items-center justify-center gap-10 text-xs sm:text-sm font-extrabold tracking-widest uppercase opacity-90 font-poppins">
-          <a href="#" className="hover:opacity-70">Company</a>
-          <a href="#" className="hover:opacity-70">Careers</a>
-          <a href="#" className="hover:opacity-70">Privacy</a>
-          <a href="#" className="hover:opacity-70">Terms &amp; Conditions</a>
+          <a href="#" className="cursor-default">Company</a>
+          <a href="#" className="cursor-default">Careers</a>
+          <a href="#" className="cursor-default">Privacy</a>
+          <a href="#" className="cursor-default">Terms &amp; Conditions</a>
         </div>
       </div>
     </section>
