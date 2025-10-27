@@ -14,7 +14,7 @@ const projects = [
     "description": "This Startup has hundreds of unique features that makes it out of box. It is one of the most sleek and beautiful design that has in-built mortgage calculator, most intelligent and advance search filters, geo location search and Google suggestions. It allow admin and users add unlimited properties from front as well as backend.",
     "status": "Available",
     "slug": "extraacre-real-estate-portal-multiple-users-android-app",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/real-estate-portal-banner-350x197.jpg"
   },
   {
     "title": "GigaBrick – Real Estate Portal Website",
@@ -27,7 +27,7 @@ const projects = [
     "description": "Complete real estate portal website with property listings, search functionality, and comprehensive real estate management features.",
     "status": "Available",
     "slug": "gigabrick-real-estate-portal-website",
-    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/real-estate-portal-350x197.jpg"
   },
   {
     "title": "Citysquid – Innovative Real Estate Investment Platform",
@@ -41,7 +41,7 @@ const projects = [
     "description": "Are you an entrepreneur seeking to tap into the lucrative world of real estate investment? Look no further than the game-changing platform that empowers businesses to thrive in the dynamic property market. With this, you gain access to a robust and sophisticated real estate investment platform that offers unparalleled opportunities for growth and profitability.",
     "status": "Available",
     "slug": "citysquid-innovative-real-estate-investment-platform",
-    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/invest-350x233.jpg"
   },
   {
     "title": "PropertyPlus – Society, Property, Tenant and Maintenance Management System",
@@ -55,7 +55,7 @@ const projects = [
     "description": "Complete Property management software streamlines the day-to-day operations of property owners and managers. With features like online rent payments, maintenance requests, and lease tracking, this software makes it easy to manage multiple properties from one centralized platform.",
     "status": "Available",
     "slug": "propertyplus-society-property-tenant-maintenance-management-system",
-    "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/prop.png"
   },
   {
     "title": "SmartCitizens – Property Management System with Tenant & Maintenance",
@@ -69,7 +69,7 @@ const projects = [
     "description": "Property management refers to the administration, operation, and oversight of real estate properties on behalf of property owners. It involves various tasks such as marketing rental properties, finding tenants, collecting rent and ensuring legal compliance.",
     "status": "Available",
     "slug": "smartcitizens-property-management-system-tenant-maintenance",
-    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/property-management-software-350x175.jpg"
   },
   {
     "title": "Brickwick – Real Estate Portal (Multilingual)",
@@ -83,7 +83,7 @@ const projects = [
     "description": "This Startup has hundreds of unique features that makes it out of box. It is one of the most sleek and beautiful real estate design. Key Features Page, blog, menu, contact, real estate.. modules are provided with the use of components to avoid boilerplate code.",
     "status": "Available",
     "slug": "brickwick-real-estate-portal-multilingual",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/real-estate-banner-350x184.jpg"
   }
 ];
 

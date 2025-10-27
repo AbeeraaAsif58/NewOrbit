@@ -37,7 +37,28 @@ const projects = [
     "status": "Available",
     "slug": "sendnova-bulk-email-sms-and-whatsapp-messaging-application",
     "image": "https://www.ufglab.com/projects/Sendnova-banner-350x197.jpg"
-  }
+  },
+  {
+    "title": "MailMill- Bulk Email Marketing Software Application",
+    "category": "Digital Marketing",
+    "tags": ["Bulk Email", "Email Marketing", "Laravel", "Open Source"],
+    "description": "This is a self hosted, open-source, full-featured, and easy-to-use Email Marketing Web Application written in PHP / Laravel that lets you send high-volume marketing emails via your own server or through other email service (SMTP) providers.",
+    "status": "Available",
+    "slug": "mailmill-bulk-email-marketing-software-application",
+    "image": "https://www.ufglab.com/projects/email-banner-350x201.png"
+  },
+  {
+    "title": "Inboxer – Bulk Email Marketing SAAS Application",
+    "category": "Digital Marketing",
+    "tags": ["Bulk Email", "Email Marketing", "SAAS", "Email Service Provider"],
+    "description": "Become an Email Service Provider for your customers, since this integrates easily with payment gateways and it offers all the needed tools to create pricing plans, promotional codes and to manage orders and transactions created by your customers.",
+    "status": "Available",
+    "slug": "inboxer-bulk-email-marketing-saas-application",
+    "image": "https://www.ufglab.com/projects/email-mar-banner-350x197.jpg"
+  },
+  
+  
+  
 ];
 
 export default function DigitalMarketing() {

@@ -13,7 +13,7 @@ const projects = [
     "description": "Complete restaurant point-of-sale system with comprehensive order management, payment processing, and restaurant operations.",
     "status": "64 Sales",
     "slug": "mexicata-complete-restaurant-pos",
-    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/restaurant-pos-350x233.png"
   },
   {
     "title": "Food Desk – Restaurant Management Software with Website",
@@ -26,7 +26,7 @@ const projects = [
     "description": "Comprehensive restaurant management software with integrated website for online ordering, table management, and restaurant operations.",
     "status": "23 Sales",
     "slug": "food-desk-restaurant-management-software-website",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/restaurant-350x200.png"
   },
   {
     "title": "Foodinga – Zomato Clone – Multiple Restaurant Food ordering Website with Customer, Merchant and Driver Android and iOS apps",
@@ -40,21 +40,21 @@ const projects = [
     "description": "Complete Zomato clone with multiple restaurant food ordering website and dedicated Android and iOS apps for customers, merchants, and drivers.",
     "status": "23 Sales",
     "slug": "foodinga-zomato-clone-multiple-restaurant-food-ordering-website-customer-merchant-driver-android-ios-apps",
-    "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/multiple-resturant-350x175.jpg"
   },
   {
-    "title": "TrackAla- The Complete SaaS Restaurant Management Solution",
+    "title": "Lilplates – Restaurant Food Delivery System with Admin Panel & Delivery Man App | Restaurant POS",
     "category": "Restaurant",
     "tags": [
-      "ERP & CRM",
+      "eCommerce",
       "Restaurant",
-      "SAAS",
-      "Management Solution"
+      "Food Delivery",
+      "POS System"
     ],
-    "description": "Complete SaaS restaurant management solution with comprehensive features for operations, analytics, and customer management.",
-    "status": "New",
-    "slug": "trackala-complete-saas-restaurant-management-solution",
-    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop&crop=center"
+    "description": "This is a cutting-edge food delivery app and restaurant management system designed to support both single and multi-branch restaurants. It comes with a robust POS system, complemented by user-friendly applications.",
+    "status": "Available",
+    "slug": "lilplates-restaurant-food-delivery-system-with-admin-panel-delivery-man-app-restaurant-pos",
+    "image": "https://www.ufglab.com/projects/lilplates-350x181.jpg"
   },
   {
     "title": "OrderCreator – SaaS Restaurant / QR Menu / WhatsApp Online ordering / Reservation system",
@@ -69,8 +69,24 @@ const projects = [
     "description": "SaaS restaurant solution with QR menu, WhatsApp online ordering, and reservation system for modern restaurant operations.",
     "status": "New",
     "slug": "ordercreator-saas-restaurant-qr-menu-whatsapp-online-ordering-reservation-system",
-    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&h=600&fit=crop&crop=center"
-  }
+    "image": "https://ufg-lab-roan.vercel.app/projects/ordercreator-banner-350x233.webp"
+  },
+  {
+    "title": "DixieDaily- Dunzo Clone – Multivendor Food, Grocery, eCommerce, Parcel, Pharmacy Delivery Website & 3 Mobile apps (Customer, Store, Driver apps)",
+    "category": "Restaurant",
+    "tags": [
+      "Directory",
+      "eCommerce",
+      "Grocery",
+      "Restaurant"
+    ],
+    "description": "This is a complete Multi-vendor Food, Grocery, eCommerce, Parcel, Pharmacy, or any kind of products delivery system developed using Laravel and Flutter Framework. It's Powerful admin panel will help you to control your business smartly.",
+    "status": "Available",
+    "slug": "dixiedaily-dunzo-clone-multivendor-food-grocery-ecommerce-parcel-pharmacy-delivery-website-3-mobile-apps-customer-store-driver-apps",
+    "image": "https://www.ufglab.com/projects/dunzo-clone-350x184.jpg"
+  },
+  
+
 ];
 
 export default function Restaurant() {

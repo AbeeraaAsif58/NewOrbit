@@ -12,7 +12,7 @@ const Projects = () => {
       description: "Send, receive, deposit, request, invest and exchange money globally in multiple currencies easily, quickly and safely with great rates and low fees.",
       category: "Fintech",
       tags: ["Government", "Exchange", "Cash"],
-      image: "/pro1.avif",
+      image: "https://ufg-lab-roan.vercel.app/_next/static/media/rootswall.d2f1f8d2.png",
       url: "https://rootswall.com/"
     },
     {
@@ -21,7 +21,7 @@ const Projects = () => {
       description: "Next-gen financial and banking facilities featuring mortgages, lending/borrowing, and residency via investment.",
       category: "Banking",
       tags: ["Mortgage", "Investment"],
-      image: "/pro2.avif",
+      image: "https://ufg-lab-roan.vercel.app/_next/static/media/cashcare.e59bfca7.png",
       url: "https://www.cashcare.co/"
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
       description: "Gamers and developers can transact to trade in-game assets while building a diverse gaming community.",
       category: "Gaming",
       tags: ["NFT", "Community"],
-      image: "/pro3.avif",
+      image: "https://ufg-lab-roan.vercel.app/_next/static/media/gamiverz.d5e7cfb2.png",
       url: "https://orbitwalls.com"
     },
     {
@@ -39,7 +39,7 @@ const Projects = () => {
       description: "Merging the best of what the world offers for the discerning traveler. For leisure and business travel stays, air travel and charter flights",
       category: "Travel",
       tags: ["Booking", "Luxury"],
-      image: "/pro4.avif",
+      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800",
       url: "https://ticksntravel.com/"
     },
     {
@@ -48,7 +48,7 @@ const Projects = () => {
       description: "A personified crypto trading experience for enthusiasts and novices, with an intuitive user interface and expanded coin listings.",
       category: "Crypto",
       tags: ["Trading", "Finance"],
-      image: "/pro5.avif",
+      image: "https://images.unsplash.com/photo-1605792657660-596af9009e82?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -57,7 +57,7 @@ const Projects = () => {
       description: "Bringing together healthcare professionals, hospitals and patients on one platform, with private, trackable health records and progress updates.",
       category: "Healthcare",
       tags: ["Records", "Privacy"],
-      image: "/pro6.avif",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -66,7 +66,7 @@ const Projects = () => {
       description: "Disrupting traditional real estate, using next-gen solutions to list and invest in properties, transacting directly with the owner.",
       category: "Real Estate",
       tags: ["Investment", "Blockchain"],
-      image: "/pro7.avif",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -75,7 +75,7 @@ const Projects = () => {
       description: "Streamline and secure private insurance records across motor, home, health and travel insurance, centralizing policies, incident reports and claims.",
       category: "Insurance",
       tags: ["Claims", "Security"],
-      image: "/pro8.webp",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -84,7 +84,7 @@ const Projects = () => {
       description: "A luxury experience through specialized ATM kiosks globally, allowing users to convert between fiat and crypto, and debit/credit cards.",
       category: "ATM",
       tags: ["Crypto", "Payments"],
-      image: "/pro9.avif",
+      image: "https://images.unsplash.com/photo-1622630998477-20aa696ecb05?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -93,7 +93,7 @@ const Projects = () => {
       description: "Enabling individuals and businesses to manage multiple investments and portfolios, with the highest data security and investment opportunities.",
       category: "Investment",
       tags: ["Portfolio", "Security"],
-      image: "/pro10.avif",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -102,7 +102,7 @@ const Projects = () => {
       description: "Premium services, experiences and amenities ranging from entertainment, exclusive networking events, social events, F & B and more.",
       category: "Luxury",
       tags: ["Events", "Networking"],
-      image: "/pro12.avif",
+      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -111,7 +111,7 @@ const Projects = () => {
       description: "Changing the online shopping experience for shoppers and merchants, eliminating payment fraud, data breaches and exorbitant transaction fees.",
       category: "E-commerce",
       tags: ["Payments", "Security"],
-      image: "/pro13.avif",
+      image: "https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -120,8 +120,8 @@ const Projects = () => {
       description: "Raise the stakes the next-gen way. Purchase lotto's and win jackpots, and interact with other players.",
       category: "Lottery",
       tags: ["Gaming", "Blockchain"],
-      image: "/pro14.avif",
-      url: "https://orbitwalls.com"
+      image: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=800",
+      url: "https://lottolucks.com"
     },
     {
       id: 14,
@@ -129,7 +129,7 @@ const Projects = () => {
       description: "Gives the power back to artists together with a vibrant community of investors and collectors, where creators will be incentivized ethically.",
       category: "NFT",
       tags: ["Art", "Community"],
-      image: "/pro15.avif",
+      image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     },
     {
@@ -138,7 +138,7 @@ const Projects = () => {
       description: "Inclusivity and efficiency through crypto bonds, enabling governments, corporations and institutions to raise capital.",
       category: "Bonds",
       tags: ["Investment", "Institution"],
-      image: "/pro16.avif",
+      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800",
       url: "https://orbitwalls.com"
     }
   ];
@@ -368,4 +368,3 @@ const Projects = () => {
 
 // Memoize the component to prevent unnecessary re-renders
 export default React.memo(Projects);
-

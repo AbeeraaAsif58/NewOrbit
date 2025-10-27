@@ -14,7 +14,7 @@ const projects = [
     "status": "Available",
     "price": "$5,000 – $15,000",
     "slug": "travoila-complete-travel-portal",
-    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/travel-banner-350x266.png"
   },
   {
     "title": "CargoSilo- Complete Courier Management System – Domestic and International",
@@ -28,7 +28,7 @@ const projects = [
     "status": "Available",
     "price": "$3,000 – $8,000",
     "slug": "cargosilo-courier-management-system",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/Courier-Management-System-350x188.jpg"
   },
   {
     "title": "SecretBus- Bus Reservation System",
@@ -42,7 +42,7 @@ const projects = [
     "status": "Available",
     "price": "$2,000 – $5,000",
     "slug": "secretbus-bus-reservation-system",
-    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/bus-banner-350x222.jpg"
   },
   {
     "title": "Travelray – Book Hotels, Tours, Flights, Activities, Cabs – Complete Travel Booking Portal",
@@ -56,7 +56,7 @@ const projects = [
     "status": "Available",
     "price": "$5,000 – $15,000",
     "slug": "travelray-complete-travel-booking-portal",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/travel-banner-350x266.png"
   },
   {
     "title": "HotelTitan – Hotel & Resort Booking Application",
@@ -70,7 +70,7 @@ const projects = [
     "status": "Available",
     "price": "$1,500 – $4,000",
     "slug": "hoteltitan-hotel-resort-booking-application",
-    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/hotelnerd-350x201.png"
   },
   {
     "title": "HotelNerd – Hotel & Resort Booking System",
@@ -84,7 +84,7 @@ const projects = [
     "status": "Available",
     "price": "$2,500 – $6,000",
     "slug": "hotelnerd-hotel-resort-booking-system",
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/hotelnerd-350x201.png"
   }
 ];
 

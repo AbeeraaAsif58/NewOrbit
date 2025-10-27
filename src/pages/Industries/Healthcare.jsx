@@ -14,7 +14,7 @@ const projects = [
     "description": "The best and number one Hospital Management System Software with Website. It has 40+ Features what you need to manage Hospital. Here has Insurance, Modern Billing System and SMS Gateway also.",
     "status": "Available",
     "slug": "healthy-web-hospital-management-system",
-    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/hms3-1-350x197.jpg"
   },
   {
     "title": "Phroma – Pharmacy Management System",
@@ -28,7 +28,7 @@ const projects = [
     "description": "It is designed and developed for pharmacy, medicine stores, departmental stores and medicine shop. Handle all of your pharmacy data easily. Here you can handle all of your pharmacy account management, invoice create, user and data analysis, stock management, store management, purchase history, income history, pos and many more.",
     "status": "Available",
     "slug": "phroma-pharmacy-management-system",
-    "image": "https://www.ufglab.com/projects/hms3-1-350x197.jpg"
+    "image": "https://www.ufglab.com/projects/pharma-banner-man-350x195.jpg"
   },
   {
     "title": "Doctor Corps- Hospital Management System",
@@ -56,7 +56,7 @@ const projects = [
     "description": "Complete SAAS Business of Hospital Management Software Platform for all hospitals in a community. Different hospitals owned by different people can be managed by our single application. Create an account for a hospital and give the login details to that hospital. thats it!",
     "status": "Available",
     "slug": "hospitalcore-complete-saas-hospital-management-system",
-    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/hospital-banner-1-350x197.jpg"
   },
   {
     "title": "All Healed – Diagnostic/Pathology lab Management System",
@@ -84,7 +84,7 @@ const projects = [
     "description": "Hospital management system is online patient management and Appointment, Scheduler application software for getting an appointment very easily over the internet. This application is built upon PHP with Codeigniter Framework Hospital can take the online patient appointment and patient can take doctor schedule from anywhere in the world.",
     "status": "Available",
     "slug": "hospiva-hospital-management-system",
-    "image": "https://www.ufglab.com/projects/hospital-banner-1-350x197.jpg"
+    "image": "https://www.ufglab.com/projects/hms1-1-350x173.jpg"
   }
 ];
 

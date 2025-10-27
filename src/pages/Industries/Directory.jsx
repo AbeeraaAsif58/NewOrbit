@@ -3,18 +3,18 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "City Listing – Classified Ads Website and Mobile app – OLX, Quikr, Craigslist Clone",
+    "title": "Practova – Appointment Booking With Time-slot app – Practo clone",
     "category": "Directory",
     "tags": [
       "Directory",
-      "eCommerce",
-      "Classified Ads",
-      "Mobile Apps"
+      "Healthcare",
+      "Mobile Apps",
+      "Appointment Booking"
     ],
-    "description": "A comprehensive classified ads platform similar to OLX, Quikr, and Craigslist with website and mobile app functionality for buying and selling various items.",
+    "description": "This is an Appointment Booking With Time-slot app in Flutter is a complete medical solution for users. You can find nearby doctors with complete profile details of doctor.",
     "status": "66 Sales",
-    "slug": "city-listing-classified-ads-website-mobile-app-olx-quikr-craigslist-clone",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center"
+    "slug": "practova-appointment-booking-with-time-slot-app-practo-clone",
+    "image": "https://www.ufglab.com/projects/practo-clone-350x183.png"
   },
   {
     "title": "Fantica – Premium Content Creators SaaS platform, Onlyfans Clone",
@@ -28,7 +28,7 @@ const projects = [
     "description": "This is a fully-featured PHP platform that allows you to start your own premium content-based social media platform in no time. The experience is powered by a mobile-first, clean and easy-to-use design, with Dark and Light mode themes, RTL, and localization capabilities. It allows your creators to sell their premium content via monthly subscriptions, offers, bundles, tips, and pay to unlock posts.",
     "status": "56 Sales",
     "slug": "fantica-premium-content-creators-saas-platform-onlyfans-clone",
-    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/fans-banner-350x175.jpg"
   },
   {
     "title": "Carinian - Used Car Buy/Sell & Dealership Website & Apps",
@@ -70,6 +70,19 @@ const projects = [
     "status": "25 Sales",
     "slug": "binnic-business-suite",
     "image": "https://www.ufglab.com/projects/business-suite-350x183.jpg"
+  },
+  {
+    "title": "CouponLife – Affiliate & Submitting Coupons Application",
+    "category": "Directory",
+    "tags": [
+      "Directory",
+      "eCommerce",
+      "Coupon Management"
+    ],
+    "description": "This application is designed to serve coupons either submitted by your users or imported via XML/CSV file from the affiliate network or both. It is designed to be super fast and not to add any stress to queries",
+    "status": "25 Sales",
+    "slug": "couponlife-affiliate-submitting-coupons-application",
+    "image": "https://www.ufglab.com/projects/coupon-350x197.jpg"
   }
 ];
 

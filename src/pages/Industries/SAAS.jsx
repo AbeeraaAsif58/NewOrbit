@@ -15,7 +15,7 @@ const projects = [
     "status": "Available",
     "price": "$5,000 – $15,000",
     "slug": "vyapaar-complete-saas-business-stock-management-pos-invoicing",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/salepose-banner-350x241.jpg"
   },
   {
     "title": "Recruitrabbit – SAAS Human Resource Management",
@@ -30,7 +30,7 @@ const projects = [
     "status": "Available",
     "price": "$3,000 – $8,000",
     "slug": "recruitrabbit-saas-human-resource-management",
-    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/hr-350x197.jpg"
   },
   {
     "title": "Resumesy – Complete SAAS Resume Builder",
@@ -45,7 +45,7 @@ const projects = [
     "status": "Available",
     "price": "$2,500 – $6,000",
     "slug": "resumesy-complete-saas-resume-builder",
-    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/Top-Resume-Builders-350x197.png"
   },
   {
     "title": "FoodDeck – SaaS Contactless Multi-restaurant QR Menu Maker",
@@ -60,23 +60,9 @@ const projects = [
     "status": "Available",
     "price": "$2,000 – $5,000",
     "slug": "fooddeck-saas-contactless-multi-restaurant-qr-menu-maker",
-    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/qr-menu-banner-350x187.jpeg"
   },
-  {
-    "title": "CloudFlow – Complete SAAS Business Management Platform",
-    "category": "SAAS",
-    "tags": [
-      "SAAS",
-      "Business Management",
-      "Cloud Platform",
-      "Automation"
-    ],
-    "description": "Complete SAAS business management platform with comprehensive features including customer management, project tracking, team collaboration, billing and invoicing, analytics dashboard, multi-tenant architecture, API integration, and customizable workflows for modern businesses.",
-    "status": "Available",
-    "price": "$4,500 – $12,000",
-    "slug": "cloudflow-complete-saas-business-management-platform",
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center"
-  },
+  
   {
     "title": "Ultreno – SAAS Project Management System",
     "category": "SAAS",
@@ -90,7 +76,7 @@ const projects = [
     "status": "Available",
     "price": "$4,000 – $10,000",
     "slug": "ultreno-saas-project-management-system",
-    "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/banner-2-350x270.png"
   }
 ];
 

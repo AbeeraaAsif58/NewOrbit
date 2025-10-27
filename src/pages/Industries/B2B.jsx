@@ -13,7 +13,7 @@ const projects = [
     "status": "Available",
     "price": "$4,000 – $7,000",
     "slug": "vyapaar-complete-saas-business-for-stock-management-pos-invoicing",
-    "image": "https://plus.unsplash.com/premium_photo-1661544641499-e12fd5efeea4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332"
+    "image": "https://www.ufglab.com/projects/salepose-banner-350x241.jpg"
   },
   {
     title: "Cloud Prospects-Lead Management System and Sales CRM",
@@ -63,7 +63,7 @@ const projects = [
     status: "Available",
     price: "$750 – $1,375",
     slug: "close-sourcing-b2b-ecommerce-bulk-discount",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1115"
+    image: "https://www.ufglab.com/projects/B2B-eCommerce-Solution-for-Your-Business-350x175.png"
   }
 ];
 

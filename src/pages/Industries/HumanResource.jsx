@@ -15,7 +15,7 @@ const projects = [
     "description": "This is a powerful HR management and payroll solution, perfect for any organization. Manage multiple companies, departments, employees, projects and much more from an intuitive admin panel that you'll love to use. No matter what is the size of your company, This is capable of handling all your HR related tasks.",
     "status": "Available",
     "slug": "hr-logics-hrm-payroll-project-management",
-    "image": "https://images.unsplash.com/photo-1521791136064-7986b292a6ed?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/hr-banner-350x245.jpeg"
   },
   {
     "title": "Bold Jobs – Freelancer Job Board System",
@@ -29,7 +29,7 @@ const projects = [
     "description": "This is an online platform where resourceful clients and skillful freelancers can be connected. The site helps professionals find projects, communicate with clients and get paid. It is a marketplace for clients and freelancers in fields like web development, application development, writing, graphic design or any other scope.",
     "status": "Available",
     "slug": "bold-jobs-freelancer-job-board-system",
-    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/job-board-350x207.jpg"
   },
   {
     "title": "Recruitrabbit – SAAS Human Resource Management",
@@ -43,7 +43,7 @@ const projects = [
     "description": "SAAS Human Resource Management system with comprehensive features including Employees, Department, Awards, Expense, Holidays, Attendance, Leave Applications, Leave Types, Notice Board and much more.",
     "status": "Available",
     "slug": "recruitrabbit-saas-human-resource-management",
-    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/hr-350x197.jpg"
   },
   {
     "title": "Resumesy – Complete SAAS Resume Builder",
@@ -57,7 +57,7 @@ const projects = [
     "description": "Complete SAAS Recruitment Manager A Web application to manage the recruitment process of a company. If you are a company that need an application through which job seekers can apply directly on your website and you can manage those job applicants from an admin panel then this is the app you need.",
     "status": "Available",
     "slug": "resumesy-complete-saas-resume-builder",
-    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/Top-Resume-Builders-350x197.png"
   },
   {
     "title": "Freelance Mall – Freelancing Marketplace Platform – Upwork, Fiverr Clone",
@@ -72,7 +72,7 @@ const projects = [
     "description": "A professional Freelancing Marketplace Platform that comes with Premium features to take your business on a higher level. It is a complete premium item that comes with all features with a combination of all types of the digital marketplace. you able to run gigs-based websites, Hiring based websites, download-based websites, and what you need.",
     "status": "Available",
     "slug": "freelance-mall-freelancing-marketplace-platform-upwork-fiverr-clone",
-    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/freelance-marketplace-350x168.jpg"
   },
   {
     "title": "Recruitpool:- Complete SAAS Recruitment Manager with ATS (Application Tracking System)",
@@ -87,7 +87,7 @@ const projects = [
     "description": "Complete SAAS Recruitment Manager A Web application to manage the recruitment process of a company. If you are a company that need an application through which job seekers can apply directly on your website and you can manage those job applicants from an admin panel then this is the app you need.",
     "status": "Available",
     "slug": "recruitpool-complete-saas-recruitment-manager-ats-application-tracking-system",
-    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center"
+    "image": "https://ufg-lab-roan.vercel.app/projects/hr-portal-01-350x205.png"
   }
 ];
 
@@ -101,4 +101,3 @@ export default function HumanResource() {
     />
   );
 }
-

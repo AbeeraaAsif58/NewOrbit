@@ -28,7 +28,7 @@ const projects = [
     "description": "Android & iOS media app for creating and sharing short videos, similar to TikTok with all modern features for content creation and social interaction.",
     "status": "Available",
     "slug": "tokito-android-ios-media-app-creating-sharing-short-videos-tiktok-moj-clone",
-    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/tiktok-350x197.jpg"
   },
   {
     "title": "Janoo – Dating Platform like Tinder/Badoo",
@@ -42,7 +42,7 @@ const projects = [
     "description": "Complete dating platform similar to Tinder and Badoo with advanced matching algorithms, chat features, and social interaction capabilities.",
     "status": "Available",
     "slug": "janoo-dating-platform-like-tinder-badoo",
-    "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/social-dating-350x194.png"
   },
   {
     "title": "PixelPear OOT Platform – Netflix Clone – Live TV & Movies Streaming Platform",
@@ -56,8 +56,22 @@ const projects = [
     "description": "Complete Netflix clone with live TV and movies streaming platform. It is a complete system with all the features of any modern Netflix clone.",
     "status": "Available",
     "slug": "pixelpear-oot-platform-netflix-clone-live-tv-movies-streaming-platform",
-    "image": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&h=600&fit=crop&crop=center"
-  }
+    "image": "https://www.ufglab.com/projects/video-tv-app-1-350x230.png"
+  },
+  {
+    "title": "Nexagram – Instagram Clone – Image & Photo Sharing Social Network Platform",
+    "category": "Entertainment",
+    "tags": [
+      "Entertainment",
+      "Social",
+      "Instagram Clone",
+      "Photo Sharing"
+    ],
+    "description": "Best Instagram Clone Website and application. The best way to start your own photo-sharing website!",
+    "status": "Available",
+    "slug": "nexagram-instagram-clone-image-photo-sharing-social-network-platform",
+    "image": "https://www.ufglab.com/projects/instagram-clone-350x184.jpg"
+  },
 
 ];
 

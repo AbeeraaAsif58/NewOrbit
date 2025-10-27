@@ -10,7 +10,7 @@ const projects = [
     status: "1 Sale",
     price: "$625 – $1,250",
     slug: "sonicvox-text-to-speech-as-saas",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+    image: "https://www.ufglab.com/projects/sonicvox.jpg"
   },
   {
     title: "Writingo – AI Content Writer & Copyright Generator",
@@ -20,7 +20,7 @@ const projects = [
     status: "Available",
     price: "$2,000 – $3,500",
     slug: "classifiable-classified-buy-sell-marketplace",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center"
+    image: "https://www.ufglab.com/projects/writetalent.jpg"
   },
   {
     title: "Inbitcoin – AI Prompt Buy Selling Marketplace",
@@ -50,7 +50,7 @@ const projects = [
     status: "Available",
     price: "$750 – $1,375",
     slug: "writingo-ai-content-writer-copyright-generator",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop&crop=center"
+    image: "https://www.ufglab.com/projects/thinkgpt-banner.jpeg"
   },
   {
     title: "Aitini – ChatGPT SaaS Writing Assistant",
@@ -60,7 +60,7 @@ const projects = [
     status: "Available",
     price: "$750 – $1,375",
     slug: "aitini-chatgpt-saas-writing-assistant",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
+    image: "https://www.ufglab.com/projects/thinkgpt-banner.jpeg"
   },
 
 

@@ -15,7 +15,7 @@ const projects = [
     "description": "Complete grocery delivery platform with customer, store, and driver apps - BigBasket clone with multi-store management capabilities. What's included: 1. Customer Android App Source Code 2. Store Manager Android Source Code App 3. Delivery Boy Android App Source Code 4. Admin Panel PHP Script Source Code 5. WordPress website with source code",
     "status": "120 Sales",
     "slug": "grocery-space-grocery-multi-store-customer-store-driver-apps-bigbasket-clone",
-    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/product-banner-350x178.png"
   },
   {
     "title": "Farm Grocery- Ecommerce for Grocery, Food, Pharmacy with Android Apps",
@@ -45,7 +45,7 @@ const projects = [
     "description": "Dunzo Clone – Multivendor Food, Grocery, eCommerce, Parcel, Pharmacy Delivery Website & 3 Mobile apps (Customer, Store, Driver apps).",
     "status": "Available",
     "slug": "dixiedaily-dunzo-clone-multivendor-food-grocery-ecommerce-parcel-pharmacy-delivery-website-3-mobile-apps-customer-store-driver-apps",
-    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/dunzo-clone-350x184.jpg"
   }
 
 ];

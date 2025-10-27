@@ -14,7 +14,7 @@ const projects = [
     "description": "Comprehensive multi-school management system with advanced features for managing multiple educational institutions from a single platform.",
     "status": "89 Sales",
     "slug": "school-silo-multi-school-management-system",
-    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/lms4-350x235.png"
   },
   {
     "title": "Skillsly – Ultimate eLearning Website",
@@ -28,7 +28,7 @@ const projects = [
     "description": "It is an Enterprise grade Learning management system Website for Class 9th to 12th, JEE, NEET, and other exams. It is a complete system with all the features of any modern LMS.",
     "status": "82 Sales",
     "slug": "skillsly-ultimate-elearning-website",
-    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/lms-350x247.jpg"
   },
   {
     "title": "Hostelstead – Hostel/Room Management System",
@@ -42,10 +42,10 @@ const projects = [
     "description": "Complete hostel and room management system for educational institutions with booking, payment, and maintenance features.",
     "status": "76 Sales",
     "slug": "hostelstead-hostel-room-management-system",
-    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/lms10-350x177.png"
   },
   {
-    "title": "Libroxo – Library Management System with Website",
+    "title": "Libraxo – Library Management System with Website",
     "category": "Education",
     "tags": [
       "Education",
@@ -55,8 +55,8 @@ const projects = [
     ],
     "description": "Library management system with integrated website for book cataloging, borrowing, and digital resource management.",
     "status": "65 Sales",
-    "slug": "libroxo-library-management-system-website",
-    "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop&crop=center"
+    "slug": "libraxo-library-management-system-website",
+    "image": "https://www.ufglab.com/projects/lms9-350x201.png"
   },
   {
     "title": "Skillbuzz – Udemy Clone - Online Courses and Learning Management System",
@@ -70,7 +70,7 @@ const projects = [
     "description": "Complete Udemy clone with online course management, instructor dashboard, and learning management system.",
     "status": "72 Sales",
     "slug": "skillbuzz-udemy-clone-online-courses-learning-management-system",
-    "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/online-learning-management-systemudemy-clone-350x209.png"
   },
   {
     "title": "QuizMatics – Real Money Quiz Game/App",
@@ -84,7 +84,7 @@ const projects = [
     "description": "With more fun, advanced security, and real money rewards, this quiz game app is a perfect way to learn and earn.",
     "status": "58 Sales",
     "slug": "quizmatics-real-money-quiz-game-app",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+    "image": "https://www.ufglab.com/projects/quiz-banner-350x175.jpeg"
   }
 ];
 
