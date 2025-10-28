@@ -72,20 +72,6 @@ const projects = [
     "slug": "skillbuzz-udemy-clone-online-courses-learning-management-system",
     "image": "https://www.ufglab.com/projects/online-learning-management-systemudemy-clone-350x209.png"
   },
-  {
-    "title": "QuizMatics – Real Money Quiz Game/App",
-    "category": "Education",
-    "tags": [
-      "Education",
-      "Quiz Game",
-      "Real Money",
-      "Gamification"
-    ],
-    "description": "With more fun, advanced security, and real money rewards, this quiz game app is a perfect way to learn and earn.",
-    "status": "58 Sales",
-    "slug": "quizmatics-real-money-quiz-game-app",
-    "image": "https://www.ufglab.com/projects/quiz-banner-350x175.jpeg"
-  }
 ];
 
 export default function Education() {

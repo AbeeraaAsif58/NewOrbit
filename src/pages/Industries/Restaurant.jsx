@@ -71,20 +71,6 @@ const projects = [
     "slug": "ordercreator-saas-restaurant-qr-menu-whatsapp-online-ordering-reservation-system",
     "image": "https://ufg-lab-roan.vercel.app/projects/ordercreator-banner-350x233.webp"
   },
-  {
-    "title": "DixieDaily- Dunzo Clone – Multivendor Food, Grocery, eCommerce, Parcel, Pharmacy Delivery Website & 3 Mobile apps (Customer, Store, Driver apps)",
-    "category": "Restaurant",
-    "tags": [
-      "Directory",
-      "eCommerce",
-      "Grocery",
-      "Restaurant"
-    ],
-    "description": "This is a complete Multi-vendor Food, Grocery, eCommerce, Parcel, Pharmacy, or any kind of products delivery system developed using Laravel and Flutter Framework. It's Powerful admin panel will help you to control your business smartly.",
-    "status": "Available",
-    "slug": "dixiedaily-dunzo-clone-multivendor-food-grocery-ecommerce-parcel-pharmacy-delivery-website-3-mobile-apps-customer-store-driver-apps",
-    "image": "https://www.ufglab.com/projects/dunzo-clone-350x184.jpg"
-  },
   
 
 ];

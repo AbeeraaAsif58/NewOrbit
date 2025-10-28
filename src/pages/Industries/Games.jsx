@@ -59,34 +59,6 @@ const projects = [
     "slug": "fortunefantasy-online-betting-platform-1xbet-clone",
     "image": "https://www.ufglab.com/projects/1xbet-1.jpg"
   },
-  {
-    "title": "Aviator-Real Money Aviator Game",
-    "category": "Games",
-    "tags": [
-      "Games",
-      "Aviator",
-      "Real Money",
-      "Casino Game"
-    ],
-    "description": "Aviator is a real money aviator game with all the features of any modern aviator game.",
-    "status": "Available",
-    "slug": "aviator-real-money-aviator-game",
-    "image": "https://www.ufglab.com/projects/aviator-banner-350x175.png"
-  },
-  {
-    "title": "Color IQ-Real Money Colour Prediction Game",
-    "category": "Games",
-    "tags": [
-      "Games",
-      "Color Prediction",
-      "Real Money",
-      "Prediction Game"
-    ],
-    "description": "Color IQ is a real money colour prediction game with all the features of any modern colour prediction game.",
-    "status": "Available",
-    "slug": "color-iq-real-money-colour-prediction-game",
-    "image": "https://www.ufglab.com/projects/coloriq-banner-350x233.png"
-  }
 
 ];
 

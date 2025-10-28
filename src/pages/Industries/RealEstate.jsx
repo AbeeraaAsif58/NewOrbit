@@ -44,34 +44,6 @@ const projects = [
     "image": "https://ufg-lab-roan.vercel.app/projects/invest-350x233.jpg"
   },
   {
-    "title": "PropertyPlus – Society, Property, Tenant and Maintenance Management System",
-    "category": "Real Estate",
-    "tags": [
-      "ERP & CRM",
-      "Real Estate",
-      "Tools and Utilities",
-      "Property Management"
-    ],
-    "description": "Complete Property management software streamlines the day-to-day operations of property owners and managers. With features like online rent payments, maintenance requests, and lease tracking, this software makes it easy to manage multiple properties from one centralized platform.",
-    "status": "Available",
-    "slug": "propertyplus-society-property-tenant-maintenance-management-system",
-    "image": "https://ufg-lab-roan.vercel.app/projects/prop.png"
-  },
-  {
-    "title": "SmartCitizens – Property Management System with Tenant & Maintenance",
-    "category": "Real Estate",
-    "tags": [
-      "ERP & CRM",
-      "Real Estate",
-      "Tools and Utilities",
-      "Property Management"
-    ],
-    "description": "Property management refers to the administration, operation, and oversight of real estate properties on behalf of property owners. It involves various tasks such as marketing rental properties, finding tenants, collecting rent and ensuring legal compliance.",
-    "status": "Available",
-    "slug": "smartcitizens-property-management-system-tenant-maintenance",
-    "image": "https://ufg-lab-roan.vercel.app/projects/property-management-software-350x175.jpg"
-  },
-  {
     "title": "Brickwick – Real Estate Portal (Multilingual)",
     "category": "Real Estate",
     "tags": [

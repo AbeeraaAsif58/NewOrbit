@@ -3,19 +3,6 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "Vyapaar-Complete SAAS Business for Stock Management, POS & Invoicing",
-    "category": "B2B",
-    "tags": [
-      "Marketplace",
-      "Enterprise"
-    ],
-    "description": "This is a SAAS based Startup provides a CRM with some amazing features suitable for all businesses. With this application, you are assured to save time-consuming process of bookkeeping accounting and inventory information.",
-    "status": "Available",
-    "price": "$4,000 – $7,000",
-    "slug": "vyapaar-complete-saas-business-for-stock-management-pos-invoicing",
-    "image": "https://www.ufglab.com/projects/salepose-banner-350x241.jpg"
-  },
-  {
     title: "Cloud Prospects-Lead Management System and Sales CRM",
     category: "B2B",
     tags: ["B2B", "ERP & CRM"],
@@ -24,16 +11,6 @@ const projects = [
     price: "$750 – $1,375",
     slug: "cloud-prospects-lead-management-system-and-sales-crm",
     image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-  },
-  {
-    title: "Hospitalcore-Complete SAAS Hospital management system",
-    category: "B2B",
-    tags: ["SaaS", "Healthcare , SaaS"],
-    description: "Complete SaaS-based hospital management system with cloud-based deployment and comprehensive healthcare management features.",
-    status: "Available",
-    price: "$750 – $1,375",
-    slug: "hospitalcore-complete-saas-hospital-management-system",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1115"
   },
   {
     title: "Business Brawn-Complete SAAS Business Management ",

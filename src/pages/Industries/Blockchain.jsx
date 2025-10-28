@@ -14,7 +14,8 @@ const projects = [
     "status": "Available",
     "price": "69 sales",
     "slug": "cryptoquiver-ico-sto-token-sale-management-ico-admin",
-    "image": "https://www.ufglab.com/projects/ico-token.jpeg"
+    "image": "https://www.ufglab.com/projects/ico-token.jpeg",
+    "liveUrl": "https://cryptoquiver.com"
   },
   {
     title: "Cryptologia-Cryptocurrency Buy Sell Exchange with MLM System",

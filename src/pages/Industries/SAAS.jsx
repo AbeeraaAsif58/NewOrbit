@@ -18,36 +18,6 @@ const projects = [
     "image": "https://ufg-lab-roan.vercel.app/projects/salepose-banner-350x241.jpg"
   },
   {
-    "title": "Recruitrabbit – SAAS Human Resource Management",
-    "category": "SAAS",
-    "tags": [
-      "SAAS",
-      "Human Resource",
-      "HRM",
-      "Management"
-    ],
-    "description": "Comprehensive SAAS Human Resource Management system featuring employees management, department organization, awards system, expense tracking, holidays management, attendance monitoring, leave applications, leave types, and notice board functionality.",
-    "status": "Available",
-    "price": "$3,000 – $8,000",
-    "slug": "recruitrabbit-saas-human-resource-management",
-    "image": "https://ufg-lab-roan.vercel.app/projects/hr-350x197.jpg"
-  },
-  {
-    "title": "Resumesy – Complete SAAS Resume Builder",
-    "category": "SAAS",
-    "tags": [
-      "SAAS",
-      "Human Resource",
-      "Resume Builder",
-      "Recruitment"
-    ],
-    "description": "Complete SAAS Recruitment Manager and Resume Builder. Web application to manage recruitment process with job seekers applying directly on website, admin panel management, recurring payments, cover letter builder, multiple resume templates, PDF export, Google captcha, social login, analytics, multi-language support, and SEO optimization.",
-    "status": "Available",
-    "price": "$2,500 – $6,000",
-    "slug": "resumesy-complete-saas-resume-builder",
-    "image": "https://ufg-lab-roan.vercel.app/projects/Top-Resume-Builders-350x197.png"
-  },
-  {
     "title": "FoodDeck – SaaS Contactless Multi-restaurant QR Menu Maker",
     "category": "SAAS",
     "tags": [

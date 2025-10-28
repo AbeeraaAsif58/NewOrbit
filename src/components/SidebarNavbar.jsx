@@ -214,7 +214,7 @@ export default function SidebarNavbar() {
                     style={sidebarFontStyle}
                   />
                 </div>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y divide-teal-500/30">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 divide-y divide-teal-500/30">
                   {filteredIndustries.map((item, index) => (
                     <li key={item.to} className={`${index % 4 !== 3 && window.innerWidth >= 1024 ? "lg:border-r border-teal-500/30" : ""}`}>
                       <NavLink

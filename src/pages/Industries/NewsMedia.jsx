@@ -13,7 +13,8 @@ const projects = [
     "description": "Complete news portal platform with dedicated Android and iOS mobile applications featuring real-time news updates and multimedia content.",
     "status": "71 Sales",
     "slug": "newsshelf-news-portal-android-ios-mobile-apps",
-    "image": "https://ufg-lab-roan.vercel.app/projects/online-News-Portal-Development-compnay-350x187.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/online-News-Portal-Development-compnay-350x187.jpg",
+    "liveUrl": "https://www.ufglab.com"
   },
   {
     "title": "Indie News – Newspaper, Blog Multilingual News Portal (with AI Writer, Content Generator)",
@@ -27,7 +28,8 @@ const projects = [
     "description": "Multilingual news portal with AI-powered content generation, newspaper and blog functionality, and comprehensive media management.",
     "status": "New",
     "slug": "indie-news-newspaper-blog-multilingual-news-portal-ai-writer-content-generator",
-    "image": "https://ufg-lab-roan.vercel.app/projects/news-350x189.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/news-350x189.jpg",
+    "liveUrl": "https://www.ufglab.com"
   },
   {
     "title": "Shortnews – Short News App – Inshorts Clone",
@@ -40,7 +42,8 @@ const projects = [
     "description": "Complete Inshorts clone application featuring short-form news content, quick updates, and mobile-optimized news consumption.",
     "status": "New",
     "slug": "shortnews-short-news-app-inshorts-clone",
-    "image": "https://ufg-lab-roan.vercel.app/projects/short-bews-350x233.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/short-bews-350x233.jpg",
+    "liveUrl": "https://www.ufglab.com"
   }
 ];
 

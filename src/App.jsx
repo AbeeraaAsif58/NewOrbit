@@ -145,6 +145,9 @@ export default function App() {
             <Route path="/matrimony/:projectSlug" element={<ProjectDetail />} />
             <Route path="/news-media" element={<NewsMedia />} />
             <Route path="/news-media/:projectSlug" element={<ProjectDetail />} />
+            {/* Redirect for common typo */}
+            <Route path="/news--media" element={<Navigate to="/news-media" replace />} />
+            <Route path="/news--media/:projectSlug" element={<Navigate to="/news-media/:projectSlug" replace />} />
             <Route path="/real-estate" element={<RealEstate />} />
             <Route path="/real-estate/:projectSlug" element={<ProjectDetail />} />
             <Route path="/restaurant" element={<Restaurant />} />

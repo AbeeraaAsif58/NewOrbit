@@ -3,32 +3,6 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    "title": "Futureshaadi-Matrimony Web Application with Android and iOS app",
-    "category": "Dating",
-    "tags": [
-      "Dating",
-      "Matrimony"
-    ],
-    "description": "Futureshaadi- Matrimony Web Application with Android and IOS app",
-    "status": "Available",
-    "price": "$750 – $1,500",
-    "slug": "futureshaadi-matrimony-web-application-android-ios-app",
-    "image": "https://www.ufglab.com/projects/matrimonial-portal-350x190.jpg"
-  },
-  {
-    "title": "Rishtey-Shaadi Clone Matrimony Android & iOS app",
-    "category": "Dating",
-    "tags": [
-      "Dating",
-      "Matrimony"
-    ],
-    "description": "A feature-packed Shaadi Clone Matrimonial Mobile Application to seamlessly manage your Users, Preference, Membership, Payments, Promotion and more. Mobile App Features this app is for matrimonial services.",
-    "status": "Available",
-    "price": "$750 – $1,500",
-    "slug": "rishtey-shaadi-clone-matrimony-android-ios-app",
-    "image": "https://www.ufglab.com/projects/rishtey-350x202.jpg"
-  },
-  {
     "title": "Janoo-Dating Platform like Tinder/Badoo",
     "category": "Dating",
     "tags": [

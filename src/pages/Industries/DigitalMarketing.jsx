@@ -12,15 +12,6 @@ const projects = [
     "image": "https://www.ufglab.com/projects/bulk-sms-banner-350x165.jpg"
   },
   {
-    "title": "Fantica – Premium Content Creators SaaS platform, Onlyfans Clone",
-    "category": "Digital Marketing",
-    "tags": ["SaaS", "Content Creation", "Onlyfans Clone", "Premium Content"],
-    "description": "This is a fully-featured PHP platform that allows you to start your own premium content-based social media platform in no time. The experience is powered by a mobile-first, clean and easy-to-use design, with Dark and Light mode themes, RTL, and localization capabilities.",
-    "status": "Available",
-    "slug": "fantica-premium-content-creators-saas-platform-onlyfans-clone",
-    "image": "https://www.ufglab.com/projects/fans-banner-350x175.jpg"
-  },
-  {
     "title": "Order vCard – Portfolio/vCard Builder SAAS / Multi-User Profile",
     "category": "Digital Marketing",
     "tags": ["Portfolio Builder", "vCard", "SaaS", "Multi-User", "Profile Builder"],

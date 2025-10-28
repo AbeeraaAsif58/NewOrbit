@@ -31,20 +31,6 @@ const projects = [
     "image": "https://www.ufglab.com/projects/tiktok-350x197.jpg"
   },
   {
-    "title": "Janoo – Dating Platform like Tinder/Badoo",
-    "category": "Entertainment",
-    "tags": [
-      "Entertainment",
-      "Dating",
-      "Social Platform",
-      "Mobile App"
-    ],
-    "description": "Complete dating platform similar to Tinder and Badoo with advanced matching algorithms, chat features, and social interaction capabilities.",
-    "status": "Available",
-    "slug": "janoo-dating-platform-like-tinder-badoo",
-    "image": "https://www.ufglab.com/projects/social-dating-350x194.png"
-  },
-  {
     "title": "PixelPear OOT Platform – Netflix Clone – Live TV & Movies Streaming Platform",
     "category": "Entertainment",
     "tags": [
@@ -57,20 +43,6 @@ const projects = [
     "status": "Available",
     "slug": "pixelpear-oot-platform-netflix-clone-live-tv-movies-streaming-platform",
     "image": "https://www.ufglab.com/projects/video-tv-app-1-350x230.png"
-  },
-  {
-    "title": "Nexagram – Instagram Clone – Image & Photo Sharing Social Network Platform",
-    "category": "Entertainment",
-    "tags": [
-      "Entertainment",
-      "Social",
-      "Instagram Clone",
-      "Photo Sharing"
-    ],
-    "description": "Best Instagram Clone Website and application. The best way to start your own photo-sharing website!",
-    "status": "Available",
-    "slug": "nexagram-instagram-clone-image-photo-sharing-social-network-platform",
-    "image": "https://www.ufglab.com/projects/instagram-clone-350x184.jpg"
   },
 
 ];

@@ -17,34 +17,6 @@ const projects = [
     "image": "https://www.ufglab.com/projects/practo-clone-350x183.png"
   },
   {
-    "title": "Fantica – Premium Content Creators SaaS platform, Onlyfans Clone",
-    "category": "Directory",
-    "tags": [
-      "Digital Marketing",
-      "Directory",
-      "SAAS",
-      "Social"
-    ],
-    "description": "This is a fully-featured PHP platform that allows you to start your own premium content-based social media platform in no time. The experience is powered by a mobile-first, clean and easy-to-use design, with Dark and Light mode themes, RTL, and localization capabilities. It allows your creators to sell their premium content via monthly subscriptions, offers, bundles, tips, and pay to unlock posts.",
-    "status": "56 Sales",
-    "slug": "fantica-premium-content-creators-saas-platform-onlyfans-clone",
-    "image": "https://www.ufglab.com/projects/fans-banner-350x175.jpg"
-  },
-  {
-    "title": "Carinian - Used Car Buy/Sell & Dealership Website & Apps",
-    "category": "Directory",
-    "tags": [
-      "Automobile",
-      "Directory",
-      "Dealership",
-      "Marketplace"
-    ],
-    "description": "We have developed most advanced and comprehensive auto dealer Website with all ad posting features including comparison, search filter, modern gallery, Review System, default layout, Bump up Ads & much more.",
-    "status": "Available",
-    "slug": "carinian-used-car-buy-sell-dealership-website-apps",
-    "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop&crop=center"
-  },
-  {
     "title": "Urban Better – Home Services, Business Listing, Handyman Booking App",
     "category": "Directory",
     "tags": [

@@ -45,20 +45,6 @@ const projects = [
     "image": "https://ufg-lab-roan.vercel.app/projects/bus-banner-350x222.jpg"
   },
   {
-    "title": "Travelray – Book Hotels, Tours, Flights, Activities, Cabs – Complete Travel Booking Portal",
-    "category": "Travel",
-    "tags": [
-      "Travel",
-      "Booking",
-      "Portal"
-    ],
-    "description": "Advanced travel booking portal with marketplace functionality for hotels, tours, flights, and activities. Features multi-service booking, partner management, and comprehensive analytics.",
-    "status": "Available",
-    "price": "$5,000 – $15,000",
-    "slug": "travelray-complete-travel-booking-portal",
-    "image": "https://ufg-lab-roan.vercel.app/projects/travel-banner-350x266.png"
-  },
-  {
     "title": "HotelTitan – Hotel & Resort Booking Application",
     "category": "Travel",
     "tags": [

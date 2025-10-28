@@ -352,6 +352,43 @@ section[class*="hero"] * {
 /* -------- Additional Responsive Utilities -------- */
 @media (max-width: 640px) {
   /* Mobile-specific adjustments */
+  .hero-head {
+    padding: 1rem;
+  }
+  
+  .hero-head h1 {
+    line-height: 1.1;
+  }
+}
+
+/* Line clamp utilities for better text truncation */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
 
 /* Touch-friendly interactions */

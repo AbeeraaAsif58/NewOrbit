@@ -5,35 +5,6 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 const ErpCrm = () => {
   const projects = [
     {
-      "title": "Vyapaar – Complete SAAS Business for Stock Management, POS & Invoicing",
-      "category": "ERP & CRM",
-      "tags": [
-        "ERP & CRM",
-        "SAAS",
-        "Stock Management",
-        "POS System",
-        "B2B"
-      ],
-      "description": "This is a SAAS based Startup provides a CRM with some amazing features suitable for all businesses. With this application, you are assured to save time-consuming process of bookkeeping accounting and inventory information.",
-      "status": "Available",
-      "slug": "vyapaar-complete-saas-business-stock-management-pos-invoicing",
-      "image": "https://ufg-lab-roan.vercel.app/projects/salepose-banner-350x241.jpg"
-    },
-    {
-      "title": "Healthy Web – Hospital Management System",
-      "category": "ERP & CRM",
-      "tags": [
-        "ERP & CRM",
-        "Healthcare",
-        "Hospital Management",
-        "Medical System"
-      ],
-      "description": "The best and number one Hospital Management System Software with Website. It has 40+ Features what you need to manage Hospital. Here has Insurance, Modern Billing System and SMS Gateway also.",
-      "status": "Available",
-      "slug": "healthy-web-hospital-management-system",
-      "image": "https://ufg-lab-roan.vercel.app/projects/hms3-1-350x197.jpg"
-    },
-    {
       "title": "Zyial- Salon Booking Management System",
       "category": "ERP & CRM",
       "tags": [
@@ -46,20 +17,6 @@ const ErpCrm = () => {
       "status": "Available",
       "slug": "zyial-salon-booking-management-system",
       "image": "https://ufg-lab-roan.vercel.app/projects/salon-business-350x184.png"
-    },
-    {
-      "title": "School Silo – Multi-School Management System",
-      "category": "ERP & CRM",
-      "tags": [
-        "ERP & CRM",
-        "Education",
-        "School Management",
-        "Multi-School"
-      ],
-      "description": "Complete multi-school management system for educational institutions with comprehensive features for student, teacher, and administrative management.",
-      "status": "Available",
-      "slug": "school-silo-multi-school-management-system",
-      "image": "https://www.ufglab.com/projects/lms4-350x235.png"
     },
     {
       "title": "HeyText – Bulk SMS Application For Marketing",

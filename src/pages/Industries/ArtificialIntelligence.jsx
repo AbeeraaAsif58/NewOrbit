@@ -3,16 +3,6 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
-    title: "SonicVox – Text to Speech as SaaS",
-    category: "Artificial Intelligence",
-    tags: ["SaaS", "Tools and Utilities"],
-    description: "Machine learning and Deep learning based text-to-speech solution with advanced features and analytics",
-    status: "1 Sale",
-    price: "$625 – $1,250",
-    slug: "sonicvox-text-to-speech-as-saas",
-    image: "https://www.ufglab.com/projects/sonicvox.jpg"
-  },
-  {
     title: "Writingo – AI Content Writer & Copyright Generator",
     category: "Artificial Intelligence",
     tags: ["SaaS", "Tools and Utilities"],
@@ -31,16 +21,6 @@ const projects = [
     price: "$2,000 – $3,500",
     slug: "inbitcoin-ai-prompt-buy-selling-marketplace",
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop&crop=center"
-  },
-  {
-    title: "WriteTalent – SAAS OpenAI Content Generator",
-    category: "Artificial Intelligence", 
-    tags: ["SaaS", "Tools and Utilities"],
-    description: "Complete AI solution for content, text, image, voice, chat, code, transcript, and video generation",
-    status: "Available",
-    price: "$2,000 – $3,500",
-    slug: "writetalent-saas-openai-content-generator",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center"
   },
   {
     title: "ThinkGPT – ChatGPT & OpenAI Mobile App",

@@ -45,34 +45,6 @@ const projects = [
     "image": "https://www.ufglab.com/projects/ecommerce-banner-350x173.jpg"
   },
   {
-    "title": "Skillsly – Ultimate E-learning Website",
-    "category": "eCommerce",
-    "tags": [
-      "eCommerce",
-      "E-learning",
-      "Education",
-      "LMS"
-    ],
-    "description": "Enterprise-grade learning management system with advanced features for online learning businesses.",
-    "status": "85 Sales",
-    "slug": "skillsly-ultimate-elearning-website",
-    "image": "https://www.ufglab.com/projects/lms-350x247.jpg"
-  },
-  {
-    "title": "Skillbuzz – Udemy Clone - Online Courses and Learning Management System",
-    "category": "eCommerce",
-    "tags": [
-      "eCommerce",
-      "E-learning",
-      "Courses",
-      "Marketplace"
-    ],
-    "description": "Marketplace for online courses and learning management system similar to Udemy.",
-    "status": "65 Sales",
-    "slug": "skillbuzz-udemy-clone-online-courses-learning-management-system",
-    "image": "https://www.ufglab.com/projects/online-learning-management-systemudemy-clone-350x209.png"
-  },
-  {
     "title": "Bona Kart – Multi-vendor eCommerce Platform with Android & iOS apps",
     "category": "eCommerce",
     "tags": [

@@ -42,12 +42,12 @@ const ProjectCard = React.memo(({ project, navigate, basePath }) => {
         </div>
         
         {/* Title */}
-        <h3 className="text-xl font-bold text-white mb-3">
+        <h3 className="text-lg sm:text-xl font-bold text-white mb-3 line-clamp-2">
           {project.title}
         </h3>
         
         {/* Description */}
-        <p className="text-gray-300 text-sm leading-relaxed mb-4">
+        <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4 line-clamp-3">
           {project.description}
         </p>
         
@@ -71,7 +71,7 @@ const ProjectsGrid = React.memo(({ projects, basePath }) => {
   return (
     <section className="py-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {memoizedProjects.map((project, index) => (
             <ProjectCard 
               key={project.slug} 
@@ -89,12 +89,12 @@ const ProjectsGrid = React.memo(({ projects, basePath }) => {
 
 // Optimized Hero Component
 const Hero = React.memo(({ title, description }) => (
-  <section className="py-16 md:py-24">
-    <div className="max-w-6xl mx-auto">
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+  <section className="py-12 sm:py-16 md:py-20 lg:py-24">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 sm:mb-6">
         {title}
       </h1>
-      <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+      <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
         {description}
       </p>
     </div>
