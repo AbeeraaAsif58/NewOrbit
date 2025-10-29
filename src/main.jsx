@@ -5,5 +5,5 @@ import './index.css'
 import App from './App.jsx'
 
 
-const root=document.getElementById('root')
+const root = document.getElementById('root')
 createRoot(root).render(<React.StrictMode><BrowserRouter><App/></BrowserRouter></React.StrictMode>)

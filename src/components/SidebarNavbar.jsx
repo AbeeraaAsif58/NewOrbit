@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
 
 const LINKS = [
@@ -54,6 +54,7 @@ export default function SidebarNavbar() {
   const navbarRef = useRef(null);
   const industriesBtnRef = useRef(null);
   const industriesDropdownRef = useRef(null);
+  const location = useLocation();
 
   // Custom font style for sidebar navbar
   const sidebarFontStyle = {
@@ -116,6 +117,47 @@ export default function SidebarNavbar() {
 
   const toggleDropdown = (setter) => setter((prev) => !prev);
 
+  // Handle home logo click - scroll to top if already on home page
+  const handleHomeClick = (e) => {
+    console.log("Home clicked, current path:", location.pathname);
+    if (location.pathname === "/") {
+      e.preventDefault();
+      console.log("Scrolling to top...");
+      
+      // Force scroll to top with multiple methods
+      const scrollToTop = () => {
+        // Method 1: window.scrollTo
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+        
+        // Method 2: Direct property setting
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        
+        // Method 3: Try scrolling the main container
+        const appRoot = document.getElementById('app-root');
+        if (appRoot) {
+          appRoot.scrollTop = 0;
+        }
+        
+        // Method 4: Try scrolling the main element
+        const mainElement = document.querySelector('main');
+        if (mainElement) {
+          mainElement.scrollTop = 0;
+        }
+      };
+      
+      // Execute immediately
+      scrollToTop();
+      
+      // Execute with a small delay to handle any async rendering
+      setTimeout(scrollToTop, 100);
+    }
+  };
+
   // Click outside handler for industries dropdown
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -168,7 +210,11 @@ export default function SidebarNavbar() {
           </button>
 
           <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-            <Link to="/" className="pointer-events-auto group">
+            <Link 
+              to="/" 
+              className="pointer-events-auto group"
+              onClick={handleHomeClick}
+            >
               <img 
                 src="/newlogo.png" 
                 alt="Orbit Walls Logo" 
