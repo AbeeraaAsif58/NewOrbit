@@ -107,10 +107,11 @@ useEffect(() => {
       
         <div className="hero-head absolute top-0 left-0 h-[100vh] w-full z-10 flex flex-col items-center justify-center text-center font-poppins px-4">
   <div>
-    <h1 className="hello font-poppins text-[8vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] xl:text-[3.5vw] font-bold leading-tight">
+    <h1 className="hello font-poppins text-[10vw] sm:text-[8vw] md:text-[8vw] lg:text-[7vw] xl:text-[5vw] font-bold leading-tight">
       Beyond Walls
     </h1>
-    <h1 className="hyisycis font-poppins text-[8vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] xl:text-[3.5vw] font-bold leading-tight mt-2">
+    <br />
+    <h1 className="hyisycis font-poppins text-[10vw] sm:text-[8vw] md:text-[8vw] lg:text-[7vw] xl:text-[5vw] font-bold leading-tight mt-1 ml-4 sm:ml-6 md:ml-8 lg:ml-10">
       Towards Innovation
     </h1>
 
