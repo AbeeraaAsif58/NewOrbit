@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      name: "CareCash",
+      name: "Cash Care",
       description: "Next-gen financial and banking facilities featuring mortgages, lending/borrowing, and residency via investment.",
       category: "Banking",
       tags: ["Mortgage", "Investment"],
@@ -204,7 +204,7 @@ const Projects = () => {
                   </div>
 
                 </div>
-                <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-center max-w-3xl mx-auto">
+                <div className="md:col-span-12 text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed text-left max-w-3xl">
                   Explore our portfolio of successful projects and digital transformations.
                 </div>
           </div>
@@ -239,9 +239,6 @@ const Projects = () => {
                     decoding="async" // Async decoding for better performance
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-teal-500/25 to-transparent opacity-0 group-hover:opacity-100"></div>
-                  <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full flex items-center justify-center shadow-lg shadow-teal-500/30">
-                    <span className="text-2xl">🚀</span>
-                  </div>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500">
                   {project.name}

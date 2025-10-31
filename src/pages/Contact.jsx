@@ -169,6 +169,7 @@ export default function Contact() {
               <div>
                 <p>1104, 11th Floor, The Tower Plaza Hotel, Sheikh Zayad Road</p>
                 <p>Dubai, UAE</p>
+                <p className="mt-3">Metropolitan House, Station Rod, Cheadle Hulme, StockportSK8 7AZ-UK</p>
               </div>
             </div>
           </div>

@@ -225,6 +225,11 @@ export default function FooterOrbitMoonTech() {
                   1104, 11th Floor, The Tower Plaza Hotel, Sheikh Zayad Road UAE.
                 </span>
               </li>
+              <li className="ft-stagger">
+                <span className="text-white/60 text-sm">
+                  Metropolitan House, Station Rod, Cheadle Hulme, StockportSK8 7AZ-UK
+                </span>
+              </li>
             </ul>
           </div>
         </div>
