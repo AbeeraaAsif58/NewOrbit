@@ -24,8 +24,24 @@ export default function StickyStack3({
   const baseRef = useRef(null);
   const o1Ref = useRef(null);
   const o2Ref = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Determine mobile once on mount and on resize
+    const update = () => {
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.matchMedia('(max-width: 767px)').matches);
+      }
+    };
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
+
+  useEffect(() => {
+    // Skip GSAP scroll interactions on mobile
+    if (isMobile) return;
+
     const ctx = gsap.context(() => {
       gsap.set([o1Ref.current, o2Ref.current], { yPercent: -110, z: 0.001 });
       gsap.set([baseRef.current, o1Ref.current, o2Ref.current], {
@@ -61,30 +77,43 @@ export default function StickyStack3({
         .to(o2Ref.current, { yPercent: 0, duration: 0.48 }, ">+0.04");
     }, sectionRef);
     return () => ctx.revert();
-  }, []);
+  }, [isMobile]);
 
   return (
-    <section ref={sectionRef} className="relative" style={{ height: "300vh" }}>
-      <div className="sticky" style={{ top: topOffset }}>
-        <div className="relative h-screen w-full overflow-hidden" style={{ background: colors.ink }}>
-          {/* BASE (HERO) */}
-          <div className="absolute inset-0 z-10">
-            <div ref={baseRef} className="relative h-full w-full">
-              <HeroLayer colors={colors} />
-            </div>
+    <section ref={sectionRef} className="relative" style={{ height: isMobile ? "auto" : "300vh" }}>
+      {isMobile ? (
+        // Static stacked layout for mobile (no sticky/pin)
+        <div className="w-full" style={{ background: colors.ink }}>
+          <div className="w-full">
+            <HeroLayer colors={colors} />
           </div>
-
-          {/* OVERLAY 1 (EXPLORE) */}
-          <div ref={o1Ref} className="absolute inset-0 z-20">
+          <div className="w-full">
             <ExploreLayer colors={colors} />
           </div>
+          {/* Hide the WE CREATE MAGIC closer card on mobile to save space */}
+        </div>
+      ) : (
+        <div className="sticky" style={{ top: topOffset }}>
+          <div className="relative h-screen w-full overflow-hidden" style={{ background: colors.ink }}>
+            {/* BASE (HERO) */}
+            <div className="absolute inset-0 z-10">
+              <div ref={baseRef} className="relative h-full w-full">
+                <HeroLayer colors={colors} />
+              </div>
+            </div>
 
-          {/* OVERLAY 2 (CLOSER) */}
-          <div ref={o2Ref} className="absolute inset-0 z-30">
-            <CloserLayer colors={colors} />
+            {/* OVERLAY 1 (EXPLORE) */}
+            <div ref={o1Ref} className="absolute inset-0 z-20">
+              <ExploreLayer colors={colors} />
+            </div>
+
+            {/* OVERLAY 2 (CLOSER) */}
+            <div ref={o2Ref} className="absolute inset-0 z-30">
+              <CloserLayer colors={colors} />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* small helpers */}
       <style>{`

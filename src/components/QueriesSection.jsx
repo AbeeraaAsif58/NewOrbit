@@ -53,6 +53,11 @@ export default function QueriesSection() {
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
+    // Disable scroll animations on mobile
+    if (typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches) {
+      return;
+    }
+
     const ctx = gsap.context(() => {
       gsap.from(root.current, {
         opacity: 0,
@@ -128,18 +133,21 @@ export default function QueriesSection() {
         setIsSuccess(true);
         setMessage(result.message);
         
-        // Button animation
-        gsap
-          .timeline()
-          .to(btn, { scale: 0.97, duration: 0.08 })
-          .to(btn, { scale: 1, duration: 0.18, ease: "power2.out" })
-          .fromTo(
-            text,
-            { opacity: 0, y: 6 },
-            { opacity: 1, y: 0, duration: 0.32, ease: "power2.out" },
-            0.05
-          )
-          .to(text, { opacity: 0, y: -6, duration: 0.45, delay: 1.1, ease: "power2.in" });
+        // Skip button/text animation on mobile; keep on larger screens
+        const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches;
+        if (!isMobile) {
+          gsap
+            .timeline()
+            .to(btn, { scale: 0.97, duration: 0.08 })
+            .to(btn, { scale: 1, duration: 0.18, ease: "power2.out" })
+            .fromTo(
+              text,
+              { opacity: 0, y: 6 },
+              { opacity: 1, y: 0, duration: 0.32, ease: "power2.out" },
+              0.05
+            )
+            .to(text, { opacity: 0, y: -6, duration: 0.45, delay: 1.1, ease: "power2.in" });
+        }
         
         // Reset form on success
         e.target.reset();
