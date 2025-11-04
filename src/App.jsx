@@ -7,7 +7,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
-import Gallery from "./pages/Gallery";
+// import Gallery from "./pages/Gallery"; // Commented out - will use after a month
 import Blogs from "./pages/Blogs";
 import BlogDetail from "./pages/BlogDetail";
 import About from "./pages/About";
@@ -95,7 +95,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/gallery" element={<Gallery />} />
+            {/* <Route path="/gallery" element={<Gallery />} /> */} {/* Commented out - will use after a month */}
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs/:slug" element={<BlogDetail />} />
             <Route path="/about" element={<About />} />

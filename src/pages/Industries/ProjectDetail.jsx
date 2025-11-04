@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useMemo } from 'react';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import TalkBanner from '../../components/TalkBanner';
 
 
@@ -9,6 +9,34 @@ const ProjectDetail = () => {
   const { projectSlug } = useParams();
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Extract base path from current URL (everything before the projectSlug)
+  // Example: /social/janoo-dating-platform -> /social
+  // Example: /dating/janoo-dating-platform -> /dating
+  const basePath = useMemo(() => {
+    const pathParts = location.pathname.split('/').filter(part => part.length > 0);
+    // Remove the last part (projectSlug) to get the base path
+    if (pathParts.length > 1) {
+      pathParts.pop(); // Remove projectSlug
+      return `/${pathParts.join('/')}`;
+    }
+    return '/'; // Fallback to home if path structure is unexpected
+  }, [location.pathname]);
+
+  // Get industry name from base path for display
+  const industryName = useMemo(() => {
+    const pathParts = basePath.split('/').filter(part => part.length > 0);
+    if (pathParts.length > 0) {
+      // Capitalize first letter and format industry name
+      // Example: "social" -> "Social", "artificial-intelligence" -> "Artificial Intelligence"
+      const name = pathParts[pathParts.length - 1];
+      return name.split('-').map(word => 
+        word.charAt(0).toUpperCase() + word.slice(1)
+      ).join(' ');
+    }
+    return 'Industry';
+  }, [basePath]);
 
 
 
@@ -7136,9 +7164,9 @@ const ProjectDetail = () => {
 
       slug: "hpl11-dream-11-clone-fantasy-app",
 
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center",
+      image: "https://www.ufglab.com/projects/dream11-fantasy-clone-application-350x200.png",
 
-      heroImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=600&fit=crop&crop=center",
+      heroImage: "https://www.ufglab.com/projects/dream11-fantasy-clone-application-350x200.png",
 
       overview: "HPL11 is an easy-to-use app for Fantasy Cricket Tournament. It lets you effectively manage and track the app, maintenance, and users. The app also helps you calculate the earnings of your app based on the quantity of the Tournament Players. This is a complete Dream11 clone fantasy sports platform with all the features of any modern fantasy sports application.",
 
@@ -7296,9 +7324,9 @@ const ProjectDetail = () => {
 
       slug: "fortunefantasy-online-betting-platform-1xbet-clone",
 
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center",
+      image: "https://www.ufglab.com/projects/1xbet-1.jpg",
 
-      heroImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=600&fit=crop&crop=center",
+      heroImage: "https://www.ufglab.com/projects/1xbet-1.jpg",
 
       overview: "FortuneFantasy is a betting management system that can be used to guess the result of WorldCup / Tournament matches in a kind of prediction. The players compete in guessing the correct result of some kind of match. Soccer, Cricket, Baseball, Basketball, or even Yes/No questions like: will Brazil win the next WorldCup. At first User need to deposit for predicting. User will get interest followed by ratio. Admin can control match lock/unlock, ratio update, question, option add instantly where user doesn't need to website reload.",
 
@@ -17035,7 +17063,8 @@ const ProjectDetail = () => {
   const project = projects[projectSlug];
 
   if (!project) {
-    navigate('/artificial-intelligence');
+    // Navigate back to the industry page if project not found
+    navigate(basePath || '/');
     return null;
   }
 
@@ -17053,17 +17082,40 @@ const ProjectDetail = () => {
 
           <div className="max-w-6xl mx-auto">
 
+            {/* Back Button */}
+            <div className="mb-6">
+              <button
+                onClick={() => navigate(basePath, { replace: false })}
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors rounded-lg hover:bg-teal-500/10 border border-teal-500/20"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to {industryName}
+              </button>
+            </div>
+
             {/* Breadcrumb */}
 
             <div className="mb-8">
 
               <nav className="flex items-center space-x-2 text-sm text-gray-400">
 
-                <a href="/" className="hover:text-teal-400 transition-colors">Home</a>
+                <button 
+                  onClick={() => navigate('/')} 
+                  className="hover:text-teal-400 transition-colors"
+                >
+                  Home
+                </button>
 
                 <span>/</span>
 
-                <a href={`/${project.category.toLowerCase().replace(/\s+/g, '-').replace('&', '')}`} className="hover:text-teal-400 transition-colors">{project.category}</a>
+                <button 
+                  onClick={() => navigate(basePath, { replace: false })} 
+                  className="hover:text-teal-400 transition-colors"
+                >
+                  {industryName}
+                </button>
 
                 <span>/</span>
 
@@ -17227,50 +17279,46 @@ const ProjectDetail = () => {
 
         {/* Features Section */}
 
-        <section className="py-16 px-6">
+        <section className="py-16 px-6" style={{ backgroundColor: '#034159' }}>
 
           <div className="max-w-6xl mx-auto">
 
-            <div className="text-center mb-12">
-
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-
-                Key Features
-
+            {/* Features Title - Top Left */}
+            <div className="mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                Features
               </h2>
-
             </div>
 
-
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
+            {/* Two Column Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
               {project.features.map((feature, index) => (
-
                 <div 
-
                   key={index}
-
-                  className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-teal-500/50 transition-all duration-300"
-
+                  className="flex items-center gap-3"
                 >
-
-                  <div className="flex items-start gap-4">
-
-                    <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-
-                      <div className="w-4 h-4 bg-teal-500 rounded-full"></div>
-
-                    </div>
-
-                    <p className="text-white font-medium">{feature}</p>
-
+                  {/* Teal/Green Circular Checkmark Icon - Theme Color */}
+                  <div className="w-5 h-5 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg 
+                      className="w-3 h-3 text-white" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={3} 
+                        d="M5 13l4 4L19 7" 
+                      />
+                    </svg>
                   </div>
-
+                  {/* Feature Text */}
+                  <p className="text-white text-base font-normal leading-relaxed">
+                    {feature}
+                  </p>
                 </div>
-
               ))}
-
             </div>
 
           </div>

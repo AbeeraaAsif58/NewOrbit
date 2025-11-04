@@ -1,5 +1,6 @@
 // src/components/ProfessionalPartners.jsx
 import React from "react";
+import DIFCLogo from "./DIFC_Logo.png";
 import { useNavigate } from "react-router-dom";
 
 /* Selected Partners Only */
@@ -11,7 +12,7 @@ const ALL_PARTNERS = [
   { name: "", logo: "/slider3.png" },
   { name: "", logo: "/jsbank logo.png" },
   { name: "", logo: "/slider7.png" },
-  { name: "", logo: "/peace homes-logo.png" },
+  { name: "", logo: DIFCLogo },
   { name: "", logo: "/slider6.png" },
   { name: "", logo: "/iata-logo.png" },
   { name: "", logo: "/lbank-logo.png" },
@@ -23,10 +24,10 @@ const ALL_PARTNERS = [
 /* Clean Partner Logo Component */
 const PartnerLogo = ({ partner }) => {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-2">
+    <div className="flex flex-col items-center justify-center text-center p-1 sm:p-2">
       {/* Logo Container */}
       <div className="
-        w-32 h-32 mb-4 
+        w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 mb-3 sm:mb-4 
         flex items-center justify-center
         hover:scale-105 transition-all duration-300 ease-out
       ">
@@ -61,7 +62,7 @@ export default function ProfessionalPartners() {
   };
 
   return (
-    <div className="relative w-screen -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 py-16 bg-white/80 z-20">
+    <div className="relative w-screen -mx-2 sm:-mx-4 md:-mx-6 lg:-mx-8 py-10 sm:py-16 bg-white/80 z-20">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Section Header */}
@@ -73,7 +74,7 @@ export default function ProfessionalPartners() {
         </div>
 
         {/* Partners Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-8 sm:gap-10">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 sm:gap-8">
           {ALL_PARTNERS.map((partner, index) => (
             <PartnerLogo 
               key={`partner-${index}`} 

@@ -32,7 +32,7 @@ export default function DualMarqueeSliders({
   const bottom5 = imagesBottom.slice(0, 5);
 
   return (
-    <div className="hidden md:block w-full h-[80vh] sm:h-[90vh] md:h-screen overflow-hidden text-white">
+    <div className="hidden xl:block w-full h-[80vh] sm:h-[90vh] md:h-screen overflow-hidden text-white">
       {/* Inline styles for keyframes and hover-pause */}
       <style>{`
         .marquee-group { position: relative; }

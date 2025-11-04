@@ -133,7 +133,7 @@ export default function FooterOrbitMoonTech() {
             <div className="ft-social ft-stagger mt-5 flex items-center gap-3 text-white">
               <SocialIcon
                 label="Instagram"
-                href="https://www.instagram.com/orbitwallstechnology/"
+                href="https://www.instagram.com/orbitwalls_official/"
                 path="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm5.5-.5a1 1 0 100 2 1 1 0 000-2z"
               />
               <SocialIcon

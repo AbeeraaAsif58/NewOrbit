@@ -80,7 +80,7 @@ export default function StickyStack3({
   }, [isMobile]);
 
   return (
-    <section ref={sectionRef} className="relative" style={{ height: isMobile ? "auto" : "300vh" }}>
+    <section ref={sectionRef} className="relative" style={{ height: isMobile ? "auto" : "300vh", paddingBottom: isMobile ? "1.5rem" : undefined, paddingTop: isMobile ? "0.5rem" : undefined }}>
       {isMobile ? (
         // Static stacked layout for mobile (no sticky/pin)
         <div className="w-full" style={{ background: colors.ink }}>
@@ -140,7 +140,7 @@ function HeroLayer({ colors }) {
             {["Empowering Finance", "Through Technology"].map((t, i) => (
               <h1
                 key={i}
-                className="font-black leading-[0.95] tracking-tight text-[14vw] sm:text-[12vw] lg:text-[6vw] font-poppins"
+                className="font-black leading-[0.95] tracking-tight text-[10vw] sm:text-[8vw] lg:text-[6vw] font-poppins"
                 style={{ color: colors.text }}
               >
                 {t}
@@ -148,7 +148,7 @@ function HeroLayer({ colors }) {
             ))}
             <div className="flex items-center gap-3">
               <h1
-                className="font-black leading-[0.95] tracking-tight text-[14vw] sm:text-[12vw] lg:text-[8.2vw] font-poppins"
+                className="font-black leading-[0.95] tracking-tight text-[11vw] sm:text-[9vw] lg:text-[8.2vw] font-poppins"
                 style={{ color: colors.text }}
               >
               
@@ -170,14 +170,14 @@ function HeroLayer({ colors }) {
             </div>
           </div>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed font-sans" style={{ color: colors.sub }}>
+          <p className="mt-6 max-w-xl text-sm sm:text-base md:text-lg leading-relaxed font-sans" style={{ color: colors.sub }}>
            We are Obit shaping the future of finance meets decentralization
           </p>
         </div>
 
         {/* RIGHT: circular image with blue tint */}
         <div className="relative">
-          <div className="relative mx-auto w-[68vw] max-w-[560px] aspect-square circle-clip overflow-hidden shadow-xl">
+          <div className="relative mx-auto w-[58vw] sm:w-[52vw] max-w-[560px] aspect-square circle-clip overflow-hidden shadow-xl">
             {/* ✅ DIRECT SRC HERE */}
             <img
               src="/g4.png"
@@ -258,7 +258,7 @@ function ExploreLayer({ colors }) {
               <img
                 src="/meet 1.png"
                 alt=""
-                className="h-[420px] w-full object-cover sm:h-[520px]"
+                className="h-[260px] sm:h-[420px] lg:h-[520px] w-full object-cover"
               />
             </div>
 

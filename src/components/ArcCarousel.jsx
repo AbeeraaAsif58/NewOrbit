@@ -340,7 +340,7 @@ export default function ArcCarousel({
       )}
 
       {/* Stage */}
-      <div className="relative mx-auto max-w-[1300px] h-[560px] md:h-[640px] flex items-center justify-center">
+      <div className="relative mx-auto max-w-[1300px] h-[430px] sm:h-[500px] md:h-[640px] flex items-center justify-center">
         {/* Rotating ring behind the center card (brand gradient) */}
         <div
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
@@ -385,7 +385,7 @@ export default function ArcCarousel({
             ref={(el) => (cardRefs.current[i] = el)}
             className="
               absolute left-1/2 will-change-transform select-none
-              w-[240px] h-[320px] sm:w-[300px] sm:h-[380px] md:w-[360px] md:h-[460px] lg:w-[420px] lg:h-[520px]
+              w-[200px] h-[260px] sm:w-[260px] sm:h-[340px] md:w-[340px] md:h-[440px] lg:w-[420px] lg:h-[520px]
               rounded-[26px] overflow-hidden
               bg-white/5 backdrop-blur border border-white/12
               shadow-[0_40px_120px_rgba(0,0,0,0.35)]
@@ -489,19 +489,18 @@ export default function ArcCarousel({
       </div>
 
       {/* Dots (brand colors) */}
-      <div className="mt-6 flex items-center justify-center gap-2">
+      <div className="mt-6 hidden md:flex items-center justify-center gap-3">
         {dots.map((_, i) => (
           <button
             key={i}
             onClick={() => setIndex(i)}
-            className={`h-2.5 rounded-full transition-all ${
+            className={`rounded-full transition-all ${
               i === index
-                ? "w-8"
-                : "w-2.5 bg-white/60 hover:bg-white/80"
+                ? "h-2.5 w-10 md:w-12"
+                : "h-2 w-2 md:h-2.5 md:w-2.5 bg-white/50 hover:bg-white/70"
             }`}
-            style={i === index ? { 
-              background: `linear-gradient(90deg, ${PALETTE.BLUEGRAY}, ${PALETTE.MIDNIGHT})`,
-              width: "2rem"
+            style={i === index ? {
+              background: `linear-gradient(90deg, ${PALETTE.BLUEGRAY}, ${PALETTE.MIDNIGHT})`
             } : {}}
             aria-label={`Go to slide ${i + 1}`}
           />

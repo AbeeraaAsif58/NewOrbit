@@ -3,15 +3,43 @@ import OptimizedIndustryPage from "../../components/OptimizedIndustryPage";
 
 const projects = [
   {
+    "title": "Futureshaadi - Matrimony Web Application with Android and iOS app",
+    "category": "Dating",
+    "tags": [
+      "Dating",
+      "Matrimony",
+      "Web App",
+      "Mobile Apps"
+    ],
+    "description": "Complete matrimony web application with dedicated Android and iOS apps featuring advanced matching algorithms and secure communication.",
+    "status": "73 Sales",
+    "slug": "futureshaadi-matrimony-web-application-android-ios-app",
+    "image": "https://www.ufglab.com/projects/matrimonial-portal-350x190.jpg"
+  },
+  {
+    "title": "Rishtey – Shaadi Clone Matrimony Android & iOS app",
+    "category": "Dating",
+    "tags": [
+      "Dating",
+      "Matrimony",
+      "Mobile Apps",
+      "Clone"
+    ],
+    "description": "A feature-packed Shaadi Clone Matrimonial Mobile Application to seamlessly manage your Users, Preferences, Membership, Payments, Promotions and more. This app is for providing matrimonial services to users.",
+    "status": "53 Sales",
+    "slug": "rishtey-shaadi-clone-matrimony-android-ios-app",
+    "image": "https://www.ufglab.com/projects/rishtey-350x202.jpg"
+  },
+  {
     "title": "Janoo-Dating Platform like Tinder/Badoo",
     "category": "Dating",
     "tags": [
       "Dating",
-      "Entertainment"
+      "Entertainment",
+      "Social"
     ],
     "description": "Fast and secured Dating social platform User Features Upload Images: Upload any image from your device and share it online with other users High performance & Capability: it handles advanced matching algorithms.",
-    "status": "Available",
-    "price": "$750 – $1,500",
+    "status": "11 Sales",
     "slug": "janoo-dating-platform-like-tinder-badoo",
     "image": "https://www.ufglab.com/projects/social-dating-350x194.png"
   },

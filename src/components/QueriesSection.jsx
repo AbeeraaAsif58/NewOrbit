@@ -358,10 +358,38 @@ export default function QueriesSection() {
           </form>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 opacity-90">
-            <img src="/svg/linkedin-box-line.svg" alt="LinkedIn" className="h-8 social-icon" />
-            <img src="/svg/facebook-circle-fill.svg" alt="Facebook" className="h-8 social-icon" />
-            <img src="/svg/instagram-line.svg" alt="Instagram" className="h-6 social-icon" />
-            <img src="/svg/twitter-x-line.svg" alt="X (Twitter)" className="h-6 social-icon" />
+            <a 
+              href="https://www.linkedin.com/in/orbit-walls-technology-117018395/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="/svg/linkedin-box-line.svg" alt="LinkedIn" className="h-8 social-icon" />
+            </a>
+            <a 
+              href="https://www.facebook.com/profile.php?id=61582957831313" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <img src="/svg/facebook-circle-fill.svg" alt="Facebook" className="h-8 social-icon" />
+            </a>
+            <a 
+              href="https://www.instagram.com/orbitwalls_official/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="/svg/instagram-line.svg" alt="Instagram" className="h-6 social-icon" />
+            </a>
+            <a 
+              href="https://x.com/OrbitWalls" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="X (Twitter)"
+            >
+              <img src="/svg/twitter-x-line.svg" alt="X (Twitter)" className="h-6 social-icon" />
+            </a>
           </div>
         </div>
       </div>

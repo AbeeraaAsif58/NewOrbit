@@ -26,7 +26,7 @@ export default function Navbar() {
     { to: "/", label: "Home", end: true },
     { to: "/services", label: "Services" },
     { to: "/projects", label: "Projects" },
-    { to: "/gallery", label: "Gallery" },
+    // { to: "/gallery", label: "Gallery" }, // Commented out - will use after a month
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ];

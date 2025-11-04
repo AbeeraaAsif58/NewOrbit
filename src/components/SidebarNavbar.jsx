@@ -7,7 +7,7 @@ const LINKS = [
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/projects", label: "Projects" },
-  { to: "/gallery", label: "Gallery" },
+  // { to: "/gallery", label: "Gallery" }, // Commented out - will use after a month
   { to: "/blogs", label: "Blogs" },
   { to: "/business-partners", label: "Business Partners" },
   { to: "/contact", label: "Contact" }

@@ -1,5 +1,6 @@
 // src/pages/BusinessPartners.jsx
 import React from "react";
+import DIFCLogo from "../components/DIFC_Logo.png";
 import FooterOrbit from "../components/FooterOrbit";
 import TalkBanner from "../components/TalkBanner";
 
@@ -146,12 +147,12 @@ export default function BusinessPartners() {
               </div>
             </div>
 
-            {/* Peace Home */}
+            {/* DIFC */}
             <div className="flex flex-col items-center justify-center text-center p-2">
               <div className="w-32 h-32 flex items-center justify-center hover:scale-105 transition-all duration-300 ease-out">
                 <img 
-                  src="/peace homes-logo.png" 
-                  alt="Peace Home Logo"
+                  src={DIFCLogo} 
+                  alt="DIFC Logo"
                   className="max-w-full max-h-full object-contain"
                   draggable={false}
                   onError={(e) => {
