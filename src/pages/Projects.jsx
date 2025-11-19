@@ -8,34 +8,34 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: "Roots Wall",
+      name: "Orbitpayz",
       description: "Send, receive, deposit, request, invest and exchange money globally in multiple currencies easily, quickly and safely with great rates and low fees.",
       category: "Fintech",
       tags: ["Government", "Exchange", "Cash"],
-      image: "https://ufg-lab-roan.vercel.app/_next/static/media/rootswall.d2f1f8d2.png",
+      image: "https://media.istockphoto.com/id/1410007281/photo/currency-exchange-money-transfer-global-business-fintech-financial-technology-online-banking.jpg?s=612x612&w=0&k=20&c=GHNxlK3zJVDdoYW3G3glOcEO3kYAhhBZzHlBVZ7cVls=",
       url: "https://rootswall.com/"
     },
     {
       id: 2,
-      name: "Cash Care",
+      name: "Payelance",
       description: "Next-gen financial and banking facilities featuring mortgages, lending/borrowing, and residency via investment.",
       category: "Banking",
       tags: ["Mortgage", "Investment"],
-      image: "https://ufg-lab-roan.vercel.app/_next/static/media/cashcare.e59bfca7.png",
+      image: "https://media.istockphoto.com/id/1199539162/photo/online-payment.jpg?s=612x612&w=0&k=20&c=s06i4laGzwX1AEETf5uedzXwFs9GG8tKDghs0ROGebU=",
       url: "https://www.cashcare.co/"
     },
     {
       id: 3,
-      name: "Gamiverz",
+      name: "Tok n Game",
       description: "Gamers and developers can transact to trade in-game assets while building a diverse gaming community.",
       category: "Gaming",
       tags: ["NFT", "Community"],
-      image: "https://ufg-lab-roan.vercel.app/_next/static/media/gamiverz.d5e7cfb2.png",
+      image: "https://img.pikbest.com/wp/202348/casino-chips-3d-illustration-of-a-laptop-computer-background-with-cards-dice-and-gambling-for-online-gaming_9784583.jpg!bw700",
       url: "https://orbitwalls.com"
     },
     {
       id: 4,
-      name: "Ticks 'n Travel",
+      name: "Tripvaya",
       description: "Merging the best of what the world offers for the discerning traveler. For leisure and business travel stays, air travel and charter flights",
       category: "Travel",
       tags: ["Booking", "Luxury"],
@@ -53,16 +53,16 @@ const Projects = () => {
     },
     {
       id: 6,
-      name: "WellPlex",
+      name: "Well Plex",
       description: "Bringing together healthcare professionals, hospitals and patients on one platform, with private, trackable health records and progress updates.",
       category: "Healthcare",
       tags: ["Records", "Privacy"],
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+      image: "https://engage.vic.gov.au/storage/media/59977/conversions/banner-for-engage-vic-site_eab1-hero.jpg",
       url: "https://orbitwalls.com"
     },
     {
       id: 7,
-      name: "Chain Homes",
+      name: "Tok n build",
       description: "Disrupting traditional real estate, using next-gen solutions to list and invest in properties, transacting directly with the owner.",
       category: "Real Estate",
       tags: ["Investment", "Blockchain"],
@@ -80,11 +80,11 @@ const Projects = () => {
     },
     {
       id: 9,
-      name: "Coin Pulse",
+      name: "Trueemi",
       description: "A luxury experience through specialized ATM kiosks globally, allowing users to convert between fiat and crypto, and debit/credit cards.",
       category: "ATM",
       tags: ["Crypto", "Payments"],
-      image: "https://images.unsplash.com/photo-1622630998477-20aa696ecb05?auto=format&fit=crop&q=80&w=800",
+      image: "https://financefeeds.com/wp-content/uploads/2025/09/Top-Crypto-Friendly-Banks-in-The-USA.webp",
       url: "https://orbitwalls.com"
     },
     {
@@ -228,7 +228,7 @@ const Projects = () => {
             {visibleProjects.map((project, index) => (
               <div
                 key={project.id}
-                className="group bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden"
+                className="group bg-gradient-to-br from-teal-900/60 to-teal-800/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-teal-700/50 hover:border-teal-500/70 hover:shadow-2xl hover:shadow-teal-500/20 overflow-hidden flex flex-col"
               >
                 <div className="relative mb-6">
                   <img 
@@ -240,24 +240,26 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-teal-500/25 to-transparent opacity-0 group-hover:opacity-100"></div>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500">
-                  {project.name}
-                </h3>
-                <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">
-                    {project.category}
-                  </span>
-                  {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">
-                      {tag}
+                <div className="flex flex-col flex-grow">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-teal-500">
+                    {project.name}
+                  </h3>
+                  <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">
+                      {project.category}
                     </span>
-                  ))}
+                    {project.tags.map((tag, tagIndex) => (
+                      <span key={tagIndex} className="px-3 py-1 bg-teal-500/15 text-teal-300 rounded-full text-sm">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 <button 
-                  className="w-full py-3 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700"
+                  className="w-full py-3 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 mt-auto"
                   onClick={() => window.open(project.url, '_blank')}
                 >
                   View Project

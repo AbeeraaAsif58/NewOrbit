@@ -220,14 +220,35 @@ export default function FooterOrbitMoonTech() {
                   +97145706249
                 </span>
               </li>
-              <li className="ft-stagger">
+              <li className="ft-stagger flex items-start gap-2">
+                <svg className="w-5 h-5 text-white/80 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
                 <span className="text-white/60 text-sm">
-                  1104, 11th Floor, The Tower Plaza Hotel, Sheikh Zayad Road UAE.
+                 
+                  459-461, Cheetham Hill Road,<br />
+                  M8 9PA, Manchester, UK
                 </span>
               </li>
-              <li className="ft-stagger">
+              <li className="ft-stagger flex items-start gap-2">
+                <svg className="w-5 h-5 text-white/80 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
                 <span className="text-white/60 text-sm">
-                  Metropolitan House, Station Rod, Cheadle Hulme, StockportSK8 7AZ-UK
+                1104, 11th Floor, The Tower Plaza Hotel,
+                Sheikh Zayed Road, Dubai, UAE
+                </span>
+              </li>
+              <li className="ft-stagger flex items-start gap-2">
+                <svg className="w-5 h-5 text-white/80 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span className="text-white/60 text-sm">
+                  2 Bis, Rue Abou Abdellah Nafii,<br />
+                  Maarif, Casablanca 20100, Morocco
                 </span>
               </li>
             </ul>

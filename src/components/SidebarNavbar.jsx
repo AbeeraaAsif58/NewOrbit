@@ -218,7 +218,7 @@ export default function SidebarNavbar() {
               <img 
                 src="/newlogo.png" 
                 alt="Orbit Walls Logo" 
-                className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
+                className="h-20 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
               />
             </Link>
           </div>
@@ -234,8 +234,7 @@ export default function SidebarNavbar() {
                 className="px-2 sm:px-3 md:px-4 lg:px-6 h-8 sm:h-10 md:h-12 rounded-lg sm:rounded-xl bg-gradient-to-r from-[#0CF25D] to-[#0CF25D]/90 hover:from-[#0CF25D]/90 hover:to-[#0CF25D]/80 font-semibold flex items-center gap-1 sm:gap-2 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform touch-manipulation text-xs sm:text-sm md:text-base"
                 style={sidebarFontStyle}
               >
-                <span className="hidden lg:inline">Industries</span>
-                <span className="lg:hidden">Ind.</span>
+                <span>Industries</span>
                 <svg
                   className={`w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 transition-transform duration-300 ${industriesOpen ? "rotate-180" : ""}`}
                   viewBox="0 0 24 24"

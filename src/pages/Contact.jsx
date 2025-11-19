@@ -166,10 +166,40 @@ export default function Contact() {
                 </a>
               </div>
 
-              <div>
-                <p>1104, 11th Floor, The Tower Plaza Hotel, Sheikh Zayad Road</p>
-                <p>Dubai, UAE</p>
-                <p className="mt-3">Metropolitan House, Station Rod, Cheadle Hulme, StockportSK8 7AZ-UK</p>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-white/80 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div>
+                    <p className="font-medium text-white">Dubai, UAE</p>
+                    <p className="text-white/80">1104, 11th Floor, The Tower Plaza Hotel,</p>
+                    <p className="text-white/80">Sheikh Zayed Road, Dubai, UAE</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-white/80 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div>
+                    <p className="font-medium text-white">Manchester, UK</p>
+                    <p className="text-white/80">459-461, Cheetham Hill Road,</p>
+                    <p className="text-white/80">M8 9PA, Manchester, UK</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-white/80 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div>
+                    <p className="font-medium text-white">Casablanca, Morocco</p>
+                    <p className="text-white/80">2 Bis, Rue Abou Abdellah Nafii,</p>
+                    <p className="text-white/80">Maarif, Casablanca 20100, Morocco</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
