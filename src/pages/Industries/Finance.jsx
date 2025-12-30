@@ -15,7 +15,7 @@ const projects = [
     "description": "The world's first neutral online marketplace for instant customized rate quotes on loans and credit cards. Shop for loans & cards just like you buy everything else now – online.",
     "status": "Available",
     "slug": "properloan-nbfc-finance-mortgage-startup-sourcing-loans-credit-cards",
-    "image": "https://www.ufglab.com/projects/loan-350x222.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/loan-350x222.png"
   },
   {
     "title": "InvestDrive- HYIP Crypto Investment Management Platform",
@@ -29,7 +29,7 @@ const projects = [
     "description": "With this Application, you can easily create a HYIP Crypto Investment Management Platform with all the features of any modern HYIP Crypto Investment Management Platform.",
     "status": "Available",
     "slug": "investdrive-hyip-crypto-investment-management-platform",
-    "image": "https://www.ufglab.com/projects/crypto-investmet-350x197.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/crypto-investmet-350x197.jpg"
   },
   {
     "title": "Quotora-Live Trading Market Analysis Portfolio Watching List Subscriptions",
@@ -43,7 +43,7 @@ const projects = [
     "description": "Features More Than 2100+ Crypto Currencies & Tokens, Live Trading, Market Analysis, Portfolio Management, Watching List, Subscriptions",
     "status": "Available",
     "slug": "quotora-live-trading-market-analysis-portfolio-watching-list-subscriptions",
-    "image": "https://www.ufglab.com/projects/banner-350x219.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/banner-350x219.jpg"
   },
   {
     "title": "Bankovia - Online Banking With DPS & Loan",
@@ -71,7 +71,7 @@ const projects = [
     "description": "Trusted virtual credit card solution for your business with all the features of any modern virtual credit card solution.",
     "status": "Available",
     "slug": "payoutcard-complete-virtual-credit-card-solution",
-    "image": "https://www.ufglab.com/projects/virtual-card-350x219.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/virtual-card-350x219.jpg"
   },
   {
     "title": "CapturePay-Start your own Secure Online Payment Gateway",
@@ -85,7 +85,7 @@ const projects = [
     "description": "The most secure and reliable online payment gateway solution for your business with all the features of any modern online payment gateway solution.",
     "status": "Available",
     "slug": "capturepay-start-your-own-secure-online-payment-gateway",
-    "image": "https://www.ufglab.com/projects/payment-gateway-350x217.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/payment-gateway-350x217.jpg"
   }
 ];
 

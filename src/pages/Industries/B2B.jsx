@@ -40,7 +40,7 @@ const projects = [
     status: "Available",
     price: "$750 – $1,375",
     slug: "close-sourcing-b2b-ecommerce-bulk-discount",
-    image: "https://www.ufglab.com/projects/B2B-eCommerce-Solution-for-Your-Business-350x175.png"
+    image: "https://ufg-lab-roan.vercel.app/projects/B2B-eCommerce-Solution-for-Your-Business-350x175.png"
   }
 ];
 

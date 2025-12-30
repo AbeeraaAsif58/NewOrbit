@@ -30,7 +30,7 @@ const Projects = () => {
       description: "Gamers and developers can transact to trade in-game assets while building a diverse gaming community.",
       category: "Gaming",
       tags: ["NFT", "Community"],
-      image: "https://img.pikbest.com/wp/202348/casino-chips-3d-illustration-of-a-laptop-computer-background-with-cards-dice-and-gambling-for-online-gaming_9784583.jpg!bw700",
+      image: "https://images.pexels.com/photos/6333898/pexels-photo-6333898.jpeg",
       url: "https://orbitwalls.com"
     },
     {
@@ -345,14 +345,6 @@ const Projects = () => {
                 <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
                   Join the cosmic revolution and let Orbit propel your business into the digital stratosphere. Our stellar team is ready to make your vision a reality.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-lg sm:text-xl md:text-2xl font-bold rounded-full hover:from-cyan-600 hover:to-blue-700">
-                    <span>Start Your Mission</span>
-                  </button>
-                  <button className="group px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-transparent border-2 border-primary text-white text-lg sm:text-xl md:text-2xl font-bold rounded-full hover:bg-primary hover:text-black">
-                    <span>Learn More</span>
-                  </button>
-                </div>
               </div>
             </div>
           </div>

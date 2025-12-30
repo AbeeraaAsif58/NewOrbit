@@ -15,7 +15,7 @@ const projects = [
     "description": "With more fun, advanced security, and real money rewards, this quiz game app is a perfect way to learn and earn.",
     "status": "58 Sales",
     "slug": "quizmatics-real-money-quiz-game-app",
-    "image": "https://www.ufglab.com/projects/quiz-banner-350x175.jpeg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/quiz-banner-350x175.jpeg"
   },
   {
     "title": "HPL11-Dream 11 Clone Fantasy App",
@@ -29,7 +29,7 @@ const projects = [
     "description": "This is an easy to use and deploy Dream 11 Clone Fantasy App with all the features of any modern Dream 11 Clone Fantasy App.",
     "status": "Available",
     "slug": "hpl11-dream-11-clone-fantasy-app",
-    "image": "https://www.ufglab.com/projects/dream11-fantasy-clone-application-350x200.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/dream11-fantasy-clone-application-350x200.png"
   },
   {
     "title": "Ludo HG-Ludo Tournament Betting",
@@ -43,7 +43,7 @@ const projects = [
     "description": "By using this application, you can easily create a Ludo Tournament Betting Platform with all the features of any modern Ludo Tournament Betting Platform.",
     "status": "Available",
     "slug": "ludo-hg-ludo-tournament-betting",
-    "image": "https://www.ufglab.com/projects/Ludo-King-WhatsApp-Group-350x175.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/Ludo-King-WhatsApp-Group-350x175.jpg"
   },
   {
     "title": "FortuneFantasy-Online Betting Platform",
@@ -57,7 +57,7 @@ const projects = [
     "description": "This is a betting management system with all the features of any modern betting management system.",
     "status": "Available",
     "slug": "fortunefantasy-online-betting-platform-1xbet-clone",
-    "image": "https://www.ufglab.com/projects/1xbet-1.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/1xbet-1.jpg"
   },
 
 ];

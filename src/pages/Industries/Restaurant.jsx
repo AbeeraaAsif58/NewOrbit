@@ -54,7 +54,7 @@ const projects = [
     "description": "This is a cutting-edge food delivery app and restaurant management system designed to support both single and multi-branch restaurants. It comes with a robust POS system, complemented by user-friendly applications.",
     "status": "Available",
     "slug": "lilplates-restaurant-food-delivery-system-with-admin-panel-delivery-man-app-restaurant-pos",
-    "image": "https://www.ufglab.com/projects/lilplates-350x181.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/lilplates-350x181.jpg"
   },
   {
     "title": "OrderCreator – SaaS Restaurant / QR Menu / WhatsApp Online ordering / Reservation system",

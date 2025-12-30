@@ -14,7 +14,7 @@ const projects = [
     "description": "Complete matrimony web application with dedicated Android and iOS apps featuring advanced matching algorithms and secure communication.",
     "status": "73 Sales",
     "slug": "futureshaadi-matrimony-web-application-android-ios-app",
-    "image": "https://www.ufglab.com/projects/matrimonial-portal-350x190.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/matrimonial-portal-350x190.jpg"
   },
   {
     "title": "Rishtey – Shaadi Clone Matrimony Android & iOS app",
@@ -28,7 +28,7 @@ const projects = [
     "description": "A feature-packed Shaadi Clone Matrimonial Mobile Application to seamlessly manage your Users, Preferences, Membership, Payments, Promotions and more. This app is for providing matrimonial services to users.",
     "status": "53 Sales",
     "slug": "rishtey-shaadi-clone-matrimony-android-ios-app",
-    "image": "https://www.ufglab.com/projects/rishtey-350x202.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/rishtey-350x202.jpg"
   },
   {
     "title": "Janoo-Dating Platform like Tinder/Badoo",
@@ -41,7 +41,7 @@ const projects = [
     "description": "Fast and secured Dating social platform User Features Upload Images: Upload any image from your device and share it online with other users High performance & Capability: it handles advanced matching algorithms.",
     "status": "11 Sales",
     "slug": "janoo-dating-platform-like-tinder-badoo",
-    "image": "https://www.ufglab.com/projects/social-dating-350x194.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/social-dating-350x194.png"
   },
 ];
 

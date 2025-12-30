@@ -14,7 +14,7 @@ const projects = [
     "status": "Available",
     "price": "69 sales",
     "slug": "cryptoquiver-ico-sto-token-sale-management-ico-admin",
-    "image": "https://www.ufglab.com/projects/ico-token.jpeg",
+    "image": "https://ufg-lab-roan.vercel.app/projects/ico-token.jpeg",
     "liveUrl": "https://cryptoquiver.com"
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     status: "Available",
     price: "9 sales",
     slug: "cryptologia-cryptocurrency-buy-sell-exchange-mlm-system",
-    image: "https://www.ufglab.com/projects/crypto-mlm.png"
+    image: "https://ufg-lab-roan.vercel.app/projects/crypto-mlm.png"
   }
 ];
 

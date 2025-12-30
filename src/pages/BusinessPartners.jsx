@@ -1,5 +1,6 @@
 // src/pages/BusinessPartners.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import DIFCLogo from "../components/DIFC_Logo.png";
 import FooterOrbit from "../components/FooterOrbit";
 import TalkBanner from "../components/TalkBanner";
@@ -312,15 +313,21 @@ export default function BusinessPartners() {
             Contact us today to learn more about our partnership opportunities and how we can work together to achieve mutual success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
+            <Link
+              to="/contact"
+              className="bg-white hover:bg-gray-100 text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins inline-flex items-center justify-center"
+            >
               Contact Us
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins">
+            </Link>
+            <Link
+              to="/about"
+              className="border-2 border-white text-white hover:bg-white hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 font-poppins inline-flex items-center justify-center"
+            >
               Learn More
-            </button>
-              </div>
-            </div>
+            </Link>
           </div>
+        </div>
+      </div>
 
       {/* Fourth Parallax Section */}
       <div 

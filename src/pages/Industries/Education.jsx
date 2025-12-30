@@ -14,7 +14,7 @@ const projects = [
     "description": "Comprehensive multi-school management system with advanced features for managing multiple educational institutions from a single platform.",
     "status": "89 Sales",
     "slug": "school-silo-multi-school-management-system",
-    "image": "https://www.ufglab.com/projects/lms4-350x235.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/lms4-350x235.png"
   },
   {
     "title": "Skillsly – Ultimate eLearning Website",
@@ -28,7 +28,7 @@ const projects = [
     "description": "It is an Enterprise grade Learning management system Website for Class 9th to 12th, JEE, NEET, and other exams. It is a complete system with all the features of any modern LMS.",
     "status": "82 Sales",
     "slug": "skillsly-ultimate-elearning-website",
-    "image": "https://www.ufglab.com/projects/lms-350x247.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/lms-350x247.jpg"
   },
   {
     "title": "Hostelstead – Hostel/Room Management System",
@@ -42,7 +42,7 @@ const projects = [
     "description": "Complete hostel and room management system for educational institutions with booking, payment, and maintenance features.",
     "status": "76 Sales",
     "slug": "hostelstead-hostel-room-management-system",
-    "image": "https://www.ufglab.com/projects/lms10-350x177.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/lms10-350x177.png"
   },
   {
     "title": "Libraxo – Library Management System with Website",
@@ -56,7 +56,7 @@ const projects = [
     "description": "Library management system with integrated website for book cataloging, borrowing, and digital resource management.",
     "status": "65 Sales",
     "slug": "libraxo-library-management-system-website",
-    "image": "https://www.ufglab.com/projects/lms9-350x201.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/lms9-350x201.png"
   },
   {
     "title": "Skillbuzz – Udemy Clone - Online Courses and Learning Management System",
@@ -70,7 +70,7 @@ const projects = [
     "description": "Complete Udemy clone with online course management, instructor dashboard, and learning management system.",
     "status": "72 Sales",
     "slug": "skillbuzz-udemy-clone-online-courses-learning-management-system",
-    "image": "https://www.ufglab.com/projects/online-learning-management-systemudemy-clone-350x209.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/online-learning-management-systemudemy-clone-350x209.png"
   },
 ];
 

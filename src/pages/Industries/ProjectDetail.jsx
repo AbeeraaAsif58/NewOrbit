@@ -1089,7 +1089,7 @@ const ProjectDetail = () => {
       description: "This software helps to manage park cars, buses, bikes, pickup and other vehicles in your business or home in a very decorated and convenient way. Using this system, a user can handle parking related activities like defining parking slots, categorizing vehicles category, customizing vehicle category wise rates, parking rate validity period and view overall information at a glance.",
       status: "Available",
       slug: "parkingrabbit-daily",
-      image: "https://www.ufglab.com/images/industries/automobile/parkingrabbit.jpg",
+      image: "https://ufg-lab-roan.vercel.app/images/industries/automobile/parkingrabbit.jpg",
       heroImage: "https://www.ufglab.com/images/industries/automobile/parkingrabbit.jpg",
       overview: "ParkingRabbit is a comprehensive parking management system designed to handle all aspects of vehicle parking in businesses, residential complexes, and commercial facilities. The system provides a complete solution for managing parking spaces, vehicle categories, pricing, and real-time monitoring. With support for multiple vehicle types including cars, buses, bikes, and pickup trucks, ParkingRabbit offers flexible configuration options and user-friendly interfaces for both administrators and users.",
       features: [
@@ -1659,9 +1659,9 @@ const ProjectDetail = () => {
 
       slug: "business-brawn-complete-saas-business-management",
 
-      image: "https://www.ufglab.com/projects/business-banner-350x210.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/business-banner-350x210.jpg",
 
-      heroImage: "https://www.ufglab.com/projects/business-banner-350x210.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/business-banner-350x210.jpg",
 
       overview: "Business Brawn is a comprehensive SAAS business management platform that provides all the tools needed to run a successful business. Our unified platform combines operations, finance, HR, and project management in one seamless solution.",
 
@@ -1951,9 +1951,9 @@ const ProjectDetail = () => {
 
       slug: "futureshaadi-matrimony-web-application-android-ios-app",
 
-      image: "https://www.ufglab.com/projects/matrimonial-portal-350x190.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/matrimonial-portal-350x190.jpg",
 
-      heroImage: "https://www.ufglab.com/projects/matrimonial-portal-350x190.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/matrimonial-portal-350x190.jpg",
 
       overview: "Futureshaadi is a comprehensive matrimony platform that combines web application with dedicated Android and iOS mobile apps. Our platform provides advanced matching algorithms, secure communication features, and comprehensive profile management for serious matrimonial connections.",
 
@@ -2011,9 +2011,9 @@ const ProjectDetail = () => {
 
       slug: "rishtey-shaadi-clone-matrimony-android-ios-app",
 
-      image: "https://www.ufglab.com/projects/rishtey-350x202.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/rishtey-350x202.jpg",
 
-      heroImage: "https://www.ufglab.com/projects/rishtey-350x202.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/rishtey-350x202.jpg",
 
       overview: "Rishtey is a complete Shaadi clone matrimony platform that replicates the functionality of the popular matrimonial website. Our platform includes comprehensive profile management, advanced search filters, and dedicated mobile applications for both Android and iOS platforms.",
 
@@ -2111,9 +2111,9 @@ const ProjectDetail = () => {
 
       slug: "janoo-dating-platform-like-tinder-badoo",
 
-      image: "https://www.ufglab.com/projects/social-dating-350x194.png",
+      image: "https://ufg-lab-roan.vercel.app/projects/social-dating-350x194.png",
 
-      heroImage: "https://www.ufglab.com/projects/social-dating-350x194.png",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/social-dating-350x194.png",
 
       overview: "Janoo is a modern dating platform inspired by popular apps like Tinder and Badoo. Our platform features intuitive swipe functionality, location-based matching, and premium features designed to help users find meaningful connections in their area.",
 
@@ -3039,8 +3039,8 @@ const ProjectDetail = () => {
       description: "This is an Appointment Booking With Time-slot app in Flutter is a complete medical solution for users. You can find nearby doctors with complete profile details of doctor.",
       status: "66 Sales",
       slug: "practova-appointment-booking-with-time-slot-app-practo-clone",
-      image: "https://www.ufglab.com/projects/practo-clone-350x183.png",
-      heroImage: "https://www.ufglab.com/projects/practo-clone-350x183.png",
+      image: "https://ufg-lab-roan.vercel.app/projects/practo-clone-350x183.png",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/practo-clone-350x183.png",
       overview: "Practova is a comprehensive appointment booking system designed as a Practo clone, providing a complete medical solution for users and healthcare providers. The platform enables users to find nearby doctors, check their profiles, availability, and book appointments at convenient time slots. The system includes separate applications for patients and doctors, with advanced features for appointment management, payment processing, and real-time notifications.",
       features: [
         "Search Nearby Doctors",
@@ -3146,8 +3146,8 @@ const ProjectDetail = () => {
       description: "This application is designed to serve coupons either submitted by your users or imported via XML/CSV file from the affiliate network or both. It is designed to be super fast and not to add any stress to queries while providing best features at the same time.",
       status: "25 Sales",
       slug: "couponlife-affiliate-submitting-coupons-application",
-      image: "https://www.ufglab.com/projects/coupon-350x197.jpg",
-      heroImage: "https://www.ufglab.com/projects/coupon-350x197.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/coupon-350x197.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/coupon-350x197.jpg",
       overview: "CouponLife is a comprehensive affiliate coupon management application designed to serve coupons either submitted by users or imported via XML/CSV files from affiliate networks. The application is built for speed and efficiency, providing the best features without adding stress to database queries. It offers complete control over coupon management with drag-and-drop functionality, user submission capabilities, and advanced search and filtering options.",
       features: [
         "Importing Coupons System",
@@ -3440,9 +3440,9 @@ const ProjectDetail = () => {
 
       slug: "urban-better-home-services-business-listing-handyman-booking-app",
 
-      image: "https://www.ufglab.com/projects/business-suite-350x183.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/home-service-350x184.jpg",
 
-      heroImage: "https://www.ufglab.com/projects/business-suite-350x183.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/home-service-350x184.jpg",
 
       overview: "Urban Better is a comprehensive home services platform that connects homeowners with trusted service providers. Our platform offers business listings, booking management, and service tracking for various home improvement and maintenance services.",
 
@@ -3770,8 +3770,8 @@ const ProjectDetail = () => {
       description: "All-in-one eCommerce platform with advanced features for online retail businesses.",
       status: "75 Sales",
       slug: "bunnpay-complete-ecommerce",
-      image: "https://www.ufglab.com/projects/ecommerce-banner-350x173.jpg",
-      heroImage: "https://www.ufglab.com/projects/ecommerce-banner-350x173.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/ecommerce-banner-350x173.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/ecommerce-banner-350x173.jpg",
       overview: "Bunnpay is a comprehensive eCommerce platform designed to provide all the essential features needed for online retail businesses. It offers advanced payment processing, content management, and complete eCommerce functionality in one integrated solution.",
       features: [
         "Complete eCommerce Platform",
@@ -4889,9 +4889,9 @@ const ProjectDetail = () => {
 
       slug: "school-silo-multi-school-management-system",
 
-      image: "https://www.ufglab.com/projects/lms4-350x235.png",
+      image: "https://ufg-lab-roan.vercel.app/projects/lms4-350x235.png",
 
-      heroImage: "https://www.ufglab.com/projects/lms4-350x235.png",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/lms4-350x235.png",
 
       overview: "School Silo is a comprehensive multi-school management system designed to handle the complex needs of educational institutions. It provides centralized management for multiple schools, allowing administrators to oversee operations, track performance, and manage resources efficiently across different campuses. The system includes complete ERP functionality for student management, teacher administration, academic planning, fee collection, library management, transport coordination, and parent communication.",
 
@@ -7164,9 +7164,9 @@ const ProjectDetail = () => {
 
       slug: "hpl11-dream-11-clone-fantasy-app",
 
-      image: "https://www.ufglab.com/projects/dream11-fantasy-clone-application-350x200.png",
+      image: "https://ufg-lab-roan.vercel.app/projects/dream11-fantasy-clone-application-350x200.png",
 
-      heroImage: "https://www.ufglab.com/projects/dream11-fantasy-clone-application-350x200.png",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/dream11-fantasy-clone-application-350x200.png",
 
       overview: "HPL11 is an easy-to-use app for Fantasy Cricket Tournament. It lets you effectively manage and track the app, maintenance, and users. The app also helps you calculate the earnings of your app based on the quantity of the Tournament Players. This is a complete Dream11 clone fantasy sports platform with all the features of any modern fantasy sports application.",
 
@@ -7324,9 +7324,9 @@ const ProjectDetail = () => {
 
       slug: "fortunefantasy-online-betting-platform-1xbet-clone",
 
-      image: "https://www.ufglab.com/projects/1xbet-1.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/1xbet-1.jpg",
 
-      heroImage: "https://www.ufglab.com/projects/1xbet-1.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/1xbet-1.jpg",
 
       overview: "FortuneFantasy is a betting management system that can be used to guess the result of WorldCup / Tournament matches in a kind of prediction. The players compete in guessing the correct result of some kind of match. Soccer, Cricket, Baseball, Basketball, or even Yes/No questions like: will Brazil win the next WorldCup. At first User need to deposit for predicting. User will get interest followed by ratio. Admin can control match lock/unlock, ratio update, question, option add instantly where user doesn't need to website reload.",
 
@@ -8198,9 +8198,9 @@ const ProjectDetail = () => {
 
       slug: "dixiedaily-dunzo-clone-multivendor-food-grocery-ecommerce-parcel-pharmacy-delivery-website-3-mobile-apps-customer-store-driver-apps",
 
-      image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&h=600&fit=crop&crop=center",
+      image: "https://ufg-lab-roan.vercel.app/projects/grocery-online-350x262.jpg",
 
-      heroImage: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=1200&h=600&fit=crop&crop=center",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/grocery-online-350x262.jpg",
 
       overview: "DixieDaily is a complete Multi-vendor Food, Grocery, eCommerce, Parcel, Pharmacy, or any kind of products delivery system developed using Laravel and Flutter Framework. It's Powerful admin panel will help you to control your business smartly. It comprises of 3 Mobile Applications, 2 Web Panel, and 1 website with comprehensive order flow management and advanced features.",
 
@@ -8484,9 +8484,9 @@ const ProjectDetail = () => {
 
       slug: "doctor-corps-hospital-management-system",
 
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center",
+      image: "https://ufg-lab-roan.vercel.app/projects/hms6-350x191.png",
 
-      heroImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&h=600&fit=crop&crop=center",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/hms6-350x191.png",
 
       overview: "Doctor Corps Hospital Management System is the most complete and multi-functional hospital or medical center management system. It collaborates admin, patients, doctors, nurses, laboratorists, pharmacists, receptionist, accountants so that all the paperworks and manual tiresome works can be automated easily and efficiently. This comprehensive system provides hundreds of automation features with 8 types of user accounts for complete healthcare facility management.",
 
@@ -8812,9 +8812,9 @@ const ProjectDetail = () => {
 
       slug: "hospiva-hospital-management-system",
 
-      image: "https://www.ufglab.com/projects/hms1-1-350x173.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/hms1-1-350x173.jpg",
 
-      heroImage: "https://www.ufglab.com/projects/hms1-1-350x173.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/hms1-1-350x173.jpg",
 
       overview: "Hospiva is a comprehensive hospital management system designed for online patient management and appointment scheduling. This application is built upon PHP with Codeigniter Framework, allowing hospitals to take online patient appointments and patients to schedule doctor appointments from anywhere in the world. It provides a complete solution for modern healthcare management.",
 
@@ -10128,8 +10128,8 @@ const ProjectDetail = () => {
       description: "This is a cutting-edge food delivery app and restaurant management system designed to support both single and multi-branch restaurants. It comes with a robust POS system, complemented by user-friendly applications.",
       status: "Available",
       slug: "lilplates-restaurant-food-delivery-system-with-admin-panel-delivery-man-app-restaurant-pos",
-      image: "https://www.ufglab.com/projects/lilplates-350x181.jpg",
-      heroImage: "https://www.ufglab.com/projects/lilplates-350x181.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/lilplates-350x181.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/lilplates-350x181.jpg",
       overview: "Lilplates is a cutting-edge food delivery app and restaurant management system designed to support both single and multi-branch restaurants. It comes with a robust POS system, complemented by user-friendly applications including an app for customers, a website, and an app for delivery personnel. The system boasts a feature-rich admin panel developed with Laravel Framework and Vue, empowering you to efficiently and intelligently manage every aspect of your restaurant operations. Experience accelerated growth and seamless management with powerful tools at your disposal.",
       features: [
         "Customer User Journey",
@@ -16581,8 +16581,8 @@ const ProjectDetail = () => {
       description: "This is a self hosted, open-source, full-featured, and easy-to-use Email Marketing Web Application written in PHP / Laravel that lets you send high-volume marketing emails via your own server or through other email service (SMTP) providers.",
       status: "Available",
       slug: "mailmill-bulk-email-marketing-software-application",
-      image: "https://www.ufglab.com/projects/email-banner-350x201.png",
-      heroImage: "https://www.ufglab.com/projects/email-banner-350x201.png",
+      image: "https://ufg-lab-roan.vercel.app/projects/email-banner-350x201.png",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/email-banner-350x201.png",
       overview: "MailMill is a self-hosted, open-source, full-featured, and easy-to-use Email Marketing Web Application written in PHP/Laravel that lets you send high-volume marketing emails via your own server or through other email service (SMTP) providers. This comes as a fully open source product, allowing you to send marketing emails without any limitations and get rid of expensive email services like Mailchimp, ActiveCampaign. You can have full control over the entire system with your own SMTP servers or integrate with email service providers like Mailgun, SendGrid, SparkPost, ElasticEmail, or Amazon SES.",
       features: [
         "Self-Hosted & Open Source",
@@ -16756,8 +16756,8 @@ const ProjectDetail = () => {
       description: "Become an Email Service Provider for your customers, since this integrates easily with payment gateways and it offers all the needed tools to create pricing plans, promotional codes and to manage orders and transactions created by your customers.",
       status: "Available",
       slug: "inboxer-bulk-email-marketing-saas-application",
-      image: "https://www.ufglab.com/projects/email-mar-banner-350x197.jpg",
-      heroImage: "https://www.ufglab.com/projects/email-mar-banner-350x197.jpg",
+      image: "https://ufg-lab-roan.vercel.app/projects/email-mar-banner-350x197.jpg",
+      heroImage: "https://ufg-lab-roan.vercel.app/projects/email-mar-banner-350x197.jpg",
       overview: "Inboxer is a comprehensive Bulk Email Marketing SAAS Application that allows you to become an Email Service Provider for your customers. The platform integrates easily with payment gateways and offers all the necessary tools to create pricing plans, promotional codes, and manage orders and transactions created by your customers. You can send unlimited email campaigns (newsletters) to unlimited lists containing unlimited subscribers. If you handle newsletters for multiple websites, you can treat those as customers with unlimited capacity.",
       features: [
         "Email Service Provider Platform",

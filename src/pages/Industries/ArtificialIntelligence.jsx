@@ -10,7 +10,7 @@ const projects = [
     status: "Available",
     price: "$2,000 – $3,500",
     slug: "classifiable-classified-buy-sell-marketplace",
-    image: "https://www.ufglab.com/projects/writetalent.jpg"
+    image: "https://ufg-lab-roan.vercel.app/projects/sonicvox.jpg"
   },
   {
     title: "Inbitcoin – AI Prompt Buy Selling Marketplace",
@@ -30,7 +30,7 @@ const projects = [
     status: "Available",
     price: "$750 – $1,375",
     slug: "writingo-ai-content-writer-copyright-generator",
-    image: "https://www.ufglab.com/projects/thinkgpt-banner.jpeg"
+    image: "https://ufg-lab-roan.vercel.app/projects/thinkgpt-banner.jpeg"
   },
   {
     title: "Aitini – ChatGPT SaaS Writing Assistant",
@@ -40,7 +40,7 @@ const projects = [
     status: "Available",
     price: "$750 – $1,375",
     slug: "aitini-chatgpt-saas-writing-assistant",
-    image: "https://www.ufglab.com/projects/thinkgpt-banner.jpeg"
+    image: "https://ufg-lab-roan.vercel.app/projects/thinkgpt-banner.jpeg"
   },
 
 

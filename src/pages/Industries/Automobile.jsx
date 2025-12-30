@@ -13,7 +13,7 @@ const projects = [
     "price": "$625 – $1,125",
     "slug": "carinian-used-car-buy-sell-dealership-website-apps",
     "sales": "38 Sales",
-    "image": "https://www.ufglab.com/images/industries/automobile/carinian.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/images/industries/automobile/carinian.jpg"
   },
   {
     "title": "Garagify - Garage/Vehicle Service Management System",
@@ -26,7 +26,7 @@ const projects = [
     "price": "$625 – $1,250",
     "slug": "garagify-garage-vehicle-service-management-system",
     "sales": "14 Sales",
-    "image": "https://www.ufglab.com/images/industries/automobile/garagify.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/images/industries/automobile/garagify.jpg"
   },
   {
     "title": "Carenting - Car/Bike/Scooter Vehicle Rental Platform",
@@ -39,7 +39,7 @@ const projects = [
     "price": "$750 – $1,500",
     "slug": "carenting-car-bike-scooter-vehicle-rental-platform",
     "sales": "25 Sales",
-    "image": "https://www.ufglab.com/images/industries/automobile/carenting.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/images/industries/automobile/carenting.jpg"
   },
   {
     "title": "TrackingBit - Fleet Management System With Live GPS Tracking",
@@ -52,7 +52,7 @@ const projects = [
     "price": "$625 – $1,250",
     "slug": "trackingbit-fleet-management-system-live-gps-tracking",
     "sales": "22 Sales",
-    "image": "https://www.ufglab.com/images/industries/automobile/trackingbit.png"
+    "image": "https://ufg-lab-roan.vercel.app/images/industries/automobile/trackingbit.png"
   },
   {
     "title": "ParkingRabbit - SaaS Vehicle Parking Management System",
@@ -65,7 +65,7 @@ const projects = [
     "price": "$625 – $1,250",
     "slug": "parkingrabbit-saas-vehicle-parking-management-system",
     "sales": "15 Sales",
-    "image": "https://www.ufglab.com/images/industries/automobile/parkingrabbit-saas.png"
+    "image": "https://ufg-lab-roan.vercel.app/images/industries/automobile/parkingrabbit.jpg"
   },
   {
     "title": "ParkingRabbit – Car and Bike Parking Management",
@@ -78,7 +78,7 @@ const projects = [
     "price": "$625 – $1,250",
     "slug": "parkingrabbit-daily",
     "sales": "15 Sales",
-    "image": "https://www.ufglab.com/images/industries/automobile/parkingrabbit.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/images/industries/automobile/parkingrabbit-saas.png"
   }
 ];
 

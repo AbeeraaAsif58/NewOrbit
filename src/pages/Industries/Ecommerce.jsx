@@ -14,7 +14,7 @@ const projects = [
     "description": "Complete grocery delivery platform with customer, store, and driver apps - BigBasket clone with multi-store management capabilities.",
     "status": "120 Sales",
     "slug": "grocery-space-grocery-multi-store-customer-store-driver-apps-bigbasket-clone",
-    "image": "https://www.ufglab.com/projects/product-banner-350x178.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/product-banner-350x178.png"
   },
   {
     "title": "Buyyu – Fashion & Lifestyle eCommerce Platform with Mobileapp",
@@ -28,7 +28,7 @@ const projects = [
     "description": "Comprehensive fashion and lifestyle eCommerce platform with mobile app support for modern retail businesses.",
     "status": "95 Sales",
     "slug": "buyyu-fashion-lifestyle-ecommerce-platform-mobileapp",
-    "image": "https://www.ufglab.com/projects/ecommerce-email-banner-350x197.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/ecommerce-email-banner-350x197.jpg"
   },
   {
     "title": "Bunnpay – Complete eCommerce Platform",
@@ -42,7 +42,7 @@ const projects = [
     "description": "All-in-one eCommerce platform with advanced features for online retail businesses.",
     "status": "75 Sales",
     "slug": "bunnpay-complete-ecommerce",
-    "image": "https://www.ufglab.com/projects/ecommerce-banner-350x173.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/ecommerce-banner-350x173.jpg"
   },
   {
     "title": "Bona Kart – Multi-vendor eCommerce Platform with Android & iOS apps",
@@ -56,7 +56,7 @@ const projects = [
     "description": "Multi-vendor eCommerce platform with Android and iOS apps built on Bootstrap and Laravel.",
     "status": "55 Sales",
     "slug": "bona-kart-multivendor-ecommerce-platform-android-ios-apps",
-    "image": "https://www.ufglab.com/projects/ecommerce-multi-vendor-marketplace-350x184.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/ecommerce-multi-vendor-marketplace-350x184.jpg"
   }
 ];
 

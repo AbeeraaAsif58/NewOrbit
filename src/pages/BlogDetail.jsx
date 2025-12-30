@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import TalkBanner from "../components/TalkBanner";
-import SimpleFooter from "../components/SimpleFooter";
+import FooterOrbitMoonTech from "../components/FooterOrbit";
 
 // Professional blog data inspired by PureLogics content
 const blogPosts = [
@@ -414,7 +414,7 @@ export default function BlogDetail() {
       />
       
       {/* Footer */}
-      <SimpleFooter />
+      <FooterOrbitMoonTech />
     </div>
   );
 }

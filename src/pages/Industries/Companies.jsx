@@ -9,7 +9,7 @@ const projects = [
     "description": "Established 4 years Employees 25 Legal Entity Private Limited Company Reported Sales EUR 12.4 million Run Rate Sales EUR 16 million EBITDA Margin 33 % Industries Fintech Locations Barcelona, Spain",
     "status": "For Sale",
     "slug": "for-sale-innovative-fintech-banking-company-spain",
-    "image": "https://www.ufglab.com/projects/International-payment-gateway-350x205.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/International-payment-gateway-350x205.png"
   },
   {
     "title": "Website and Apps Marketplace with 100+ Live Solutions – Heloix Clone",
@@ -18,7 +18,7 @@ const projects = [
     "description": "This is an online marketplace that facilitates buying of digital assets and businesses. We provide verified and tested CRM solutions, web and mobile applications that enable entrepreneurs to start with a step ahead.",
     "status": "Available",
     "slug": "website-apps-marketplace-100-live-solutions-heloix-clone",
-    "image": "https://www.ufglab.com/projects/startupbox-banner-350x237.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/startupbox-banner-350x237.jpg"
   },
   {
     "title": "Software Company with 50+ CRM and Cloud solutions – Salesforce/Zoho Clone",
@@ -27,7 +27,7 @@ const projects = [
     "description": "Jobber Alliance is India's #1 customer relationship management (CRM) platform. We help your marketing, sales, commerce, service and IT teams work as one from anywhere — so you can keep your customers happy everywhere.",
     "status": "Available",
     "slug": "software-company-50-crm-cloud-solutions-salesforce-zoho-clone",
-    "image": "https://www.ufglab.com/projects/jobber-banner-350x186.jpeg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/jobber-banner-350x186.jpeg"
   }
 ];
 

@@ -14,7 +14,7 @@ const projects = [
     "description": "This is Flexible, Powerful and Reliable video/photo gallery sharing & hosting platform, you can now easily create Highly Profitable adult tube websites.",
     "status": "Available",
     "slug": "juqe-adult-video-platform",
-    "image": "https://www.ufglab.com/projects/adult-350x166.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/adult-350x166.png"
   },
   {
     "title": "Tokito – Android & iOS Media App Creating, Sharing, Short Videos TikTok MoJ Clone",
@@ -28,7 +28,7 @@ const projects = [
     "description": "Android & iOS media app for creating and sharing short videos, similar to TikTok with all modern features for content creation and social interaction.",
     "status": "Available",
     "slug": "tokito-android-ios-media-app-creating-sharing-short-videos-tiktok-moj-clone",
-    "image": "https://www.ufglab.com/projects/tiktok-350x197.jpg"
+    "image": "https://ufg-lab-roan.vercel.app/projects/tiktok-350x197.jpg"
   },
   {
     "title": "PixelPear OOT Platform – Netflix Clone – Live TV & Movies Streaming Platform",
@@ -42,7 +42,7 @@ const projects = [
     "description": "Complete Netflix clone with live TV and movies streaming platform. It is a complete system with all the features of any modern Netflix clone.",
     "status": "Available",
     "slug": "pixelpear-oot-platform-netflix-clone-live-tv-movies-streaming-platform",
-    "image": "https://www.ufglab.com/projects/video-tv-app-1-350x230.png"
+    "image": "https://ufg-lab-roan.vercel.app/projects/video-tv-app-1-350x230.png"
   },
 
 ];
